@@ -14,7 +14,7 @@ export default function Header() {
             src="/images/entei-logo.svg"
             alt="Entei Design"
             fill
-            className="object-contain"
+            className="objec t-contain"
             priority
           />
         </Link>

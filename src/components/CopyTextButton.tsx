@@ -32,7 +32,7 @@ export default function CopyTextButton({ text }: CopyTextButtonProps) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="text-primary"
+      className="text-gray-500"
     >
       <polyline points="20 6 9 17 4 12" />
     </svg>
@@ -47,6 +47,7 @@ export default function CopyTextButton({ text }: CopyTextButtonProps) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className="text-gray-500"
     >
       <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
@@ -54,13 +55,11 @@ export default function CopyTextButton({ text }: CopyTextButtonProps) {
   );
 
   return (
-    <Button
-      variant="text"
-      onClick={handleCopy}
-      aria-label="Copy email address"
-      iconRight={icon}
-    >
-      <Text className="cursor-pointer">{text}</Text>
+    <Button variant="text" onClick={handleCopy} aria-label="Copy email address">
+      {text}
+      <div className="opacity-0 group-hover:opacity-100 transition-opacity absolute right-[-32px] bg-black p-1">
+        {icon}
+      </div>
     </Button>
   );
 }
