@@ -56,7 +56,9 @@ const ContactForm: React.FC<ContactFormProps> = ({
       <Field className="flex align-center justify-center gap-2">
         <Checkbox
           name="accept_policy"
-          className="cursor-pointer group block rounded border border-gray-500 bg-gray-800 data-checked:bg-primary h-[24px] w-[24px]"
+          className="cursor-pointer group block rounded border border-gray-500 bg-gray-800 data-checked:bg-primary h-[24px] w-[24px]
+          focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary
+          "
         >
           <svg
             className="stroke-gray-800 opacity-0 group-data-checked:opacity-100"
