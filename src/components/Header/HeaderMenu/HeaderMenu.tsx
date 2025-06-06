@@ -4,7 +4,7 @@ import { headerMenu } from "./constants";
 
 export default function HeaderMenu() {
   return (
-    <nav className="hidden md:flex items-center bg-brand-gray-900 border border-brand-gray-800 rounded-lg px-4 py-2">
+    <nav className="hidden md:flex items-center bg-brand-gray-900/50 border border-brand-gray-800 rounded-lg px-4 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {headerMenu.map((item) => (
         <Link
           key={item.href}

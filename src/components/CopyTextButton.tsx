@@ -56,8 +56,8 @@ export default function CopyTextButton({ text }: CopyTextButtonProps) {
 
   return (
     <Button variant="text" onClick={handleCopy} aria-label="Copy email address">
-      {text}
-      <div className="opacity-0 group-hover:opacity-100 transition-opacity absolute right-[-32px] bg-black p-1">
+      <Text className="text-white">{text}</Text>
+      <div className="opacity-0 group-hover:opacity-100 transition-opacity absolute left-[-32px] bg-black p-1">
         {icon}
       </div>
     </Button>

@@ -21,32 +21,27 @@ const ContactForm: React.FC<ContactFormProps> = ({
           możemy Ci pomóc?
         </span>
       </Heading>
-      <Field className="flex flex-col gap-2">
-        <Label htmlFor="full_name" className="text-gray-200">
-          Imię i nazwisko
-        </Label>
-        <TextField
-          name="full_name"
-          type="text"
-          placeholder="Jak się nazywasz"
-        />
-      </Field>
-      <Field className="flex flex-col gap-2">
-        <Label>Adres email</Label>
-        <TextField
-          name="email"
-          type="email"
-          placeholder="Gdzie możemy odpisać"
-        />
-      </Field>
-      <Field className="flex flex-col gap-2">
-        <Label>Nazwa firmy (opcjonalnie)</Label>
-        <TextField
-          name="company_name"
-          type="text"
-          placeholder="Twoja marka, projekt lub startup"
-        />
-      </Field>
+
+      <TextField
+        name="full_name"
+        type="text"
+        label="Imię i nazwisko"
+        placeholder="Jak się nazywasz"
+      />
+
+      <TextField
+        name="email"
+        type="email"
+        label="Adres email"
+        placeholder="Gdzie możemy odpisać"
+      />
+
+      <TextField
+        name="company_name"
+        type="text"
+        label="Nazwa firmy (opcjonalnie)"
+        placeholder="Twoja marka, projekt lub startup"
+      />
 
       <Field className="flex flex-col gap-2">
         <Label>Opisz swój pomysł lub potrzeby</Label>
@@ -58,7 +53,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
         />
       </Field>
 
-      <Field className="flex align-center gap-2 ">
+      <Field className="flex align-center justify-center gap-2">
         <Checkbox
           name="accept_policy"
           className="cursor-pointer group block rounded border border-gray-500 bg-gray-800 data-checked:bg-primary h-[24px] w-[24px]"
