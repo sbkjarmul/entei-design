@@ -5,14 +5,10 @@ import {
   DialogBackdrop,
   DialogPanel,
   DialogTitle,
-  Field,
-  Label,
-  Textarea,
 } from "@headlessui/react";
 import Button from "./Button";
 import Text from "./Text";
 import Heading from "./Heading";
-import TextField from "./TextField";
 import CopyTextButton from "./CopyTextButton";
 import AccentText from "./AccentText";
 import Image from "next/image";
@@ -64,16 +60,13 @@ export default function ContactDialog({
     >
       <DialogBackdrop className="fixed inset-0 bg-black/50" />
       <div className="fixed inset-0 flex w-screen items-center justify-center p-4 ">
-        <DialogPanel className=" bg-black flex gap-4 p-2 rounded-lg relative w-full h-full max-w-[1200px] max-h-[900px]">
+        <DialogPanel className="bg-black flex gap-4 p-2 rounded-lg relative w-full h-full max-w-[1200px] max-h-[900px]">
           <div className="p-12 rounded-lg w-1/2 h-full flex flex-col gap-4 z-1">
-            <DialogTitle>
-              <AccentText>
-                Zaufali nam founderzy, startupy i marki, które chcą się
-                wyróżniać.
-              </AccentText>
-              <Heading level={2}>Każdy projekt zaczyna się od wizji.</Heading>
-            </DialogTitle>
-            <Description>
+            <AccentText>
+              Zaufali nam founderzy, startupy i marki, które chcą się wyróżniać.
+            </AccentText>
+            <Heading level={2}>Każdy projekt zaczyna się od wizji.</Heading>
+            <Description className="flex-col flex gap-4">
               <Text>
                 Odpowiadamy na Twoje zgłoszenie w ciągu 48 godzin roboczych.
                 Jeżeli Twoje zgłoszenie jest pilne lub nie jesteś fanem
@@ -81,7 +74,10 @@ export default function ContactDialog({
               </Text>
               <Text>
                 <CopyTextButton text="hello@entei.design" /> lub{" "}
-                <Button variant="text">zarezerwuj rozmowę</Button>.
+                <Button variant="text" className="text-gray-100">
+                  zarezerwuj rozmowę
+                </Button>
+                .
               </Text>
             </Description>
           </div>

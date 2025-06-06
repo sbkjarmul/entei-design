@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-black">
+    <footer className="bg-primary text-black z-10">
       <div className="container mx-auto px-4 h-full">
         <div className="flex flex-col h-full">
           {/* Top Block - Menu */}

@@ -4,11 +4,11 @@ export const headerMenu = [
     href: "#work",
   },
   {
-    name: "O mnie",
+    name: "O nas",
     href: "#about",
   },
   {
     name: "Kontakt",
-    href: "#contact",
+    href: "contact",
   },
 ];
