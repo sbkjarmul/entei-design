@@ -1,4 +1,4 @@
-import { Input } from "@headlessui/react";
+import { Input, Label } from "@headlessui/react";
 
 interface TextFieldProps {
   name: string;
@@ -18,7 +18,9 @@ export default function TextField({
       name={name}
       type={type ?? "text"}
       placeholder={placeholder}
-      className="p-4 bg-white rounded-md text-black"
+      className="p-2 bg-black rounded-md text-gray-500 border border-gray-800
+      focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary
+      "
     />
   );
 }

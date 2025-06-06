@@ -22,13 +22,13 @@ export default function Heading({
       defaultClass = "font-medium text-2xl md:text-5xl max-w-3xl";
       break;
     case 3:
-      defaultClass = "font-medium text-xl md:text-2xl max-w-2xl";
+      defaultClass = "text-xl md:text-2xl max-w-2xl";
       break;
     case 4:
-      defaultClass = "font-medium text-lg md:text-xl";
+      defaultClass = "text-lg md:text-xl";
       break;
     case 5:
-      defaultClass = "font-medium text-base md:text-lg";
+      defaultClass = " text-base md:text-lg";
       break;
     case 6:
       defaultClass = "font-medium text-sm md:text-base";

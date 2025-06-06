@@ -1,20 +1,22 @@
 import {
-  CloseButton,
+  Checkbox,
   Description,
   Dialog,
   DialogBackdrop,
   DialogPanel,
   DialogTitle,
+  Field,
+  Label,
   Textarea,
 } from "@headlessui/react";
 import Button from "./Button";
 import Text from "./Text";
 import Heading from "./Heading";
-import Link from "next/link";
 import TextField from "./TextField";
 import CopyTextButton from "./CopyTextButton";
 import AccentText from "./AccentText";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 interface CloseContactDialogButtonProps {
   onClose: () => void;
@@ -24,7 +26,7 @@ function CloseContactDialogButton({ onClose }: CloseContactDialogButtonProps) {
   return (
     <button
       onClick={onClose}
-      className="absolute right-4 top-4 text-gray-500 hover:text-white transition-colors"
+      className="absolute right-4 top-4 text-gray-500 hover:text-white transition-colors cursor-pointer"
       aria-label="Close dialog"
     >
       <svg
@@ -61,19 +63,9 @@ export default function ContactDialog({
       className="relative z-50"
     >
       <DialogBackdrop className="fixed inset-0 bg-black/50" />
-      <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-        <DialogPanel className="border bg-black flex gap-4 p-2 rounded-lg relative w-full h-full max-w-[1200px] max-h-[800px]">
-          <div className="absolute inset-0 flex items-center justify-end">
-            <Image
-              src="/images/entei-logo-blurred.png"
-              alt="Entei Design Background"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          <CloseContactDialogButton onClose={() => setIsOpen(false)} />
-          <div className="p-12 rounded-lg w-1/2 h-full flex flex-col gap-4">
+      <div className="fixed inset-0 flex w-screen items-center justify-center p-4 ">
+        <DialogPanel className=" bg-black flex gap-4 p-2 rounded-lg relative w-full h-full max-w-[1200px] max-h-[900px]">
+          <div className="p-12 rounded-lg w-1/2 h-full flex flex-col gap-4 z-1">
             <DialogTitle>
               <AccentText>
                 Zaufali nam founderzy, startupy i marki, które chcą się
@@ -94,23 +86,19 @@ export default function ContactDialog({
             </Description>
           </div>
 
-          <div className="p-12 w-1/2 h-full flex flex-col">
-            <div className="flex flex-col gap-4 h-full">
-              <TextField
-                name="full_name"
-                type="text"
-                placeholder="Imię i nazwisko"
-              />
-              <TextField name="email" type="email" placeholder="Email" />
-              <Textarea
-                name="message"
-                placeholder="Wiadomość"
-                className="p-4 bg-white rounded-md text-black flex-1"
-              />
-              <Button variant="primary" onClick={() => setIsOpen(false)}>
-                Wyślij zapytanie
-              </Button>
-            </div>
+          <div className="p-12 w-1/2 h-full flex flex-col z-1">
+            <CloseContactDialogButton onClose={() => setIsOpen(false)} />
+            <ContactForm onSubmit={() => setIsOpen(false)} />
+          </div>
+
+          <div className="absolute inset-0 flex items-center justify-end z-0 overflow-hidden">
+            <Image
+              src="/images/entei-logo-blurred.png"
+              alt="Entei Design Background"
+              fill
+              className="object-cover translate-x-[25%]"
+              priority
+            />
           </div>
         </DialogPanel>
       </div>

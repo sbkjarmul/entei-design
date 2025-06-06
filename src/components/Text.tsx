@@ -13,7 +13,7 @@ export default function Text({
   ...rest
 }: TextProps) {
   const Tag = as;
-  const defaultClass = "text-base md:text-lg max-w-2xl text-gray-500";
+  const defaultClass = "text-base max-w-2xl text-gray-500";
   const mergedClass = `${defaultClass} ${className}`.trim();
   return React.createElement(
     Tag,
