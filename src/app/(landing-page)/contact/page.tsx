@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 
-import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
-import CopyTextButton from "@/components/CopyTextButton";
-import Heading from "@/components/Heading";
-import Text from "@/components/Text";
-import TrustedUs from "./components/TrustedUs";
 import ContactInfo from "./components/ContactInfo";
 
 export default function Contact() {

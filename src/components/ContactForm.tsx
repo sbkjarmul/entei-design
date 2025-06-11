@@ -14,10 +14,10 @@ const ContactForm: React.FC<ContactFormProps> = ({
   return (
     <div className="flex flex-col gap-4 bg-black p-10 rounded-md">
       <Heading level={3}>
-        <span className="text-[32px] text-gray-500 tracking-[-2px]">
+        <span className="text-[32px] text-gray-500 tracking-[-1px]">
           W czym{" "}
         </span>
-        <span className="text-[32px] text-gray-200 tracking-[-2px]">
+        <span className="text-[32px] text-gray-200 tracking-[-1px]">
           możemy Ci pomóc?
         </span>
       </Heading>
@@ -48,7 +48,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
         <Textarea
           name="message"
           placeholder="Podziel się ważnymi informacjami o Twojej marce lub projekcie"
-          className="p-2 bg-black rounded-md text-gray-500 border border-gray-800 h-[160px]
+          className="p-2 bg-black rounded-md text-gray-400 border border-gray-800 h-[160px]
                 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
         />
       </Field>
