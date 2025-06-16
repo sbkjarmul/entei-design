@@ -13,24 +13,38 @@ export default function Button({
   rounded = true,
   height,
   width,
+  disabled,
   ...props
 }: ButtonProps) {
   const base = `${rounded ? "rounded-md" : ""} ${
     variant === "text" ? "" : "px-8 py-2"
-  } relative text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary cursor-pointer ${
+  } relative text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary ${
+    disabled ? "cursor-not-allowed" : "cursor-pointer"
+  } ${
     height === "100%" ? "h-full" : height ? `h-[${height}]` : ""
   } ${width ? `w-[${width}]` : ""}`;
-  const primary = "bg-primary text-black hover:bg-primary/90";
-  const secondary =
-    "bg-transparent border border-gray-500 text-gray-500 hover:text-gray-300";
-  const text =
-    "bg-transparent text-base text-gray-500 hover:border-secondary hover:text-white ";
+
+  const primary = `${disabled ? "bg-gray-500 text-gray-300" : "bg-primary text-black hover:bg-primary/90"}`;
+  const secondary = `${
+    disabled
+      ? "bg-transparent border border-gray-500 text-gray-500"
+      : "bg-transparent border border-gray-500 text-gray-500 hover:text-gray-300"
+  }`;
+  const text = `${
+    disabled
+      ? "bg-transparent text-base text-gray-500"
+      : "bg-transparent text-base text-gray-500 hover:border-secondary hover:text-white"
+  }`;
 
   const variantClass =
     variant === "secondary" ? secondary : variant === "text" ? text : primary;
 
   return (
-    <button className={`${base} ${variantClass} group`} {...props}>
+    <button
+      className={`${base} ${variantClass} group`}
+      disabled={disabled}
+      {...props}
+    >
       <div className="flex items-center justify-center gap-2 w-full">
         {children}
         {iconRight}

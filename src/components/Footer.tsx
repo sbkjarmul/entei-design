@@ -27,11 +27,8 @@ export default function Footer() {
     <footer className="bg-primary text-black z-10">
       <div className="container mx-auto px-4 h-full">
         <div className="flex flex-col h-full">
-          {/* Top Block - Menu */}
           <div className="flex-1 flex justify-end items-center py-8">
-            {/* Menu Columns */}
             <div className="flex gap-16">
-              {/* Company Links */}
               <div className="flex flex-col gap-2">
                 <h3 className="font-semibold mb-2">Firma</h3>
                 {footerLinks.company.map((link) => (
@@ -45,7 +42,6 @@ export default function Footer() {
                 ))}
               </div>
 
-              {/* Services Links */}
               <div className="flex flex-col gap-2">
                 <h3 className="font-semibold mb-2">Usługi</h3>
                 {footerLinks.services.map((link) => (
@@ -59,7 +55,6 @@ export default function Footer() {
                 ))}
               </div>
 
-              {/* Legal Links */}
               <div className="flex flex-col gap-2">
                 <h3 className="font-semibold mb-2">Informacje</h3>
                 {footerLinks.legal.map((link) => (
@@ -75,7 +70,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Bottom Block - Logo */}
           <div className="flex-1 flex items-end pb-8">
             <div className="w-[50%] h-[200px] relative">
               <Image

@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 
-import ContactForm from "@/components/ContactForm";
+import ContactBox from "@/components/ContactBox";
 import ContactInfo from "./components/ContactInfo";
 
 export default function Contact() {
@@ -12,9 +10,8 @@ export default function Contact() {
         <div className="w-full lg:w-1/2 flex z-1 justify-center">
           <ContactInfo />
         </div>
-
-        <div className="p-0 md:p-12 w-full lg:w-1/2 h-full flex flex-col z-1">
-          <ContactForm onSubmit={() => {}} />
+        <div className="p-0 w-full lg:w-1/2 h-full flex flex-col z-1">
+          <ContactBox />
         </div>
 
         <div className="absolute inset-0 bottom-[-50%] translate-y-[25%] lg:translate-y-[10%] lg:inset-[-15%] flex items-center justify-end z-0 overflow-hidden select-none ">
