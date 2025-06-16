@@ -24,16 +24,16 @@ export async function submitContactForm(
 
   try {
     const data = schema.parse({
-      fullName: formData.get("full_name")?.toString(),
+      fullName: formData.get("fullName")?.toString(),
       email: formData.get("email")?.toString(),
       message: formData.get("message")?.toString(),
-      companyName: formData.get("company_name")?.toString(),
+      companyName: formData.get("companyName")?.toString(),
     });
 
     const { fullName, email, message, companyName } = data;
 
     // Send confirmation email to client
-    const { data: dataClient } = await resend.emails.send({
+    await resend.emails.send({
       from: "ENTEI <noreply@entei.design>",
       to: email.toString(),
       subject: "Wypełniłeś formularz kontaktowy",
@@ -45,7 +45,7 @@ export async function submitContactForm(
     });
 
     // Send notification email to ENTEI
-    const { data: dataEntei } = await resend.emails.send({
+    await resend.emails.send({
       from: "ENTEI <noreply@entei.design>",
       to: "entei.designs@gmail.com",
       subject: "Nowe zapytanie",

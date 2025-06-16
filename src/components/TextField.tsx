@@ -7,6 +7,7 @@ interface TextFieldProps {
   label?: string;
   className?: string;
   isDisabled?: boolean;
+  error?: string;
 }
 
 export default function TextField({
@@ -16,26 +17,25 @@ export default function TextField({
   label,
   className = "",
   isDisabled,
+  error,
+  ...props
 }: TextFieldProps) {
   return (
-    <Field className={`flex flex-col gap-2 ${className}`}>
-      {label && (
-        <Label htmlFor={name} className="text-gray-200">
-          {label}
-        </Label>
-      )}
+    <Field className="flex flex-col gap-2">
+      {label && <Label>{label}</Label>}
       <Input
-        id={name}
         name={name}
-        type={type ?? "text"}
+        type={type}
         placeholder={placeholder}
         autoComplete="off"
-        className="p-2 bg-black rounded-md text-gray-400 border border-gray-800
-        focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary
-      "
+        className={`p-2 bg-black rounded-md text-gray-400 border ${
+          error ? "border-red-500" : "border-gray-800"
+        } focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary ${className}`}
         disabled={isDisabled}
         aria-disabled={isDisabled}
+        {...props}
       />
+      {error && <span className="text-red-500 text-sm">{error}</span>}
     </Field>
   );
 }
