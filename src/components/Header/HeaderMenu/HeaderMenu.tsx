@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLink from "@/components/NavLink";
 
 import { headerMenu } from "./constants";
 
@@ -6,13 +6,9 @@ export default function HeaderMenu() {
   return (
     <nav className="hidden md:flex items-center bg-brand-gray-900/50 border border-brand-gray-800 rounded-lg px-4 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {headerMenu.map((item) => (
-        <Link
-          key={item.href}
-          href={item.href}
-          className="text-brand-gray-300 hover:text-primary transition-colors px-4 py-2"
-        >
+        <NavLink key={item.href} href={item.href}>
           {item.name}
-        </Link>
+        </NavLink>
       ))}
     </nav>
   );

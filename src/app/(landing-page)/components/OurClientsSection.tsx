@@ -5,7 +5,10 @@ import Text from "../../../components/Text";
 
 export default function OurClientsSection() {
   return (
-    <section className="bg-black py-20 flex flex-col items-center gap-10">
+    <section
+      className="bg-black py-20 flex flex-col items-center gap-10"
+      id="ourclients"
+    >
       <div className="flex flex-col items-center gap-2">
         <AccentText>Zaufali nam</AccentText>
         <Heading level={2}>Nasi klienci</Heading>
