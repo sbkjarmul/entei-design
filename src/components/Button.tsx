@@ -18,13 +18,13 @@ export default function Button({
 }: ButtonProps) {
   const base = `${rounded ? "rounded-md" : ""} ${
     variant === "text" ? "" : "px-8 py-2"
-  } relative text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary ${
+  } relative text-base font-medium transition-all duration-500 ease-in-out focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary ${
     disabled ? "cursor-not-allowed" : "cursor-pointer"
   } ${
     height === "100%" ? "h-full" : height ? `h-[${height}]` : ""
   } ${width ? `w-[${width}]` : ""}`;
 
-  const primary = `${disabled ? "bg-gray-500 text-gray-300" : "bg-primary text-black hover:bg-primary/90"}`;
+  const primary = `${disabled ? "bg-gray-500 text-gray-300" : "bg-primary text-black hover:bg-primary/90 hover:scale-105"}`;
   const secondary = `${
     disabled
       ? "bg-transparent border border-gray-500 text-gray-500"

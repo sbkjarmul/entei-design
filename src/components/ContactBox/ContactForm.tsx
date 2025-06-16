@@ -1,35 +1,14 @@
 "use client";
 
 import React from "react";
-import Heading from "@/components/Heading";
-import { Checkbox, Field, Label, Textarea } from "@headlessui/react";
-import TextField from "@/components/TextField";
-import Button from "@/components/Button";
-import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Checkbox, Field, Label, Textarea } from "@headlessui/react";
 
-const contactFormSchema = z.object({
-  fullName: z
-    .string()
-    .min(5, "Imię i nazwisko musi mieć minimum 5 znaków")
-    .max(100, "Imię i nazwisko nie może być dłuższe niż 100 znaków")
-    .regex(
-      /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ\s-]+$/,
-      "Imię i nazwisko może zawierać tylko litery, spacje i myślniki"
-    ),
-  email: z.string().email("Nieprawidłowy adres email"),
-  companyName: z.string().optional(),
-  message: z
-    .string()
-    .min(10, "Wiadomość musi mieć minimum 10 znaków")
-    .max(2000, "Wiadomość nie może być dłuższa niż 2000 znaków"),
-  acceptPolicy: z.boolean().refine((val) => val === true, {
-    message: "Musisz zaakceptować politykę prywatności",
-  }),
-});
-
-type ContactFormData = z.infer<typeof contactFormSchema>;
+import Heading from "@/components/Heading";
+import TextField from "@/components/TextField";
+import Button from "@/components/Button";
+import { ContactFormData, contactFormSchema, defaultValues } from "./schema";
 
 interface ContactFormProps {
   formAction: (payload: FormData) => void;
@@ -47,13 +26,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
     setValue,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
-    defaultValues: {
-      fullName: "",
-      email: "",
-      companyName: "",
-      message: "",
-      acceptPolicy: false,
-    },
+    defaultValues,
     mode: "onBlur",
   });
 
