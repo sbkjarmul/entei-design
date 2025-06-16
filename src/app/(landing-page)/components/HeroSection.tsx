@@ -15,11 +15,13 @@ export default function HeroSection() {
     <section className="flex flex-col items-center justify-center text-center py-20 gap-6">
       <div className="gap-2">
         <AccentText>100% zadowolonych klientów</AccentText>
-        <Heading level={1}>Zamieniamy pomysły w nowoczesne marki</Heading>
+        <Heading level={1}>
+          Sprawimy, że Twoja firma, przyciągnie więcej klientów.
+        </Heading>
       </div>
       <Text>
-        Wiemy jak tworzyć ponadczasowe logo oraz strony internetowę, którę
-        budują przywiązanie już od pierwszego kontaktu z Twoją firmą!
+        Wiemy jak tworzyć ponadczasowe logo oraz strony internetowę, które
+        klienci zapamiętają już od pierwszego kontaktu z Twoją firmą!
       </Text>
       <div className="flex flex-col sm:flex-row gap-4 mt-4">
         <Button variant="primary" onClick={handleBookMeeting}>
