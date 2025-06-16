@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center gap-8 h-full">
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 mr-[350px]">
             <HeaderMenu />
           </div>
 

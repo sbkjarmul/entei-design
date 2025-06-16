@@ -6,6 +6,7 @@ interface TextFieldProps {
   placeholder: string;
   label?: string;
   className?: string;
+  isDisabled?: boolean;
 }
 
 export default function TextField({
@@ -14,6 +15,7 @@ export default function TextField({
   placeholder,
   label,
   className = "",
+  isDisabled,
 }: TextFieldProps) {
   return (
     <Field className={`flex flex-col gap-2 ${className}`}>
@@ -31,6 +33,8 @@ export default function TextField({
         className="p-2 bg-black rounded-md text-gray-400 border border-gray-800
         focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary
       "
+        disabled={isDisabled}
+        aria-disabled={isDisabled}
       />
     </Field>
   );
