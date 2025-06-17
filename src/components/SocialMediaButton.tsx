@@ -24,7 +24,7 @@ export default function SocialMediaButton({
           className="object-contain"
         />
         <div className="flex flex-col items-start">
-          <span className="text-[8px] text-gray-400 leading-[10px] tracking-[0.5px]">
+          <span className="text-[8px] text-gray-400 leading-[10px]">
             FOLLOW US ON
           </span>
           <span className="text-base leading-[18px] font-semibold text-gray-200">
