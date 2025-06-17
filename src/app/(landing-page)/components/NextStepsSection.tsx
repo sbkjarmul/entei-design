@@ -16,7 +16,7 @@ export default function NextStepsSection() {
           </Heading>
         </div>
         <Text className="text-center">
-          Chetnie zajmiemy sie regularnym tworzeniem treści na Twoje social
+          Chętnie wesprzemy Cię w regularnym tworzeniem treści na Twoje social
           media, a także pozyskiwaniem klientów poprzez digital marketing.
         </Text>
       </div>

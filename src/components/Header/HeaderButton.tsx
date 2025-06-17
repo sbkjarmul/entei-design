@@ -9,7 +9,7 @@ export default function HeaderButton() {
 
   return (
     <button
-      className="h-full px-16 bg-primary text-black text-2xl font-normal hover:bg-primary/90 transition-colors cursor-pointer
+      className="h-full px-10 bg-primary text-black text-2xl font-normal hover:bg-primary/90 transition-colors cursor-pointer
       focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
       onClick={handleButtonClick}
     >

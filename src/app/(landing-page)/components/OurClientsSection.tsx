@@ -34,6 +34,8 @@ export default function OurClientsSection() {
               className="object-contain w-auto h-full grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
+        </div>
+        <div className="flex flex-row justify-center gap-x-16 w-full">
           <div className="h-10 flex items-center justify-center">
             <Image
               src="/images/our-clients/lagom-logo.png"
@@ -43,23 +45,12 @@ export default function OurClientsSection() {
               className="object-contain w-auto h-full grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
-        </div>
-        <div className="flex flex-row justify-center gap-x-16 w-full">
           <div className="h-10 flex items-center justify-center">
             <Image
               src="/images/our-clients/aristo-logo.png"
               alt="aristo"
               width={260}
               height={40}
-              className="object-contain w-auto h-full grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
-            />
-          </div>
-          <div className="h-16 flex items-center justify-center">
-            <Image
-              src="/images/our-clients/highwave-logo.png"
-              alt="high wave"
-              width={220}
-              height={64}
               className="object-contain w-auto h-full grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
