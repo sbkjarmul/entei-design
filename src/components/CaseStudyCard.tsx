@@ -44,7 +44,7 @@ export default function CaseStudyCard({
         </div>
 
         {logo && (
-          <div className="absolute inset-0 bg-black/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20">
+          <div className="absolute inset-0 bg-black/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden lg:flex items-center justify-center z-20">
             <Image
               src={logo}
               alt="Case Study Logo"
