@@ -1,7 +1,4 @@
 import CaseStudyCard from "@/components/CaseStudyCard";
-import AccentText from "../../../components/AccentText";
-import Heading from "../../../components/Heading";
-import Text from "../../../components/Text";
 
 export default function OurWorkSection() {
   return (

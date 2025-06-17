@@ -4,9 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ComponentProps } from "react";
 
-interface NavLinkProps extends ComponentProps<typeof Link> {}
-
-export default function NavLink({ href, ...props }: NavLinkProps) {
+export default function NavLink({
+  href,
+  ...props
+}: ComponentProps<typeof Link>) {
   const pathname = usePathname();
   const isActive = pathname.includes(href.toString());
 
