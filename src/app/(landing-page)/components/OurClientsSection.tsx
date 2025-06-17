@@ -2,13 +2,11 @@ import Image from "next/image";
 import AccentText from "../../../components/AccentText";
 import Heading from "../../../components/Heading";
 import Text from "../../../components/Text";
+import Section from "@/components/Section";
 
 export default function OurClientsSection() {
   return (
-    <section
-      className="bg-black py-20 flex flex-col items-center gap-10"
-      id="ourclients"
-    >
+    <Section className="items-center" id="ourclients">
       <div className="flex flex-col items-center gap-2">
         <AccentText>Zaufali nam</AccentText>
         <Heading level={2}>Nasi klienci</Heading>
@@ -56,6 +54,6 @@ export default function OurClientsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

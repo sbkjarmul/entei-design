@@ -1,12 +1,13 @@
 import CaseStudyCard from "@/components/CaseStudyCard";
+import Section from "@/components/Section";
 
 export default function OurWorkSection() {
   return (
-    <section
+    <Section
       className="bg-black py-20 flex flex-col items-center gap-10"
       id="ourwork"
     >
-      <div className="flex flex-col p-4 gap-4">
+      <div className="flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-4">
           <CaseStudyCard
             categories={[
@@ -64,6 +65,6 @@ export default function OurWorkSection() {
           />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
