@@ -21,7 +21,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
       </head>
       <body className="font-neue-haas">
-        <div className="min-h-screen flex flex-col ">
+        <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
