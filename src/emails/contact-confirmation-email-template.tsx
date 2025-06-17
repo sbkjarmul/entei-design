@@ -14,20 +14,14 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
-
 interface ContactConfirmationEmailTemplateProps {
   fullName: string;
   companyName?: string;
-  email?: string;
   message: string;
 }
 
 export default function ContactConfirmationEmailTemplate({
   fullName = "Full Name",
-  email = "michal@gmail.com",
   companyName = "NaturaNova",
   message = "Szukamy wsparcia kreatywnego przy rebrandingu naszej marki – NaturaNova to firma zajmująca się produkcją naturalnych kosmetyków opartych na lokalnych składnikach. Potrzebujemy nowej identyfikacji wizualnej (logo, paleta kolorów, typografia), odświeżenia opakowań produktów oraz zaprojektowania nowej strony internetowej z e-sklepem. Zależy nam na estetyce minimalistycznej, bliskiej naturze, ale jednocześnie nowoczesnej i przyjaznej użytkownikowi. Chcielibyśmy także współpracować przy strategii komunikacji wizualnej w social mediach.",
 }: ContactConfirmationEmailTemplateProps) {
@@ -171,15 +165,6 @@ const footerStyle = {
   backgroundColor: "#D9D9D9",
 };
 
-const messageWrapper = {
-  marginTop: "32px",
-  padding: "24px",
-  backgroundColor: "#0F0F0F",
-  borderRadius: "8px",
-  border: "1px solid rgba(240, 240, 240, 0.2)",
-  zIndex: "20",
-};
-
 const h1 = {
   color: "#fff",
   fontSize: "40px",
@@ -256,17 +241,6 @@ const text = {
   fontSize: "16px",
   lineHeight: "24px",
   margin: "16px 0",
-  fontFamily:
-    'neue-haas-grotesk-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
-};
-
-const labelTextStyle = {
-  margin: 0,
-  padding: 0,
-  color: "#9F9F9F",
-  fontSize: "14px",
-  lineHeight: "24px",
-  letterSpacing: "0.5px",
   fontFamily:
     'neue-haas-grotesk-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
 };

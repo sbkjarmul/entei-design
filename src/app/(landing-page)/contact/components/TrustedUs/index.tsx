@@ -1,6 +1,5 @@
 import Text from "@/components/Text";
 import Image from "next/image";
-import UserAvatar from "./UserAvatar";
 import UserAvatarGroup from "./UserAvatarGroup";
 
 export default function TrustedUs() {
