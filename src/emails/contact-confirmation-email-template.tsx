@@ -290,12 +290,6 @@ const contactCardStyle = {
   backgroundSize: "cover",
 };
 
-const fullNameCardStyle = {
-  color: "#fff",
-  fontWeight: "300",
-  fontSize: "20px",
-};
-
 const companyNameStyle = {
   color: "#fff",
   fontWeight: "600",

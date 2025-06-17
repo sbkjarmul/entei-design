@@ -1,7 +1,7 @@
 export const headerMenu = [
   {
     name: "Nasze projekty",
-    href: "/#work",
+    href: "/git #work",
   },
   {
     name: "Klienci",
