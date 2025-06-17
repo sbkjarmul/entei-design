@@ -17,7 +17,7 @@ export default function ContactBox() {
   );
 
   return (
-    <div className="bg-black p-10 rounded-md min-h-[600px]">
+    <div className="bg-black p-4 md:p-10 rounded-md min-h-[600px]">
       {state.success ? (
         <ContactFormSuccessMessage />
       ) : (
