@@ -5,6 +5,7 @@ import AccentText from "../../../components/AccentText";
 import Heading from "../../../components/Heading";
 import Text from "../../../components/Text";
 import { useRouter } from "next/navigation";
+import Section from "@/components/Section";
 
 export default function HeroSection() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function HeroSection() {
   const handleBookMeeting = () => router.push("/contact");
 
   return (
-    <section className="flex flex-col items-center justify-center text-center py-20 gap-6">
+    <Section id="hero" className="items-center justify-center text-center">
       <div className="gap-2">
         <AccentText>100% zadowolonych klientów</AccentText>
         <Heading level={1}>
@@ -28,6 +29,7 @@ export default function HeroSection() {
           Umów konsultacje
         </Button>
       </div>
-    </section>
+      {/* </section> */}
+    </Section>
   );
 }

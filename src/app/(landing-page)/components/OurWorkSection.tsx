@@ -9,12 +9,6 @@ export default function OurWorkSection() {
       className="bg-black py-20 flex flex-col items-center gap-10"
       id="ourwork"
     >
-      {/* <div className="flex flex-col items-center gap-2">
-        <AccentText>Case studies</AccentText>
-        <Heading level={2}>Nasze realizacje</Heading>
-        <Text>Sprawdź nad czym ostatnio pracowaliśmy</Text>
-      </div> */}
-
       <div className="flex flex-col p-4 gap-4">
         <div className="flex flex-col md:flex-row gap-4">
           <CaseStudyCard
@@ -26,7 +20,7 @@ export default function OurWorkSection() {
             ]}
             image="/images/case-studies/suseu-case-study-card.png"
             logo="/images/our-clients/suseu-logo.png"
-            title="Stworzyliśmy ponad 300 widoków w wersji web i mobile dla Suseu, aplikacji do zarządzania współpracami "
+            title="Stworzyliśmy ponad 300 widoków w wersji web i mobile dla Suseu, aplikacji typu SaaS"
             comingSoon={true}
             size="small"
           />
