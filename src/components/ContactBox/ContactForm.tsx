@@ -34,7 +34,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
   return (
     <form action={formAction}>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8 md:gap-4">
         <Heading level={3}>
           <span className="text-[32px] text-gray-500 tracking-[-1px]">
             W czym{" "}
