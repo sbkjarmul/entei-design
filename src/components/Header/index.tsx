@@ -24,11 +24,11 @@ export default function Header() {
             <HeaderMenu />
           </div>
 
-          <div className="md:hidden">
+          <div className="hidden">
             <BurgerMenu />
           </div>
 
-          <div className="hidden md:flex absolute right-0 top-0 h-25">
+          <div className="flex absolute right-0 top-0 h-25 items-center">
             <HeaderButton />
           </div>
         </div>
