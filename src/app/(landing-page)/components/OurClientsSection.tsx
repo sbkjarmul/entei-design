@@ -10,7 +10,9 @@ export default function OurClientsSection() {
       <div className="flex flex-col items-center gap-2">
         <AccentText>Zaufali nam</AccentText>
         <Heading level={2}>Nasi klienci</Heading>
-        <Text>Pomogliśmy już 20+ firmom wyglądać lepiej</Text>
+        <Text className="text-center">
+          Pomogliśmy już 20+ firmom wyglądać lepiej
+        </Text>
       </div>
       <div className="flex flex-col items-center gap-y-10 max-w-5xl w-full">
         <div className="flex flex-row justify-center gap-x-16 w-full">

@@ -36,11 +36,6 @@ export default function Footer() {
                 icon="/images/emails/entei-email-icon.png"
                 platform="Instagram"
               />
-              <SocialMediaButton
-                href="https://linkedin.com/company/entei"
-                icon="/images/emails/entei-email-icon.png"
-                platform="LinkedIn"
-              />
             </div>
           </div>
         </div>
