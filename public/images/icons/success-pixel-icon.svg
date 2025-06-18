@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260.57 304">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff2400;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="72.38" y="14.48" width="14.48" height="43.43"/>
+  <rect class="cls-1" x="86.86" width="28.95" height="14.48"/>
+  <rect class="cls-1" x="115.81" y="14.48" width="14.48" height="28.95"/>
+  <rect class="cls-1" x="130.29" y="43.43" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="86.86" y="57.9" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="101.33" y="72.38" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="217.14" y="115.81" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="231.62" y="130.29" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="231.62" y="260.57" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="202.67" y="275.05" width="28.95" height="14.48"/>
+  <rect class="cls-1" x="14.48" y="289.52" width="188.19" height="14.48"/>
+  <rect class="cls-1" x="246.1" y="144.76" width="14.48" height="115.81"/>
+  <polygon class="cls-1" points="130.29 130.29 130.29 86.86 115.81 86.86 115.81 115.81 57.9 115.81 57.9 130.29 115.81 130.29 130.29 130.29"/>
+  <rect class="cls-1" x="28.95" y="173.71" width="14.48" height="28.95"/>
+  <rect class="cls-1" y="260.57" width="14.48" height="28.95"/>
+  <polygon class="cls-1" points="101.33 159.24 57.9 159.24 57.9 130.29 43.43 130.29 43.43 159.24 43.43 173.71 101.33 173.71 101.33 159.24"/>
+  <polygon class="cls-1" points="101.33 246.1 57.9 246.1 57.9 217.14 115.81 217.14 115.81 202.67 43.43 202.67 43.43 217.14 43.43 246.1 14.48 246.1 14.48 260.57 101.33 260.57 101.33 246.1"/>
+  <rect class="cls-1" x="144.76" y="57.9" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="159.24" y="72.38" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="173.71" y="86.86" width="14.48" height="14.48"/>
+  <rect class="cls-1" x="188.19" y="101.33" width="28.95" height="14.48"/>
+</svg>

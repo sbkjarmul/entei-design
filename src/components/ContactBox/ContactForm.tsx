@@ -36,10 +36,10 @@ const ContactForm: React.FC<ContactFormProps> = ({
     <form action={formAction}>
       <div className="flex flex-col gap-8 md:gap-4">
         <Heading level={3}>
-          <span className="text-[32px] text-gray-500 tracking-[-1px]">
+          <span className="text-4xl text-gray-500 tracking-[-1px]">
             W czym{" "}
           </span>
-          <span className="text-[32px] text-gray-200 tracking-[-1px]">
+          <span className="text-4xl text-gray-200 tracking-[-1px]">
             możemy Ci pomóc?
           </span>
         </Heading>
