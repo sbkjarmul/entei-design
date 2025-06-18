@@ -6,7 +6,7 @@ import Section from "@/components/Section";
 
 export default function OurClientsSection() {
   return (
-    <Section className="items-center" id="ourclients">
+    <Section className="items-center px-8" id="ourclients">
       <div className="flex flex-col items-center gap-2">
         <AccentText>Zaufali nam</AccentText>
         <Heading level={2}>Nasi klienci</Heading>
