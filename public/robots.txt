@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.entei.design
+
+# Sitemaps
+Sitemap: https://www.entei.design/sitemap.xml
