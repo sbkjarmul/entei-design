@@ -5,8 +5,8 @@ import Text from "../../../components/Text";
 
 export default function NextStepsSection() {
   return (
-    <Section className="bg-white items-center" id="ourwork">
-      <div className="flex flex-col gap-2 items-center">
+    <Section className="bg-white items-center px-4" id="ourwork">
+      <div className="flex flex-col gap-2 items-center ">
         <AccentText>Skup się na swoim biznesie!</AccentText>
         <Heading
           level={2}
