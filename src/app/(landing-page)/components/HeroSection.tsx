@@ -13,16 +13,27 @@ export default function HeroSection() {
   const handleBookMeeting = () => router.push("/contact");
 
   return (
-    <Section id="hero" className="items-center justify-center text-center px-4">
+    <Section id="hero" className="items-center justify-center text-center px-6">
       <div className="flex flex-col gap-2 items-center">
         <AccentText>100% zadowolonych klientów</AccentText>
         <Heading level={1}>
-          Sprawimy, że Twoja firma, przyciągnie więcej klientów.
+          <span className="block md:hidden">
+            Pomagamy małym firmom wyglądać profesjonalnie.
+          </span>
+          <span className="hidden md:block">
+            Sprawimy, że Twoja firma, przyciągnie więcej klientów.
+          </span>
         </Heading>
       </div>
       <Text>
-        Wiemy jak tworzyć ponadczasowe logo oraz strony internetowę, które
-        klienci zapamiętają już od pierwszego kontaktu z Twoją firmą!
+        <span className="block md:hidden">
+          Tworzymy ponadczasowe logo oraz strony internetowe, które są
+          niezbędne, aby klienci wybrali Ciebie.
+        </span>
+        <span className="hidden md:block">
+          Wiemy jak tworzyć ponadczasowe logo oraz strony internetowę, które
+          klienci zapamiętają już od pierwszego kontaktu z Twoją firmą!
+        </span>
       </Text>
       <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
         <Button variant="primary" onClick={handleBookMeeting} isHero>

@@ -14,7 +14,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`flex flex-col py-20 mx-auto w-full gap-8 md:gap-6 ${className}`}
+      className={`flex flex-col py-10 md:py-20 mx-auto w-full gap-6 ${className}`}
     >
       {children}
     </section>

@@ -28,7 +28,7 @@ export default function Button({
     ${isHero ? "w-full sm:w-fit" : ""}
   `;
 
-  const primary = `${disabled ? "bg-gray-500 text-gray-300" : "bg-primary text-black hover:bg-primary/90 hover:scale-105"}`;
+  const primary = `${disabled ? "bg-gray-500 text-gray-300" : "bg-primary text-black hover:bg-primary/90 md:hover:scale-105"}`;
   const secondary = `${
     disabled
       ? "bg-black text-gray-500 "
