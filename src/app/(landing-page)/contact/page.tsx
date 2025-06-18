@@ -5,7 +5,7 @@ import ContactInfo from "./components/ContactInfo";
 
 export default function Contact() {
   return (
-    <div className="inset-0 flex w-screen min-h-fit items-center justify-center p-0 md:p-8">
+    <div className="inset-0 flex w-screen min-h-fit items-center justify-center p-0 md:p-8 relative overflow-hidden">
       <div className="flex flex-col lg:flex-row gap-12 rounded-lg w-full max-w-[1200px] max-h-[900px] min-h-fit">
         <div className="w-full lg:w-1/2 hidden sm:flex z-1 justify-center p-4 pt-16">
           <ContactInfo />
@@ -14,7 +14,7 @@ export default function Contact() {
           <ContactBox />
         </div>
 
-        <div className="absolute inset-0 bottom-[-50%] translate-y-[25%] lg:translate-y-[10%] lg:inset-[-15%] flex items-center justify-end z-0 overflow-hidden select-none">
+        <div className="absolute inset-0 bottom-[-50%] translate-y-[25%] lg:translate-y-[5%] lg:inset-[-15%] flex items-center justify-end z-0 overflow-hidden select-none">
           <Image
             src="/images/entei-logo-blurred.png"
             alt="Entei Design Background"
