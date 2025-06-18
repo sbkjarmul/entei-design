@@ -18,10 +18,11 @@ export default function ContactInfo() {
           do nas na:
         </Text>
         <Text>
-          <CopyTextButton text={"hello@entei.design"} /> lub{" "}
+          <CopyTextButton text={"hello@entei.design"} />{" "}
+          <span className="hidden">lub </span>
           <Button
             variant="text"
-            className="hover:text-gray-100 cursor-pointer text-primary"
+            className="hover:text-gray-100 cursor-pointer text-primary hidden"
           >
             zarezerwuj rozmowę.
           </Button>
