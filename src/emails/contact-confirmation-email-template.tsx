@@ -106,26 +106,6 @@ export default function ContactConfirmationEmailTemplate({
                   </Column>
                 </Row>
               </Button>
-              <Button
-                style={buttonStyle}
-                href="https://linkedin.com/company/entei"
-              >
-                <Row>
-                  <Column style={buttonIconColumn}>
-                    <Img
-                      src="https://i.ibb.co/LDyzzBQd/LinkedIn.png"
-                      width="30"
-                      height="30"
-                      alt="LinkedIn"
-                      style={buttonIcon}
-                    />
-                  </Column>
-                  <Column style={buttonTextColumn}>
-                    <Text style={followUsOnStyle}>FOLLOW US ON</Text>
-                    <Text style={socialMediaNameStyle}>LinkedIn</Text>
-                  </Column>
-                </Row>
-              </Button>
             </Column>
           </Row>
         </Section>
