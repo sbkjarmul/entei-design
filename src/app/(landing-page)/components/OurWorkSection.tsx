@@ -3,10 +3,7 @@ import Section from "@/components/Section";
 
 export default function OurWorkSection() {
   return (
-    <Section
-      className="bg-black py-20 flex flex-col items-center gap-10"
-      id="ourwork"
-    >
+    <Section className="bg-black items-center px-0 sm:px-8" id="ourwork">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-4">
           <CaseStudyCard

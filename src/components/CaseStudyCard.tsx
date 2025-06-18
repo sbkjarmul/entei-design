@@ -21,10 +21,10 @@ export default function CaseStudyCard({
   const titleWidthClass = size === "big" ? "w-3/5" : "w-full";
 
   return (
-    <div
-      className={`relative w-full rounded-lg overflow-hidden group flex flex-col`}
-    >
-      <div className={`relative aspect-[1.34] overflow-hidden rounded-lg`}>
+    <div className={`relative w-full overflow-hidden group flex flex-col`}>
+      <div
+        className={`relative aspect-[1.34] overflow-hidden rounded-none md:rounded-lg`}
+      >
         <Image
           src={image}
           alt={title}
@@ -32,7 +32,7 @@ export default function CaseStudyCard({
           className="object-cover transition-transform duration-300 group-hover:scale-105 "
         />
 
-        <div className="absolute flex flex-wrap top-4 left-4 z-10 flex gap-2">
+        <div className="absolute flex flex-wrap top-4 left-4 z-10 flex gap-4">
           {categories.map((category) => (
             <span
               key={category}
@@ -55,7 +55,7 @@ export default function CaseStudyCard({
         )}
       </div>
 
-      <div className="p-4">
+      <div className="p-4 sm:px-0 sm:py-4">
         {comingSoon && (
           <span className="mb-2 text-brand-gray-600 text-sm">
             Case study wkrótce
