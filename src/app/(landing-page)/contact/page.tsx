@@ -7,10 +7,10 @@ export default function Contact() {
   return (
     <div className="inset-0 flex w-screen min-h-fit items-center justify-center p-0 md:p-8">
       <div className="flex flex-col lg:flex-row gap-12 rounded-lg w-full max-w-[1200px] max-h-[900px] min-h-fit">
-        <div className="w-full lg:w-1/2 flex z-1 justify-center p-4">
+        <div className="w-full lg:w-1/2 flex z-1 justify-center p-4 py-16">
           <ContactInfo />
         </div>
-        <div className="p-0 w-full lg:w-1/2 h-full flex flex-col z-1">
+        <div className="w-full lg:w-1/2 h-full flex flex-col z-1">
           <ContactBox />
         </div>
 
