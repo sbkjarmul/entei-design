@@ -1,8 +1,3 @@
-import Image from "next/image";
-import AccentText from "../../../components/AccentText";
-import Heading from "../../../components/Heading";
-import Text from "../../../components/Text";
-import Section from "@/components/Section";
 import LogoBanner from "@/components/LogoBanner";
 
 export default function LogoBannerSection() {
