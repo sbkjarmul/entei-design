@@ -36,7 +36,7 @@ export default function CaseStudyCard({
           {categories.map((category) => (
             <span
               key={category}
-              className="bg-brand-gray-900 text-brand-gray-600 px-1 py-0.5 rounded-sm border border-brand-gray-600 text-xs"
+              className="bg-gray-900 text-gray-600 px-1 py-0.5 rounded-sm border border-gray-600 text-xs"
             >
               {category}
             </span>
@@ -57,12 +57,10 @@ export default function CaseStudyCard({
 
       <div className="p-4 sm:px-0 sm:py-4">
         {comingSoon && (
-          <span className="mb-2 text-brand-gray-600 text-sm">
-            Case study wkrótce
-          </span>
+          <span className="mb-2 text-gray-600 text-sm">Case study wkrótce</span>
         )}
         <h3
-          className={`text-brand-gray-400 font-regular leading-tight ${titleSizeClass} ${titleWidthClass}`}
+          className={`text-gray-400 font-regular leading-tight ${titleSizeClass} ${titleWidthClass}`}
         >
           {title}
         </h3>
