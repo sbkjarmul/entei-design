@@ -24,7 +24,7 @@ export default function LogoBanner({ logos }: LogoBannerProps) {
               alt={`logo-${idx % logos.length}`}
               width={160}
               height={40}
-              className="object-contain"
+              className="object-contain opacity-50"
               priority
             />
           </div>

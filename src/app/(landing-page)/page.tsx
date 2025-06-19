@@ -4,6 +4,7 @@ import ContactSection from "@/app/(landing-page)/components/ContactSection";
 import OurWorkSection from "./components/OurWorkSection";
 import NextStepsSection from "./components/NextStepsSection";
 import LogoBannerSection from "./components/LogoBannerSection";
+import WhatYouGetSection from "./components/WhatYouGetSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <LogoBannerSection />
       <OurWorkSection />
+      <WhatYouGetSection />
       <NextStepsSection />
       <OurClientsSection />
       <ContactSection />

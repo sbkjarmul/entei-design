@@ -14,7 +14,7 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className={`${isActive ? "text-primary" : "text-brand-gray-300"}  hover:text-primary transition-colors px-4 py-2`}
+      className={`${isActive ? "text-primary" : "text-gray-300"}  hover:text-primary transition-colors px-4 py-2`}
       {...props}
     />
   );
