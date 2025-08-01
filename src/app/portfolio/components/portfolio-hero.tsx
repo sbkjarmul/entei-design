@@ -18,16 +18,26 @@ function PortfolioHeroText() {
 
   return (
     <div className="flex flex-col items-start justify-end gap-4">
-      <div className="flex items-center gap-2 py-2 px-4 border border-gray-800 rounded-full bg-gray-900">
+      <motion.div
+        animate={{ scale: 1, opacity: 1 }}
+        initial={{ scale: 0, opacity: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="flex items-center gap-2 py-2 px-4 border border-gray-800 rounded-full bg-gray-900"
+      >
         <div className="relative w-3 h-3 bg-primary rounded-full shadow-[0_0_10px_var(--color-primary)]">
           <div className="absolute top-0 left-0 w-full h-full bg-primary rounded-full animate-ping" />
         </div>
         <span className="text-white">{t("hero.available")}</span>
-      </div>
-
-      <Heading level={1} className="text-white font-light">
-        {t("hero.title")}
-      </Heading>
+      </motion.div>
+      <motion.div
+        animate={{ scale: 1, opacity: 1 }}
+        initial={{ scale: 0, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Heading level={1} className="text-white font-light">
+          {t("hero.title")}
+        </Heading>
+      </motion.div>
     </div>
   );
 }
@@ -39,7 +49,10 @@ function PortfolioHeroFigmaComment() {
     <motion.div
       animate={{ scale: 1, opacity: 1 }}
       initial={{ scale: 0, opacity: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{
+        duration: 0.5,
+        delay: 1,
+      }}
       className="p-3 border border-gray-800 rounded-tl-4xl rounded-tr-4xl rounded-br-4xl rounded-bl-0  bg-gray-900 flex items-start justify-start gap-2 w-[320px] shadow-2xl"
     >
       <div className="p-2 min-w-10 min-h-10 bg-black rounded-full flex items-center justify-center">
