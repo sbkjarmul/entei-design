@@ -17,3 +17,7 @@
   --color-gray-900: #212121;
   --color-gray-950: #121212;
 }
+
+@theme {
+  --font-despair-time: var(--font-despair-time);
+}

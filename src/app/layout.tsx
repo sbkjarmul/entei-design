@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
+import localFont from "next/font/local";
 import { getLocale } from "next-intl/server";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "Agencja kreatywna, która zajmuje się tworzeniem brandingu, stron internetowych oraz strategii marketingowych.",
 };
+
+const despairTime = localFont({
+  src: "../../public/fonts/despair-time-straight.otf",
+  variable: "--font-despair-time",
+});
 
 export default async function RootLayout({
   children,
@@ -26,7 +33,7 @@ export default async function RootLayout({
 
       <GoogleTagManager gtmId="GTM-W83QMK2D" />
 
-      <body className="font-neue-haas">
+      <body className={`font-neue-haas ${despairTime.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

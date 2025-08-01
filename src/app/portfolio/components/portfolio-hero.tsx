@@ -20,7 +20,7 @@ function PortfolioHeroText() {
         <span className="text-white">{t("hero.available")}</span>
       </div>
 
-      <Heading level={1} className="text-white">
+      <Heading level={1} className="text-white font-light">
         {t("hero.title")}
       </Heading>
     </div>
@@ -69,7 +69,7 @@ export default function PortfolioHero() {
 
       <Container className="relative h-full z-2 ">
         <div className="w-full h-full flex flex-col items-start justify-end gap-10">
-          <div className="hidden md:block absolute top-1/3 left-0 w-[450px]">
+          <div className="hidden md:block absolute top-1/3 left-0 w-[400px]">
             <PortfolioHeroText />
           </div>
 

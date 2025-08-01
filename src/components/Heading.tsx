@@ -1,4 +1,5 @@
 import React from "react";
+import { cx } from "@/lib/utils";
 
 interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   level: 1 | 2 | 3 | 4 | 5 | 6;
@@ -8,7 +9,7 @@ interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
 export default function Heading({
   level,
   children,
-  className = "",
+  className,
   ...rest
 }: HeadingProps) {
   const Tag = ("h" + level) as keyof HTMLElementTagNameMap;
@@ -37,11 +38,9 @@ export default function Heading({
       defaultClass = "";
   }
 
-  const mergedClass = `${defaultClass} ${className}`.trim();
-
   return React.createElement(
     Tag,
-    { className: mergedClass, ...rest },
+    { className: cx(defaultClass, className), ...rest },
     children
   );
 }
