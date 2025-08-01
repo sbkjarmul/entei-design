@@ -6,6 +6,24 @@
       "available": "Available to work",
       "entei": "entei",
       "now": "now"
+    },
+    "aboutMe": {
+      "accent": "Who I am",
+      "title": "User centered designer",
+      "description1": "I’m a UI/UX Designer with several years of experience building frontends for applications across various industries.",
+      "description2": "When designing interfaces, I focus on solving real user problems and addressing their needs.",
+      "cta": "See my work",
+      "stats": {
+        "frontend": "years in frontend development",
+        "branding": "years in designing brands",
+        "uiux": "years in UI/UX design"
+      }
+    },
+    "why": {
+      "but": "But...",
+      "title": "Why woud you work with me?",
+      "description1": "Many companies want to stand out with great design but face technical limitations that many UI/UX designers don’t understand. This often slows down the team and delays the project.",
+      "description2": " I help change that."
     }
   }
 }
