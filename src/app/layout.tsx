@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: "ENTEI | Agencja Kreatywna",
   description:
     "Agencja kreatywna, która zajmuje się tworzeniem brandingu, stron internetowych oraz strategii marketingowych.",
+  keywords: [
+    "Projektowanie logo",
+    "Stalowa Wola",
+    "Agencja kreatywna",
+    "Projektowanie stron",
+    "Projektowanie stron internetowych",
+    "Projektowanie stron internetowych Stalowa Wola",
+    "Projektowanie stron dla firm",
+  ],
 };
 
 export default function RootLayout({
