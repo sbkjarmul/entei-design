@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -20,6 +21,9 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/uhq3naf.css" />
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
       </head>
+
+      <GoogleTagManager gtmId="GTM-W83QMK2D" />
+
       <body className="font-neue-haas">
         <div className="min-h-screen flex flex-col">
           <Header />
