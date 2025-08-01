@@ -67,13 +67,13 @@ export default function PortfolioHero() {
         priority
       />
 
-      <Container className="relative h-full z-2 ">
+      <Container className="relative h-full z-2">
         <div className="w-full h-full flex flex-col items-start justify-end gap-10">
-          <div className="hidden md:block absolute top-1/3 left-0 w-[400px]">
+          <div className="hidden md:block absolute top-1/3 left-0 w-[400px] pl-4">
             <PortfolioHeroText />
           </div>
 
-          <div className="hidden md:block absolute top-1/3 left-2/3 ">
+          <div className="hidden md:block absolute md:top-1/4 lg:top-1/3 md:left-3/5 lg:left-2/3 ">
             <PortfolioHeroFigmaComment />
           </div>
 

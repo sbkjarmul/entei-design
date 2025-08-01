@@ -4,9 +4,15 @@ import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import Text from "@/components/Text";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { sendGtmSuccessEvent } from "@/lib/gtm";
 
 export default function ContactFormSuccessMessage() {
   const router = useRouter();
+
+  useEffect(() => {
+    sendGtmSuccessEvent();
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center h-full  gap-6">
