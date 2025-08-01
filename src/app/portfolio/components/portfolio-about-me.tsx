@@ -25,8 +25,10 @@ interface PortfolioAboutMeStatsProps {
 
 function PortfolioAboutMeStats({ title, value }: PortfolioAboutMeStatsProps) {
   return (
-    <div className="flex flex-col gap-2">
-      <span className="text-primary text-8xl font-despair-time">{value}</span>
+    <div className="flex flex-row md:flex-col items-end md:items-start gap-4 md:gap-2">
+      <span className="text-primary leading-[90px] text-9xl md:text-8xl font-despair-time">
+        {value}
+      </span>
       <span className="text-gray-500 text-lg font-light">{title}</span>
     </div>
   );
@@ -44,8 +46,8 @@ export default function PortfolioAboutMe() {
   return (
     <div className="h-screen flex items-center justify-center bg-gray-950 relative">
       <PortfolioAboutMeShadow />
-      <Container className="flex items-center justify-between z-1 px-4">
-        <div className="max-w-4xl gap-10 flex flex-col w-1/2">
+      <Container className="flex flex-col md:flex-row items-center justify-between z-1 px-4 gap-16 md:gap-4">
+        <div className="max-w-4xl gap-10 flex flex-col w-full md:w-1/2">
           <div>
             <PortfolioAccentText>{t("aboutMe.accent")}</PortfolioAccentText>
             <Heading level={2} className="text-white">
@@ -67,7 +69,7 @@ export default function PortfolioAboutMe() {
           </div>
         </div>
 
-        <div className="w-1/3 h-full flex flex-col gap-10">
+        <div className="w-full md:w-1/3 h-full flex flex-col gap-10">
           <PortfolioAboutMeStats
             title={t("aboutMe.stats.frontend")}
             value="4"
