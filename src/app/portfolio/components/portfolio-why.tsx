@@ -40,7 +40,9 @@ export default function PortfolioWhy() {
           <span className="text-gray-400 font-light">
             {t("why.description1")}
           </span>
-          <span className="text-white font-bold">{t("why.description2")}</span>
+          <span className="text-white font-medium">
+            {t("why.description2")}
+          </span>
 
           <motion.div
             initial={{ width: "100%" }}
