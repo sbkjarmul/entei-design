@@ -49,7 +49,7 @@ export default function PortfolioAboutMe() {
   const t = useTranslations("portfolio");
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-950 relative py-10 md:py-20">
+    <div className="min-h-screen flex items-center justify-center bg-gray-950 relative py-20">
       <PortfolioAboutMeShadow />
       <Container className="flex flex-col md:flex-row items-center justify-between z-1 px-4 gap-16 md:gap-4">
         <div className="max-w-4xl gap-10 flex flex-col w-full md:w-1/2">
