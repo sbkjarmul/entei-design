@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function LandingPageLayout({
+export default function PortfolioPageLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
