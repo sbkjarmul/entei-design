@@ -34,7 +34,10 @@ function PortfolioHeroText() {
         initial={{ scale: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Heading level={1} className="text-white font-light">
+        <Heading
+          level={1}
+          className="text-white font-light w-[250px] md:w-full"
+        >
           {t("hero.title")}
         </Heading>
       </motion.div>
@@ -92,7 +95,7 @@ function PortfolioHeroFigmaComment() {
 
 export default function PortfolioHero() {
   return (
-    <section className="w-full h-screen bg-[#0C0C0C] relative max-h-[600px] md:max-h-[1000px]">
+    <section className="w-full h-screen bg-[#0C0C0C] relative max-h-[700px] md:max-h-[1000px]">
       <PortfolioHeroShadow />
 
       <Image
@@ -104,7 +107,7 @@ export default function PortfolioHero() {
         priority
       />
 
-      <Container className="relative h-full z-2">
+      <Container className="relative h-full z-2 ">
         <div className="w-full h-full flex flex-col items-start justify-end gap-10">
           <div className="hidden md:block absolute top-1/3 left-0 w-[400px] pl-4">
             <PortfolioHeroText />
