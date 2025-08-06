@@ -26,15 +26,32 @@ function ArrowRightIcon() {
 interface PortfolioAboutMeStatsProps {
   title: string;
   value: string;
+  delay?: number;
 }
 
-function PortfolioAboutMeStats({ title, value }: PortfolioAboutMeStatsProps) {
+function PortfolioAboutMeStats({
+  title,
+  value,
+  delay = 0,
+}: PortfolioAboutMeStatsProps) {
   return (
     <div className="flex flex-row md:flex-col items-end md:items-start gap-4 md:gap-2">
-      <span className="text-primary leading-[90px] text-9xl md:text-8xl font-despair-time">
+      <motion.span
+        className="text-primary leading-[90px] text-9xl md:text-8xl font-despair-time"
+        initial={{ color: "#212121" }}
+        whileInView={{ color: "#FF2400" }}
+        transition={{ duration: 1, delay }}
+      >
         {value}
-      </span>
-      <span className="text-gray-500 text-lg font-light">{title}</span>
+      </motion.span>
+      <motion.span
+        initial={{ color: "#212121" }}
+        whileInView={{ color: "#9e9e9e" }}
+        transition={{ duration: 1, delay }}
+        className="text-gray-500 text-lg font-light"
+      >
+        {title}
+      </motion.span>
     </div>
   );
 }
@@ -76,16 +93,29 @@ export default function PortfolioAboutMe() {
           </div>
         </div>
 
+        <motion.div
+          className="absolute top-0 right-0 bottom-0 w-full h-full bg-primary z-3"
+          initial={{ width: "100%" }}
+          whileInView={{ width: "0%" }}
+          transition={{ duration: 1, delay: 2 }}
+        />
+
         <div className="w-full md:w-1/3 h-full flex flex-col gap-10">
           <PortfolioAboutMeStats
             title={t("aboutMe.stats.frontend")}
             value="4"
+            delay={3}
           />
           <PortfolioAboutMeStats
             title={t("aboutMe.stats.branding")}
             value="3"
+            delay={4}
           />
-          <PortfolioAboutMeStats title={t("aboutMe.stats.uiux")} value="2" />
+          <PortfolioAboutMeStats
+            title={t("aboutMe.stats.uiux")}
+            value="2"
+            delay={5}
+          />
         </div>
       </Container>
     </div>
