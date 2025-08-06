@@ -24,6 +24,11 @@
       "title": "Why woud you work with me?",
       "description1": "Many companies want to stand out with great design but face technical limitations that many UI/UX designers don’t understand. This often slows down the team and delays the project.",
       "description2": "I help change that."
+    },
+    "projects": {
+      "so": "So...",
+      "howDoIWork": "How do I work?",
+      "description": " Explore the results of my work through detailed case studies or live, fully launched websites."
     }
   }
 }
