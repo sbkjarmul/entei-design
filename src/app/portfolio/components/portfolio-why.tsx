@@ -10,8 +10,8 @@ export default function PortfolioWhy() {
   const t = useTranslations("portfolio");
 
   return (
-    <div className="bg-gray-950">
-      <Container className=" h-screen flex items-center justify-center z-1 px-4">
+    <div className="bg-gray-950 hidden md:block">
+      <Container className="h-screen flex items-center justify-center z-1 px-4">
         <Heading level={2} className="text-white">
           <span className="relative flex flex-col gap-2 py-2">
             <span className="text-gray-500">{t("why.but")}</span>
@@ -40,7 +40,7 @@ export default function PortfolioWhy() {
           <span className="text-gray-400 font-light">
             {t("why.description1")}
           </span>
-          <span className="text-white font-medium">
+          <span className="text-white font-medium ml-2">
             {t("why.description2")}
           </span>
 
