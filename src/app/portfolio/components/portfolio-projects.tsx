@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export default function PortfolioProjects() {
   return (
-    <section className="h-screen bg-gray-950 relative">
-      <Container className="h-screen flex flex-col items-center justify-center bg-gray-950 relative gap-20 px-4">
+    <section className="h-screen bg-gray-950 relative" id="projects">
+      <Container className="h-screen flex flex-col items-center justify-center bg-gray-950 relative gap-20 px-4  py-10 md:py-20">
         <div className="flex flex-col items-center justify-center gap-4">
           <Heading level={2}>
             <span className="relative flex flex-col gap-0 py-2 text-5xl md:text-7xl">

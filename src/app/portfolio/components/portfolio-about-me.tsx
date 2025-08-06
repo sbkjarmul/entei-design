@@ -1,20 +1,25 @@
+"use client";
+
 import Container from "@/components/Container";
 import PortfolioAccentText from "./portfolio-accent-text";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 function ArrowRightIcon() {
   return (
-    <div className="w-10 h-10 bg-gray-900 rounded-lg flex justify-center items-center">
+    <motion.div className="w-10 h-10 bg-gray-900 rounded-lg flex justify-center items-center relative">
       <Image
         src="/images/icons/arrow-icon.svg"
         alt="Arrow Icon"
         width="24"
         height="24"
+        className="z-2"
       />
-    </div>
+    </motion.div>
   );
 }
 
@@ -44,7 +49,7 @@ export default function PortfolioAboutMe() {
   const t = useTranslations("portfolio");
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-950 relative">
+    <div className="h-screen flex items-center justify-center bg-gray-950 relative py-10 md:py-20">
       <PortfolioAboutMeShadow />
       <Container className="flex flex-col md:flex-row items-center justify-between z-1 px-4 gap-16 md:gap-4">
         <div className="max-w-4xl gap-10 flex flex-col w-full md:w-1/2">
@@ -60,12 +65,14 @@ export default function PortfolioAboutMe() {
           </div>
 
           <div className="flex justify-between items-center w-full gap-2">
-            <Button className="pl-4 pr-2 py-2">
-              <span className="flex items-center gap-10 font-bold tracking-tight">
-                {t("aboutMe.cta")}
-                <ArrowRightIcon />
-              </span>
-            </Button>
+            <Link href="#projects" className="relative">
+              <Button className="pl-4 pr-2 py-2">
+                <span className="flex items-center gap-10 font-bold tracking-tight">
+                  {t("aboutMe.cta")}
+                  <ArrowRightIcon />
+                </span>
+              </Button>
+            </Link>
           </div>
         </div>
 
