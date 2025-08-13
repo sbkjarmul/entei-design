@@ -95,7 +95,7 @@ function PortfolioHeroFigmaComment() {
 
 export default function PortfolioHero() {
   return (
-    <section className="w-full h-screen bg-[#0C0C0C] relative max-h-[700px] md:max-h-[1000px]">
+    <section className="w-full h-screen bg-[#0C0C0C] relative max-h-[600px] md:max-h-[1000px]">
       <PortfolioHeroShadow />
 
       <Image
@@ -108,7 +108,7 @@ export default function PortfolioHero() {
       />
 
       <Container className="relative h-full z-2 ">
-        <div className="w-full h-full flex flex-col items-start justify-end gap-10">
+        <div className="w-full h-full flex flex-col items-start justify-center md:justify-end gap-10">
           <div className="hidden md:block absolute top-1/3 left-0 w-[400px] pl-4">
             <PortfolioHeroText />
           </div>
@@ -117,7 +117,7 @@ export default function PortfolioHero() {
             <PortfolioHeroFigmaComment />
           </div>
 
-          <div className="block md:hidden px-4">
+          <div className="block md:hidden px-4 ">
             <PortfolioHeroText />
           </div>
 
@@ -128,7 +128,7 @@ export default function PortfolioHero() {
             alt="ENTEI owner in glasses"
             width={1600}
             height={1000}
-            className="object-contain z-0"
+            className="object-contain z-0 hidden md:block"
             priority
           />
 
