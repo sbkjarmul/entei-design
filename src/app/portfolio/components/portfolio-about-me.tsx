@@ -39,14 +39,14 @@ function PortfolioAboutMeStats({
       <motion.span
         className="text-primary leading-[90px] text-9xl md:text-8xl font-despair-time"
         initial={{ color: "#212121" }}
-        whileInView={{ color: "#FF2400" }}
+        animate={{ color: "#FF2400" }}
         transition={{ duration: 1, delay }}
       >
         {value}
       </motion.span>
       <motion.span
         initial={{ color: "#212121" }}
-        whileInView={{ color: "#9e9e9e" }}
+        animate={{ color: "#9e9e9e" }}
         transition={{ duration: 1, delay }}
         className="text-gray-500 text-lg font-light"
       >
