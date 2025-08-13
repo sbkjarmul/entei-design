@@ -49,6 +49,171 @@ export default function PortfolioSuseuCaseStudy() {
             className="w-full h-auto"
           />
         </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-branding.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-mobile-ia.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-mobile-user-flow.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-mobile-ui.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-mobile-user-testing.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-mobile-takeaways.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-welcome.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-overview.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-user-persona.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-ia.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-user-flow.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-wireframes.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-user-testing.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-web-takeaways.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
+
+        <div className="relative w-full h-auto">
+          <Image
+            src="/images/case-studies/suseu/suseu-learnings.png"
+            alt="Suseu Case Study"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+        </div>
       </Container>
     </section>
   );
