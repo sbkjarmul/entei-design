@@ -4,6 +4,10 @@ export const headerMenu = [
     href: "/#ourwork",
   },
   {
+    name: "Portfolio (ENG)",
+    href: "/portfolio",
+  },
+  {
     name: "Klienci",
     href: "/#ourclients",
   },
