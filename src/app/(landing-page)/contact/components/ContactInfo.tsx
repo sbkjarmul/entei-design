@@ -3,6 +3,7 @@ import Text from "@/components/Text";
 import TrustedUs from "./TrustedUs";
 import CopyTextButton from "@/components/CopyTextButton";
 import Button from "@/components/Button";
+import Link from "next/link";
 
 export default function ContactInfo() {
   return (
@@ -18,14 +19,18 @@ export default function ContactInfo() {
           do nas na:
         </Text>
         <Text>
-          <CopyTextButton text={"hello@entei.design"} />{" "}
-          <span className="hidden">lub </span>
-          <Button
-            variant="text"
-            className="hover:text-gray-100 cursor-pointer text-primary hidden"
+          <CopyTextButton text={"hello@entei.design"} /> <span>lub </span>
+          <Link
+            href={"https://calendly.com/entei-designs/30min"}
+            target="_blank"
           >
-            zarezerwuj rozmowę.
-          </Button>
+            <Button
+              variant="text"
+              className="hover:text-gray-100 cursor-pointer text-primary"
+            >
+              zarezerwuj rozmowę.
+            </Button>
+          </Link>
         </Text>
       </div>
     </div>
