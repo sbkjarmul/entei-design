@@ -32,7 +32,7 @@ export default function OurClientsSection() {
           />
         </Link>
         <Link
-          href="https://rem-met.com"
+          href="https://www.rem-met.com"
           target="_blank"
           className="flex justify-start items-center"
         >
@@ -46,7 +46,7 @@ export default function OurClientsSection() {
           />
         </Link>
         <Link
-          href="https://lagomwarsaw.com"
+          href="https://www.lagomwarsaw.com"
           target="_blank"
           className="flex justify-end items-center"
         >
@@ -67,6 +67,20 @@ export default function OurClientsSection() {
           <Image
             src="/images/our-clients/aristo-logo.png"
             alt="aristo"
+            width={400}
+            height={150}
+            sizes="(max-width: 768px) 200px, 400px"
+            className="object-contain w-auto h-full grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
+          />
+        </Link>
+        <Link
+          href="https://highwavewear.pl/"
+          target="_blank"
+          className="flex justify-end items-center"
+        >
+          <Image
+            src="/images/our-clients/highwave-logo.png"
+            alt="highwave wear"
             width={400}
             height={100}
             sizes="(max-width: 768px) 200px, 400px"
