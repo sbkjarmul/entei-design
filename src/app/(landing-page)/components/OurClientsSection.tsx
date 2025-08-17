@@ -13,7 +13,7 @@ export default function OurClientsSection() {
         <AccentText>Zaufali nam</AccentText>
         <Heading level={2}>Nasi klienci</Heading>
         <Text className="text-center">
-          Pomogliśmy już 20+ firmom wyglądać lepiej
+          Ponad 20 firm skorzystało z naszej pomocy w projektach wizualnych
         </Text>
       </div>
       <div className="grid grid-cols-2 gap-8 md:gap-16 max-w-5xl w-full">
@@ -68,7 +68,7 @@ export default function OurClientsSection() {
             src="/images/our-clients/aristo-logo.png"
             alt="aristo"
             width={400}
-            height={150}
+            height={100}
             sizes="(max-width: 768px) 200px, 400px"
             className="object-contain w-auto h-full grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
           />
