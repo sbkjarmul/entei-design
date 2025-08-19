@@ -36,8 +36,14 @@ export default function HeroSection() {
         </span>
       </Text>
       <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
-        <Button variant="primary" onClick={handleBookMeeting} isHero>
-          Umów konsultacje
+        <Button
+          variant="primary"
+          onClick={handleBookMeeting}
+          isHero
+          className="relative z-1"
+        >
+          <div className="absolute inset-[-4px] bg-primary/50 rounded-xl animate-pulse z-0 blur-sm" />
+          <span className="z-1">Umów konsultacje</span>
         </Button>
       </div>
     </Section>
