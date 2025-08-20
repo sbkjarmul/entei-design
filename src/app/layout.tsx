@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import { getLocale } from "next-intl/server";
 
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "ENTEI | Agencja Kreatywna",
@@ -32,6 +33,15 @@ export default async function RootLayout({
       </head>
 
       <GoogleTagManager gtmId="GTM-W83QMK2D" />
+
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17222508858');
+          `}
+      </Script>
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
