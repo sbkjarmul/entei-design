@@ -30,18 +30,66 @@ export default async function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/uhq3naf.css" />
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-      </head>
-
-      <GoogleTagManager gtmId="GTM-W83QMK2D" />
-
-      <Script id="gtag-init" strategy="afterInteractive">
-        {`
+        {/* Travatar */}
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17222508858');
           `}
-      </Script>
+        </Script>
+
+        <Script
+          src="https://tracker.travatar.ai/prod/latest/_ua-parser.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="https://tracker.travatar.ai/prod/latest/_ifvisible.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="https://tracker.travatar.ai/prod/latest/_md.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="https://tracker.travatar.ai/prod/latest/TravatarTrackerConfig.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="https://tracker.travatar.ai/prod/latest/TravatarTrackerSetup.min.js"
+          strategy="beforeInteractive"
+        />
+
+        <Script id="travatar-init" strategy="beforeInteractive">
+          {`
+            window.Travatar("newTracker", window.travatarTrackerName, window.travatarTrackerUrl, {
+              appId: "ENTEI",
+              discoverRootDomain: true,
+              cookieSameSite: "Lax",
+              encodeBase64: true,
+              eventMethod: 'post',
+              keepalive: true,
+              contexts: {
+                webPage: true,
+                session: true,
+                browser: true,
+                performanceNavigationTiming: true,
+                performanceTiming: true,
+                gaCookies: true,
+                geolocation: true
+              },
+            });
+          `}
+        </Script>
+
+        <Script
+          src="https://tracker.travatar.ai/prod/latest/TravatarTrackerEvents.min.js"
+          strategy="beforeInteractive"
+        />
+      </head>
+
+      <GoogleTagManager gtmId="GTM-W83QMK2D" />
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
