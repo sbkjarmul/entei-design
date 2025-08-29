@@ -19,10 +19,7 @@ export default function ContactSection() {
         <div className="flex-col flex gap-4">
           <Text>
             Napisz do nas maila lub skorzystaj z
-            <Link
-              href={"https://calendly.com/entei-designs/30min"}
-              target="_blank"
-            >
+            <Link href={"/contact"}>
               <Button
                 variant="text"
                 className="hover:text-gray-100 cursor-pointer text-primary"
