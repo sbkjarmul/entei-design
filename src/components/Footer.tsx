@@ -33,7 +33,9 @@ export default function Footer() {
             <div className="flex flex-1 flex-col justify-center md:justify-end items-center md:items-end gap-20">
               <div className="text-center">
                 <h5 className="">Masz jakieś pytania? Napisz do nas</h5>
-                <span className="text-5xl font-medium">hello@entei.design</span>
+                <span className="text-2xl md:text-5xl font-medium">
+                  hello@entei.design
+                </span>
               </div>
 
               <SocialMediaButton
