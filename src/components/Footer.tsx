@@ -14,8 +14,9 @@ export default function Footer() {
               Dołącz do <span className="font-bold">rewolucji!</span>
             </span>
           </div>
-          <div className="flex-1 flex items-end pb-8 items-start gap-10 md:gap-4 flex-wrap">
-            <div className="w-[100%] h-[100px] md:w-[600px] md:h-[140px] relative">
+
+          <div className="flex-1 flex pb-8 items-start justify-center gap-0 md:gap-4 flex-wrap">
+            <div className="w-full h-[100px] md:w-[600px] md:h-[140px] relative">
               <Image
                 src="/images/entei-black-wordmark.svg"
                 alt="Entei Design"
@@ -23,15 +24,17 @@ export default function Footer() {
                 className="object-fill"
               />
             </div>
-            <div className="flex flex-col ">
+
+            <div className="flex flex-col">
               <div className="flex-col hidden lg:flex leading-tight">
                 <span>Design studio</span>
                 <span>Revolutionize your brand</span>
                 <span>Modern visual identities.</span>
               </div>
             </div>
+
             <div className="flex flex-1 flex-col justify-center md:justify-end items-center md:items-end gap-20">
-              <div className="text-center">
+              <div className="text-center mt-10 md:mt-0">
                 <h5 className="">Masz jakieś pytania? Napisz do nas</h5>
                 <span className="text-2xl md:text-5xl font-medium">
                   hello@entei.design

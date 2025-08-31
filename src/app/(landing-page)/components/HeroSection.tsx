@@ -18,7 +18,7 @@ export default function HeroSection() {
         <AccentText>100% zadowolonych klientów</AccentText>
         <Heading level={1}>
           <span className="block md:hidden">
-            Pomagamy małym firmom wyglądać profesjonalnie.
+            Pomagamy firmom wyglądać profesjonalnie.
           </span>
           <span className="hidden md:block">
             Sprawimy, że Twoja firma, przyciągnie więcej klientów.
@@ -26,7 +26,7 @@ export default function HeroSection() {
         </Heading>
       </div>
       <Text>
-        <span className="block md:hidden">
+        <span className="block md:hidden max-w-md">
           Tworzymy ponadczasowe logo oraz strony internetowe, które są
           niezbędne, aby klienci wybrali Ciebie.
         </span>
