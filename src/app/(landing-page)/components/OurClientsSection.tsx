@@ -20,9 +20,9 @@ function ClientCard({ logo, name, url }: ClientCardProps) {
           src={logo}
           alt={name}
           width={150}
-          height={50}
+          height={100}
           sizes="(max-width: 768px) 200px, 200px"
-          className="object-contain grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
+          className="max-w-[200px] w-full h-auto object-contain grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
         />
       </div>
     </Link>
@@ -36,21 +36,24 @@ export default function OurClientsSection() {
       id="ourclients"
     >
       <Image
-        src="/images/entei-blocks.png"
+        src="/images/entei-blocks.webp"
         alt="Entei design studio background"
-        width={1000}
-        height={1000}
-        className="absolute top-0 right-0 object-cover z-0"
+        width={1920}
+        height={1920}
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="absolute top-0 right-0 h-full w-auto lg:h-auto lg:w-3/4 xl:w-1/2 object-cover"
       />
 
-      <div className="flex flex-col items-center gap-2 z-1">
+      <div className="hidden md:block absolute inset-0 bg-radial-[at_90%_50%] from-transparent from-10% to-black to-55% z-1" />
+
+      <div className="flex flex-col items-center gap-2 z-2">
         <AccentText>Zaufali nam</AccentText>
         <Heading level={2}>Nasi klienci</Heading>
         <Text className="text-center">
           Ponad 20 firm skorzystało z naszej pomocy w projektach wizualnych
         </Text>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[160px] gap-2 md:gap-2 max-w-5xl w-full">
+      <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] gap-2 max-w-5xl w-full z-2">
         <ClientCard
           logo="/images/our-clients/art-mat-logo.png"
           name="art-mat"
