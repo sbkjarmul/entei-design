@@ -1,10 +1,9 @@
-import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
 import { getLocale } from "next-intl/server";
 
-import { metadata } from "./seo/metadata";
+export { metadata } from "./seo/metadata";
 
 import "./globals.css";
 import Script from "next/script";
