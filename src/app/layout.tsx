@@ -4,14 +4,10 @@ import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
 import { getLocale } from "next-intl/server";
 
+import { metadata } from "./seo/metadata";
+
 import "./globals.css";
 import Script from "next/script";
-
-export const metadata: Metadata = {
-  title: "ENTEI | Agencja Kreatywna",
-  description:
-    "Agencja kreatywna, która zajmuje się tworzeniem brandingu, stron internetowych oraz strategii marketingowych.",
-};
 
 const despairTime = localFont({
   src: "../../public/fonts/despair-time-straight.otf",
