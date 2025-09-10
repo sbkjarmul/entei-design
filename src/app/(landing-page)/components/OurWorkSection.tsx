@@ -18,16 +18,11 @@ export default function OurWorkSection() {
               image="/images/case-studies/suseu-case-study-card.png"
               logo="/images/our-clients/suseu-logo.png"
               title="Stworzyliśmy ponad 300 widoków w wersji web i mobile dla Suseu, aplikacji typu SaaS"
-              comingSoon={true}
               size="small"
             />
           </Link>
 
-          <Link
-            href="https://www.rem-met.com"
-            target="_blank"
-            className="w-full"
-          >
+          <Link href="/case-study/rem-met" target="_blank" className="w-full">
             <CaseStudyCard
               categories={[
                 "Identyfikacja wizualna",
@@ -37,7 +32,6 @@ export default function OurWorkSection() {
               image="/images/case-studies/rem-met-case-study-card.png"
               logo="/images/our-clients/rem-met-logo.png"
               title="Zaprojektowaliśmy pełny system wizualny dla polskiego producenta wygrodzeń przemysłowych"
-              comingSoon={true}
               size="small"
             />
           </Link>

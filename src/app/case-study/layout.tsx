@@ -1,3 +1,4 @@
+import CaseStudyFooter from "./components/case-study-footer";
 import CaseStudyHeader from "./components/case-study-header";
 
 export default function CaseStudyLayout({
@@ -9,6 +10,7 @@ export default function CaseStudyLayout({
     <div className="min-h-screen flex flex-col">
       <CaseStudyHeader />
       <main className="flex-grow">{children}</main>
+      <CaseStudyFooter />
     </div>
   );
 }
