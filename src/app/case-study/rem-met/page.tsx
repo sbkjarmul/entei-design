@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function PortfolioRemMetCaseStudy() {
   return (
     <section className="flex flex-col gap-8 min-h-screen bg-white relative pb-8">
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-auto overflow-hidden">
         <Image
           src="/images/case-studies/rem-met/rem-met-hero.png"
           alt="Katalog REM-MET na rok 2025"
@@ -18,7 +18,7 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col px-10 py-20 gap-10">
+        <Container className="flex flex-col px-10 py-0 md:py-20 gap-10">
           <div className="flex">
             <div className="flex-1 text-gray-800">
               <span>Rok: </span>
@@ -33,7 +33,9 @@ export default function PortfolioRemMetCaseStudy() {
               </span>
             </div>
           </div>
-          <h1 className="text-8xl font-bold text-gray-900">REM-MET</h1>
+          <h1 className="text-4xl md:text-8xl font-bold text-gray-900">
+            REM-MET
+          </h1>
 
           <p className="font-base text-gray-700">
             REM-MET to firma z ponad 20-letnim doświadczeniem w spawalnictwie,
@@ -67,7 +69,7 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col py-20 gap-10 text-gray-900 px-8">
+        <Container className="flex flex-col py-0 md:py-20 gap-10 text-gray-900 px-8">
           <h2 className="text-4xl font-bold">
             Logo, które nawiązuje do branży spawalniczej.
           </h2>
@@ -89,7 +91,7 @@ export default function PortfolioRemMetCaseStudy() {
         </Container>
       </article>
 
-      <div className="relative w-full h-screen overflow-hidden p-8">
+      <div className="relative w-full h-auto overflow-hidden p-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-logo-black-white.png"
           alt="REM-MET logo na czarnym tle"
@@ -139,7 +141,7 @@ export default function PortfolioRemMetCaseStudy() {
         </article>
       </div>
 
-      <div className="relative w-full h-screen overflow-hidden px-8">
+      <div className="relative w-full h-auto overflow-hidden px-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-mockup-posters.png"
           alt="Plakaty REM-MET na szarej ścianie"
@@ -152,7 +154,7 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col py-20 gap-10 text-gray-900 px-8">
+        <Container className="flex flex-col py-0 md:py-20 gap-10 text-gray-900 px-8">
           <h2 className="text-4xl font-bold">
             Techniczna czcionka podkreślająca charakter marki.
           </h2>
@@ -231,7 +233,7 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col gap-10 text-gray-900">
+        <Container className="flex flex-col gap-10 text-gray-900 px-8">
           <h2 className="text-4xl font-bold">
             Marketingowe hasła w komunikacji REM-MET
           </h2>
@@ -282,7 +284,7 @@ export default function PortfolioRemMetCaseStudy() {
         />
       </div>
 
-      <article className="relative w-full h-auto overflow-hidden">
+      <article className="relative w-full h-auto overflow-hidden px-8">
         <Container className="flex flex-col gap-10 text-gray-900">
           <h2 className="text-4xl font-bold">Interfejs, który sprzedaje!</h2>
           <p className="font-base text-gray-700">
