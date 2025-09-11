@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function PortfolioRemMetCaseStudy() {
   return (
-    <section className="flex flex-col gap-8 min-h-screen bg-white relative pb-8">
+    <section className="flex flex-col gap-4 md:gap-8 min-h-screen bg-white relative pb-8">
       <div className="relative w-full h-auto overflow-hidden">
         <Image
           src="/images/case-studies/rem-met/rem-met-hero.png"
@@ -18,22 +18,22 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col px-10 py-0 md:py-20 gap-10">
+        <Container className="flex flex-col px-10 py-0 md:py-20 gap-6 md:gap-10">
           <div className="flex">
-            <div className="flex-1 text-gray-800">
-              <span>Rok: </span>
-              <span>2025</span>
+            <div className="flex-1 text-gray-800 text-sm md:text-base">
+              <span className="font-bold">Rok: </span>
+              <span className="text-gray-700">2025</span>
             </div>
-            <div className="flex-1 text-gray-800">
-              <span>Zakres: </span>
-              <span>
+            <div className="flex-1 text-gray-800 text-sm md:text-base">
+              <span className="font-bold">Zakres: </span>
+              <span className="text-gray-700">
                 Projektowanie logo, rebranding, materiały promocyjne, strategia,
                 nazewnictwo, copywriting, identyfikacja wizualna, identyfikacja
                 werbalna, projekt UI/UX, web development
               </span>
             </div>
           </div>
-          <h1 className="text-4xl md:text-8xl font-bold text-gray-900">
+          <h1 className="text-2xl md:text-4xl md:text-8xl font-bold text-gray-900">
             REM-MET
           </h1>
 
@@ -56,7 +56,7 @@ export default function PortfolioRemMetCaseStudy() {
         </Container>
       </article>
 
-      <div className="relative w-full h-auto overflow-hidden p-8">
+      <div className="relative w-full h-auto overflow-hidden p-4 md:p-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-gecko-black.png"
           alt="Wygrodzenia REM-MET GECKO na czarnym tle"
@@ -69,8 +69,8 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col py-0 md:py-20 gap-10 text-gray-900 px-8">
-          <h2 className="text-4xl font-bold">
+        <Container className="flex flex-col py-0 md:py-20 gap-6 md:gap-10 text-gray-900 px-4 md:px-8">
+          <h2 className="text-2xl md:text-4xl font-bold">
             Logo, które nawiązuje do branży spawalniczej.
           </h2>
           <p className="font-base text-gray-700">
@@ -91,7 +91,7 @@ export default function PortfolioRemMetCaseStudy() {
         </Container>
       </article>
 
-      <div className="relative w-full h-auto overflow-hidden p-8">
+      <div className="relative w-full h-auto overflow-hidden p-4 md:p-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-logo-black-white.png"
           alt="REM-MET logo na czarnym tle"
@@ -103,7 +103,7 @@ export default function PortfolioRemMetCaseStudy() {
         />
       </div>
 
-      <div className="flex px-8 gap-8">
+      <div className="flex px-4 md:px-8 gap-4 md:gap-8">
         <div className="relative w-full h-auto overflow-hidden">
           <Image
             src="/images/case-studies/rem-met/rem-met-squared-boxes.png"
@@ -117,8 +117,8 @@ export default function PortfolioRemMetCaseStudy() {
         </div>
 
         <article className="relative w-full h-auto overflow-hidden">
-          <Container className="flex flex-col gap-10 text-gray-900">
-            <h2 className="text-4xl font-bold">
+          <Container className="flex flex-col gap-6 md:gap-10 text-gray-900">
+            <h2 className="text-2xl md:text-4xl font-bold">
               Kolory, które wyróżniają markę od konkurencji.
             </h2>
             <p className="font-base text-gray-700">
@@ -141,7 +141,7 @@ export default function PortfolioRemMetCaseStudy() {
         </article>
       </div>
 
-      <div className="relative w-full h-auto overflow-hidden px-8">
+      <div className="relative w-full h-auto overflow-hidden px-4 md:px-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-mockup-posters.png"
           alt="Plakaty REM-MET na szarej ścianie"
@@ -154,8 +154,8 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col py-0 md:py-20 gap-10 text-gray-900 px-8">
-          <h2 className="text-4xl font-bold">
+        <Container className="flex flex-col py-0 md:py-20 gap-6 md:gap-10 text-gray-900 px-4 md:px-8">
+          <h2 className="text-2xl md:text-4xl font-bold">
             Techniczna czcionka podkreślająca charakter marki.
           </h2>
           <p className="font-base text-gray-700">
@@ -177,7 +177,7 @@ export default function PortfolioRemMetCaseStudy() {
         </Container>
       </article>
 
-      <div className="relative w-full h-auto overflow-hidden px-8">
+      <div className="relative w-full h-auto overflow-hidden px-4 md:px-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-product-names.png"
           alt="Nazwy produktów REM-MET: Gecko, Falcon i Rhino"
@@ -189,7 +189,7 @@ export default function PortfolioRemMetCaseStudy() {
         />
       </div>
 
-      <div className="flex px-8 gap-8">
+      <div className="flex px-4 md:px-8 gap-4 md:gap-8">
         <div className="relative w-full h-auto overflow-hidden">
           <Image
             src="/images/case-studies/rem-met/rem-met-mockup-box-no-light.png"
@@ -203,10 +203,10 @@ export default function PortfolioRemMetCaseStudy() {
         </div>
 
         <article className="relative w-full h-auto overflow-hidden">
-          <Container className="flex flex-col gap-10 text-gray-900">
-            <h2 className="text-4xl font-bold">
+          <Container className="flex flex-col gap-6 md:gap-10 text-gray-900">
+            <h2 className="text-2xl md:text-4xl font-bold">
               Użyliśmy nazw zwierząt, aby podkreślić unikalny charakter
-              produktów!
+              produktów.
             </h2>
             <p className="font-base text-gray-700">
               Aby wyróżnić ofertę REM-MET, systemom wygrodzeń nadano unikalne,
@@ -220,7 +220,7 @@ export default function PortfolioRemMetCaseStudy() {
         </article>
       </div>
 
-      <div className="relative w-full h-auto overflow-hidden px-8">
+      <div className="relative w-full h-auto overflow-hidden px-4 md:px-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-binder-mockup-black.png"
           alt="Mockup segregatora z projektami REM-MET"
@@ -233,8 +233,8 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <article className="relative w-full h-auto overflow-hidden">
-        <Container className="flex flex-col gap-10 text-gray-900 px-8">
-          <h2 className="text-4xl font-bold">
+        <Container className="flex flex-col gap-6 md:gap-10 text-gray-900 px-4 md:px-8">
+          <h2 className="text-2xl md:text-4xl font-bold">
             Marketingowe hasła w komunikacji REM-MET
           </h2>
           <p className="font-base text-gray-700">
@@ -246,7 +246,7 @@ export default function PortfolioRemMetCaseStudy() {
         </Container>
       </article>
 
-      <div className="flex px-8 gap-8">
+      <div className="flex px-4 md:px-8 gap-4 md:gap-8">
         <div className="relative w-full h-auto overflow-hidden">
           <Image
             src="/images/case-studies/rem-met/rem-met-mockup-haning-poster-square.png"
@@ -272,7 +272,7 @@ export default function PortfolioRemMetCaseStudy() {
         </div>
       </div>
 
-      <div className="relative w-full h-auto overflow-hidden px-8">
+      <div className="relative w-full h-auto overflow-hidden px-4 md:px-8">
         <Image
           src="/images/case-studies/rem-met/rem-met-bus-stop.png"
           alt="Opakowania na akcesoria REM-MET na czarnym tle"
@@ -284,9 +284,11 @@ export default function PortfolioRemMetCaseStudy() {
         />
       </div>
 
-      <article className="relative w-full h-auto overflow-hidden px-8">
-        <Container className="flex flex-col gap-10 text-gray-900">
-          <h2 className="text-4xl font-bold">Interfejs, który sprzedaje!</h2>
+      <article className="relative w-full h-auto overflow-hidden px-4 md:px-8">
+        <Container className="flex flex-col gap-6 md:gap-10 text-gray-900">
+          <h2 className="text-2xl md:text-4xl font-bold">
+            Interfejs, który sprzedaje.
+          </h2>
           <p className="font-base text-gray-700">
             Strona internetowa miała dwa główne zadania. Po pierwsze, w
             atrakcyjny i przyjazny dla użytkownika sposób przedstawić ofertę
@@ -298,7 +300,7 @@ export default function PortfolioRemMetCaseStudy() {
         </Container>
       </article>
 
-      <div className="flex gap-8 px-8">
+      <div className="flex gap-4 md:gap-8 px-4 md:px-8">
         <div className="flex flex-col justify-between">
           <div className="relative w-full h-auto overflow-hidden">
             <Image
@@ -338,11 +340,11 @@ export default function PortfolioRemMetCaseStudy() {
       </div>
 
       <div className="text-gray-900">
-        <Container className="px-8 flex flex-col items-start max-w-md gap-4 py-10">
+        <Container className="px-4 md:px-8 flex flex-col items-start max-w-md gap-4 py-10">
           <Link
             href="https://www.rem-met.com"
             target="_blank"
-            className="flex gap-1 items-center justify-center animate-bounce"
+            className="flex gap-1 items-center justify-center "
           >
             <Image
               src="/images/icons/website-icon.png"
@@ -351,7 +353,7 @@ export default function PortfolioRemMetCaseStudy() {
               alt="Website icon"
             />
             SPRAWDŹ OFICJALNĄ{" "}
-            <span className="font-bold text-[#425ba9] hover:text-[#2a3a74]">
+            <span className="font-bold text-[#425ba9] hover:text-[#2a3a74] animate-pulse">
               STRONĘ REM-MET
             </span>
           </Link>
@@ -367,7 +369,7 @@ export default function PortfolioRemMetCaseStudy() {
               height={32}
               alt="Behance icon"
             />
-            SPRAWDŹ REM-MET{" "}
+            SPRAWDŹ REM-MET
             <span className="font-bold  hover:text-yellow-500">NA BEHANCE</span>
           </Link>
         </Container>
