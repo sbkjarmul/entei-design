@@ -63,13 +63,26 @@ export default function PortfolioProjects() {
           </Link>
 
           <Link
-            href="https://www.rem-met.com"
+            href="/case-study/rem-met"
             className="opacity-50 hover:opacity-100 transition-opacity duration-300"
             target="_blank"
           >
             <Image
               src="/images/case-studies/rem-met-case-study-logo.svg"
               alt="REM-MET Project"
+              width={250}
+              height={200}
+            />
+          </Link>
+
+          <Link
+            href="/case-study/ceramido"
+            className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+            target="_blank"
+          >
+            <Image
+              src="/images/case-studies/ceramido-case-study-logo.svg"
+              alt="Ceramido Project"
               width={250}
               height={200}
             />
