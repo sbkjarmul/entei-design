@@ -52,14 +52,15 @@ export default function OurWorkSection() {
             />
           </Link>
 
-          <CaseStudyCard
-            categories={["Branding", "Opakowania produktowe"]}
-            image="/images/case-studies/ceramido-case-study-card.png"
-            logo="/images/our-clients/ceramido-logo.png"
-            title="Zaprojektowaliśmy marke suplementów dla kobiet"
-            comingSoon={true}
-            size="small"
-          />
+          <Link href="/case-study/ceramido" target="_blank" className="w-full">
+            <CaseStudyCard
+              categories={["Branding", "Opakowania produktowe"]}
+              image="/images/case-studies/ceramido-case-study-card.png"
+              logo="/images/our-clients/ceramido-logo.png"
+              title="Zaprojektowaliśmy marke suplementów dla kobiet"
+              size="small"
+            />
+          </Link>
 
           <CaseStudyCard
             categories={["Branding"]}
