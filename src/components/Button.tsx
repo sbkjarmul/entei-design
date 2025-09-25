@@ -42,7 +42,7 @@ export default function Button({
     variant === "secondary" && [
       disabled
         ? "bg-black text-gray-500"
-        : "bg-black text-gray-500 hover:text-gray-300",
+        : "bg-black text-gray-200 hover:text-gray-300",
     ],
     variant === "text" && [
       disabled
