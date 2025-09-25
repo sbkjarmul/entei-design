@@ -8,6 +8,10 @@ export const headerMenu = [
     href: "/#ourclients",
   },
   {
+    name: "Usługi",
+    href: "/uslugi",
+  },
+  {
     name: "Kontakt",
     href: "contact",
   },
