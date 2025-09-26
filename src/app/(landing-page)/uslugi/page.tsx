@@ -25,7 +25,7 @@ function ServiceCard({
       className={`uppercase text-sm tracking-wider md:hover:bg-gray-900 md:hover:text-gray-100 md:hover:flex-${flexSpace * 2} transition-all duration-200 ease flex-${flexSpace}`}
     >
       <article
-        className={`relative group h-[400px] bg-gray-950 p-6 cursor-pointer flex flex-col text-gray-100 gap-4 `}
+        className={`relative group h-[300px] md:h-[400px] bg-gray-950 p-6 cursor-pointer flex flex-col text-gray-100 gap-4 `}
       >
         <span className="font-despair-time text-7xl text-gray-700 md:group-hover:text-primary">
           {number}
@@ -65,7 +65,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="flex flex-col gap-1">
-          <div className="flex flex-row gap-1 w-full">
+          <div className="flex flex-col md:flex-row gap-1 w-full">
             <ServiceCard
               number="01"
               name="Branding"
@@ -82,7 +82,7 @@ export default function ServicesPage() {
               flexSpace={2}
             />
           </div>
-          <div className="flex flex-row gap-1 w-full">
+          <div className="flex flex-col md:flex-row gap-1 w-full">
             <ServiceCard
               number="03"
               name="Brand Experience"
