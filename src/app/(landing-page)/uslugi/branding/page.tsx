@@ -75,7 +75,7 @@ export default function BrandingServicePage() {
         <Divider />
 
         <div className="flex flex-col gap-8">
-          <div className="flex gap-1">
+          <div className="flex flex-col md:flex-row gap-1">
             <ServiceCard
               number="01"
               name="Identyfikacja Wizualna"
