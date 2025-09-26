@@ -28,7 +28,7 @@ function ServiceCard({
       className={`text-sm  md:hover:bg-gray-900 md:hover:text-gray-100 md:hover:flex-${flexSpace * 2} transition-all duration-200 ease flex-${flexSpace}`}
     >
       <article
-        className={`relative group h-[200px] md:h-[300px] bg-gray-950 p-6 cursor-pointer flex flex-col text-gray-100 gap-4 `}
+        className={`relative group h-[300px] md:h-[350px] bg-gray-950 p-6 cursor-pointer flex flex-col text-gray-100 gap-4 `}
       >
         <span className="font-despair-time text-4xl text-gray-700 md:group-hover:text-primary">
           {number}
@@ -36,7 +36,9 @@ function ServiceCard({
         <h3 className="text-2xl text-gray-300 font-medium uppercase tracking-wider">
           {name}
         </h3>
-        <p className="text-gray-700 group-hover:text-gray-500">{description}</p>
+        <p className="text-gray-700 group-hover:text-gray-500 text-ellipsis">
+          {description}
+        </p>
         <div className="absolute top-0 right-0 flex justify-end items-start h-full hidden w-24 group-hover:flex bg-transparent">
           <div className="w-4 h-full bg-primary" />
         </div>
@@ -62,9 +64,9 @@ function Divider() {
 export default function BrandingServicePage() {
   return (
     <div className="inset-0 flex flex-col gap-10 w-screen min-h-fit items-center justify-center p-0 md:py-8 relative overflow-hidden">
-      <Container className="flex flex-col gap-10">
+      <Container className="flex flex-col gap-10 px-4">
         <section className="max-w-xl my-20">
-          <Heading level={1} className="leading-5 ">
+          <Heading level={1} className="leading-5">
             <span className="text-5xl font-light text-gray-500">
               <span className="font-medium text-gray-100 ">Branding, </span>
               czyli jak postrzegają Cie klienci.
@@ -106,7 +108,7 @@ export default function BrandingServicePage() {
       </Container>
 
       <Section className="bg-white text-gray-900">
-        <Container className="flex gap-10">
+        <Container className="flex flex-col md:flex-row gap-10 px-4">
           <div className="flex flex-col gap-4 flex-2">
             <Heading level={3}>
               REM-MET - Czy start-up przemysłowy może wyglądać ogólnoświatowo?
@@ -125,12 +127,13 @@ export default function BrandingServicePage() {
               </Button>
             </Link>
           </div>
+
           <Image
             src="/images/case-studies/rem-met/rem-met-bus-stop.png"
             alt="Podgląd case study REM-MET"
-            width={400}
+            width={640}
             height={400}
-            className="h-auto w-full flex-1"
+            className="h-fit w-full md:w-1/2"
           />
         </Container>
       </Section>
