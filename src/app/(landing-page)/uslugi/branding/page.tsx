@@ -59,7 +59,7 @@ function Divider() {
   return <div className="border border-solid border-gray-800" />;
 }
 
-export default function VisualIdentityServicePage() {
+export default function BrandingServicePage() {
   return (
     <div className="inset-0 flex flex-col gap-10 w-screen min-h-fit items-center justify-center p-0 md:py-8 relative overflow-hidden">
       <Container className="flex flex-col gap-10">
