@@ -70,7 +70,7 @@ export default function ServicesPage() {
               number="01"
               name="Branding"
               description="Projektowanie logo, identyfikacja wizualna, strategia marki, które wyróżniają."
-              path="/uslugi/identyfikacja-wizualna"
+              path="/uslugi/branding"
               flexSpace={1}
             />
 

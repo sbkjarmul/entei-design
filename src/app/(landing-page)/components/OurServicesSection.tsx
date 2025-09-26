@@ -81,9 +81,9 @@ export default function OurServicesSection() {
         <div className="flex flex-col md:flex-row gap-1">
           <ServiceCard
             number="01"
-            name="Identyfikacja wizualna"
+            name="Branding"
             description="Projektowanie logo, systemów wizualnych, strategia marki, które wyróżniają."
-            path="/uslugi/identyfikacja-wizualna"
+            path="/uslugi/branding"
           />
 
           <ServiceCard

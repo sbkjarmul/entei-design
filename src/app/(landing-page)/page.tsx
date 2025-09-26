@@ -13,7 +13,7 @@ export default function Home() {
       <LogoBannerSection />
       <OurWorkSection />
       <OurServicesSection />
-      <NextStepsSection />
+      {/* <NextStepsSection /> */}
       <OurClientsSection />
       <ContactSection />
     </main>
