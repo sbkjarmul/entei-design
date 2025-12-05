@@ -65,12 +65,12 @@ export default function OurClientsSection() {
           name="rem-met"
           url="https://www.rem-met.com"
         />
-
+        {/* 
         <ClientCard
           logo="/images/our-clients/lagom-logo.png"
           name="lagom"
           url="https://www.lagomwarsaw.com"
-        />
+        /> */}
 
         <ClientCard
           logo="/images/our-clients/aristo-logo.png"
