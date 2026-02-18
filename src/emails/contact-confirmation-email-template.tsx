@@ -258,6 +258,6 @@ const contactCardFooterStyle = {
 
 const companyNameStyle = {
   color: "#fff",
-  fontWeight: "600",
+  fontWeight: "500",
   fontSize: "32px",
 };
