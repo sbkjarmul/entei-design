@@ -33,12 +33,7 @@ export default function ContactConfirmationEmailTemplate({
       <Preview>Sprawdź szczegóły</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Img
-            src="https://i.ibb.co/pjK4CBZG/ente-brandmark-red-orange.png"
-            height="50"
-            alt="ENTEI"
-            style={logo}
-          />
+          <Img height="50" alt="ENTEI" style={logo} />
 
           <Heading style={h1}>Dziękujemy za kontakt!</Heading>
           <Section style={section}>
@@ -55,7 +50,7 @@ export default function ContactConfirmationEmailTemplate({
               <Row width="100%" style={{ marginBottom: "32px" }}>
                 <Column align="left" width="50%">
                   <Img
-                    src="https://i.ibb.co/MDybQ8Th/entei-email-icon.png"
+                    src="https://www.entei.design/images/emails/entei-email-icon.png"
                     height="32"
                     alt="ENTEI"
                   />
@@ -74,8 +69,8 @@ export default function ContactConfirmationEmailTemplate({
           <Row style={{ marginBottom: "48px" }}>
             <Column>
               <Img
-                src="https://i.ibb.co/4wXgvVyB/entei-logo-nimbus-cloud-1-2.png"
-                width="300px"
+                src="https://www.entei.design/images/entei-black-wordmark.svg"
+                width="270px"
                 alt="ENTEI"
                 style={logo}
               />
@@ -93,7 +88,7 @@ export default function ContactConfirmationEmailTemplate({
                 <Row>
                   <Column style={buttonIconColumn}>
                     <Img
-                      src="https://i.ibb.co/ZRB3YGV3/Instagram.png"
+                      src="https://www.entei.design/images/icons/behance-icon.png"
                       width="30"
                       height="30"
                       alt="Instagram"
@@ -121,7 +116,7 @@ const main = {
   fontFamily:
     'neue-haas-grotesk-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
 
-  backgroundImage: `url("https://i.ibb.co/TqtxBp3f/entei-logo-blurred.png")`,
+  backgroundImage: `url("https://www.entei.design/images/entei-logo-blurred.png")`,
   backgroundPosition: "center 300px",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
