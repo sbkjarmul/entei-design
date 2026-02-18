@@ -38,27 +38,29 @@ export default function ContactNotificationEmailTemplate({
           <Section style={section}>
             {message && (
               <Section style={contactCardStyle}>
-                <Row width="100%">
-                  <Column align="left" width="50%">
-                    <Img
-                      src="https://i.ibb.co/MDybQ8Th/entei-email-icon.png"
-                      height="32"
-                      alt="ENTEI"
-                      style={logo}
-                    />
-                  </Column>
-                  <Column align="right">
-                    <Text style={clientEmailStyle}>{email}</Text>
-                  </Column>
-                </Row>
+                <Section style={contactCardContentStyle}>
+                  <Row width="100%">
+                    <Column align="left" width="50%">
+                      <Img
+                        src="https://www.entei.design/images/entei-logo.svg"
+                        height="32"
+                        alt="ENTEI"
+                        style={logo}
+                      />
+                    </Column>
+                    <Column align="right">
+                      <Text style={clientEmailStyle}>{email}</Text>
+                    </Column>
+                  </Row>
 
-                {fullName && <Text style={fullNameStyle}>{fullName}</Text>}
+                  {fullName && <Text style={fullNameStyle}>{fullName}</Text>}
 
-                {companyName && (
-                  <Text style={companyNameStyle}>{companyName}</Text>
-                )}
-                <Text style={text}>{message}</Text>
-                <Section style={contactCardFooterStyle}>xd</Section>
+                  {companyName && (
+                    <Text style={companyNameStyle}>{companyName}</Text>
+                  )}
+                  <Text style={text}>{message}</Text>
+                </Section>
+                <Section style={contactCardFooterStyle}></Section>
               </Section>
             )}
           </Section>
@@ -75,7 +77,7 @@ const main = {
   fontFamily:
     'neue-haas-grotesk-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
 
-  backgroundImage: `url("https://i.ibb.co/TqtxBp3f/entei-logo-blurred.png")`,
+  backgroundImage: `url("https://www.entei.design/images/entei-logo-blurred.png")`,
   backgroundPosition: "center 300px",
   backgroundRepeat: "no-repeat",
 };
@@ -93,27 +95,25 @@ const section = {
 };
 
 const contactCardStyle = {
-  marginTop: "32px",
-  padding: "24px 24px 48px",
   backgroundColor: "rgba(0, 0, 0, 1)",
   borderRadius: "16px",
   border: "1px solid rgba(240, 240, 240, 0.2)",
   zIndex: "20",
   boxShadow: "0 6px 12px rgba(0, 0, 0, 0.5)",
-  backgroundImage:
-    "url('https://i.ibb.co/mrNcqrV2/entei-contact-card-pattern-2.png')",
-  backgroundPosition: "center 300px",
+};
+
+const contactCardContentStyle = {
+  padding: "24px 24px 24px 24px",
+  backgroundColor: "rgba(0, 0, 0, 1)",
+  borderRadius: "16px",
+};
+
+const contactCardFooterStyle = {
+  backgroundImage: "url('https://entei.design/images/entei-pattern.svg')",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-};
-const contactCardFooterStyle = {
   height: "100px",
-  width: "100%",
-  // backgroundImage:
-  //   "url('https://i.ibb.co/mrNcqrV2/entei-contact-card-pattern-2.png')",
-  // backgroundPosition: "center",
-  // backgroundRepeat: "no-repeat",
-  // backgroundSize: "cover",
+  borderRadius: "0 0 16px 16px",
 };
 
 const h1 = {
@@ -135,19 +135,19 @@ const fullNameStyle = {
 
 const companyNameStyle = {
   color: "#fff",
-  fontWeight: "600",
+  fontWeight: "500",
   fontSize: "32px",
 };
 
 const clientEmailStyle = {
-  border: "1px solid white",
+  border: "1px solid rgba(255, 255, 255, 0.24)",
   display: "inline",
   color: "white",
   padding: "8px 12px",
   borderRadius: "4px",
-  backgroundColor: "rgba(255, 255, 255, 0.5)",
+  backgroundColor: "rgba(255, 255, 255, 0.11)",
   textDecoration: "unset",
-  opacity: 0,
+  letterSpacing: "1px",
 };
 
 const text = {
@@ -155,6 +155,7 @@ const text = {
   fontSize: "20px",
   lineHeight: "24px",
   margin: "16px 0",
+  letterSpacing: "0.5px",
   fontFamily:
     'neue-haas-grotesk-display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
 };
