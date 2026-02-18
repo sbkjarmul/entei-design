@@ -33,7 +33,12 @@ export default function ContactConfirmationEmailTemplate({
       <Preview>Sprawdź szczegóły</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Img height="50" alt="ENTEI" style={logo} />
+          <Img
+            height="50"
+            alt="ENTEI"
+            style={logo}
+            src="https://www.entei.design/images/entei-logo.svg"
+          />
 
           <Heading style={h1}>Dziękujemy za kontakt!</Heading>
           <Section style={section}>
@@ -47,21 +52,26 @@ export default function ContactConfirmationEmailTemplate({
             </Text>
 
             <Section style={contactCardStyle}>
-              <Row width="100%" style={{ marginBottom: "32px" }}>
-                <Column align="left" width="50%">
-                  <Img
-                    src="https://www.entei.design/images/emails/entei-email-icon.png"
-                    height="32"
-                    alt="ENTEI"
-                  />
-                </Column>
-                <Column align="right" width="50%"></Column>
-              </Row>
+              <Section style={contactCardContentStyle}>
+                <Row width="100%" style={{ marginBottom: "32px" }}>
+                  <Column align="left" width="50%">
+                    <Img
+                      src="https://www.entei.design/images/emails/entei-email-icon.png"
+                      height="32"
+                      alt="ENTEI"
+                    />
+                  </Column>
+                  <Column align="right" width="50%"></Column>
+                </Row>
 
-              {companyName && (
-                <Text style={companyNameStyle}>{companyName}</Text>
-              )}
-              <Text style={text}>{message}</Text>
+                {companyName && (
+                  <Text style={companyNameStyle}>{companyName}</Text>
+                )}
+
+                <Text style={text}>{message}</Text>
+              </Section>
+
+              <Section style={contactCardFooterStyle}></Section>
             </Section>
           </Section>
         </Container>
@@ -88,7 +98,7 @@ export default function ContactConfirmationEmailTemplate({
                 <Row>
                   <Column style={buttonIconColumn}>
                     <Img
-                      src="https://www.entei.design/images/icons/behance-icon.png"
+                      src="https://www.entei.design/images/emails/entei-instagram-gray.png"
                       width="30"
                       height="30"
                       alt="Instagram"
@@ -225,18 +235,25 @@ const logo = {
 };
 
 const contactCardStyle = {
-  marginTop: "32px",
-  padding: "24px 24px 48px",
   backgroundColor: "rgba(0, 0, 0, 1)",
   borderRadius: "16px",
   border: "1px solid rgba(240, 240, 240, 0.2)",
   zIndex: "20",
   boxShadow: "0 6px 12px rgba(0, 0, 0, 0.5)",
-  backgroundImage:
-    "url('https://i.ibb.co/mrNcqrV2/entei-contact-card-pattern-2.png')",
-  backgroundPosition: "center 300px",
+};
+
+const contactCardContentStyle = {
+  padding: "24px 24px 24px 24px",
+  backgroundColor: "rgba(0, 0, 0, 1)",
+  borderRadius: "16px",
+};
+
+const contactCardFooterStyle = {
+  backgroundImage: "url('https://entei.design/images/entei-pattern.svg')",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
+  height: "100px",
+  borderRadius: "0 0 16px 16px",
 };
 
 const companyNameStyle = {
