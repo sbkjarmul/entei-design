@@ -7,6 +7,7 @@ export { metadata } from "./seo/metadata";
 
 import "./globals.css";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 const despairTime = localFont({
   src: "../../public/fonts/despair-time-straight.otf",
@@ -85,6 +86,7 @@ export default async function RootLayout({
       </head>
 
       <GoogleTagManager gtmId="GTM-W83QMK2D" />
+      <Analytics />
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
