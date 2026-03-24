@@ -7,6 +7,22 @@ export default function OurWorkSection() {
     <Section className="bg-black items-center px-0 sm:px-8" id="ourwork">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-4">
+          <Link
+            href="https://www.instagram.com/p/DVwKd0cCHlL"
+            target="_blank"
+            className="w-full"
+          >
+            <CaseStudyCard
+              categories={["Branding", "Materiały marketingowe"]}
+              image="/images/case-studies/broscars-case-study-card.png"
+              logo="/images/our-clients/broscars-logo.png"
+              title="Zaprojektowaliśmy nowy wizerunek dla eksperta w imporcie samochodów"
+              size="small"
+            />
+          </Link>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-4">
           <Link href="/case-study/suseu" target="_blank" className="w-full">
             <CaseStudyCard
               categories={[
@@ -36,6 +52,7 @@ export default function OurWorkSection() {
             />
           </Link>
         </div>
+
         <div className="flex flex-col md:flex-row gap-4">
           <Link
             href="https://art-mat.com.pl"

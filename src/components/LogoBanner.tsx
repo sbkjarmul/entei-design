@@ -8,12 +8,11 @@ interface LogoBannerProps {
 }
 
 export default function LogoBanner({ logos }: LogoBannerProps) {
-  // Duplicate the logos for seamless looping
   const allLogos = [...logos, ...logos];
 
   return (
-    <div className="w-full h-[100px] overflow-hidden relative bg-transparent flex items-center">
-      <div className="flex flex-row items-center animate-logo-banner-move whitespace-nowrap min-w-fit gap-16 md:gap-24">
+    <div className="w-full h-[75px] overflow-hidden relative bg-transparent flex items-center">
+      <div className="flex flex-row items-center animate-logo-banner-move whitespace-nowrap min-w-fit gap-16 md:gap-10">
         {allLogos.map((logo, idx) => (
           <div
             key={idx}
@@ -22,7 +21,7 @@ export default function LogoBanner({ logos }: LogoBannerProps) {
             <Image
               src={logo}
               alt={`logo-${idx % logos.length}`}
-              width={160}
+              width={120}
               height={40}
               className="object-contain opacity-50"
               priority

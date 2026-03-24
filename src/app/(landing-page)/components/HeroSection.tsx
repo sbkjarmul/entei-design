@@ -11,7 +11,10 @@ import Section from "@/components/Section";
 
 export default function HeroSection() {
   return (
-    <Section id="hero" className="items-center justify-center text-center px-6">
+    <Section
+      id="hero"
+      className="items-center justify-center text-center px-6 md:py-10"
+    >
       <div className="flex flex-col gap-2 items-center">
         <AccentText>100% zadowolonych klientów</AccentText>
         <Heading level={1}>
