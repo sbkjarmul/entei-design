@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center gap-8 h-full">
-          <div className="hidden md:flex items-center gap-8 mr-[300px]">
+          <div className="hidden md:flex items-center gap-8">
             <HeaderMenu />
           </div>
 
@@ -32,6 +32,8 @@ export default function Header() {
             <HeaderButton />
           </div>
         </div>
+        {/* This sets HeaderMenu in center */}
+        <div className="w-10" />
       </Container>
     </header>
   );
