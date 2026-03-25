@@ -7,8 +7,13 @@ import Text from "@/components/Text";
 import Link from "next/link";
 import Button from "@/components/Button";
 import Image from "next/image";
+import { trackEvent } from "@/lib/pixel";
 
 export default function ContactSection() {
+  const onCalendarButtonClick = () => {
+    trackEvent("Schedule", crypto.randomUUID());
+  };
+
   return (
     <Section className="items-center min-h-[400px] justify-center">
       <div className="flex flex-col items-center gap-2 text-center">
@@ -32,6 +37,7 @@ export default function ContactSection() {
             href={"https://calendly.com/entei-designs/30min"}
             target="_blank"
             className="mt-10"
+            onClick={onCalendarButtonClick}
           >
             <Button>
               Zarezerwuj rozmowę{" "}
