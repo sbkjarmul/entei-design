@@ -85,14 +85,14 @@ export default async function RootLayout({
           src="https://tracker.travatar.ai/prod/latest/TravatarTrackerEvents.min.js"
           strategy="beforeInteractive"
         />
-      </head>
 
-      {/* Google */}
-      <GoogleTagManager gtmId="GTM-W83QMK2D" />
-      {/* Vercel */}
-      <Analytics />
-      {/* Meta */}
-      <FacebookPixel />
+        {/* Google */}
+        <GoogleTagManager gtmId="GTM-W83QMK2D" />
+        {/* Vercel */}
+        <Analytics />
+        {/* Meta */}
+        <FacebookPixel />
+      </head>
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
