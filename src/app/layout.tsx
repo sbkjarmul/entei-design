@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
 import { getLocale } from "next-intl/server";
 
+import FacebookPixel from "@/components/FacebookPixel";
 export { metadata } from "./seo/metadata";
 
 import "./globals.css";
@@ -26,6 +27,7 @@ export default async function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/uhq3naf.css" />
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
         {/* Travatar */}
         <Script id="gtag-init" strategy="afterInteractive">
           {`
@@ -85,8 +87,12 @@ export default async function RootLayout({
         />
       </head>
 
+      {/* Google */}
       <GoogleTagManager gtmId="GTM-W83QMK2D" />
+      {/* Vercel */}
       <Analytics />
+      {/* Meta */}
+      <FacebookPixel />
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

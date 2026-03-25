@@ -8,8 +8,13 @@ import AccentText from "../../../components/AccentText";
 import Heading from "../../../components/Heading";
 import Text from "../../../components/Text";
 import Section from "@/components/Section";
+import { trackEvent } from "@/lib/pixel";
 
 export default function HeroSection() {
+  const onCalendarButtonClick = () => {
+    trackEvent("Schedule", crypto.randomUUID());
+  };
+
   return (
     <Section
       id="hero"
@@ -37,7 +42,11 @@ export default function HeroSection() {
         </span>
       </Text>
       <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
-        <Link href={"https://calendly.com/entei-designs/30min"} target="_blank">
+        <Link
+          href={"https://calendly.com/entei-designs/30min"}
+          onClick={onCalendarButtonClick}
+          target="_blank"
+        >
           <Button className="relative z-1">
             <div className="absolute inset-[-4px] bg-primary/50 rounded-xl animate-pulse z-0 blur-sm" />{" "}
             <span className="z-1">Umów konsultację</span>

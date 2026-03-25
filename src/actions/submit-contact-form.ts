@@ -5,16 +5,20 @@ import z from "zod";
 
 import ContactConfirmationEmailTemplate from "@/emails/contact-confirmation-email-template";
 import ContactNotificationEmailTemplate from "@/emails/contact-notification-email-template";
+import { trackServerEvent } from "@/lib/pixel";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function submitContactForm(
   previousState: {
     success: boolean;
+    eventId: string;
     error?: string;
   },
-  formData: FormData
+  formData: FormData,
 ) {
+  const eventId = crypto.randomUUID();
+
   const schema = z.object({
     fullName: z.string().nonempty(),
     email: z.string().nonempty(),
@@ -57,14 +61,18 @@ export async function submitContactForm(
       }),
     });
 
+    trackServerEvent("Lead", eventId);
+
     return {
       success: true,
+      eventId,
     };
   } catch (error) {
     console.error("Failed to send email:", error);
     return {
       success: false,
       error: "Failed to send email",
+      eventId: "",
     };
   }
 }
