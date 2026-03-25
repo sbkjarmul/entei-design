@@ -92,6 +92,10 @@ export default async function RootLayout({
         <Analytics />
         {/* Meta */}
         <FacebookPixel />
+        <meta
+          name="facebook-domain-verification"
+          content="e5mbgpsv046wxdji7oad26ckdfnv7a"
+        />
       </head>
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
