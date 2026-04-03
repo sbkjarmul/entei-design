@@ -11,7 +11,8 @@ export default function LogoBanner({ logos }: LogoBannerProps) {
   const allLogos = [...logos, ...logos];
 
   return (
-    <div className="w-full h-[75px] overflow-hidden relative bg-transparent flex items-center">
+    <div className="w-full h-[75px] overflow-hidden relative bg-transparent flex items-center relative">
+      <div className="absolute z-10 inset-0 bg-[radial-gradient(circle,_transparent_0%,_black_100%)]"></div>
       <div className="flex flex-row items-center animate-logo-banner-move whitespace-nowrap min-w-fit gap-16 md:gap-10">
         {allLogos.map((logo, idx) => (
           <div
