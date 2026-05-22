@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Checkbox, Field, Label, Textarea } from "@headlessui/react";
@@ -111,7 +112,17 @@ const ContactForm: React.FC<ContactFormProps> = ({
           </Checkbox>
           <Label className="text-xs text-gray-500 flex-1 cursor-pointer">
             Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
-            kontaktu, zgodnie z polityką prywatności.
+            kontaktu, zgodnie z{" "}
+            <Link
+              href="/polityka-prywatnosci"
+              target="_blank"
+              rel="noreferrer"
+              onClick={(event) => event.stopPropagation()}
+              className="underline hover:text-primary"
+            >
+              polityką prywatności
+            </Link>
+            .
           </Label>
           {errors.acceptPolicy && (
             <span className="text-red-500 text-sm">

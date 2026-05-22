@@ -20,7 +20,9 @@ export async function trackServerEvent(eventName: string, eventId: string) {
 }
 
 export const trackEvent = (eventName: string, eventId: string) => {
-  if (typeof window !== "undefined") {
+  // The Meta Pixel only loads after cookie consent is granted, so `fbq`
+  // may be undefined — guard against it before tracking.
+  if (typeof window !== "undefined" && typeof window.fbq === "function") {
     window.fbq("track", eventName, {}, { eventID: eventId });
   }
 };

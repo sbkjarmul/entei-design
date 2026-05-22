@@ -5,7 +5,7 @@ import ContactInfo from "./components/ContactInfo";
 
 export default function Contact() {
   return (
-    <div className="inset-0 flex w-screen min-h-fit items-center justify-center p-0 md:p-8 relative overflow-hidden">
+    <div className="inset-0 flex w-full min-h-fit items-center justify-center p-0 md:p-8 relative overflow-hidden">
       <div className="flex flex-col lg:flex-row gap-12 rounded-lg w-full max-w-[1200px] max-h-[900px] min-h-fit">
         <div className="w-full lg:w-1/2 hidden sm:flex z-1 justify-center p-4 pt-16">
           <ContactInfo />

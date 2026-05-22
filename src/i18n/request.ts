@@ -1,10 +1,20 @@
 import { getRequestConfig } from "next-intl/server";
 
-export default getRequestConfig(async () => {
-  const locale = "en";
+const DEFAULT_LOCALE = "en";
+const SUPPORTED_LOCALES = ["en", "pl"];
+
+export default getRequestConfig(async ({ locale, requestLocale }) => {
+  // `locale` is provided when translations are requested for an explicit
+  // locale (e.g. getTranslations({ locale: "pl" })). Otherwise we fall back
+  // to the request locale, and finally to the default locale.
+  const candidate = locale ?? (await requestLocale);
+  const resolved =
+    candidate && SUPPORTED_LOCALES.includes(candidate)
+      ? candidate
+      : DEFAULT_LOCALE;
 
   return {
-    locale,
-    messages: (await import(`../../messages/${locale}.json`)).default,
+    locale: resolved,
+    messages: (await import(`../../messages/${resolved}.json`)).default,
   };
 });

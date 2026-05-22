@@ -1,14 +1,15 @@
-import { GoogleTagManager } from "@next/third-parties/google";
 import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
-import { getLocale } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 
-import FacebookPixel from "@/components/FacebookPixel";
 export { metadata } from "./seo/metadata";
 
 import "./globals.css";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+
+import { ConsentProvider } from "@/components/CookieConsent/ConsentProvider";
+import AnalyticsScripts from "@/components/CookieConsent/AnalyticsScripts";
+import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner";
 
 const despairTime = localFont({
   src: "../../public/fonts/despair-time-straight.otf",
@@ -21,6 +22,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
@@ -28,70 +30,7 @@ export default async function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/uhq3naf.css" />
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 
-        {/* Travatar */}
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17222508858');
-          `}
-        </Script>
-
-        <Script
-          src="https://tracker.travatar.ai/prod/latest/_ua-parser.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://tracker.travatar.ai/prod/latest/_ifvisible.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://tracker.travatar.ai/prod/latest/_md.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://tracker.travatar.ai/prod/latest/TravatarTrackerConfig.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://tracker.travatar.ai/prod/latest/TravatarTrackerSetup.min.js"
-          strategy="beforeInteractive"
-        />
-
-        <Script id="travatar-init" strategy="beforeInteractive">
-          {`
-            window.Travatar("newTracker", window.travatarTrackerName, window.travatarTrackerUrl, {
-              appId: "ENTEI",
-              discoverRootDomain: true,
-              cookieSameSite: "Lax",
-              encodeBase64: true,
-              eventMethod: 'post',
-              keepalive: true,
-              contexts: {
-                webPage: true,
-                session: true,
-                browser: true,
-                performanceNavigationTiming: true,
-                performanceTiming: true,
-                gaCookies: true,
-                geolocation: true
-              },
-            });
-          `}
-        </Script>
-
-        <Script
-          src="https://tracker.travatar.ai/prod/latest/TravatarTrackerEvents.min.js"
-          strategy="beforeInteractive"
-        />
-
-        {/* Google */}
-        <GoogleTagManager gtmId="GTM-W83QMK2D" />
-        {/* Vercel */}
-        <Analytics />
-        {/* Meta */}
-        <FacebookPixel />
+        {/* Meta domain verification — static meta tag, no tracking */}
         <meta
           name="facebook-domain-verification"
           content="e5mbgpsv046wxdji7oad26ckdfnv7a"
@@ -99,7 +38,18 @@ export default async function RootLayout({
       </head>
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <ConsentProvider>
+          <NextIntlClientProvider messages={{ portfolio: messages.portfolio }}>
+            {children}
+          </NextIntlClientProvider>
+
+          {/* Tracking scripts — loaded only after cookie consent is granted */}
+          <AnalyticsScripts />
+          <CookieConsentBanner />
+
+          {/* Vercel Analytics — cookieless, no consent required */}
+          <Analytics />
+        </ConsentProvider>
       </body>
     </html>
   );

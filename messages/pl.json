@@ -7,5 +7,192 @@
       "entei": "entei",
       "now": "teraz"
     }
+  },
+  "privacyPolicy": {
+    "header": {
+      "badge": "Dokumenty prawne",
+      "titleLight": "Polityka",
+      "titleStrong": "prywatności",
+      "lastUpdated": "Ostatnia aktualizacja: 22 maja 2026",
+      "intro": "Dbamy o prywatność osób odwiedzających naszą stronę. Poniżej wyjaśniamy, jakie dane zbieramy, w jakim celu i na jakiej podstawie je przetwarzamy, komu możemy je przekazać oraz jakie prawa Ci przysługują."
+    },
+    "tocTitle": "Spis treści",
+    "sections": [
+      {
+        "id": "administrator",
+        "title": "1. Administrator danych osobowych",
+        "paragraphs": [
+          "Administratorem Twoich danych osobowych jest ENTEI Sebastian Jarmul — jednoosobowa działalność gospodarcza z siedzibą przy ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, NIP 8652574151 (dalej: „ENTEI”, „my” lub „Administrator”).",
+          "We wszystkich sprawach dotyczących przetwarzania danych osobowych oraz korzystania z przysługujących Ci praw możesz skontaktować się z nami pod adresem e-mail: hello@entei.design.",
+          "Niniejsza Polityka prywatności opisuje, w jaki sposób zbieramy, wykorzystujemy i chronimy dane osób odwiedzających stronę internetową entei.design oraz kontaktujących się z nami, w tym za pośrednictwem serwisu Instagram."
+        ]
+      },
+      {
+        "id": "definicje",
+        "title": "2. Definicje i podstawa prawna",
+        "paragraphs": [
+          "Dane osobowe przetwarzamy zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych (dalej: „RODO”) oraz ustawą z dnia 10 maja 2018 r. o ochronie danych osobowych.",
+          "Na potrzeby niniejszej Polityki przyjmujemy następujące znaczenie pojęć:"
+        ],
+        "bullets": [
+          "Dane osobowe — wszelkie informacje pozwalające zidentyfikować osobę fizyczną, takie jak imię i nazwisko, adres e-mail czy adres IP.",
+          "Przetwarzanie — każda operacja wykonywana na danych osobowych, np. zbieranie, przechowywanie, wykorzystywanie czy usuwanie.",
+          "Pliki cookies — niewielkie pliki tekstowe zapisywane na Twoim urządzeniu podczas korzystania ze strony.",
+          "Użytkownik — każda osoba odwiedzająca stronę entei.design lub kontaktująca się z ENTEI."
+        ]
+      },
+      {
+        "id": "zakres-danych",
+        "title": "3. Jakie dane zbieramy i skąd",
+        "paragraphs": [
+          "Zakres zbieranych danych zależy od sposobu, w jaki korzystasz ze strony i kontaktujesz się z nami.",
+          "Dane z formularza kontaktowego — wypełniając formularz kontaktowy dostępny na stronie, przekazujesz nam imię i nazwisko, adres e-mail, opcjonalnie nazwę firmy oraz treść wiadomości. Podanie tych danych jest dobrowolne, ale niezbędne do udzielenia odpowiedzi na Twoje zapytanie.",
+          "Dane z kontaktu przez Instagram — jeżeli kontaktujesz się z nami poprzez nasz profil na Instagramie (@entei.designs), w wiadomościach prywatnych lub komentarzach, przetwarzamy nazwę Twojego profilu oraz treść przekazanej korespondencji wraz z informacjami, które zdecydujesz się nam udostępnić.",
+          "Dane techniczne i analityczne — podczas przeglądania strony automatycznie zbierane są dane takie jak adres IP, typ i wersja przeglądarki, rodzaj urządzenia, system operacyjny, przybliżona lokalizacja geograficzna, źródło wejścia na stronę oraz informacje o aktywności na stronie. Dane te zbierane są za pomocą plików cookies i narzędzi opisanych w punkcie 5."
+        ]
+      },
+      {
+        "id": "cele-przetwarzania",
+        "title": "4. Cele i podstawy prawne przetwarzania",
+        "paragraphs": [
+          "Twoje dane osobowe przetwarzamy w następujących celach i w oparciu o następujące podstawy prawne:"
+        ],
+        "bullets": [
+          "Obsługa zapytań z formularza kontaktowego oraz prowadzenie korespondencji — podejmowanie działań na Twoje żądanie przed zawarciem umowy (art. 6 ust. 1 lit. b RODO) oraz nasz prawnie uzasadniony interes polegający na komunikacji z osobami zainteresowanymi naszymi usługami (art. 6 ust. 1 lit. f RODO).",
+          "Kontakt i obsługa korespondencji za pośrednictwem serwisu Instagram — nasz prawnie uzasadniony interes polegający na obsłudze zapytań kierowanych przez media społecznościowe (art. 6 ust. 1 lit. f RODO).",
+          "Prowadzenie analityki i statystyk oglądalności strony — Twoja dobrowolna zgoda wyrażona poprzez baner plików cookies (art. 6 ust. 1 lit. a RODO).",
+          "Marketing, w tym remarketing i pomiar skuteczności reklam w serwisach Meta oraz Google — Twoja dobrowolna zgoda wyrażona poprzez baner plików cookies (art. 6 ust. 1 lit. a RODO).",
+          "Ustalenie, dochodzenie lub obrona przed roszczeniami — nasz prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO)."
+        ]
+      },
+      {
+        "id": "cookies",
+        "title": "5. Pliki cookies i technologie śledzące",
+        "paragraphs": [
+          "Strona entei.design korzysta z plików cookies oraz podobnych technologii. Pliki cookies niezbędne do prawidłowego działania strony zapisywane są zawsze i nie wymagają zgody. Pliki cookies analityczne i marketingowe zapisywane są wyłącznie po wyrażeniu przez Ciebie zgody w banerze plików cookies.",
+          "Poniższa tabela przedstawia narzędzia i technologie zewnętrzne wykorzystywane na stronie:"
+        ],
+        "table": {
+          "columns": ["Narzędzie", "Dostawca", "Cel", "Okres przechowywania"],
+          "rows": [
+            ["Meta Pixel", "Meta Platforms Ireland Ltd.", "Remarketing oraz pomiar skuteczności kampanii reklamowych w serwisach Facebook i Instagram", "do 180 dni"],
+            ["Google Tag Manager", "Google Ireland Ltd.", "Zarządzanie znacznikami i skryptami analitycznymi na stronie", "do 24 miesięcy"],
+            ["Google Ads", "Google Ireland Ltd.", "Pomiar konwersji i skuteczności kampanii reklamowych Google", "do 24 miesięcy"],
+            ["Travatar", "Travatar", "Analityka ruchu, sesji oraz zachowania użytkowników na stronie, w tym przybliżona geolokalizacja", "do 24 miesięcy"],
+            ["Vercel Analytics", "Vercel Inc.", "Anonimowa analityka wydajności i ruchu, działająca bez plików cookies", "dane zanonimizowane"],
+            ["Adobe Fonts (Typekit)", "Adobe Systems Inc.", "Dostarczanie i poprawne wyświetlanie czcionek na stronie", "na czas sesji"]
+          ]
+        }
+      },
+      {
+        "id": "zarzadzanie-zgoda",
+        "title": "6. Zarządzanie zgodą na pliki cookies",
+        "paragraphs": [
+          "Przy pierwszej wizycie na stronie wyświetlamy baner plików cookies, w którym możesz wyrazić zgodę na pliki analityczne i marketingowe („Akceptuję”) albo z nich zrezygnować („Tylko niezbędne”). Do czasu wyrażenia zgody nie uruchamiamy żadnych narzędzi analitycznych ani marketingowych.",
+          "Wyrażoną zgodę możesz w każdej chwili wycofać. W tym celu skorzystaj z opcji „Zarządzaj cookies” dostępnej w stopce strony — spowoduje to ponowne wyświetlenie banera i umożliwi zmianę Twojego wyboru. Wycofanie zgody nie wpływa na zgodność z prawem przetwarzania, którego dokonano przed jej wycofaniem.",
+          "Niezależnie od banera możesz zarządzać plikami cookies bezpośrednio w ustawieniach swojej przeglądarki internetowej — w tym usuwać zapisane pliki oraz blokować ich zapisywanie. Ograniczenie plików cookies może wpłynąć na działanie niektórych funkcji strony."
+        ]
+      },
+      {
+        "id": "odbiorcy",
+        "title": "7. Odbiorcy danych i podmioty przetwarzające",
+        "paragraphs": [
+          "W związku z prowadzeniem strony i obsługą zapytań Twoje dane mogą być przekazywane zaufanym podmiotom, które przetwarzają je w naszym imieniu lub jako niezależni administratorzy. Należą do nich:"
+        ],
+        "bullets": [
+          "Resend — dostawca usługi wysyłki wiadomości e-mail, za pośrednictwem którego realizowana jest korespondencja związana z formularzem kontaktowym.",
+          "Meta Platforms Ireland Ltd. — w zakresie narzędzia Meta Pixel oraz kontaktu za pośrednictwem serwisu Instagram.",
+          "Google Ireland Ltd. — w zakresie narzędzi Google Tag Manager oraz Google Ads.",
+          "Travatar — dostawca narzędzia analitycznego.",
+          "Vercel Inc. — dostawca hostingu strony oraz usługi Vercel Analytics.",
+          "Calendly LLC — w zakresie rezerwacji terminów konsultacji, jeżeli zdecydujesz się skorzystać z tej formy kontaktu.",
+          "Adobe Systems Inc. — w zakresie dostarczania czcionek wyświetlanych na stronie."
+        ]
+      },
+      {
+        "id": "transfer-eog",
+        "title": "8. Przekazywanie danych poza EOG",
+        "paragraphs": [
+          "Niektórzy z odbiorców danych wskazanych w punkcie 7 — w szczególności dostawcy narzędzi Meta, Google, Vercel, Resend, Calendly oraz Adobe — mają siedzibę lub przetwarzają dane poza Europejskim Obszarem Gospodarczym (EOG), głównie w Stanach Zjednoczonych.",
+          "Przekazywanie danych do państw trzecich odbywa się z zachowaniem odpowiednich zabezpieczeń wymaganych przez RODO — na podstawie standardowych klauzul umownych zatwierdzonych przez Komisję Europejską lub w oparciu o program Data Privacy Framework, do którego przystąpili dostawcy posiadający odpowiednią certyfikację."
+        ]
+      },
+      {
+        "id": "okres-przechowywania",
+        "title": "9. Okres przechowywania danych",
+        "paragraphs": [
+          "Twoje dane osobowe przechowujemy przez okres niezbędny do realizacji celów, dla których zostały zebrane:"
+        ],
+        "bullets": [
+          "Dane z formularza kontaktowego oraz korespondencji — przez czas niezbędny do obsługi zapytania, a następnie do upływu okresu przedawnienia ewentualnych roszczeń.",
+          "Dane przetwarzane na podstawie zgody (analityka, marketing) — do czasu wycofania zgody lub wygaśnięcia plików cookies, zgodnie z okresami wskazanymi w punkcie 5.",
+          "Dane przetwarzane na podstawie prawnie uzasadnionego interesu — do czasu skutecznego wniesienia sprzeciwu lub ustania tego interesu."
+        ]
+      },
+      {
+        "id": "prawa",
+        "title": "10. Twoje prawa",
+        "paragraphs": [
+          "W związku z przetwarzaniem Twoich danych osobowych przysługują Ci następujące prawa:"
+        ],
+        "bullets": [
+          "prawo dostępu do swoich danych oraz otrzymania ich kopii,",
+          "prawo do sprostowania (poprawienia) nieprawidłowych lub nieaktualnych danych,",
+          "prawo do usunięcia danych („prawo do bycia zapomnianym”),",
+          "prawo do ograniczenia przetwarzania danych,",
+          "prawo do wniesienia sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie,",
+          "prawo do przenoszenia danych,",
+          "prawo do cofnięcia zgody w dowolnym momencie, bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej cofnięciem,",
+          "prawo do wniesienia skargi do organu nadzorczego — Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa)."
+        ]
+      },
+      {
+        "id": "kontakt-prawa",
+        "title": "11. Realizacja praw i kontakt",
+        "paragraphs": [
+          "Aby skorzystać z przysługujących Ci praw, skontaktuj się z nami pod adresem e-mail: hello@entei.design. Odpowiemy na Twoje zgłoszenie bez zbędnej zwłoki, najpóźniej w terminie jednego miesiąca od jego otrzymania.",
+          "W razie potrzeby — na przykład ze względu na złożoność zgłoszenia — termin ten może zostać przedłużony o kolejne dwa miesiące, o czym zostaniesz poinformowany."
+        ]
+      },
+      {
+        "id": "profilowanie",
+        "title": "12. Profilowanie i zautomatyzowane decyzje",
+        "paragraphs": [
+          "W ramach narzędzi marketingowych Meta i Google Twoje dane mogą być wykorzystywane do profilowania, polegającego na dopasowywaniu wyświetlanych reklam do Twoich zainteresowań i aktywności w internecie (remarketing).",
+          "Profilowanie to odbywa się wyłącznie na podstawie Twojej zgody i nie wywołuje wobec Ciebie skutków prawnych ani nie wpływa w podobnie istotny sposób na Twoją sytuację. W każdej chwili możesz cofnąć zgodę, korzystając z opcji „Zarządzaj cookies” w stopce strony."
+        ]
+      },
+      {
+        "id": "bezpieczenstwo",
+        "title": "13. Bezpieczeństwo danych",
+        "paragraphs": [
+          "Stosujemy odpowiednie środki techniczne i organizacyjne, aby chronić Twoje dane osobowe przed nieuprawnionym dostępem, utratą, zniszczeniem czy ujawnieniem. Połączenie ze stroną jest szyfrowane za pomocą protokołu SSL.",
+          "Dostęp do danych mają wyłącznie osoby i podmioty, którym jest to niezbędne do realizacji celów opisanych w niniejszej Polityce."
+        ]
+      },
+      {
+        "id": "dane-dzieci",
+        "title": "14. Dane osób niepełnoletnich",
+        "paragraphs": [
+          "Strona entei.design oraz świadczone przez nas usługi nie są kierowane do osób poniżej 16. roku życia. Nie zbieramy świadomie danych osobowych dzieci. Jeżeli stwierdzisz, że przekazałeś nam dane osoby niepełnoletniej, skontaktuj się z nami — niezwłocznie je usuniemy."
+        ]
+      },
+      {
+        "id": "linki-zewnetrzne",
+        "title": "15. Linki do stron zewnętrznych",
+        "paragraphs": [
+          "Na stronie mogą znajdować się odnośniki do serwisów zewnętrznych, takich jak Instagram, Behance czy Calendly, a także do stron internetowych naszych klientów. Nie odpowiadamy za politykę prywatności i praktyki przetwarzania danych obowiązujące w tych serwisach.",
+          "Zachęcamy do zapoznania się z politykami prywatności obowiązującymi na stronach, które odwiedzasz za pośrednictwem zamieszczonych przez nas odnośników."
+        ]
+      },
+      {
+        "id": "zmiany",
+        "title": "16. Zmiany polityki prywatności",
+        "paragraphs": [
+          "Niniejsza Polityka prywatności może być okresowo aktualizowana, w szczególności w przypadku zmiany przepisów prawa, wprowadzenia nowych narzędzi lub zmiany zakresu świadczonych usług.",
+          "Aktualna wersja Polityki jest zawsze dostępna na tej stronie, a data ostatniej aktualizacji wskazana jest na początku dokumentu. Niniejsza Polityka prywatności obowiązuje od dnia 22 maja 2026 r."
+        ]
+      }
+    ]
   }
 }
