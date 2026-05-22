@@ -1,9 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import SocialMediaButton from "./SocialMediaButton";
+import { useConsent } from "./CookieConsent/ConsentProvider";
 
 export default function Footer() {
+  const { openBanner } = useConsent();
+
   return (
     <footer className="bg-primary text-black z-10">
       <div className=" mx-auto p-4 h-full">
@@ -46,6 +50,27 @@ export default function Footer() {
                 icon="/images/emails/entei-email-icon.png"
                 platform="Instagram"
               />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-3 border-t border-black/20 pt-6 pb-2 text-sm md:flex-row md:items-center md:justify-between">
+            <span>
+              © 2026 ENTEI Sebastian Jarmul. Wszelkie prawa zastrzeżone.
+            </span>
+            <div className="flex flex-wrap items-center gap-4">
+              <Link
+                href="/polityka-prywatnosci"
+                className="underline hover:opacity-70"
+              >
+                Polityka prywatności
+              </Link>
+              <button
+                type="button"
+                onClick={openBanner}
+                className="cursor-pointer underline hover:opacity-70"
+              >
+                Zarządzaj cookies
+              </button>
             </div>
           </div>
         </div>

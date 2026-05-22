@@ -30,5 +30,192 @@
       "howDoIWork": "How do I work?",
       "description": " Explore the results of my work through detailed case studies or live, fully launched websites."
     }
+  },
+  "privacyPolicy": {
+    "header": {
+      "badge": "Legal documents",
+      "titleLight": "Privacy",
+      "titleStrong": "policy",
+      "lastUpdated": "Last updated: 22 May 2026",
+      "intro": "We care about the privacy of everyone who visits our website. Below we explain what data we collect, for what purpose and on what legal basis we process it, with whom we may share it, and what rights you have."
+    },
+    "tocTitle": "Table of contents",
+    "sections": [
+      {
+        "id": "administrator",
+        "title": "1. Data controller",
+        "paragraphs": [
+          "The controller of your personal data is ENTEI Sebastian Jarmul — a sole proprietorship with its registered office at ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, Poland, Tax ID (NIP) 8652574151 (hereinafter: “ENTEI”, “we” or the “Controller”).",
+          "For all matters related to the processing of personal data and the exercise of your rights, you can contact us at: hello@entei.design.",
+          "This Privacy Policy describes how we collect, use and protect the data of people who visit the entei.design website and contact us, including via Instagram."
+        ]
+      },
+      {
+        "id": "definicje",
+        "title": "2. Definitions and legal basis",
+        "paragraphs": [
+          "We process personal data in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data (the “GDPR”) and the Polish Personal Data Protection Act of 10 May 2018.",
+          "For the purposes of this Policy, the following terms have the meanings below:"
+        ],
+        "bullets": [
+          "Personal data — any information that allows a natural person to be identified, such as a name, email address or IP address.",
+          "Processing — any operation performed on personal data, e.g. collection, storage, use or deletion.",
+          "Cookies — small text files saved on your device while you use the website.",
+          "User — any person visiting the entei.design website or contacting ENTEI."
+        ]
+      },
+      {
+        "id": "zakres-danych",
+        "title": "3. What data we collect and from where",
+        "paragraphs": [
+          "The scope of the data we collect depends on how you use the website and contact us.",
+          "Contact form data — when you fill in the contact form available on the website, you provide us with your name, email address, optionally a company name and the content of your message. Providing this data is voluntary but necessary for us to respond to your enquiry.",
+          "Data from contact via Instagram — if you contact us through our Instagram profile (@entei.designs), via direct messages or comments, we process your profile name and the content of the correspondence along with any information you choose to share with us.",
+          "Technical and analytics data — while you browse the website, data such as your IP address, browser type and version, device type, operating system, approximate geographic location, traffic source and information about your activity on the site are collected automatically. This data is collected using cookies and the tools described in section 5."
+        ]
+      },
+      {
+        "id": "cele-przetwarzania",
+        "title": "4. Purposes and legal bases of processing",
+        "paragraphs": [
+          "We process your personal data for the following purposes and on the following legal bases:"
+        ],
+        "bullets": [
+          "Handling enquiries from the contact form and conducting correspondence — taking steps at your request prior to entering into a contract (Art. 6(1)(b) GDPR) and our legitimate interest in communicating with people interested in our services (Art. 6(1)(f) GDPR).",
+          "Contact and handling correspondence via Instagram — our legitimate interest in responding to enquiries made through social media (Art. 6(1)(f) GDPR).",
+          "Website analytics and audience statistics — your voluntary consent given through the cookie banner (Art. 6(1)(a) GDPR).",
+          "Marketing, including remarketing and measuring the effectiveness of ads on Meta and Google — your voluntary consent given through the cookie banner (Art. 6(1)(a) GDPR).",
+          "Establishing, pursuing or defending against claims — our legitimate interest (Art. 6(1)(f) GDPR)."
+        ]
+      },
+      {
+        "id": "cookies",
+        "title": "5. Cookies and tracking technologies",
+        "paragraphs": [
+          "The entei.design website uses cookies and similar technologies. Cookies necessary for the website to function properly are always saved and do not require consent. Analytics and marketing cookies are saved only after you give consent in the cookie banner.",
+          "The table below lists the external tools and technologies used on the website:"
+        ],
+        "table": {
+          "columns": ["Tool", "Provider", "Purpose", "Retention period"],
+          "rows": [
+            ["Meta Pixel", "Meta Platforms Ireland Ltd.", "Remarketing and measuring the effectiveness of advertising campaigns on Facebook and Instagram", "up to 180 days"],
+            ["Google Tag Manager", "Google Ireland Ltd.", "Managing tags and analytics scripts on the website", "up to 24 months"],
+            ["Google Ads", "Google Ireland Ltd.", "Measuring conversions and the effectiveness of Google advertising campaigns", "up to 24 months"],
+            ["Travatar", "Travatar", "Analytics of traffic, sessions and user behaviour on the website, including approximate geolocation", "up to 24 months"],
+            ["Vercel Analytics", "Vercel Inc.", "Anonymous performance and traffic analytics, operating without cookies", "anonymised data"],
+            ["Adobe Fonts (Typekit)", "Adobe Systems Inc.", "Delivering and correctly displaying fonts on the website", "session duration"]
+          ]
+        }
+      },
+      {
+        "id": "zarzadzanie-zgoda",
+        "title": "6. Managing cookie consent",
+        "paragraphs": [
+          "On your first visit, we display a cookie banner where you can consent to analytics and marketing cookies (“Accept”) or decline them (“Necessary only”). Until consent is given, we do not activate any analytics or marketing tools.",
+          "You can withdraw your consent at any time. To do so, use the “Manage cookies” option available in the website footer — this will display the banner again and let you change your choice. Withdrawing consent does not affect the lawfulness of processing carried out before its withdrawal.",
+          "Regardless of the banner, you can manage cookies directly in your web browser settings — including deleting saved files and blocking them from being saved. Restricting cookies may affect the operation of certain website features."
+        ]
+      },
+      {
+        "id": "odbiorcy",
+        "title": "7. Data recipients and processors",
+        "paragraphs": [
+          "In connection with operating the website and handling enquiries, your data may be transferred to trusted entities that process it on our behalf or as independent controllers. These include:"
+        ],
+        "bullets": [
+          "Resend — the email delivery service provider through which correspondence related to the contact form is handled.",
+          "Meta Platforms Ireland Ltd. — in connection with the Meta Pixel tool and contact via Instagram.",
+          "Google Ireland Ltd. — in connection with the Google Tag Manager and Google Ads tools.",
+          "Travatar — the analytics tool provider.",
+          "Vercel Inc. — the provider of website hosting and the Vercel Analytics service.",
+          "Calendly LLC — in connection with booking consultation appointments, if you choose to use this form of contact.",
+          "Adobe Systems Inc. — in connection with delivering the fonts displayed on the website."
+        ]
+      },
+      {
+        "id": "transfer-eog",
+        "title": "8. Transfers of data outside the EEA",
+        "paragraphs": [
+          "Some of the data recipients listed in section 7 — in particular the providers of Meta, Google, Vercel, Resend, Calendly and Adobe tools — are based or process data outside the European Economic Area (EEA), mainly in the United States.",
+          "Transfers of data to third countries take place with the appropriate safeguards required by the GDPR — based on standard contractual clauses approved by the European Commission or under the Data Privacy Framework, which providers with the relevant certification have joined."
+        ]
+      },
+      {
+        "id": "okres-przechowywania",
+        "title": "9. Data retention period",
+        "paragraphs": [
+          "We store your personal data for as long as necessary to achieve the purposes for which it was collected:"
+        ],
+        "bullets": [
+          "Contact form data and correspondence — for the time necessary to handle the enquiry and then until the limitation period for any claims expires.",
+          "Data processed based on consent (analytics, marketing) — until consent is withdrawn or the cookies expire, in line with the periods indicated in section 5.",
+          "Data processed based on legitimate interest — until an effective objection is raised or that interest ceases to apply."
+        ]
+      },
+      {
+        "id": "prawa",
+        "title": "10. Your rights",
+        "paragraphs": [
+          "In connection with the processing of your personal data, you have the following rights:"
+        ],
+        "bullets": [
+          "the right to access your data and to receive a copy of it,",
+          "the right to rectification of incorrect or outdated data,",
+          "the right to erasure of data (the “right to be forgotten”),",
+          "the right to restriction of processing,",
+          "the right to object to processing based on legitimate interest,",
+          "the right to data portability,",
+          "the right to withdraw consent at any time, without affecting the lawfulness of processing carried out before its withdrawal,",
+          "the right to lodge a complaint with the supervisory authority — the President of the Personal Data Protection Office (ul. Stawki 2, 00-193 Warsaw, Poland)."
+        ]
+      },
+      {
+        "id": "kontakt-prawa",
+        "title": "11. Exercising your rights and contact",
+        "paragraphs": [
+          "To exercise your rights, contact us at: hello@entei.design. We will respond to your request without undue delay, no later than within one month of receiving it.",
+          "Where necessary — for example due to the complexity of the request — this period may be extended by a further two months, and you will be informed accordingly."
+        ]
+      },
+      {
+        "id": "profilowanie",
+        "title": "12. Profiling and automated decisions",
+        "paragraphs": [
+          "Within the Meta and Google marketing tools, your data may be used for profiling, which consists of tailoring the ads displayed to your interests and online activity (remarketing).",
+          "This profiling takes place solely on the basis of your consent and does not produce legal effects concerning you nor similarly significantly affect you. You can withdraw your consent at any time using the “Manage cookies” option in the website footer."
+        ]
+      },
+      {
+        "id": "bezpieczenstwo",
+        "title": "13. Data security",
+        "paragraphs": [
+          "We apply appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, destruction or disclosure. The connection to the website is encrypted using the SSL protocol.",
+          "Access to the data is granted only to people and entities for whom it is necessary to achieve the purposes described in this Policy."
+        ]
+      },
+      {
+        "id": "dane-dzieci",
+        "title": "14. Data of minors",
+        "paragraphs": [
+          "The entei.design website and the services we provide are not directed at persons under 16 years of age. We do not knowingly collect personal data of children. If you find that you have provided us with the data of a minor, please contact us — we will delete it immediately."
+        ]
+      },
+      {
+        "id": "linki-zewnetrzne",
+        "title": "15. Links to external websites",
+        "paragraphs": [
+          "The website may contain links to external services such as Instagram, Behance or Calendly, as well as to our clients' websites. We are not responsible for the privacy policies and data processing practices applicable on those services.",
+          "We encourage you to review the privacy policies in force on the websites you visit via the links we provide."
+        ]
+      },
+      {
+        "id": "zmiany",
+        "title": "16. Changes to the privacy policy",
+        "paragraphs": [
+          "This Privacy Policy may be updated periodically, in particular in the event of changes in the law, the introduction of new tools or changes to the scope of services provided.",
+          "The current version of the Policy is always available on this page, and the date of the last update is indicated at the top of the document. This Privacy Policy is effective as of 22 May 2026."
+        ]
+      }
+    ]
   }
 }

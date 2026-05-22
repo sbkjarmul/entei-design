@@ -63,7 +63,7 @@ function Divider() {
 
 export default function BrandingServicePage() {
   return (
-    <div className="inset-0 flex flex-col gap-10 w-screen min-h-fit items-center justify-center p-0 md:py-8 relative overflow-hidden">
+    <div className="inset-0 flex flex-col gap-10 w-full min-h-fit items-center justify-center p-0 md:py-8 relative overflow-hidden">
       <Container className="flex flex-col gap-10 px-4">
         <section className="max-w-xl my-20">
           <Heading level={1} className="leading-5">
