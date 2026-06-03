@@ -101,6 +101,12 @@ export default function OurClientsSection() {
           name="ecomgo"
           url="https://ecomgo.pl/"
         />
+
+        <ClientCard
+          logo="/images/case-studies/italiana-case-study-logo.svg"
+          name="italiana"
+          url="https://www.instagram.com/reel/DQq6_3MiLTr/"
+        />
       </div>
     </Section>
   );
