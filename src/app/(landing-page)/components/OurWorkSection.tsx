@@ -8,7 +8,7 @@ export default function OurWorkSection() {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-4">
           <Link
-            href="https://www.instagram.com/reel/DQq6_3MiLTr/"
+            href="/case-study/italiana"
             target="_blank"
             className="w-full"
           >
