@@ -107,6 +107,18 @@ export default function OurClientsSection() {
           name="italiana"
           url="https://www.instagram.com/reel/DQq6_3MiLTr/"
         />
+
+        <ClientCard
+          logo="/images/our-clients/broscars-logo.png"
+          name="broscars"
+          url="https://www.instagram.com/p/DVwKd0cCHlL"
+        />
+
+        <ClientCard
+          logo="/images/our-clients/brandsets-logo.png"
+          name="brandsets"
+          url="https://brandsets.pl/"
+        />
       </div>
     </Section>
   );
