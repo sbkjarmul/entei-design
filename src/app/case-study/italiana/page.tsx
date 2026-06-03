@@ -15,14 +15,13 @@ export const metadata = {
 export default function PortfolioItalianaCaseStudy() {
   return (
     <section className="flex flex-col gap-4 md:gap-8 min-h-screen bg-white relative pb-8">
-      <div className="relative w-full h-auto overflow-hidden">
+      <div className="relative w-full h-[60vh] md:h-screen overflow-hidden">
         <Image
           src="/images/case-studies/italiana/italiana-hero.png"
           alt="Koszulka Italiana z grafiką wilka i hasłem Wyj, Jedz, Gryź"
-          width={0}
-          height={0}
+          fill
           sizes="100vw"
-          className="w-full h-auto"
+          className="object-cover"
           priority
         />
       </div>
