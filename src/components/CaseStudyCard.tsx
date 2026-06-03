@@ -7,6 +7,7 @@ interface CaseStudyCardProps {
   title: string;
   comingSoon?: boolean;
   size?: "big" | "small"; //
+  titleClassName?: string;
 }
 
 export default function CaseStudyCard({
@@ -16,6 +17,7 @@ export default function CaseStudyCard({
   title,
   comingSoon,
   size = "small",
+  titleClassName = "text-gray-400",
 }: CaseStudyCardProps) {
   const titleSizeClass = size === "big" ? "text-[32px]" : "text-[24px]";
   const titleWidthClass = size === "big" ? "w-3/5" : "w-full";
@@ -60,7 +62,7 @@ export default function CaseStudyCard({
           <span className="mb-2 text-gray-600 text-sm">Case study wkrótce</span>
         )}
         <h3
-          className={`text-gray-400 font-regular leading-tight ${titleSizeClass} ${titleWidthClass}`}
+          className={`${titleClassName} font-regular leading-tight ${titleSizeClass} ${titleWidthClass}`}
         >
           {title}
         </h3>

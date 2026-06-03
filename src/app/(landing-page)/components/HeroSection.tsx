@@ -33,12 +33,13 @@ export default function HeroSection() {
       </div>
       <Text>
         <span className="block md:hidden max-w-md">
-          Tworzymy ponadczasowe logo oraz strony internetowe, które są
-          niezbędne, aby klienci wybrali Ciebie.
+          Studio graficzne ze Stalowej Woli. Tworzymy ponadczasowe logo oraz
+          strony internetowe, które są niezbędne, aby klienci wybrali Ciebie.
         </span>
         <span className="hidden md:block">
-          Wiemy jak tworzyć ponadczasowe logo oraz strony internetowę, które
-          klienci zapamiętają już od pierwszego kontaktu z Twoją firmą!
+          Jako studio graficzne ze Stalowej Woli wiemy, jak tworzyć ponadczasowe
+          logo oraz strony internetowe, które klienci zapamiętają już od
+          pierwszego kontaktu z Twoją firmą!
         </span>
       </Text>
       <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
