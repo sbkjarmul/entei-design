@@ -53,6 +53,29 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className="flex flex-col gap-3 border-t border-black/20 pt-6 text-sm md:flex-row md:items-center md:justify-between">
+            <address className="not-italic text-center md:text-start">
+              Studio graficzne ENTEI · Stalowa Wola
+            </address>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+              <Link
+                href="/studio-graficzne-stalowa-wola"
+                className="hover:opacity-70"
+              >
+                Studio graficzne Stalowa Wola
+              </Link>
+              <Link href="/logo-stalowa-wola" className="hover:opacity-70">
+                Logo Stalowa Wola
+              </Link>
+              <Link
+                href="/strony-internetowe-stalowa-wola"
+                className="hover:opacity-70"
+              >
+                Strony internetowe Stalowa Wola
+              </Link>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-3 border-t border-black/20 pt-6 pb-2 text-sm md:flex-row md:items-center md:justify-between">
             <span>
               © 2026 ENTEI Sebastian Jarmul. Wszelkie prawa zastrzeżone.

@@ -24,14 +24,13 @@ export default function ContactSection() {
         <div className="flex-col flex gap-4">
           <Text>
             Napisz do nas maila lub skorzystaj z
-            <Link href={"/contact"}>
-              <Button
-                variant="text"
-                className="hover:text-gray-100 cursor-pointer text-primary"
-              >
-                <span className="ml-1">formularza kontaktowego!</span>
-              </Button>
-            </Link>
+            <Button
+              href="/contact"
+              variant="text"
+              className="hover:text-gray-100 cursor-pointer text-primary"
+            >
+              <span className="ml-1">formularza kontaktowego!</span>
+            </Button>
           </Text>
           <Link
             href={"https://calendly.com/entei-designs/30min"}

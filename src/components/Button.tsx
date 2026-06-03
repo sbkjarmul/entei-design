@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cx } from "@/lib/utils";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -7,6 +8,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   height?: string;
   width?: string;
   isHero?: boolean;
+  /**
+   * When provided, the button renders as a Next.js Link (an `<a>`) styled as a
+   * button. Use this for navigation so we never nest a `<button>` inside an
+   * `<a>` (invalid HTML that breaks client-side navigation).
+   */
+  href?: string;
+  target?: string;
 }
 
 export default function Button({
@@ -19,6 +27,8 @@ export default function Button({
   disabled,
   isHero,
   className,
+  href,
+  target,
   ...props
 }: ButtonProps) {
   const baseClasses = cx(
@@ -51,16 +61,26 @@ export default function Button({
     ]
   );
 
+  const mergedClassName = cx(baseClasses, variantClasses, "group", className);
+
+  const inner = (
+    <div className="flex items-center justify-center gap-2 w-full">
+      {children}
+      {iconRight}
+    </div>
+  );
+
+  if (href && !disabled) {
+    return (
+      <Link href={href} target={target} className={mergedClassName}>
+        {inner}
+      </Link>
+    );
+  }
+
   return (
-    <button
-      className={cx(baseClasses, variantClasses, "group", className)}
-      disabled={disabled}
-      {...props}
-    >
-      <div className="flex items-center justify-center gap-2 w-full">
-        {children}
-        {iconRight}
-      </div>
+    <button className={mergedClassName} disabled={disabled} {...props}>
+      {inner}
     </button>
   );
 }

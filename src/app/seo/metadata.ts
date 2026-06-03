@@ -1,11 +1,17 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.entei.design"),
   title:
-    "ENTEI Studio Kreatywne | Projektowanie logo oraz nowoczesne strony internetowe.",
+    "ENTEI Studio Graficzne Stalowa Wola | Logo i Strony Internetowe",
   description:
-    "Pomagamy firmom zbudować profesjonalny wizerunek. Przyciągnij więcej klientów i zwiększ przychody za pomocą profesjonalnego brandingu, nowoczesnych stron internetowych oraz angażujących grafik na social media.",
+    "Studio graficzne ze Stalowej Woli. Projektujemy logo, identyfikację wizualną i nowoczesne strony internetowe, które pomagają firmom przyciągnąć więcej klientów i zwiększyć przychody.",
   keywords: [
+    "studio graficzne stalowa wola",
+    "logo stalowa wola",
+    "strony internetowe stalowa wola",
+    "projektowanie logo stalowa wola",
+    "agencja reklamowa stalowa wola",
     "projektowanie logo",
     "identyfikacja wizualna",
     "strony www",
@@ -19,16 +25,16 @@ export const metadata: Metadata = {
   authors: [{ name: "ENTEI" }],
   openGraph: {
     title:
-      "ENTEI Studio Graficzne | Projektowanie logo, projektowanie stron www",
+      "ENTEI Studio Graficzne Stalowa Wola | Logo, Strony Internetowe, Branding",
     description:
-      "Projektowanie logo, projektowanie stron internetowych, grafiki na social media.",
-    url: "https://entei.design",
+      "Studio graficzne ze Stalowej Woli. Projektowanie logo, stron internetowych i identyfikacji wizualnej.",
+    url: "https://www.entei.design",
     images: [
       {
-        url: "https://entei.design/images/entei-og-image.webp",
+        url: "https://www.entei.design/images/entei-og-image.webp",
         width: 1200,
         height: 630,
-        alt: "ENTEI to studio graficzne zapewniające usługi: projektowanie logo, projektowanie stron internetowych, grafiki na social media.",
+        alt: "ENTEI studio graficzne ze Stalowej Woli: projektowanie logo, stron internetowych oraz identyfikacji wizualnej.",
       },
     ],
     locale: "pl_PL",
@@ -36,23 +42,23 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "https://entei.design/images/entei-favicon.svg",
-    shortcut: "https://entei.design/images/entei-favicon.svg",
-    apple: "https://entei.design/images/entei-favicon.svg",
+    icon: "https://www.entei.design/images/entei-favicon.svg",
+    shortcut: "https://www.entei.design/images/entei-favicon.svg",
+    apple: "https://www.entei.design/images/entei-favicon.svg",
   },
 
   alternates: {
-    canonical: "https://entei.design",
+    canonical: "https://www.entei.design",
   },
 
   twitter: {
     card: "summary",
     site: "@entei",
     title:
-      "ENTEI Studio Kreatywne | Projektowanie logo, projektowanie stron www",
+      "ENTEI Studio Graficzne Stalowa Wola | Logo i Strony Internetowe",
     description:
-      "Projektowanie logo, projektowanie stron internetowych, grafiki na social media.",
-    images: ["https://entei.design/images/entei-og-image.webp"],
+      "Studio graficzne ze Stalowej Woli. Projektowanie logo, stron internetowych i identyfikacji wizualnej.",
+    images: ["https://www.entei.design/images/entei-og-image.webp"],
   },
 
   robots: {
