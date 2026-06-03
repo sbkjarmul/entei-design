@@ -93,7 +93,7 @@ export default function OurClientsSection() {
         <ClientCard
           logo="/images/our-clients/suseu-logo.png"
           name="suseu"
-          url="https://www.entei.pl/"
+          url="https://suseu.app/"
         />
 
         <ClientCard
@@ -105,13 +105,13 @@ export default function OurClientsSection() {
         <ClientCard
           logo="/images/case-studies/italiana-case-study-logo.svg"
           name="italiana"
-          url="https://www.instagram.com/reel/DQq6_3MiLTr/"
+          url="https://www.pizzeriaitaliana.com.pl/"
         />
 
         <ClientCard
           logo="/images/our-clients/broscars-logo.png"
           name="broscars"
-          url="https://www.instagram.com/p/DVwKd0cCHlL"
+          url="https://broscars.pl/"
         />
 
         <ClientCard
