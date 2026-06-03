@@ -8,6 +8,22 @@ export default function OurWorkSection() {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-4">
           <Link
+            href="https://www.instagram.com/reel/DQq6_3MiLTr/"
+            target="_blank"
+            className="w-full"
+          >
+            <CaseStudyCard
+              categories={["Rebranding", "Identyfikacja wizualna"]}
+              image="/images/case-studies/italiana-case-study-card.png"
+              logo="/images/case-studies/italiana-case-study-logo.svg"
+              title="Odświeżyliśmy markę Italiana w Stalowej Woli"
+              size="small"
+            />
+          </Link>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-4">
+          <Link
             href="https://www.instagram.com/p/DVwKd0cCHlL"
             target="_blank"
             className="w-full"
