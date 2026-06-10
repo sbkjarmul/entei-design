@@ -64,10 +64,10 @@ export default function Button({
   const mergedClassName = cx(baseClasses, variantClasses, "group", className);
 
   const inner = (
-    <div className="flex items-center justify-center gap-2 w-full">
+    <span className="inline-flex items-center justify-center gap-2 w-full">
       {children}
       {iconRight}
-    </div>
+    </span>
   );
 
   if (href && !disabled) {
