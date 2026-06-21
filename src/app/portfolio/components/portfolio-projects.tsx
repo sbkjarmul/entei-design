@@ -87,6 +87,19 @@ export default function PortfolioProjects() {
               height={200}
             />
           </Link>
+
+          <Link
+            href="/case-study/art-mat"
+            className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+            target="_blank"
+          >
+            <Image
+              src="/images/case-studies/art-mat-case-study-logo.svg"
+              alt="Art-Mat Project"
+              width={250}
+              height={200}
+            />
+          </Link>
         </motion.div>
       </Container>
     </section>

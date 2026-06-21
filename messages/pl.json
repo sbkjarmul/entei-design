@@ -198,5 +198,83 @@
         ]
       }
     ]
+  },
+  "caseStudyChrome": {
+    "services": "Usługi",
+    "industry": "Branża",
+    "year": "Rok",
+    "country": "Kraj",
+    "fileUnder": "W kategoriach",
+    "latestWorks": "Ostatnie realizacje",
+    "cta": "Stwórzmy wszystko, czego potrzebuje Twoja marka",
+    "viewLive": "Zobacz stronę",
+    "wantProject": "Chcę projekt",
+    "serviceValues": {
+      "identity": "Identyfikacja wizualna",
+      "strategy": "Strategia marki",
+      "web": "Projekt i wdrożenie strony"
+    },
+    "industryValues": {
+      "automotive": "Motoryzacja"
+    },
+    "countryValues": {
+      "poland": "Polska"
+    }
+  },
+  "caseStudy": {
+    "artMat": {
+      "title": "Art-Mat",
+      "intro": "Art-Mat to serwis i sprzedaż opon ze Stalowej Woli, darzony zaufaniem przez kierowców indywidualnych i właścicieli flot. Wraz z rozwojem firmy jej dotychczasowy wizerunek przestał oddawać profesjonalizm i nowoczesność codziennej obsługi.",
+      "description": {
+        "heading": "Opis projektu",
+        "body": "Markę Art-Mat zbudowaliśmy tak, by komunikowała zaufanie, bezpieczeństwo i techniczną pewność, a jednocześnie sygnalizowała nowoczesną, premium usługę. Zdefiniowaliśmy kompletny system wizualny i werbalny, od logo po stronę internetową, który ustawia Art-Mat jako lokalnego lidera, a nie kolejny wulkanizator."
+      },
+      "challenge": {
+        "heading": "Wyzwanie",
+        "body": "Największym wyzwaniem było wyróżnienie się na tle sieci takich jak Best Drive czy First Stop, które dominują kategorię agresywną czerwienią i komunikacją opartą na cenie. Przeanalizowaliśmy konkurencję i potrzeby trzech grup docelowych (lokalnych kierowców, właścicieli TIR-ów i flot oraz młodszych klientów oczekujących nowoczesnej rezerwacji) i znaleźliśmy pozycję, której nikt nie zajmował: zaufanego, premium partnera w okolicy."
+      },
+      "concept": {
+        "heading": "Koncept",
+        "body": "Cała identyfikacja wyrasta z jednej idei, opony. Znak łączy litery A i M w geometryczną formę inspirowaną oponą, a wzór pasków, użyty sekwencyjnie, tworzy bieżnik i ślad opony. Premium paleta złota, szarości i głębokiej czerni zastępuje typową dla kategorii czerwień, komunikując jakość zamiast rabatu. Nagłówkowa Northura i czytelna Switzer dopełniają techniczny, pewny siebie charakter."
+      },
+      "results": {
+        "heading": "Efekt",
+        "body": "Efektem jest spójna, premium identyfikacja, która podnosi sposób postrzegania Art-Mat przez kierowców, partnerów flotowych i lokalną społeczność, oraz system na tyle elastyczny, że rośnie razem z firmą, nowymi usługami i lokalizacjami."
+      },
+      "quote": {
+        "promise": "Art-Mat nie wymienia tylko opon. Codziennie dba o Twoje bezpieczeństwo na drodze.",
+        "gold": "Identyfikacja oparta na złocie zamienia rabatową czerwień na poczucie zaufania, precyzji i premium obsługi."
+      },
+      "details": {
+        "scope": {
+          "heading": "Szczegóły projektu",
+          "items": [
+            "Pełny rebranding lokalnego serwisu i sprzedaży opon ze Stalowej Woli z zasięgiem regionalnym",
+            "Pozycjonowanie oparte na zaufaniu, bezpieczeństwie i premium lokalnej obsłudze",
+            "Znak kombinowany łączący litery A i M w formę inspirowaną oponą",
+            "Paleta złota, szarości i głębokiej czerni odróżniająca od czerwonej konkurencji",
+            "Northura w nagłówkach w parze ze Switzer w tekście",
+            "System graficzny pasek i bieżnik skalujący się na wszystkie nośniki",
+            "Identyfikacja werbalna z obietnicą: codziennie dbamy o Twoje bezpieczeństwo na drodze",
+            "Ton głosu zdecydowany, bezpośredni, empatyczny i wiarygodny",
+            "Marka na szyldach, odzieży, wizytówkach, dokumentach i reklamie",
+            "Strona zaprojektowana pod czytelną prezentację usług i rezerwację wizyt"
+          ]
+        }
+      },
+      "tags": [
+        "art-mat",
+        "serwis opon",
+        "motoryzacja",
+        "rebranding",
+        "identyfikacja wizualna",
+        "system wizualny",
+        "projekt logo",
+        "identyfikacja werbalna",
+        "projektowanie stron",
+        "stalowa wola",
+        "polska"
+      ]
+    }
   }
 }
