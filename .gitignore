@@ -43,3 +43,6 @@ next-env.d.ts
 
 # Local working source files (not for repo)
 .claude/*.pdf
+
+# Design Reviewer working artifacts (rendered app screenshots)
+/design/screenshots/

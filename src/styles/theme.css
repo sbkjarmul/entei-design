@@ -1,9 +1,20 @@
-@theme {
-  --color-primary: #ff2400;
-  --color-secondary: #e0e0e0;
-}
+/**
+ * ENTEI design system — Tailwind v4 (CSS-first config).
+ * Single source of truth for design tokens. Mirrors .claude/skills/entei-design-skill.
+ * https://tailwindcss.com/docs/theme
+ *
+ * Fonts are loaded in src/app/layout.tsx:
+ *   - Neue Haas (Typekit) → utility class `font-neue-haas` (primary sans)
+ *   - Despair Time (local OTF) → CSS var `--font-despair-time` (display face)
+ */
 
 @theme {
+  /* ---- Colors (brand palette) ---- */
+  /* Accent / brand red — CTAs, eyebrows, highlights. */
+  --color-primary: #ff2400;
+  --color-secondary: #e0e0e0;
+
+  /* Neutral surface/ink: app renders on black with white text (see globals.css). */
   --color-gray-*: initial;
   --color-gray-50: #fafafa;
   --color-gray-100: #f5f5f5;
@@ -16,8 +27,120 @@
   --color-gray-800: #424242;
   --color-gray-900: #212121;
   --color-gray-950: #121212;
+
+  /* ---- Typography ---- */
+  --font-despair-time: var(--font-despair-time);
+
+  /* ---- Section heights (desktop) ---- */
+  --section-h-sm: 400px;
+  --section-h-md: 600px;
+  --section-h-lg: 800px;
+
+  /* ---- Breakpoints (mobile/desktop typography switch = md) ---- */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
 }
 
-@theme {
-  --font-despair-time: var(--font-despair-time);
+/*
+ * Spacing: use ONLY the 4-based scale → Tailwind default steps map 1:1.
+ *   4px=1 · 8px=2 · 16px=4 · 24px=6 · 32px=8 · 40px=10 · 64px=16
+ * Stick to these steps; no arbitrary px (no p-3, m-5, etc.).
+ *
+ * NOTE: the .t-* sizes below mirror the existing Heading/Text/AccentText
+ * primitives 1:1 (non-breaking). Reconcile exact values with Figma
+ * (get_variable_defs) once the project fileKey is wired in — then update both
+ * this file AND the table in entei-design-skill.
+ */
+
+@layer components {
+  /* ---- Headings — mobile-first, desktop override at md (≥768px) ---- */
+  .t-h1,
+  .t-h2 {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  .t-h3,
+  .t-h4,
+  .t-h5,
+  .t-h6 {
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  /* Mobile sizes */
+  .t-h1 {
+    font-size: 36px;
+  }
+  .t-h2 {
+    font-size: 36px;
+  }
+  .t-h3 {
+    font-size: 20px;
+  }
+  .t-h4 {
+    font-size: 18px;
+  }
+  .t-h5 {
+    font-size: 16px;
+  }
+  .t-h6 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* Desktop sizes */
+  @media (min-width: 768px) {
+    .t-h1 {
+      font-size: 60px;
+    }
+    .t-h2 {
+      font-size: 48px;
+    }
+    .t-h3 {
+      font-size: 24px;
+    }
+    .t-h4 {
+      font-size: 20px;
+    }
+    .t-h5 {
+      font-size: 18px;
+    }
+    .t-h6 {
+      font-size: 16px;
+    }
+  }
+
+  /* Body copy (default paragraph). */
+  .t-body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+
+  /* Caption / small print. */
+  .t-caption {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  /* Accent / eyebrow label — small, used on the brand-red chip. */
+  .t-accent {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  /* Display face — Despair Time, for oversized branded numerals/wordmarks. */
+  .t-display {
+    font-family: var(--font-despair-time), sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
 }
