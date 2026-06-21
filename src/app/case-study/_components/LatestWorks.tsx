@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
+import PortfolioCard from "@/components/PortfolioCard";
 import { getOtherCaseStudies } from "@/lib/caseStudies";
 
 /**
- * „Latest works" — numbered list of the other case studies (registry-driven),
- * mirroring the berrielbrands works index. Links use each project's canonical
- * href (internal case study or external site).
+ * „Latest works" — tile grid of the other case studies (registry-driven),
+ * mirroring the berrielbrands works grid: each tile shows the project image and
+ * reveals its name + country on hover. Links use each project's canonical href
+ * (internal case study or external site).
  */
 export default async function LatestWorks({
   currentSlug,
@@ -16,34 +18,31 @@ export default async function LatestWorks({
   heading: string;
 }) {
   const tc = await getTranslations("caseStudyChrome");
-  const others = getOtherCaseStudies(currentSlug);
+  const others = getOtherCaseStudies(currentSlug).filter((c) => c.card?.image);
 
   if (others.length === 0) return null;
 
   return (
     <div className="flex flex-col gap-6 px-6 pt-20 md:px-12 md:pt-28">
-      <h2 className="t-caption uppercase tracking-wide text-gray-500">
+      <h2 className="text-[20px] font-medium text-gray-900 first-letter:uppercase">
         {heading}
       </h2>
-      <ul className="flex flex-col">
-        {others.map((c, i) => (
-          <li key={c.slug} className="border-t border-gray-200 last:border-b">
-            <Link
-              href={c.href}
-              target={c.href.startsWith("http") ? "_blank" : undefined}
-              className="group flex items-baseline gap-4 py-5 transition-colors hover:text-gray-500"
-            >
-              <span className="t-caption w-8 shrink-0 text-gray-400">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="t-h3 font-normal">{c.name}</span>
-              <span className="t-caption ml-auto text-gray-400">
-                {tc(`countryValues.${c.countryKey}`)}
-              </span>
-            </Link>
-          </li>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {others.map((c) => (
+          <Link
+            key={c.slug}
+            href={c.href}
+            target={c.href.startsWith("http") ? "_blank" : undefined}
+            className="w-full"
+          >
+            <PortfolioCard
+              name={c.name}
+              image={c.card!.image}
+              country={tc(`countryValues.${c.countryKey}`)}
+            />
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

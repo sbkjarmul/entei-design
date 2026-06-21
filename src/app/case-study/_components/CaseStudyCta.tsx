@@ -1,30 +1,33 @@
 import Link from "next/link";
 
 /**
- * Closing CTA — large statement plus an optional link to the client's live site.
+ * Closing CTA — large statement plus a „let's talk" link to the booking calendar.
  */
 export default function CaseStudyCta({
   cta,
-  liveUrl,
-  viewLive,
+  talkUrl,
+  talk,
 }: {
   cta: string;
-  liveUrl?: string;
-  viewLive: string;
+  talkUrl: string;
+  talk: string;
 }) {
   return (
-    <div className="flex flex-col gap-8 px-6 py-24 md:px-12 md:py-32">
-      <p className="t-h1">{cta}</p>
+    // Two-column grid (matching the body above): the statement + link sit in
+    // the first column, the second column stays empty.
+    <div className="grid gap-10 px-6 py-24 md:grid-cols-2 md:gap-12 md:px-12 md:py-32">
+      <div className="flex flex-col gap-8">
+        <p className="t-h1">{cta}</p>
 
-      {liveUrl && (
         <Link
-          href={liveUrl}
+          href={talkUrl}
           target="_blank"
-          className="t-h4 w-fit font-normal text-gray-900 underline decoration-2 underline-offset-8 transition-opacity hover:opacity-70"
+          rel="noopener noreferrer"
+          className="t-h4 w-fit font-normal text-gray-900 underline decoration-1 underline-offset-8 transition-opacity hover:opacity-70"
         >
-          {viewLive}
+          {talk}
         </Link>
-      )}
+      </div>
     </div>
   );
 }

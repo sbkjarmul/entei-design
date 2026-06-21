@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
+import { CALENDLY_URL } from "@/lib/caseStudies";
 import type { CaseImage, CaseStudy, ProseBlock } from "@/lib/caseStudies";
 
 import LatestWorks from "./LatestWorks";
@@ -100,11 +101,7 @@ export default async function CaseStudyTemplate({ data }: { data: CaseStudy }) {
 
       <LatestWorks currentSlug={data.slug} heading={tc("latestWorks")} />
 
-      <CaseStudyCta
-        cta={tc("cta")}
-        liveUrl={data.liveUrl}
-        viewLive={tc("viewLive")}
-      />
+      <CaseStudyCta cta={tc("cta")} talkUrl={CALENDLY_URL} talk={tc("talk")} />
     </article>
   );
 }
@@ -139,7 +136,7 @@ function ProseRenderer({
       const items = t.raw(`details.${block.k}.items`) as string[];
       return (
         <div className="flex flex-col gap-4">
-          <h2 className="text-xs uppercase tracking-wide text-gray-500 md:text-sm">
+          <h2 className="text-[20px] font-medium text-gray-900 first-letter:uppercase">
             {t(`details.${block.k}.heading`)}
           </h2>
           <ul className="flex flex-col gap-3">
@@ -161,7 +158,7 @@ function ProseRenderer({
       const tags = t.raw(block.k) as string[];
       return (
         <div className="flex flex-col gap-3">
-          <h2 className="text-xs uppercase tracking-wide text-gray-500 md:text-sm">
+          <h2 className="text-[20px] font-medium text-gray-900 first-letter:uppercase">
             {fileUnderLabel}
           </h2>
           <p className="text-lg leading-snug text-gray-500 md:text-xl">
