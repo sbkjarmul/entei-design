@@ -59,13 +59,12 @@ export default function OurWorkSection() {
           />
         </Link>
 
-        <Link href="https://art-mat.com.pl" target="_blank" className="w-full">
+        <Link href="/case-study/art-mat" target="_blank" className="w-full">
           <CaseStudyCard
             categories={["Branding", "Strona internetowa"]}
             image="/images/case-studies/art-mat-case-study-card.png"
             logo="/images/our-clients/art-mat-logo.png"
             title="Pomogliśmy w rebrandingu naszego klienta z branży automotive"
-            comingSoon={true}
             size="small"
           />
         </Link>
