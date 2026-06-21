@@ -3,6 +3,11 @@
     "tagline": "Marki stworzone, by przewodzić.",
     "studio": "ENTEI Design Studio."
   },
+  "works": {
+    "title": "Nasze realizacje",
+    "description": "Systemy wizerunkowe oraz strony internetowe dla ambitnych founderów, którzy nie chcą zniknąć w tłumie.",
+    "cta": "Zacznij projekt"
+  },
   "portfolio": {
     "hero": {
       "title": "Brand & UI/UX designer, zamieszkały w Dublinie.",
@@ -206,8 +211,8 @@
     "country": "Kraj",
     "fileUnder": "W kategoriach",
     "latestWorks": "Ostatnie realizacje",
-    "cta": "Stwórzmy wszystko, czego potrzebuje Twoja marka",
-    "viewLive": "Zobacz stronę",
+    "cta": "Stwórzmy wizerunek, który wzmocni Twoją firmę.",
+    "talk": "Porozmawiajmy",
     "wantProject": "Chcę projekt",
     "serviceValues": {
       "identity": "Identyfikacja wizualna",

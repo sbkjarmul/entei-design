@@ -4,9 +4,7 @@ import { getTranslations } from "next-intl/server";
 
 import Container from "@/components/Container";
 import { headerMenu } from "@/components/Header/HeaderMenu/constants";
-
-/** Booking calendar (same link used across the marketing site). */
-const CALENDLY_URL = "https://calendly.com/entei-designs/30min";
+import { CALENDLY_URL } from "@/lib/caseStudies";
 
 export default async function PortfolioHeader() {
   const tc = await getTranslations("caseStudyChrome");

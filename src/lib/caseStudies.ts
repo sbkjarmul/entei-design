@@ -19,6 +19,9 @@
 const IMG = "/images/case-studies";
 const A = `${IMG}/art-mat`;
 
+/** Shared contact CTA target (Calendly booking). */
+export const CALENDLY_URL = "https://calendly.com/entei-designs/30min";
+
 /**
  * Images keep their natural proportions (no cropping); rendered stacked, full-width.
  * Set `full` to render edge-to-edge, full viewport height (cover).
@@ -132,24 +135,44 @@ export const CASE_STUDIES: CaseStudy[] = [
     name: "REM-MET",
     href: "/case-study/rem-met",
     countryKey: "poland",
+    card: {
+      image: `${IMG}/rem-met-case-study-card.png`,
+      logo: `${IMG}/rem-met-case-study-logo.svg`,
+      categories: ["Identyfikacja wizualna", "Strona internetowa"],
+    },
   },
   {
     slug: "ceramido",
     name: "Ceramido",
     href: "/case-study/ceramido",
     countryKey: "poland",
+    card: {
+      image: `${IMG}/ceramido-case-study-card.png`,
+      logo: `${IMG}/ceramido-case-study-logo.svg`,
+      categories: ["Branding", "Opakowania produktowe"],
+    },
   },
   {
     slug: "italiana",
     name: "Italiana",
     href: "/case-study/italiana",
     countryKey: "poland",
+    card: {
+      image: `${IMG}/italiana-case-study-card.png`,
+      logo: `${IMG}/italiana-case-study-logo.svg`,
+      categories: ["Rebranding", "Identyfikacja wizualna"],
+    },
   },
   {
     slug: "suseu",
     name: "Suseu",
     href: "/case-study/suseu",
     countryKey: "poland",
+    card: {
+      image: `${IMG}/suseu-case-study-card.png`,
+      logo: `${IMG}/suseu-case-study-logo.svg`,
+      categories: ["Branding", "Aplikacja mobilna", "Aplikacja webowa"],
+    },
   },
 ];
 

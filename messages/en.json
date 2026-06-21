@@ -3,6 +3,11 @@
     "tagline": "Brands built to lead.",
     "studio": "ENTEI Design Studio."
   },
+  "works": {
+    "title": "Our work",
+    "description": "Brand identity systems and websites for ambitious founders who refuse to blend into the crowd.",
+    "cta": "Start a project"
+  },
   "portfolio": {
     "hero": {
       "title": "Brand & UI/UX designer based in Dublin.",
@@ -229,8 +234,8 @@
     "country": "Country",
     "fileUnder": "File under",
     "latestWorks": "Latest works",
-    "cta": "Let's create everything your brand needs",
-    "viewLive": "Visit the site",
+    "cta": "Let's build an image that strengthens your business.",
+    "talk": "Let's talk",
     "wantProject": "Start a project",
     "serviceValues": {
       "identity": "Visual identity",
