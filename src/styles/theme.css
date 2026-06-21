@@ -29,6 +29,14 @@
   --color-gray-950: #121212;
 
   /* ---- Typography ---- */
+  /* Primary sans — Neue Haas (Typekit family). Drives the `font-neue-haas`
+     utility used on <body> in src/app/layout.tsx.
+     Fallbacks use Helvetica Neue / Arial (close grotesk match + full Polish
+     glyph coverage) so any character the kit is missing — e.g. Latin-Extended
+     ż ś ć ł ń ź ą ę — doesn't fall back to a visibly heavier system font.
+     Proper fix: enable Latin Extended / Polish in the Adobe Fonts kit. */
+  --font-neue-haas: "neue-haas-grotesk-display", "Helvetica Neue", Arial,
+    sans-serif;
   --font-despair-time: var(--font-despair-time);
 
   /* ---- Section heights (desktop) ---- */

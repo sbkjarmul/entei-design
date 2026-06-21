@@ -3,6 +3,11 @@
     "tagline": "Brands built to lead.",
     "studio": "ENTEI Design Studio."
   },
+  "works": {
+    "title": "Our work",
+    "description": "Brand identity systems and websites for ambitious founders who refuse to blend into the crowd.",
+    "cta": "Start a project"
+  },
   "portfolio": {
     "hero": {
       "title": "Brand & UI/UX designer based in Dublin.",
@@ -221,5 +226,83 @@
         ]
       }
     ]
+  },
+  "caseStudyChrome": {
+    "services": "Services",
+    "industry": "Industry",
+    "year": "Year",
+    "country": "Country",
+    "fileUnder": "File under",
+    "latestWorks": "Latest works",
+    "cta": "Let's build an image that strengthens your business.",
+    "talk": "Let's talk",
+    "wantProject": "Start a project",
+    "serviceValues": {
+      "identity": "Visual identity",
+      "strategy": "Brand strategy",
+      "web": "Website design & build"
+    },
+    "industryValues": {
+      "automotive": "Automotive"
+    },
+    "countryValues": {
+      "poland": "Poland"
+    }
+  },
+  "caseStudy": {
+    "artMat": {
+      "title": "Art-Mat",
+      "intro": "Art-Mat is a tire service and sales company in Stalowa Wola, Poland, trusted by individual drivers and fleet owners alike. As the business grew, its old image no longer matched the professionalism and modern service it delivers every day.",
+      "description": {
+        "heading": "Project description",
+        "body": "We built Art-Mat's brand to convey trust, safety and technical confidence while signaling a modern, premium service. We defined a complete visual and verbal system, from logo to website, that positions Art-Mat as the local market leader rather than just another tire shop."
+      },
+      "challenge": {
+        "heading": "Challenge",
+        "body": "The main challenge was standing out against chains like Best Drive and First Stop, which dominate the category with aggressive reds and price-led messaging. We analyzed the competition and the needs of three core audiences (local drivers, truck and fleet owners, and younger customers expecting a modern booking experience) and found a position no one owned: a trusted, premium local partner."
+      },
+      "concept": {
+        "heading": "Creative concept",
+        "body": "The whole identity grows from one idea, the tire. The mark fuses the letters A and M into a geometric, tire-inspired form, while a stripe pattern used in sequence builds a tread and tire track. A premium palette of gold, grey and deep black replaces the category's usual red, signaling quality over discount. Northura for display and Switzer for text complete its technical, confident character."
+      },
+      "results": {
+        "heading": "Result",
+        "body": "The result is a cohesive, premium identity that elevates how Art-Mat is perceived by drivers, fleet partners and the local community, and a system flexible enough to grow with the business across new services and locations."
+      },
+      "quote": {
+        "promise": "Art-Mat doesn't just change tires. It looks after your safety on the road, every single day.",
+        "gold": "A gold-led identity that trades the usual discount red for trust, precision and premium care."
+      },
+      "details": {
+        "scope": {
+          "heading": "Project details",
+          "items": [
+            "Complete rebrand of a Stalowa Wola tire service with regional reach",
+            "Positioning built on trust, safety and premium local service",
+            "Combination mark fusing the letters A and M into a tire-inspired brandmark",
+            "Gold, grey and deep-black palette that differentiates from red-led competitors",
+            "Northura display type paired with Switzer for body copy",
+            "A stripe and tire-tread graphic system that scales across every touchpoint",
+            "Verbal identity led by the promise: we care for your safety on the road, every day",
+            "Tone of voice defined as confident, direct, empathetic and credible",
+            "Brand applied to signage, apparel, business cards, documents and advertising",
+            "Website designed to present services clearly and drive bookings"
+          ]
+        }
+      },
+      "tags": [
+        "art-mat",
+        "tire service",
+        "automotive",
+        "rebrand",
+        "brand identity",
+        "visual system",
+        "logo design",
+        "verbal identity",
+        "web design",
+        "stalowa wola",
+        "poland"
+      ]
+    }
   }
 }
