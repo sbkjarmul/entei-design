@@ -79,14 +79,15 @@ export default function OurWorkSection() {
           />
         </Link>
 
-        <CaseStudyCard
-          categories={["Branding"]}
-          image="/images/case-studies/hatan-case-study-card.png"
-          logo="/images/our-clients/hatan-logo.png"
-          title="Branding społeczności stworzonej dla fanów muzyki elektronicznej"
-          comingSoon={true}
-          size="small"
-        />
+        <Link href="/case-study/hatan" target="_blank" className="w-full">
+          <CaseStudyCard
+            categories={["Branding", "Identyfikacja wizualna"]}
+            image="/images/case-studies/hatan-case-study-card.png"
+            logo="/images/our-clients/hatan-logo.png"
+            title="Branding społeczności stworzonej dla fanów muzyki elektronicznej"
+            size="small"
+          />
+        </Link>
       </div>
     </Section>
   );

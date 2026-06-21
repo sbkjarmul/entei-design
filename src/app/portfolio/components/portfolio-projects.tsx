@@ -100,6 +100,19 @@ export default function PortfolioProjects() {
               height={200}
             />
           </Link>
+
+          <Link
+            href="/case-study/hatan"
+            className="opacity-50 hover:opacity-100 transition-opacity duration-300"
+            target="_blank"
+          >
+            <Image
+              src="/images/case-studies/hatan-case-study-logo.svg"
+              alt="Hatan Project"
+              width={200}
+              height={200}
+            />
+          </Link>
         </motion.div>
       </Container>
     </section>

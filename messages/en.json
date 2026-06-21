@@ -240,16 +240,73 @@
     "serviceValues": {
       "identity": "Visual identity",
       "strategy": "Brand strategy",
-      "web": "Website design & build"
+      "web": "Website design & build",
+      "social": "Social media & content"
     },
     "industryValues": {
-      "automotive": "Automotive"
+      "automotive": "Automotive",
+      "music": "Music & culture"
     },
     "countryValues": {
       "poland": "Poland"
     }
   },
   "caseStudy": {
+    "hatan": {
+      "title": "Hatan",
+      "intro": "Hatan is an electronic music project and DJ duo from Wrocław, built on the raw energy of rave culture and the brutalist concrete of the city's „Manhattan” estate. The brand needed an identity as bold and uncompromising as its sound, one that could carry a growing community across stages, screens and the street.",
+      "description": {
+        "heading": "Project description",
+        "body": "We built Hatan as a complete brand world where industrial design meets electronic music. From a single architectural idea we defined a full visual and verbal system: logo, color, typography, iconography and a graphic language that turns a DJ duo into a recognizable cultural brand, ready to scale from local raves to a global audience."
+      },
+      "challenge": {
+        "heading": "Challenge",
+        "body": "Electronic music brands tend to blur into the same neon gradients and generic club aesthetics. Hatan needed to stand apart and feel like a movement, not just a logo, while staying flexible enough to live across posters, merch, social media and live visuals. The task was to translate an intangible feeling (bass, concrete and freedom) into a system anyone could apply consistently."
+      },
+      "conceptBody": {
+        "heading": "Creative concept",
+        "body": "The whole identity grows from one place: the brutalist „Manhattan” estate in Wrocław. The brandmark fuses the letter H into a geometric concrete block built on a spherical grid, radiating the heavy bass that defines Hatan's sound. A deep „Velvet Beat” maroon and full black set a premium, nocturnal tone, accented by „Pulse Ember” red, while Drummer, a futuristic display face, pairs with the functional Standerd grotesk. A „Sedes” pattern drawn from the estate's facades ties every surface back to the architecture."
+      },
+      "results": {
+        "heading": "Result",
+        "body": "The result is a cohesive, uncompromising identity that gives Hatan the presence of an established label rather than an emerging duo. A flexible system of logos, gradients, patterns and templates lets the brand produce striking posters, merch and social content fast, while keeping a single, unmistakable voice across every channel."
+      },
+      "quote": {
+        "concept": "An identity poured in concrete: the raw weight of brutalist architecture meeting the pulse of electronic bass.",
+        "style": "Bold type, 3D wireframes and industrial texture: every touchpoint feels like a structure you can hear."
+      },
+      "details": {
+        "scope": {
+          "heading": "Project details",
+          "items": [
+            "Full brand identity for an electronic music duo and rave collective from Wrocław",
+            "Positioning built on brutalist architecture, raw energy and community",
+            "Brandmark integrating the letter H into a concrete-block form on a spherical grid",
+            "Logo system: brandmark, wordmark, horizontal, vertical and favicon variants",
+            "„Velvet Beat” maroon and full-black palette accented with „Pulse Ember” red",
+            "Drummer display type paired with the Standerd grotesk for body copy",
+            "Custom iconography built on an 18×18 spherical grid",
+            "„Sedes” pattern and brand gradients inspired by the estate's facades",
+            "Brand applied to social media, posters, event materials, documents and merch",
+            "Brand guidelines document codifying the full system"
+          ]
+        }
+      },
+      "tags": [
+        "hatan",
+        "electronic music",
+        "dj duo",
+        "rave",
+        "brand identity",
+        "visual system",
+        "logo design",
+        "brutalism",
+        "wrocław",
+        "poster design",
+        "merch",
+        "poland"
+      ]
+    },
     "artMat": {
       "title": "Art-Mat",
       "intro": "Art-Mat is a tire service and sales company in Stalowa Wola, Poland, trusted by individual drivers and fleet owners alike. As the business grew, its old image no longer matched the professionalism and modern service it delivers every day.",
