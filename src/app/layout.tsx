@@ -11,6 +11,7 @@ import { ConsentProvider } from "@/components/CookieConsent/ConsentProvider";
 import AnalyticsScripts from "@/components/CookieConsent/AnalyticsScripts";
 import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner";
 import LocalBusinessSchema from "@/components/StructuredData/LocalBusinessSchema";
+import Cursor from "@/components/Cursor/Cursor";
 
 const despairTime = localFont({
   src: "../../public/fonts/despair-time-straight.otf",
@@ -52,8 +53,14 @@ export default async function RootLayout({
       </head>
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
+        <Cursor />
         <ConsentProvider>
-          <NextIntlClientProvider messages={{ portfolio: messages.portfolio }}>
+          <NextIntlClientProvider
+            messages={{
+              portfolio: messages.portfolio,
+              loading: messages.loading,
+            }}
+          >
             {children}
           </NextIntlClientProvider>
 

@@ -6,6 +6,6 @@ interface AccentTextProps {
 
 export default function AccentText({ children }: AccentTextProps) {
   return (
-    <span className="text-black bg-primary px-2 text-sm w-fit">{children}</span>
+    <span className="t-accent text-black bg-primary px-2 w-fit">{children}</span>
   );
 }

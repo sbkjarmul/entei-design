@@ -4,10 +4,12 @@ import ContactSection from "@/app/(landing-page)/components/ContactSection";
 import OurWorkSection from "./components/OurWorkSection";
 import LogoBannerSection from "./components/LogoBannerSection";
 import OurServicesSection from "./components/OurServicesSection";
+import Preloader from "@/components/Preloader/Preloader";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Preloader />
       <HeroSection />
       <LogoBannerSection />
       <OurWorkSection />
