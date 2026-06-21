@@ -18,6 +18,7 @@
 
 const IMG = "/images/case-studies";
 const A = `${IMG}/art-mat`;
+const H = `${IMG}/hatan`;
 
 /** Shared contact CTA target (Calendly booking). */
 export const CALENDLY_URL = "https://calendly.com/entei-designs/30min";
@@ -126,6 +127,59 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Czapka zimowa z logo Art-Mat",
       },
       { src: `${A}/art-mat-mockup-cups.png`, alt: "Kubki firmowe Art-Mat" },
+    ],
+  },
+
+  {
+    slug: "hatan",
+    name: "Hatan",
+    href: "/case-study/hatan",
+    countryKey: "poland",
+    i18nKey: "hatan",
+    year: 2024,
+    industryKey: "music",
+    servicesKeys: ["strategy", "identity", "social"],
+    liveUrl: "https://www.instagram.com/hatan",
+    card: {
+      image: `${IMG}/hatan-case-study-card.png`,
+      logo: `${IMG}/hatan-case-study-logo.svg`,
+      categories: ["Branding", "Identyfikacja wizualna"],
+    },
+    featureImage: {
+      src: `${H}/hatan-banner-3-mockup.png`,
+      alt: "Baner zewnętrzny z identyfikacją Hatan",
+    },
+    body: [
+      { type: "text", k: "description" },
+      { type: "text", k: "challenge" },
+      { type: "quote", k: "concept" },
+      { type: "text", k: "conceptBody" },
+      { type: "quote", k: "style" },
+      { type: "text", k: "results" },
+      { type: "details", k: "scope" },
+      { type: "fileUnder", k: "tags" },
+    ],
+    gallery: [
+      {
+        src: `${H}/hatan-brandmark-grid.png`,
+        alt: "Znak Hatan zbudowany na siatce sferycznej",
+      },
+      {
+        src: `${H}/hatan-wordmark-grid.png`,
+        alt: "Wordmark Hatan na siatce projektowej",
+      },
+      { src: `${H}/hatan-envelope.png`, alt: "Koperta i papeteria Hatan" },
+      { src: `${H}/hatan-posters.png`, alt: "Plakaty eventowe Hatan" },
+      { src: `${H}/hatan-wristbands.png`, alt: "Opaski eventowe Hatan" },
+      { src: `${H}/hatan-tote-bag-mockup-2.png`, alt: "Torba materiałowa Hatan" },
+      {
+        src: `${H}/hatan-banner-veritcal-mockup.png`,
+        alt: "Pionowy baner Hatan",
+      },
+      {
+        src: `${H}/hatan-instagram-mockup.png`,
+        alt: "Treści Hatan na Instagramie",
+      },
     ],
   },
 

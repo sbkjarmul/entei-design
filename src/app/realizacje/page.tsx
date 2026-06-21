@@ -37,7 +37,7 @@ export default async function WorksPage() {
 
       {/* ---- Tile grid ---- */}
       <div className="px-6 pb-24 md:px-12 md:pb-32">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((c) => (
             <Link
               key={c.slug}

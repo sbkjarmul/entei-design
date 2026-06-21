@@ -217,16 +217,73 @@
     "serviceValues": {
       "identity": "Identyfikacja wizualna",
       "strategy": "Strategia marki",
-      "web": "Projekt i wdrożenie strony"
+      "web": "Projekt i wdrożenie strony",
+      "social": "Social media i treści"
     },
     "industryValues": {
-      "automotive": "Motoryzacja"
+      "automotive": "Motoryzacja",
+      "music": "Muzyka i kultura"
     },
     "countryValues": {
       "poland": "Polska"
     }
   },
   "caseStudy": {
+    "hatan": {
+      "title": "Hatan",
+      "intro": "Hatan to projekt muzyki elektronicznej i duet DJ-ski z Wrocławia, zbudowany na surowej energii kultury rave i brutalistycznym betonie wrocławskiego osiedla „Manhattan”. Marka potrzebowała identyfikacji równie odważnej i bezkompromisowej jak jej brzmienie, takiej, która poprowadzi rosnącą społeczność przez sceny, ekrany i ulicę.",
+      "description": {
+        "heading": "Opis projektu",
+        "body": "Hatan zbudowaliśmy jako kompletny świat marki, w którym industrialny design spotyka muzykę elektroniczną. Z jednej architektonicznej idei zdefiniowaliśmy pełny system wizualny i werbalny: logo, kolor, typografię, ikonografię i język graficzny, który zamienia duet DJ-ski w rozpoznawalną markę kulturową, gotową rosnąć od lokalnych rave'ów po globalną publiczność."
+      },
+      "challenge": {
+        "heading": "Wyzwanie",
+        "body": "Marki muzyki elektronicznej zwykle zlewają się w te same neonowe gradienty i generyczną estetykę klubową. Hatan musiał się wyróżnić i sprawiać wrażenie ruchu, a nie tylko logo, pozostając przy tym na tyle elastyczny, by żyć na plakatach, merchu, w social mediach i wizualizacjach na żywo. Zadaniem było przełożenie nieuchwytnego uczucia (basu, betonu i wolności) na system, który każdy może spójnie stosować."
+      },
+      "conceptBody": {
+        "heading": "Koncept",
+        "body": "Cała identyfikacja wyrasta z jednego miejsca: brutalistycznego osiedla „Manhattan” we Wrocławiu. Znak łączy literę H w geometryczny betonowy blok zbudowany na siatce sferycznej, emanując ciężkim basem, który definiuje brzmienie Hatan. Głęboki bordowy „Velvet Beat” i pełna czerń nadają premium, nocny ton, akcentowany czerwienią „Pulse Ember”, a futurystyczny krój Drummer łączy się z funkcjonalnym groteskiem Standerd. Wzór „Sedes”, wywiedziony z elewacji osiedla, spina każdą powierzchnię z architekturą."
+      },
+      "results": {
+        "heading": "Efekt",
+        "body": "Efektem jest spójna, bezkompromisowa identyfikacja, która daje Hatan obecność uznanej wytwórni, a nie debiutującego duetu. Elastyczny system logo, gradientów, wzorów i szablonów pozwala szybko tworzyć przyciągające plakaty, merch i treści social, zachowując jeden, nieomylny głos na każdym kanale."
+      },
+      "quote": {
+        "concept": "Identyfikacja odlana w betonie: surowy ciężar brutalistycznej architektury spotyka puls elektronicznego basu.",
+        "style": "Odważna typografia, trójwymiarowe wireframe'y i industrialna tekstura: każdy nośnik brzmi jak konstrukcja, którą słychać."
+      },
+      "details": {
+        "scope": {
+          "heading": "Szczegóły projektu",
+          "items": [
+            "Pełna identyfikacja marki dla duetu muzyki elektronicznej i kolektywu rave z Wrocławia",
+            "Pozycjonowanie oparte na brutalistycznej architekturze, surowej energii i społeczności",
+            "Znak integrujący literę H z formą betonowego bloku na siatce sferycznej",
+            "System logo: brandmark, wordmark, wersja pozioma, pionowa i favicon",
+            "Paleta bordowego „Velvet Beat” i pełnej czerni z akcentem czerwieni „Pulse Ember”",
+            "Krój nagłówkowy Drummer w parze z groteskiem Standerd w tekście",
+            "Autorska ikonografia zbudowana na siatce sferycznej 18×18",
+            "Wzór „Sedes” i gradienty marki inspirowane elewacjami osiedla",
+            "Marka zastosowana w social mediach, na plakatach, materiałach eventowych, dokumentach i merchu",
+            "Dokument brand guidelines kodyfikujący cały system"
+          ]
+        }
+      },
+      "tags": [
+        "hatan",
+        "muzyka elektroniczna",
+        "duet dj",
+        "rave",
+        "identyfikacja wizualna",
+        "system wizualny",
+        "projekt logo",
+        "brutalizm",
+        "wrocław",
+        "projekt plakatu",
+        "merch",
+        "polska"
+      ]
+    },
     "artMat": {
       "title": "Art-Mat",
       "intro": "Art-Mat to serwis i sprzedaż opon ze Stalowej Woli, darzony zaufaniem przez kierowców indywidualnych i właścicieli flot. Wraz z rozwojem firmy jej dotychczasowy wizerunek przestał oddawać profesjonalizm i nowoczesność codziennej obsługi.",
