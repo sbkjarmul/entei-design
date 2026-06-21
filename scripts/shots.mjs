@@ -57,6 +57,18 @@ for (const vp of VIEWPORTS) {
   // so wait for the DOM then give reveal animations / lazy media time to settle.
   await page.goto(target, {waitUntil: 'domcontentloaded', timeout: 60000});
   await page.waitForLoadState('load').catch(() => {});
+  // Guard against Next dev's lazy CSS compile: wait until the app stylesheet has
+  // actually applied (body is painted on the dark surface) before capturing,
+  // so we never screenshot an unstyled flash.
+  await page
+    .waitForFunction(
+      () => {
+        const bg = getComputedStyle(document.body).backgroundColor;
+        return bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent';
+      },
+      {timeout: 15000},
+    )
+    .catch(() => {});
   await page.waitForTimeout(1500);
   const file = resolve(OUT_DIR, `${name}.${vp.label}.png`);
   await page.screenshot({path: file, fullPage: true});
