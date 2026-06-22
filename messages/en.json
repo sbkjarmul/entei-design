@@ -241,11 +241,15 @@
       "identity": "Visual identity",
       "strategy": "Brand strategy",
       "web": "Website design & build",
-      "social": "Social media & content"
+      "social": "Social media & content",
+      "packaging": "Packaging design"
     },
     "industryValues": {
       "automotive": "Automotive",
-      "music": "Music & culture"
+      "music": "Music & culture",
+      "industrial": "Industry",
+      "beauty": "Beauty & supplements",
+      "food": "Food & dining"
     },
     "countryValues": {
       "poland": "Poland"
@@ -357,6 +361,158 @@
         "logo design",
         "verbal identity",
         "web design",
+        "stalowa wola",
+        "poland"
+      ]
+    },
+    "remMet": {
+      "title": "REM-MET",
+      "intro": "REM-MET is a company with over 20 years of experience in welding, facing the challenge of entering a new market. The owner wanted to expand into manufacturing safety guarding for industrial machinery, products that would not only meet standards but build customer trust through solidity and bespoke fit.",
+      "description": {
+        "heading": "Project description",
+        "body": "Our task was to create a new visual identity and website that would clearly present the new product lines and position REM-MET as a professional partner for industry, ready to take work off the client's hands at every stage of a project."
+      },
+      "challenge": {
+        "heading": "Challenge",
+        "body": "Entering the safety-guarding market meant standing out from manufacturers who mostly rely on red, orange and yellow. We had to connect the company's 20-year welding heritage with a new industrial direction and structure the offer so it would be easy to remember and to grow."
+      },
+      "concept": {
+        "heading": "Creative concept",
+        "body": "We built the mark around the letter R, hiding a spark, the symbol of welding, in its negative space. The spark joins geometric shapes that stand for the solidity and precision of steel structures. The palette is led by blue, the color of a welding flame, complemented by raw metal greys that set the brand apart from red-and-orange competitors and build a sense of safety. It is all held together by the technical typeface TT Octosquares, whose square forms echo the world of steel construction."
+      },
+      "results": {
+        "heading": "Result",
+        "body": "We gave the guarding systems memorable, animal-inspired names: FALCON for lightweight mesh guards, RHINO for heavy-duty metal ones and GECKO for transparent polycarbonate. The communication strategy positions REM-MET as a leader that solves its audience's safety problems, while the new website presents the offer in a friendly way and guides customers effectively toward purchase."
+      },
+      "quote": {
+        "logo": "A logo built around the letter R, with a welding spark hidden in its negative space.",
+        "naming": "FALCON, RHINO and GECKO: animal names that organize the range and stick in memory."
+      },
+      "details": {
+        "scope": {
+          "heading": "Project details",
+          "items": [
+            "Logo design and full rebrand",
+            "Promotional materials and advertising",
+            "Brand strategy and positioning",
+            "Naming of the product lines (FALCON, RHINO, GECKO)",
+            "Copywriting and verbal identity",
+            "Visual identity built on the spark motif",
+            "Technical TT Octosquares typography",
+            "Website UI/UX design and development"
+          ]
+        }
+      },
+      "tags": [
+        "rem-met",
+        "welding",
+        "industry",
+        "safety guarding",
+        "rebrand",
+        "brand identity",
+        "logo design",
+        "naming",
+        "web design",
+        "ui/ux",
+        "poland"
+      ]
+    },
+    "ceramido": {
+      "title": "Ceramido",
+      "intro": "Ceramido was created in response to the growing needs of women 30+ who care about their health and skin, yet are looking for something more than an ordinary dietary supplement. The client wanted a brand that combines scientific efficacy with a luxury experience.",
+      "description": {
+        "heading": "Project description",
+        "body": "Our task was to develop a modern visual identity and packaging designs that would set the supplement apart on the market and give it the character of a luxury object. The branding had to resonate with the tagline „Nature meets luxury”, drawing attention with its aesthetics while building trust through scientific precision."
+      },
+      "challenge": {
+        "heading": "Challenge",
+        "body": "Work on Ceramido's image began with an intensive, three-week sketching process. We explored different ways of combining the symbols that represent the brand's values, producing dozens of logo variants from which a single, coherent direction emerged."
+      },
+      "concept": {
+        "heading": "Creative concept",
+        "body": "The logo is built on five symbols that capture the brand's scientific and luxurious character: the sun and moon stand for the day and night supplements, the crystal symbolizes luxury, the molecule underlines the science behind the product, and the skin structure points directly to its purpose. The palette is inspired by nature, by shades of white desert sand and black volcanic sand that symbolize dry skin and hydration as well as day and night, complemented by a skin tone and a soft grey. Geometric, modern typography harmonizes with the round shape of the logo, joining elegance with scientific precision."
+      },
+      "results": {
+        "heading": "Result",
+        "body": "We designed the packaging to protect the supplement from sunlight: metal jars in ivory for the DAY version and graphite for NIGHT. We enriched the minimalist label with a subtle pattern of skin molecules, joining function with elegance and setting the product apart on the market as natural, scientifically backed and luxurious."
+      },
+      "quote": {
+        "logo": "A brand mark as a fusion of five symbols: sun, moon, crystal, molecule and skin structure.",
+        "packaging": "Minimalist metal packaging that protects the supplement and elevates it to luxury."
+      },
+      "details": {
+        "scope": {
+          "heading": "Project details",
+          "items": [
+            "Logo design and rebrand",
+            "Product packaging (DAY and NIGHT versions)",
+            "Promotional materials",
+            "Brand strategy and positioning",
+            "Visual identity built on the symbolism of nature and science",
+            "Verbal identity and the tagline „Nature meets luxury”",
+            "Photo-shoot guidelines"
+          ]
+        }
+      },
+      "tags": [
+        "ceramido",
+        "dietary supplements",
+        "beauty",
+        "skincare",
+        "branding",
+        "brand identity",
+        "logo design",
+        "packaging design",
+        "premium",
+        "poland"
+      ]
+    },
+    "italiana": {
+      "title": "Italiana",
+      "intro": "Italiana is a pizzeria in Stalowa Wola that has been the local leader in serving pizza by the slice for years. Despite a great product, the brand communicated in an outdated way, looked ordinary and failed to stand out from the competition.",
+      "description": {
+        "heading": "Project description",
+        "body": "Our task was to design a modern, minimalist and friendly identity that both families and young people would love. The brand had to become easily recognizable and unmistakably look like the leader of the local market."
+      },
+      "challenge": {
+        "heading": "Challenge",
+        "body": "The goal of the rebrand was to show how good Italiana's pizza is and to attract new customers. We chose a clear, modern style and consistent communication that highlight the quality of the product and build a lasting advantage over the competition."
+      },
+      "concept": {
+        "heading": "Creative concept",
+        "body": "Italiana's mark is a refreshed, friendly wolf graphic, symbolizing the brand's Italian roots and its delicious, ravenous taste. The wolf appears in many moods and variants, tying all the materials together. We based the wordmark on the ARCO typeface, whose bold, rounded shapes bring energy and ease, paired with the simple, legible DM Sans. The palette is built on deep greens and warm white with strong contrast, energetic, appetizing and instantly associated with Italiana."
+      },
+      "results": {
+        "heading": "Result",
+        "body": "We built Italiana's personality around the Rebel archetype in a modern, cultured form: authenticity, instinct and independence. We tied the whole system together in a brandbook that lets the brand be run consistently across every touchpoint, from logo, color and typography to guidelines for social media, photography and the look of the venue, and even a ready prompt template for generating campaign images."
+      },
+      "quote": {
+        "wolf": "The wolf as the brand mark: a symbol of Italian roots and a ravenous taste.",
+        "rebel": "Howl, Bite, Eat! A brand with the character of a Rebel."
+      },
+      "details": {
+        "scope": {
+          "heading": "Project details",
+          "items": [
+            "Rebrand and logo design",
+            "Visual identity with the wolf motif",
+            "Brandbook with complete brand guidelines",
+            "Social media and photography guidelines",
+            "Typography (ARCO and DM Sans)",
+            "Graphic elements, stickers and icons",
+            "Brand applications: packaging, menu and venue materials"
+          ]
+        }
+      },
+      "tags": [
+        "italiana",
+        "pizzeria",
+        "food",
+        "rebrand",
+        "brand identity",
+        "logo design",
+        "brandbook",
+        "wolf",
         "stalowa wola",
         "poland"
       ]
