@@ -20,7 +20,7 @@ export default function PortfolioCard({
   country,
 }: PortfolioCardProps) {
   return (
-    <div className="group relative aspect-[1.4] w-full overflow-hidden rounded-none md:rounded-lg">
+    <div className="group relative aspect-[1.4] w-full overflow-hidden rounded-lg">
       <Image
         src={image}
         alt={name}
