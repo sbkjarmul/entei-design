@@ -125,6 +125,18 @@ function ProseRenderer({
         </p>
       );
 
+    case "section":
+      return (
+        <div className="flex flex-col gap-3">
+          <h2 className="text-[20px] font-medium text-gray-900 first-letter:uppercase">
+            {t(`${block.k}.heading`)}
+          </h2>
+          <p className="text-xl leading-snug tracking-normal text-gray-900 md:text-2xl">
+            {t(`${block.k}.body`)}
+          </p>
+        </div>
+      );
+
     case "quote":
       return (
         <blockquote className="text-3xl font-medium leading-tight tracking-normal text-gray-900 md:text-4xl">
