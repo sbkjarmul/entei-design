@@ -27,7 +27,7 @@ export default async function LatestWorks({
       <h2 className="text-[20px] font-medium text-gray-900 first-letter:uppercase">
         {heading}
       </h2>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {others.map((c) => (
           <Link
             key={c.slug}
