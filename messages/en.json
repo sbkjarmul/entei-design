@@ -242,14 +242,16 @@
       "strategy": "Brand strategy",
       "web": "Website design & build",
       "social": "Social media & content",
-      "packaging": "Packaging design"
+      "packaging": "Packaging design",
+      "product": "Product design (UI/UX)"
     },
     "industryValues": {
       "automotive": "Automotive",
       "music": "Music & culture",
       "industrial": "Industry",
       "beauty": "Beauty & supplements",
-      "food": "Food & dining"
+      "food": "Food & dining",
+      "saas": "Marketing technology"
     },
     "countryValues": {
       "poland": "Poland"
@@ -515,6 +517,89 @@
         "wolf",
         "stalowa wola",
         "poland"
+      ]
+    },
+    "suseu": {
+      "title": "Suseu",
+      "intro": "Suseu is an influencer-marketing platform that pulls creator discovery, campaigns, contracts and reporting into one app. We shaped its brand and designed the product across mobile and web.",
+      "description": {
+        "heading": "Project description",
+        "body": "Suseu is a forward-thinking platform that merges influencer marketing, technology and everyday operations. The challenge was to build a brand and a product that feel bold, friendly and credible at once, turning a fragmented, compliance-heavy workflow into one clear, enjoyable tool. This project combined brand strategy, a distinctive visual identity and end-to-end product design for both mobile and web."
+      },
+      "challenge": {
+        "heading": "The Challenge",
+        "body": "Suseu needed an identity and a product that reflected its positioning: a new standard in influencer marketing, approachable yet professional. Before Suseu, brands relied on fragmented tools: social searches, manual outreach and expensive databases that were slow, inconsistent and opaque. The category felt corporate and cold, while the people using it are young, fast-moving and creative. The key was to balance personality with clarity, so a tool full of legal and operational complexity still felt simple to use on every screen, from a quick TikTok deal to an agency running many campaigns at once."
+      },
+      "designProcess": {
+        "heading": "Design Process",
+        "body": "On the product side we ran the full UX process, research, ideation, prototyping, testing and iteration, for both the mobile app and the web platform. Each had its own user flows and information architecture, but they shared one design system, so the experience stayed consistent from a phone in a creator's hand to a dashboard on a marketer's screen."
+      },
+      "strategicFoundation": {
+        "heading": "Strategic Foundation",
+        "body": "We started by dissecting Suseu's core values and defining its personality. The brand's DNA revolves around freeing teams from busywork so they can focus on strategy and creativity. The research phase covered competitor analysis (with Useme.com and Fiverr.com as the key references), target audiences and two core personas: Kuba, a 23-year-old TikTok creator who wants every collaboration in one place, and Anna, a 30-year-old marketing manager who needs clear, fast reporting. Their goals and pain points shaped every later decision."
+      },
+      "typography": {
+        "heading": "Typography",
+        "body": "Typography leads the system. We chose Poppins, a modern, geometric typeface whose clean lines and high legibility keep the interface clear and contemporary. Its rounded, friendly shapes soften a data-dense product, while a clear hierarchy of regular and bold weights keeps dashboards, reports and long flows easy to scan."
+      },
+      "colorPalette": {
+        "heading": "Color Palette",
+        "body": "The palette is built on a confident pink and purple, balanced with deep near-black surfaces and neutral grays. The vivid pink is the brand's signature, drawing attention to key actions and carrying the Pink Gopher Influencer across the product, while the dark UI keeps long working sessions calm and focused. High contrast ensures clarity and recognition across every application."
+      },
+      "applications": {
+        "heading": "Applications and Mockups",
+        "body": "The identity flexes across every brand touchpoint, from onboarding and empty states to the landing page, social media and marketing materials. The Pink Gopher Influencer shows up wherever it adds warmth, while the system holds a consistent look in mockups across merch, decks and digital. Everything stays recognizably Suseu, whatever the surface."
+      },
+      "mobileApp": {
+        "heading": "Mobile App",
+        "body": "The mobile app is built for creators like Kuba: a simple, fast way to keep every collaboration in one place. We led with a clear dashboard and a single, always-reachable action through a floating button, so accepting a deal, signing a contract or checking a message never takes more than a tap. The interface speaks the user's language and strips away the formality that made influencer deals feel like paperwork."
+      },
+      "webPlatform": {
+        "heading": "Web Platform",
+        "body": "The web platform is the brand's control center, designed for managers like Anna. It brings creator search across Instagram, TikTok and YouTube, automated UOKiK-compliant contracts, a built-in chat, reporting and a PR zone into one workspace. We opened the build with a functional requirements document that captured every need up front and kept the scope, around 180 views, under control, then designed the deeper analytics and views the mobile app intentionally leaves out."
+      },
+      "testing": {
+        "heading": "Testing and Iteration",
+        "body": "We validated decisions with usability and A/B testing and refined the flows before handoff, working closely with Suseu's founder and developer throughout. The lesson we carried out: more low-fidelity testing earlier saves time later, and design is never truly 'done', the strongest improvements arrive once real users are in the product after launch."
+      },
+      "results": {
+        "heading": "Results and Learnings",
+        "body": "Suseu launched with a coherent identity and a product that turns scattered, manual work into a single source of truth. The combination of a friendly brand hero and a clear, dark, data-ready interface made a dense, compliance-driven category feel like something people actually want to use. Brand and product reinforce each other at every touchpoint: the same personality that makes the logo memorable makes the app approachable, proving that strategy, identity and UX work best when they are designed as one system."
+      },
+      "quote": {
+        "brand": "A pink gopher glued to its phone: the brand hero that makes a serious martech tool feel human.",
+        "product": "From weeks to minutes: find a creator, sign the contract, run the campaign, all in one place."
+      },
+      "details": {
+        "scope": {
+          "heading": "Project details",
+          "items": [
+            "Brand strategy and positioning",
+            "Logo and full visual identity",
+            "Brand hero: the Pink Gopher Influencer",
+            "Poppins-based typography and design system",
+            "Color palette and dark UI direction",
+            "UX research: competitor analysis, personas, user flows",
+            "Mobile app UI/UX",
+            "Web platform UI/UX and functional requirements",
+            "Wireframing, prototyping, usability and A/B testing"
+          ]
+        }
+      },
+      "tags": [
+        "suseu",
+        "influencer marketing",
+        "saas",
+        "martech",
+        "branding",
+        "brand hero",
+        "mascot",
+        "mobile app",
+        "web app",
+        "product design",
+        "ui/ux",
+        "design system",
+        "poppins"
       ]
     }
   }

@@ -219,14 +219,16 @@
       "strategy": "Strategia marki",
       "web": "Projekt i wdrożenie strony",
       "social": "Social media i treści",
-      "packaging": "Opakowania produktowe"
+      "packaging": "Opakowania produktowe",
+      "product": "Projektowanie produktu (UI/UX)"
     },
     "industryValues": {
       "automotive": "Motoryzacja",
       "music": "Muzyka i kultura",
       "industrial": "Przemysł",
       "beauty": "Uroda i suplementy",
-      "food": "Gastronomia"
+      "food": "Gastronomia",
+      "saas": "Technologia marketingowa"
     },
     "countryValues": {
       "poland": "Polska"
@@ -492,6 +494,89 @@
         "wilk",
         "stalowa wola",
         "polska"
+      ]
+    },
+    "suseu": {
+      "title": "Suseu",
+      "intro": "Suseu to platforma do influencer marketingu, która łączy wyszukiwanie twórców, kampanie, umowy i raporty w jednej aplikacji. Stworzyliśmy jej markę i zaprojektowaliśmy produkt na mobile i web.",
+      "description": {
+        "heading": "Opis projektu",
+        "body": "Suseu to nowoczesna platforma, która łączy influencer marketing, technologię i codzienną pracę operacyjną. Wyzwaniem było zbudowanie marki i produktu, które są jednocześnie odważne, przyjazne i wiarygodne, oraz zamiana rozproszonego, naszpikowanego wymogami procesu w jedno czytelne i przyjemne narzędzie. Projekt połączył strategię marki, wyrazistą identyfikację wizualną i kompleksowe projektowanie produktu na mobile i web."
+      },
+      "challenge": {
+        "heading": "Wyzwanie",
+        "body": "Suseu potrzebowało identyfikacji i produktu, które oddają jego pozycjonowanie: nowy standard w influencer marketingu, przystępny, a zarazem profesjonalny. Wcześniej marki korzystały z rozproszonych narzędzi: wyszukiwarek w social mediach, ręcznego kontaktu i kosztownych baz, które były wolne, niespójne i nieprzejrzyste. Kategoria sprawiała wrażenie korporacyjnej i chłodnej, a korzystają z niej ludzie młodzi, szybcy i kreatywni. Kluczem było wyważenie osobowości i czytelności, tak by narzędzie pełne złożoności prawnej i operacyjnej wciąż było proste w obsłudze na każdym ekranie, od szybkiej współpracy na TikToku po agencję prowadzącą wiele kampanii naraz."
+      },
+      "designProcess": {
+        "heading": "Proces projektowy",
+        "body": "Po stronie produktu przeszliśmy pełen proces UX: badania, ideację, prototypowanie, testy i iteracje, zarówno dla aplikacji mobilnej, jak i platformy webowej. Każda miała własne user flows i architekturę informacji, ale dzieliły jeden design system, dzięki czemu doświadczenie pozostawało spójne, od telefonu w ręce twórcy po dashboard na ekranie marketera."
+      },
+      "strategicFoundation": {
+        "heading": "Fundament strategiczny",
+        "body": "Zaczęliśmy od rozłożenia wartości Suseu na czynniki pierwsze i zdefiniowania osobowości marki. DNA marki opiera się na uwalnianiu zespołów od żmudnej pracy, by mogły skupić się na strategii i kreatywności. Faza badań objęła analizę konkurencji (z Useme.com i Fiverr.com jako głównymi punktami odniesienia), grupy docelowe oraz dwie kluczowe persony: Kubę, 23-letniego twórcę na TikToku, który chce mieć wszystkie współprace w jednym miejscu, i Annę, 30-letnią marketing managerkę, która potrzebuje jasnych, szybkich raportów. Ich cele i bolączki ukształtowały każdą późniejszą decyzję."
+      },
+      "typography": {
+        "heading": "Typografia",
+        "body": "Typografia prowadzi cały system. Wybraliśmy Poppinsa, nowoczesny, geometryczny krój, którego czyste linie i wysoka czytelność utrzymują interfejs przejrzystym i nowoczesnym. Jego zaokrąglone, przyjazne kształty łagodzą gęsty od danych produkt, a wyraźna hierarchia odmian regular i bold sprawia, że dashboardy, raporty i długie ścieżki łatwo się skanuje."
+      },
+      "colorPalette": {
+        "heading": "Paleta kolorów",
+        "body": "Paletę oparliśmy na zdecydowanym różu i fiolecie, zrównoważonych głębokimi, niemal czarnymi powierzchniami i neutralnymi szarościami. Żywy róż to znak rozpoznawczy marki, przyciąga uwagę do kluczowych akcji i niesie Różowego Susła Influencera przez cały produkt, a ciemny interfejs utrzymuje spokój i skupienie podczas długiej pracy. Wysoki kontrast zapewnia czytelność i rozpoznawalność w każdej aplikacji."
+      },
+      "applications": {
+        "heading": "Aplikacje i makiety",
+        "body": "Identyfikacja elastycznie odnajduje się w każdym punkcie styku marki, od onboardingu i pustych stanów po landing page, social media i materiały marketingowe. Różowy Suseł Influencer pojawia się tam, gdzie dodaje ciepła, a system trzyma spójny wygląd w makietach, od merchu, przez prezentacje, po digital. Wszystko pozostaje rozpoznawalnie Suseu, niezależnie od powierzchni."
+      },
+      "mobileApp": {
+        "heading": "Aplikacja mobilna",
+        "body": "Aplikacja mobilna powstała dla twórców takich jak Kuba: prosty, szybki sposób, by trzymać wszystkie współprace w jednym miejscu. Postawiliśmy na czytelny dashboard i jedną, zawsze dostępną akcję poprzez pływający przycisk, tak by przyjęcie współpracy, podpisanie umowy czy sprawdzenie wiadomości nigdy nie zajmowało więcej niż jedno tknięcie. Interfejs mówi językiem użytkownika i zdejmuje formalność, przez którą współprace z twórcami przypominały papierologię."
+      },
+      "webPlatform": {
+        "heading": "Platforma webowa",
+        "body": "Platforma webowa to centrum dowodzenia marki, zaprojektowane dla menedżerek takich jak Anna. Łączy w jednej przestrzeni wyszukiwanie twórców na Instagramie, TikToku i YouTubie, automatyczne umowy zgodne z UOKiK, wbudowany czat, raporty i strefę PR. Pracę otworzyliśmy dokumentem wymagań funkcjonalnych, który z góry zebrał wszystkie potrzeby i utrzymał zakres, około 180 widoków, pod kontrolą, a potem zaprojektowaliśmy głębszą analitykę i widoki, które aplikacja mobilna celowo pomija."
+      },
+      "testing": {
+        "heading": "Testy i iteracje",
+        "body": "Decyzje weryfikowaliśmy testami użyteczności i A/B oraz dopracowaliśmy ścieżki przed przekazaniem, przez cały czas blisko współpracując z założycielem i deweloperem Suseu. Lekcja, którą wynieśliśmy: więcej testów low-fidelity wcześniej oszczędza czas później, a projektowanie nigdy nie jest naprawdę „skończone”, najmocniejsze usprawnienia przychodzą, gdy w produkcie pojawiają się realni użytkownicy po premierze."
+      },
+      "results": {
+        "heading": "Efekty i wnioski",
+        "body": "Suseu wystartowało ze spójną identyfikacją i produktem, który zamienia rozproszoną, ręczną pracę w jedno źródło prawdy. Połączenie przyjaznego brand hero z czytelnym, ciemnym, gotowym na dane interfejsem sprawiło, że gęsta, naszpikowana wymogami kategoria stała się czymś, z czego ludzie naprawdę chcą korzystać. Marka i produkt wzmacniają się w każdym punkcie styku: ta sama osobowość, która czyni logo zapadającym w pamięć, czyni aplikację przystępną, co dowodzi, że strategia, identyfikacja i UX działają najlepiej, gdy projektuje się je jako jeden system."
+      },
+      "quote": {
+        "brand": "Różowy suseł zapatrzony w telefon: brand hero, dzięki któremu poważne narzędzie martech staje się ludzkie.",
+        "product": "Z tygodni do minut: znajdź twórcę, podpisz umowę, prowadź kampanię, wszystko w jednym miejscu."
+      },
+      "details": {
+        "scope": {
+          "heading": "Zakres projektu",
+          "items": [
+            "Strategia i pozycjonowanie marki",
+            "Logo i pełna identyfikacja wizualna",
+            "Brand hero: Różowy Suseł Influencer",
+            "Typografia oparta na Poppinsie i design system",
+            "Paleta kolorów i kierunek ciemnego interfejsu",
+            "Badania UX: analiza konkurencji, persony, user flows",
+            "UI/UX aplikacji mobilnej",
+            "UI/UX platformy webowej i wymagania funkcjonalne",
+            "Wireframing, prototypowanie, testy użyteczności i A/B"
+          ]
+        }
+      },
+      "tags": [
+        "suseu",
+        "influencer marketing",
+        "saas",
+        "martech",
+        "branding",
+        "brand hero",
+        "maskotka",
+        "aplikacja mobilna",
+        "aplikacja webowa",
+        "projektowanie produktu",
+        "ui/ux",
+        "design system",
+        "poppins"
       ]
     }
   }
