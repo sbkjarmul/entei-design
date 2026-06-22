@@ -11,14 +11,17 @@
  * `caseStudyChrome` (shared labels). Non-localized data (image paths, year,
  * country/industry/service keys, block order) lives here.
  *
- * Legacy case studies (rem-met, ceramido, italiana, suseu) still have their own
- * static `page.tsx` folders, which take routing precedence over [slug]. They are
- * listed here without a `body` so they appear in "Latest works".
+ * Legacy case studies (suseu) still have their own static `page.tsx` folders,
+ * which take routing precedence over [slug]. They are listed here without a
+ * `body` so they appear in "Latest works".
  */
 
 const IMG = "/images/case-studies";
 const A = `${IMG}/art-mat`;
 const H = `${IMG}/hatan`;
+const R = `${IMG}/rem-met`;
+const C = `${IMG}/ceramido`;
+const I = `${IMG}/italiana`;
 
 /** Shared contact CTA target (Calendly booking). */
 export const CALENDLY_URL = "https://calendly.com/entei-designs/30min";
@@ -139,7 +142,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     year: 2024,
     industryKey: "music",
     servicesKeys: ["strategy", "identity", "social"],
-    liveUrl: "https://www.instagram.com/hatan",
+    liveUrl: "https://www.instagram.com/hatan_pl",
     card: {
       image: `${IMG}/hatan-case-study-card.png`,
       logo: `${IMG}/hatan-case-study-logo.svg`,
@@ -183,40 +186,261 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
   },
 
-  /* ---- Legacy case studies (static folders) — listed for "Latest works" ---- */
   {
     slug: "rem-met",
     name: "REM-MET",
     href: "/case-study/rem-met",
     countryKey: "poland",
+    i18nKey: "remMet",
+    year: 2025,
+    industryKey: "industrial",
+    servicesKeys: ["strategy", "identity", "web"],
+    liveUrl: "https://www.rem-met.com",
     card: {
       image: `${IMG}/rem-met-case-study-card.png`,
       logo: `${IMG}/rem-met-case-study-logo.svg`,
       categories: ["Identyfikacja wizualna", "Strona internetowa"],
     },
+    featureImage: {
+      src: `${R}/rem-met-hero.png`,
+      alt: "Katalog REM-MET na rok 2025",
+    },
+    body: [
+      { type: "text", k: "description" },
+      { type: "text", k: "challenge" },
+      { type: "quote", k: "logo" },
+      { type: "text", k: "concept" },
+      { type: "quote", k: "naming" },
+      { type: "text", k: "results" },
+      { type: "details", k: "scope" },
+      { type: "fileUnder", k: "tags" },
+    ],
+    gallery: [
+      {
+        src: `${R}/rem-met-gecko-black.png`,
+        alt: "Wygrodzenia REM-MET GECKO na czarnym tle",
+      },
+      {
+        src: `${R}/rem-met-logo-black-white.png`,
+        alt: "Logo REM-MET na czarnym tle",
+      },
+      {
+        src: `${R}/rem-met-logo-horizontal-black.png`,
+        alt: "Poziome logo REM-MET na czarnym tle",
+      },
+      {
+        src: `${R}/rem-met-squared-boxes.png`,
+        alt: "Pudełka w kolorach REM-MET",
+      },
+      {
+        src: `${R}/rem-met-mockup-posters.png`,
+        alt: "Plakaty REM-MET na szarej ścianie",
+      },
+      {
+        src: `${R}/rem-met-mockup-haning-poster-square.png`,
+        alt: "Wiszący plakat REM-MET",
+      },
+      {
+        src: `${R}/rem-met-product-names.png`,
+        alt: "Nazwy produktów REM-MET: Gecko, Falcon i Rhino",
+      },
+      {
+        src: `${R}/rem-met-mockup-box-no-light.png`,
+        alt: "Opakowania na akcesoria REM-MET na czarnym tle",
+      },
+      {
+        src: `${R}/rem-met-mockup-mug-pro-square.png`,
+        alt: "Kubek firmowy REM-MET",
+      },
+      {
+        src: `${R}/rem-met-binder-mockup-black.png`,
+        alt: "Segregator z projektami REM-MET",
+      },
+      {
+        src: `${R}/rem-met-bus-stop.png`,
+        alt: "Reklama REM-MET na wiacie przystankowej",
+      },
+      {
+        src: `${R}/rem-met-city-2.png`,
+        alt: "Reklama REM-MET w przestrzeni miejskiej",
+      },
+      {
+        src: `${R}/rem-met-website-o-nas.png`,
+        alt: "Strona REM-MET, sekcja O nas",
+      },
+      {
+        src: `${R}/rem-met-website-product.png`,
+        alt: "Strona produktu REM-MET",
+      },
+      {
+        src: `${R}/rem-met-mockup-catalog.png`,
+        alt: "Katalog produktów REM-MET na rok 2025",
+      },
+    ],
   },
   {
     slug: "ceramido",
     name: "Ceramido",
     href: "/case-study/ceramido",
     countryKey: "poland",
+    i18nKey: "ceramido",
+    year: 2025,
+    industryKey: "beauty",
+    servicesKeys: ["strategy", "identity", "packaging"],
     card: {
       image: `${IMG}/ceramido-case-study-card.png`,
       logo: `${IMG}/ceramido-case-study-logo.svg`,
       categories: ["Branding", "Opakowania produktowe"],
     },
+    featureImage: {
+      src: `${C}/ceramido-black-billboard-mockup.png`,
+      alt: "Billboard z identyfikacją Ceramido",
+    },
+    body: [
+      { type: "text", k: "description" },
+      { type: "text", k: "challenge" },
+      { type: "quote", k: "logo" },
+      { type: "text", k: "concept" },
+      { type: "quote", k: "packaging" },
+      { type: "text", k: "results" },
+      { type: "details", k: "scope" },
+      { type: "fileUnder", k: "tags" },
+    ],
+    gallery: [
+      {
+        src: `${C}/ceramido-day-product.png`,
+        alt: "Suplement diety Ceramido DAY",
+      },
+      {
+        src: `${C}/ceramido-rejected-symbols.png`,
+        alt: "Odrzucone warianty symboli marki Ceramido",
+      },
+      {
+        src: `${C}/ceramido-logo-explained.png`,
+        alt: "Znaczenie symboli w logo Ceramido",
+      },
+      {
+        src: `${C}/ceramido-logo-grid.png`,
+        alt: "Logo Ceramido na siatce projektowej",
+      },
+      {
+        src: `${C}/ceramido-luxury-billboard-box.png`,
+        alt: "Billboard przedstawiający kolory Ceramido",
+      },
+      {
+        src: `${C}/ceramido-posters-night.png`,
+        alt: "Plakaty Ceramido na szarej ścianie",
+      },
+      {
+        src: `${C}/ceramido-wordmark-grid-black.png`,
+        alt: "Siatka projektowa dla typografii Ceramido",
+      },
+      {
+        src: `${C}/ceramido-posters-multiple.png`,
+        alt: "Plakaty Ceramido w przestrzeni miejskiej",
+      },
+      {
+        src: `${C}/ceramido-box-day.png`,
+        alt: "Finalne opakowanie suplementu Ceramido DAY w wersji metalowej",
+      },
+      {
+        src: `${C}/ceramido-shopping-bag-pattern.png`,
+        alt: "Torba zakupowa Ceramido ze wzorem skóry",
+      },
+      {
+        src: `${C}/ceramido-instagram.png`,
+        alt: "Treści Ceramido na Instagramie",
+      },
+      {
+        src: `${C}/ceramido-building-mockup.png`,
+        alt: "Budynek z brandingiem Ceramido",
+      },
+      {
+        src: `${C}/ceramido-light-box.png`,
+        alt: "Podświetlany kaseton z marką Ceramido",
+      },
+    ],
   },
   {
     slug: "italiana",
     name: "Italiana",
     href: "/case-study/italiana",
     countryKey: "poland",
+    i18nKey: "italiana",
+    year: 2025,
+    industryKey: "food",
+    servicesKeys: ["strategy", "identity", "packaging"],
     card: {
       image: `${IMG}/italiana-case-study-card.png`,
       logo: `${IMG}/italiana-case-study-logo.svg`,
       categories: ["Rebranding", "Identyfikacja wizualna"],
     },
+    featureImage: {
+      src: `${I}/italiana-hero.png`,
+      alt: "Koszulka Italiana z grafiką wilka i hasłem Wyj, Jedz, Gryź",
+    },
+    body: [
+      { type: "text", k: "description" },
+      { type: "text", k: "challenge" },
+      { type: "quote", k: "wolf" },
+      { type: "text", k: "concept" },
+      { type: "quote", k: "rebel" },
+      { type: "text", k: "results" },
+      { type: "details", k: "scope" },
+      { type: "fileUnder", k: "tags" },
+    ],
+    gallery: [
+      {
+        src: `${I}/italiana-compare-logo.png`,
+        alt: "Porównanie starego i nowego logo pizzerii Italiana",
+      },
+      {
+        src: `${I}/italiana-logo.png`,
+        alt: "Znak marki Italiana – grafika wilka",
+      },
+      {
+        src: `${I}/italiana-baner-fb.png`,
+        alt: "Baner marki Italiana z logo wilka i hasłem Wyj, Jedz, Gryź",
+      },
+      {
+        src: `${I}/italiana-wordmark.png`,
+        alt: "Logotyp Italiana na czcionce ARCO",
+      },
+      {
+        src: `${I}/italiana-colors.png`,
+        alt: "Paleta kolorów marki Italiana",
+      },
+      {
+        src: `${I}/italiana-t-shirt.png`,
+        alt: "Biała koszulka Italiana z zielonym logo wilka na plecach",
+      },
+      {
+        src: `${I}/italiana-brand-guidelines.png`,
+        alt: "Rozkładówki brandbooka Italiana z wytycznymi do social mediów, fotografii i wizerunku lokalu",
+      },
+      {
+        src: `${I}/italiana-place.png`,
+        alt: "Witryna pizzerii Italiana z zieloną markizą i szyldem",
+      },
+      {
+        src: `${I}/italiana-boxes.png`,
+        alt: "Pudełka na pizzę Italiana z grafiką wilka",
+      },
+      {
+        src: `${I}/italiana-menu.png`,
+        alt: "Menu oraz ulotka promocyjna Italiana",
+      },
+      {
+        src: `${I}/italiana-sticker.png`,
+        alt: "Naklejki Pizzeria Italiana z motywem wilka, ognia i pizzy",
+      },
+      {
+        src: `${I}/italiana-fast-food-packaging.png`,
+        alt: "Zestaw opakowań Italiana: kubek, torba i pudełko",
+      },
+    ],
   },
+  /* ---- Legacy case studies (static folders) — listed for "Latest works" ---- */
   {
     slug: "suseu",
     name: "Suseu",

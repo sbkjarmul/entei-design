@@ -218,11 +218,15 @@
       "identity": "Identyfikacja wizualna",
       "strategy": "Strategia marki",
       "web": "Projekt i wdrożenie strony",
-      "social": "Social media i treści"
+      "social": "Social media i treści",
+      "packaging": "Opakowania produktowe"
     },
     "industryValues": {
       "automotive": "Motoryzacja",
-      "music": "Muzyka i kultura"
+      "music": "Muzyka i kultura",
+      "industrial": "Przemysł",
+      "beauty": "Uroda i suplementy",
+      "food": "Gastronomia"
     },
     "countryValues": {
       "poland": "Polska"
@@ -334,6 +338,158 @@
         "projekt logo",
         "identyfikacja werbalna",
         "projektowanie stron",
+        "stalowa wola",
+        "polska"
+      ]
+    },
+    "remMet": {
+      "title": "REM-MET",
+      "intro": "REM-MET to firma z ponad 20-letnim doświadczeniem w spawalnictwie, która stanęła przed wyzwaniem wejścia na nowy rynek. Celem właściciela było rozszerzenie działalności o produkcję wygrodzeń bezpieczeństwa dla maszyn przemysłowych, które miałyby nie tylko spełniać normy, lecz także budować zaufanie klientów poprzez solidność i indywidualne dopasowanie.",
+      "description": {
+        "heading": "Opis projektu",
+        "body": "Naszym zadaniem było stworzenie nowej identyfikacji wizualnej oraz strony internetowej, które w jasny sposób zaprezentują nowe linie produktowe i przedstawią REM-MET jako profesjonalnego partnera dla przemysłu, gotowego odciążyć klienta na każdym etapie realizacji."
+      },
+      "challenge": {
+        "heading": "Wyzwanie",
+        "body": "Wejście na rynek wygrodzeń bezpieczeństwa wymagało wyróżnienia się wśród producentów, którzy najczęściej stawiają na czerwień, pomarańcz i żółć. Trzeba było połączyć 20-letnią historię spawalniczą firmy z nowym, przemysłowym kierunkiem i ułożyć ofertę tak, by była łatwa do zapamiętania i dalszego rozwijania."
+      },
+      "concept": {
+        "heading": "Koncept",
+        "body": "Znak zbudowaliśmy wokół litery R, ukrywając w negatywnej przestrzeni iskrę, czyli symbol procesu spawania. Iskra spaja geometryczne kształty reprezentujące solidność i precyzję konstrukcji stalowych. Paletę oparliśmy na niebieskim, barwie płomienia podczas spawania, uzupełnionym o odcienie surowej szarości metalu, co wyróżnia markę na tle czerwono-pomarańczowej konkurencji i buduje poczucie bezpieczeństwa. Całość spina techniczna czcionka TT Octosquares, której kwadratowe formy nawiązują do świata konstrukcji stalowych."
+      },
+      "results": {
+        "heading": "Efekt",
+        "body": "Systemom wygrodzeń nadaliśmy łatwe do zapamiętania nazwy inspirowane zwierzętami: FALCON to lekkie wygrodzenia siatkowe, RHINO wytrzymałe metalowe, a GECKO przezroczyste z poliwęglanu. Strategia komunikacji ustawia REM-MET w pozycji lidera, który rozwiązuje problemy bezpieczeństwa swoich odbiorców, a nowa strona internetowa w przyjazny sposób prezentuje ofertę i skutecznie prowadzi klienta do zakupu."
+      },
+      "quote": {
+        "logo": "Logo zbudowane wokół litery R, z iskrą spawania ukrytą w negatywnej przestrzeni.",
+        "naming": "FALCON, RHINO i GECKO: nazwy zwierząt, które porządkują ofertę i zapadają w pamięć."
+      },
+      "details": {
+        "scope": {
+          "heading": "Szczegóły projektu",
+          "items": [
+            "Projektowanie logo i pełny rebranding",
+            "Materiały promocyjne i reklama",
+            "Strategia marki i pozycjonowanie",
+            "Nazewnictwo linii produktowych (FALCON, RHINO, GECKO)",
+            "Copywriting i identyfikacja werbalna",
+            "Identyfikacja wizualna oparta na motywie iskry",
+            "Techniczna typografia TT Octosquares",
+            "Projekt UI/UX i web development strony"
+          ]
+        }
+      },
+      "tags": [
+        "rem-met",
+        "spawalnictwo",
+        "przemysł",
+        "wygrodzenia bezpieczeństwa",
+        "rebranding",
+        "identyfikacja wizualna",
+        "projekt logo",
+        "nazewnictwo",
+        "projektowanie stron",
+        "ui/ux",
+        "polska"
+      ]
+    },
+    "ceramido": {
+      "title": "Ceramido",
+      "intro": "Ceramido powstało jako odpowiedź na rosnące potrzeby kobiet 30+, które dbają o zdrowie i skórę, a jednocześnie szukają czegoś więcej niż zwykły suplement diety. Celem klienta było stworzenie marki, która łączy naukową skuteczność z luksusowym doświadczeniem.",
+      "description": {
+        "heading": "Opis projektu",
+        "body": "Naszym zadaniem było opracowanie nowoczesnej identyfikacji wizualnej i projektów opakowań, które wyróżnią suplement na rynku oraz nadadzą mu charakter luksusowego gadżetu. Branding miał rezonować z tagline „Natura spotyka luksus”, przyciągając uwagę estetyką, a jednocześnie budząc zaufanie naukową precyzją."
+      },
+      "challenge": {
+        "heading": "Wyzwanie",
+        "body": "Prace nad wizerunkiem Ceramido rozpoczęły się od intensywnego, trzytygodniowego procesu szkicowania. Analizowaliśmy różne sposoby łączenia znaków symbolizujących wartości marki, w wyniku czego powstały dziesiątki wariantów logo, z których wyłonił się jeden, spójny kierunek."
+      },
+      "concept": {
+        "heading": "Koncept",
+        "body": "Logo oparliśmy na pięciu symbolach oddających naukowy i luksusowy charakter marki: słońce i księżyc to suplementy na dzień i na noc, kryształ symbolizuje luksus, molekuła podkreśla naukowe podstawy działania, a struktura skóry nawiązuje wprost do przeznaczenia produktu. Kolorystykę zainspirowaliśmy naturą, odcieniami białego piasku pustyni i czarnego piasku wulkanicznego, które symbolizują suchą skórę i nawilżenie oraz dzień i noc, uzupełnionymi o kolor skóry i delikatną szarość. Geometryczna, nowoczesna typografia harmonizuje z okrągłym kształtem logo, łącząc elegancję z naukową precyzją."
+      },
+      "results": {
+        "heading": "Efekt",
+        "body": "Opakowania zaprojektowaliśmy tak, by chroniły suplement przed promieniami słonecznymi: metalowe słoiki w kolorze kości słoniowej dla wersji DAY i grafitowe dla wersji NIGHT. Minimalistyczną etykietę wzbogaciliśmy o subtelny wzór cząsteczek skóry, łącząc funkcjonalność z elegancją i wyróżniając produkt na rynku jako naturalny, potwierdzony naukowo i luksusowy."
+      },
+      "quote": {
+        "logo": "Znak marki jako połączenie pięciu symboli: słońca, księżyca, kryształu, molekuły i struktury skóry.",
+        "packaging": "Minimalistyczne metalowe opakowania, które chronią suplement i podnoszą go do rangi luksusu."
+      },
+      "details": {
+        "scope": {
+          "heading": "Szczegóły projektu",
+          "items": [
+            "Projektowanie logo i rebranding",
+            "Opakowania produktów (wersje DAY i NIGHT)",
+            "Materiały promocyjne",
+            "Strategia marki i pozycjonowanie",
+            "Identyfikacja wizualna oparta na symbolice natury i nauki",
+            "Identyfikacja werbalna i tagline „Natura spotyka luksus”",
+            "Wytyczne do sesji zdjęciowej"
+          ]
+        }
+      },
+      "tags": [
+        "ceramido",
+        "suplementy diety",
+        "uroda",
+        "pielęgnacja skóry",
+        "branding",
+        "identyfikacja wizualna",
+        "projekt logo",
+        "opakowania produktowe",
+        "premium",
+        "polska"
+      ]
+    },
+    "italiana": {
+      "title": "Italiana",
+      "intro": "Italiana to pizzeria ze Stalowej Woli, która od lat jest lokalnym liderem w serwowaniu pizzy na kawałki. Mimo świetnego produktu marka komunikowała się w przestarzały sposób, wyglądała zwyczajnie i nie wyróżniała się na tle konkurencji.",
+      "description": {
+        "heading": "Opis projektu",
+        "body": "Naszym zadaniem było zaprojektowanie nowoczesnej, minimalistycznej i przyjaznej identyfikacji, którą pokochają zarówno rodziny, jak i młodzież. Marka miała stać się łatwo rozpoznawalna i jednoznacznie wyglądać na lidera lokalnego rynku."
+      },
+      "challenge": {
+        "heading": "Wyzwanie",
+        "body": "Celem rebrandingu było pokazanie, jak dobra jest pizza Italiany, i przyciągnięcie nowych klientów. Postawiliśmy na jasny, nowoczesny styl oraz spójną komunikację, które podkreślają jakość produktu i budują trwałą przewagę na tle konkurencji."
+      },
+      "concept": {
+        "heading": "Koncept",
+        "body": "Znakiem Italiany jest odświeżona, przyjazna grafika wilka, symbolizująca włoskie korzenie marki oraz jej pyszny, wilczy smak. Wilk występuje w wielu nastrojach i wariantach, spajając wszystkie materiały. Logotyp oparliśmy na czcionce ARCO, której masywne, zaokrąglone kształty wnoszą energię i luz, w parze z prostą i czytelną DM Sans. Paletę zbudowaliśmy na głębokich zieleniach i ciepłej bieli z mocnym kontrastem, energiczną, apetyczną i jednoznacznie kojarzoną z Italianą."
+      },
+      "results": {
+        "heading": "Efekt",
+        "body": "Osobowość Italiany zbudowaliśmy wokół archetypu Buntownika w nowoczesnym, kulturalnym wydaniu: autentyczność, instynkt i niezależność. Cały system spięliśmy w brandbooku, który pozwala prowadzić markę spójnie na każdym nośniku, od logo, kolorystyki i typografii, po wytyczne do social mediów, fotografii i wizerunku lokalu, a nawet gotowy szablon promptu do generowania zdjęć na kampanie."
+      },
+      "quote": {
+        "wolf": "Wilk jako znak marki: symbol włoskich korzeni i wilczego smaku.",
+        "rebel": "Wyj, Gryź, Jedz! Marka z charakterem Buntownika."
+      },
+      "details": {
+        "scope": {
+          "heading": "Szczegóły projektu",
+          "items": [
+            "Rebranding i projekt logo",
+            "Identyfikacja wizualna z motywem wilka",
+            "Brandbook z kompletnymi wytycznymi marki",
+            "Wytyczne do social mediów i fotografii",
+            "Typografia (ARCO i DM Sans)",
+            "Elementy graficzne, naklejki i ikony",
+            "Aplikacje marki: opakowania, menu i materiały lokalu"
+          ]
+        }
+      },
+      "tags": [
+        "italiana",
+        "pizzeria",
+        "gastronomia",
+        "rebranding",
+        "identyfikacja wizualna",
+        "projekt logo",
+        "brandbook",
+        "wilk",
         "stalowa wola",
         "polska"
       ]
