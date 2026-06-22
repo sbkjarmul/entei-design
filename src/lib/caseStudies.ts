@@ -11,9 +11,8 @@
  * `caseStudyChrome` (shared labels). Non-localized data (image paths, year,
  * country/industry/service keys, block order) lives here.
  *
- * Legacy case studies (suseu) still have their own static `page.tsx` folders,
- * which take routing precedence over [slug]. They are listed here without a
- * `body` so they appear in "Latest works".
+ * An entry listed without a `body` would render only in "Latest works" (no
+ * template page); all current case studies are template-driven.
  */
 
 const IMG = "/images/case-studies";
@@ -22,6 +21,7 @@ const H = `${IMG}/hatan`;
 const R = `${IMG}/rem-met`;
 const C = `${IMG}/ceramido`;
 const I = `${IMG}/italiana`;
+const S = `${IMG}/suseu`;
 
 /** Shared contact CTA target (Calendly booking). */
 export const CALENDLY_URL = "https://calendly.com/entei-designs/30min";
@@ -35,6 +35,7 @@ export type CaseImage = { src: string; alt: string; full?: boolean };
 /** Prose blocks rendered in the right column beside the sticky metadata. */
 export type ProseBlock =
   | { type: "text"; k: string } // k -> caseStudy.<key>.<k>.body
+  | { type: "section"; k: string } // k -> caseStudy.<key>.<k>.heading + .body
   | { type: "quote"; k: string } // k -> caseStudy.<key>.quote.<k>
   | { type: "details"; k: string } // k -> caseStudy.<key>.details.<k>.heading + .items[]
   | { type: "fileUnder"; k: string }; // k -> caseStudy.<key>.<k>[] (tags array)
@@ -221,10 +222,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Wygrodzenia REM-MET GECKO na czarnym tle",
       },
       {
-        src: `${R}/rem-met-logo-black-white.png`,
-        alt: "Logo REM-MET na czarnym tle",
-      },
-      {
         src: `${R}/rem-met-logo-horizontal-black.png`,
         alt: "Poziome logo REM-MET na czarnym tle",
       },
@@ -340,10 +337,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Plakaty Ceramido w przestrzeni miejskiej",
       },
       {
-        src: `${C}/ceramido-box-day.png`,
-        alt: "Finalne opakowanie suplementu Ceramido DAY w wersji metalowej",
-      },
-      {
         src: `${C}/ceramido-shopping-bag-pattern.png`,
         alt: "Torba zakupowa Ceramido ze wzorem skóry",
       },
@@ -407,10 +400,6 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Logotyp Italiana na czcionce ARCO",
       },
       {
-        src: `${I}/italiana-colors.png`,
-        alt: "Paleta kolorów marki Italiana",
-      },
-      {
         src: `${I}/italiana-t-shirt.png`,
         alt: "Biała koszulka Italiana z zielonym logo wilka na plecach",
       },
@@ -431,26 +420,85 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Menu oraz ulotka promocyjna Italiana",
       },
       {
-        src: `${I}/italiana-sticker.png`,
-        alt: "Naklejki Pizzeria Italiana z motywem wilka, ognia i pizzy",
-      },
-      {
         src: `${I}/italiana-fast-food-packaging.png`,
         alt: "Zestaw opakowań Italiana: kubek, torba i pudełko",
       },
     ],
   },
-  /* ---- Legacy case studies (static folders) — listed for "Latest works" ---- */
   {
     slug: "suseu",
     name: "Suseu",
     href: "/case-study/suseu",
     countryKey: "poland",
+    i18nKey: "suseu",
+    year: 2025,
+    industryKey: "saas",
+    servicesKeys: ["strategy", "identity", "product"],
+    liveUrl: "https://suseu.app",
     card: {
       image: `${IMG}/suseu-case-study-card.png`,
       logo: `${IMG}/suseu-case-study-logo.svg`,
       categories: ["Branding", "Aplikacja mobilna", "Aplikacja webowa"],
     },
+    featureImage: {
+      src: `${S}/suseu-mockup-posters.png`,
+      alt: "Plakaty Suseu z brand hero na ścianie",
+    },
+    body: [
+      { type: "text", k: "description" },
+      { type: "section", k: "challenge" },
+      { type: "quote", k: "brand" },
+      // Brand Identity
+      { type: "section", k: "strategicFoundation" },
+      { type: "section", k: "typography" },
+      { type: "section", k: "colorPalette" },
+      { type: "section", k: "applications" },
+      // UI/UX (product)
+      { type: "section", k: "designProcess" },
+      { type: "section", k: "mobileApp" },
+      { type: "section", k: "webPlatform" },
+      { type: "section", k: "testing" },
+      { type: "quote", k: "product" },
+      { type: "section", k: "results" },
+      { type: "details", k: "scope" },
+      { type: "fileUnder", k: "tags" },
+    ],
+    gallery: [
+      // Realistic mockups with the 2D grids woven in
+      // (logo grid and word grid never sit next to each other).
+      {
+        src: `${S}/suseu-mockup-cinema.png`,
+        alt: "Reklama Suseu na ekranie kinowym",
+      },
+      {
+        src: `${S}/suseu-logo-grid.png`,
+        alt: "Konstrukcja znaku Suseu na siatce projektowej",
+      },
+      {
+        src: `${S}/suseu-mockup-mac.png`,
+        alt: "Platforma webowa Suseu na MacBooku",
+      },
+      {
+        src: `${S}/suseu-mockup-app.png`,
+        alt: "Aplikacja mobilna Suseu na smartfonie",
+      },
+      {
+        src: `${S}/suseu-word-grid.png`,
+        alt: "Konstrukcja logotypu Suseu na siatce projektowej",
+      },
+      {
+        src: `${S}/suseu-mockup-t-shirt.png`,
+        alt: "Koszulka z brandingiem Suseu",
+      },
+      {
+        src: `${S}/suseu-metro-mockup.png`,
+        alt: "Reklama Suseu w przestrzeni metra",
+      },
+      {
+        src: `${S}/suseu-mockup-lightbox.png`,
+        alt: "Podświetlany kaseton z logo Suseu",
+      },
+    ],
   },
 ];
 
