@@ -1,7 +1,6 @@
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
-import PortfolioCard from "@/components/PortfolioCard";
+import WorksGrid, { type WorkItem } from "@/components/WorksGrid";
 import { getOtherCaseStudies } from "@/lib/caseStudies";
 
 /**
@@ -22,27 +21,21 @@ export default async function LatestWorks({
 
   if (others.length === 0) return null;
 
+  const items: WorkItem[] = others.map((c) => ({
+    slug: c.slug,
+    name: c.name,
+    image: c.card!.image,
+    country: tc(`countryValues.${c.countryKey}`),
+    href: c.href,
+    target: c.href.startsWith("http") ? "_blank" : undefined,
+  }));
+
   return (
     <div className="flex flex-col gap-6 px-6 pt-20 md:px-12 md:pt-28">
       <h2 className="text-[20px] font-medium text-gray-900 first-letter:uppercase">
         {heading}
       </h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {others.map((c) => (
-          <Link
-            key={c.slug}
-            href={c.href}
-            target={c.href.startsWith("http") ? "_blank" : undefined}
-            className="w-full"
-          >
-            <PortfolioCard
-              name={c.name}
-              image={c.card!.image}
-              country={tc(`countryValues.${c.countryKey}`)}
-            />
-          </Link>
-        ))}
-      </div>
+      <WorksGrid items={items} />
     </div>
   );
 }
