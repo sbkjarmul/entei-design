@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
-import PortfolioCard from "@/components/PortfolioCard";
+import WorksGrid, { type WorkItem } from "@/components/WorksGrid";
 import { CALENDLY_URL, CASE_STUDIES } from "@/lib/caseStudies";
 
 /**
@@ -13,7 +13,16 @@ import { CALENDLY_URL, CASE_STUDIES } from "@/lib/caseStudies";
 export default async function WorksPage() {
   const t = await getTranslations("works");
   const tc = await getTranslations("caseStudyChrome");
-  const projects = CASE_STUDIES.filter((c) => c.card?.image);
+  const items: WorkItem[] = CASE_STUDIES.filter((c) => c.card?.image).map(
+    (c) => ({
+      slug: c.slug,
+      name: c.name,
+      image: c.card!.image,
+      country: tc(`countryValues.${c.countryKey}`),
+      href: c.href,
+      target: c.href.startsWith("http") ? "_blank" : undefined,
+    }),
+  );
 
   return (
     <article className="bg-white text-gray-900">
@@ -35,24 +44,9 @@ export default async function WorksPage() {
         </Link>
       </div>
 
-      {/* ---- Tile grid ---- */}
+      {/* ---- Tile grid (animated reveal) ---- */}
       <div className="px-6 pb-24 md:px-12 md:pb-32">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((c) => (
-            <Link
-              key={c.slug}
-              href={c.href}
-              target={c.href.startsWith("http") ? "_blank" : undefined}
-              className="w-full"
-            >
-              <PortfolioCard
-                name={c.name}
-                image={c.card!.image}
-                country={tc(`countryValues.${c.countryKey}`)}
-              />
-            </Link>
-          ))}
-        </div>
+        <WorksGrid items={items} />
       </div>
     </article>
   );
