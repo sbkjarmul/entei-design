@@ -6,4 +6,40 @@
   body {
     @apply bg-black text-white;
   }
+
+  /* Brand text selection — primary red (#ff2400) with black ink, app-wide.
+     `::selection` and `::-moz-selection` must be separate rules: grouping an
+     unsupported pseudo-element would invalidate the whole selector. */
+  ::selection {
+    background-color: var(--color-primary);
+    color: #000;
+  }
+  ::-moz-selection {
+    background-color: var(--color-primary);
+    color: #000;
+  }
+
+  /*
+   * Global hover/interaction transition: interactive elements ease their
+   * hover-/focus-driven property changes over 0.2s ease-in-out by default.
+   * `transform` is intentionally excluded so it never fights framer-motion,
+   * which sets `transform` per-frame on elements like WorksGrid's MotionLink.
+   * Components that declare their own transition utility (e.g. `duration-500`
+   * on Button, the card image zoom) still win — Tailwind utilities layer above
+   * `base` — so deliberate slower effects are preserved.
+   */
+  a,
+  button,
+  summary,
+  label,
+  select,
+  input,
+  textarea,
+  [role="button"] {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, outline-color, fill, stroke, opacity, box-shadow,
+      filter, backdrop-filter;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
 }
