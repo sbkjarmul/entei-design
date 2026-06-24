@@ -74,8 +74,8 @@ function useColumnShift(
 ) {
   const lagged = useSpring(scrollY, config);
   return useTransform(
-    [scrollY, lagged] as [MotionValue<number>, MotionValue<number>],
-    ([raw, smooth]) => clamp((raw - smooth) * GAIN, MAX_SHIFT),
+    [scrollY, lagged],
+    ([raw, smooth]: number[]) => clamp((raw - smooth) * GAIN, MAX_SHIFT),
   );
 }
 
