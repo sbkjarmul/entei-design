@@ -28,6 +28,19 @@ interface WorksGridProps {
 
 const GRID_CLASS = "grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3";
 
+/** ENTEI house easing (expo-out-ish), shared with TextReveal / headers. */
+const EASE = [0.16, 1, 0.3, 1] as const;
+
+/**
+ * Entrance reveal lives on a wrapper around each card and uses explicit target
+ * OBJECTS (not variant labels), so it never propagates into the inner link —
+ * keeping it fully independent of the per-column scroll shift (the caterpillar).
+ * Cards lift in from below with a soft fade, fired once per card as it enters
+ * view; the column index gives a left→right cascade within each row.
+ */
+const CARD_HIDDEN = { opacity: 0, y: 48 };
+const CARD_SHOWN = { opacity: 1, y: 0 };
+
 /**
  * Per-column spring lag (the „caterpillar" feel). Stiffer = reacts to scroll
  * sooner and shifts less; softer = trails further. Ordered left → middle →
@@ -80,12 +93,14 @@ function useColumnShift(
 }
 
 /**
- * Shared tile grid of portfolio works with the annnimate „Animated Grid" scroll
- * effect: each column lags the scroll by a different amount, so the columns
- * stagger up/down like a caterpillar while scrolling and realign when it stops
- * (right column leads going down, left leads going up). Used by the „Nasze
- * realizacje" index and the „Ostatnie realizacje" section on case studies.
- * Respects `prefers-reduced-motion`; hover stays in `PortfolioCard` (pure CSS).
+ * Shared tile grid of portfolio works. Two motion layers:
+ *  - entrance: cards lift in from below (staggered) when the grid enters view;
+ *  - scroll: the „Animated Grid" caterpillar — each column lags the scroll by a
+ *    different amount, so columns stagger up/down while scrolling and realign
+ *    when it stops (right column leads going down, left leads going up).
+ * Used by the „Nasze realizacje" index and the „Ostatnie realizacje" section on
+ * case studies. Respects `prefers-reduced-motion`; hover stays in
+ * `PortfolioCard` (pure CSS).
  */
 export default function WorksGrid({ items }: WorksGridProps) {
   const reduceMotion = useReducedMotion();
@@ -110,15 +125,22 @@ export default function WorksGrid({ items }: WorksGridProps) {
       {items.map((c, i) => {
         const shift = columnShifts[i % cols];
         return (
-          <MotionLink
+          <motion.div
             key={c.slug}
-            href={c.href}
-            target={c.target}
-            className="w-full"
-            style={shift ? { y: shift } : undefined}
+            initial={reduceMotion ? false : CARD_HIDDEN}
+            whileInView={reduceMotion ? undefined : CARD_SHOWN}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: EASE, delay: (i % cols) * 0.08 }}
           >
-            <PortfolioCard name={c.name} image={c.image} country={c.country} />
-          </MotionLink>
+            <MotionLink
+              href={c.href}
+              target={c.target}
+              className="w-full"
+              style={shift ? { y: shift } : undefined}
+            >
+              <PortfolioCard name={c.name} image={c.image} country={c.country} />
+            </MotionLink>
+          </motion.div>
         );
       })}
     </div>

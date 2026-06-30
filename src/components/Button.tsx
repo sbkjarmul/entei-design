@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cx } from "@/lib/utils";
+import ScrambleText from "./ScrambleText";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "text";
@@ -63,9 +64,19 @@ export default function Button({
 
   const mergedClassName = cx(baseClasses, variantClasses, "group", className);
 
+  // String labels get the scramble/decode hover effect; anything richer (icons,
+  // nested nodes) renders as-is. The effect binds to the host <button>/<a>, so
+  // hovering anywhere on the control fires it.
+  const label =
+    typeof children === "string" ? (
+      <ScrambleText recolor={variant !== "primary"}>{children}</ScrambleText>
+    ) : (
+      children
+    );
+
   const inner = (
     <span className="inline-flex items-center justify-center gap-2 w-full">
-      {children}
+      {label}
       {iconRight}
     </span>
   );
