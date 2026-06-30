@@ -1,5 +1,6 @@
 import HeroSection from "@/app/(landing-page)/components/HeroSection";
 import OurClientsSection from "@/app/(landing-page)/components/OurClientsSection";
+// import TestimonialsSection from "@/app/(landing-page)/components/TestimonialsSection";
 import ContactSection from "@/app/(landing-page)/components/ContactSection";
 import OurWorkSection from "./components/OurWorkSection";
 import LogoBannerSection from "./components/LogoBannerSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <OurWorkSection />
       <OurServicesSection />
       <OurClientsSection />
+      {/* <TestimonialsSection /> */}
       <ContactSection />
     </main>
   );

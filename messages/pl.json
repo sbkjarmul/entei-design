@@ -3,6 +3,13 @@
     "tagline": "Brands built to lead.",
     "studio": "ENTEI Design Studio."
   },
+  "testimonials": {
+    "eyebrow": "Opinie",
+    "heading": "Co mówią o nas klienci",
+    "prev": "Poprzednia opinia",
+    "next": "Następna opinia",
+    "goTo": "Przejdź do opinii {number}"
+  },
   "works": {
     "title": "Nasze realizacje",
     "description": "Systemy wizerunkowe oraz strony internetowe dla ambitnych founderów, którzy nie chcą zniknąć w tłumie.",

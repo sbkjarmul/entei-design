@@ -1,8 +1,15 @@
 @import "tailwindcss";
 @import "../styles/theme.css";
 @import "tw-animate-css";
+@import "lenis/dist/lenis.css";
 
 @layer base {
+  /* Twardy stop na końcu strony (widok z odsłoniętą stopką) — bez natywnego
+     „odbicia"/over-scrolla, więc scroll zatrzymuje się dokładnie na tym widoku. */
+  html {
+    overscroll-behavior-y: none;
+  }
+
   body {
     @apply bg-black text-white;
   }

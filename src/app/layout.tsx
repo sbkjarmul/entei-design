@@ -12,6 +12,7 @@ import AnalyticsScripts from "@/components/CookieConsent/AnalyticsScripts";
 import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner";
 import LocalBusinessSchema from "@/components/StructuredData/LocalBusinessSchema";
 import Cursor from "@/components/Cursor/Cursor";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const despairTime = localFont({
   src: "../../public/fonts/despair-time-straight.otf",
@@ -54,23 +55,26 @@ export default async function RootLayout({
 
       <body className={`font-neue-haas ${despairTime.variable}`}>
         <Cursor />
-        <ConsentProvider>
-          <NextIntlClientProvider
-            messages={{
-              portfolio: messages.portfolio,
-              loading: messages.loading,
-            }}
-          >
-            {children}
-          </NextIntlClientProvider>
+        <SmoothScroll>
+          <ConsentProvider>
+            <NextIntlClientProvider
+              messages={{
+                portfolio: messages.portfolio,
+                loading: messages.loading,
+                testimonials: messages.testimonials,
+              }}
+            >
+              {children}
+            </NextIntlClientProvider>
 
-          {/* Tracking scripts — loaded only after cookie consent is granted */}
-          <AnalyticsScripts />
-          <CookieConsentBanner />
+            {/* Tracking scripts — loaded only after cookie consent is granted */}
+            <AnalyticsScripts />
+            <CookieConsentBanner />
 
-          {/* Vercel Analytics — cookieless, no consent required */}
-          <Analytics />
-        </ConsentProvider>
+            {/* Vercel Analytics — cookieless, no consent required */}
+            <Analytics />
+          </ConsentProvider>
+        </SmoothScroll>
       </body>
     </html>
   );

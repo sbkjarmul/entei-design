@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Button from "../../../components/Button";
+import ScrambleText from "../../../components/ScrambleText";
 import AccentText from "../../../components/AccentText";
 import Heading from "../../../components/Heading";
 import Text from "../../../components/Text";
@@ -49,7 +50,9 @@ export default function HeroSection() {
         >
           <Button className="relative z-1">
             <div className="absolute inset-[-4px] bg-primary/50 rounded-xl animate-pulse z-0 blur-sm" />{" "}
-            <span className="z-1">Umów konsultację</span>
+            <ScrambleText recolor={false} className="z-1">
+              Umów konsultację
+            </ScrambleText>
             <Image
               src="/images/icons/arrow-icon-black.svg"
               alt="Arrow Icon"

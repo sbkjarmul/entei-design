@@ -27,23 +27,27 @@ export default async function WorksPage() {
 
   return (
     <article className="bg-white text-gray-900">
-      {/* ---- Hero: title + description + CTA (entrance text reveal) ---- */}
+      {/*
+        Hero: title + description + CTA (entrance text reveal). Delays start
+        after the header slide-in lands (~0.8s, see works-header.tsx) so the
+        intro reads as "header first, then content" (berrielbrands-style).
+      */}
       <div className="px-6 pb-14 pt-[140px] md:px-12 md:pb-24 md:pt-[220px]">
         <TextReveal
           as="h1"
           className="font-neue-haas text-7xl font-medium leading-none tracking-tight md:text-9xl"
-          delay={0.1}
+          delay={0.85}
         >
           {t("title")}
         </TextReveal>
         <TextReveal
           as="p"
           className="mt-6 max-w-3xl text-2xl leading-tight tracking-normal text-gray-500 md:mt-8 md:text-4xl"
-          delay={0.28}
+          delay={1.0}
         >
           {t("description")}
         </TextReveal>
-        <TextReveal as="div" mask={false} delay={0.5} className="mt-8 md:mt-10">
+        <TextReveal as="div" mask={false} delay={1.2} className="mt-8 md:mt-10">
           <Link
             href={CALENDLY_URL}
             target="_blank"

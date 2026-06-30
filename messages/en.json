@@ -3,6 +3,13 @@
     "tagline": "Brands built to lead.",
     "studio": "ENTEI Design Studio."
   },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "What our clients say",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
+    "goTo": "Go to testimonial {number}"
+  },
   "works": {
     "title": "Our work",
     "description": "Brand identity systems and websites for ambitious founders who refuse to blend into the crowd.",
