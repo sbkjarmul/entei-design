@@ -1,124 +1,123 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-import AccentText from "../../../components/AccentText";
-import Heading from "../../../components/Heading";
-import Text from "../../../components/Text";
 import Section from "@/components/Section";
+import { cx } from "@/lib/utils";
 
-interface ClientCardProps {
+interface Client {
   logo: string;
   name: string;
   url: string;
 }
 
-function ClientCard({ logo, name, url }: ClientCardProps) {
-  return (
-    <Link href={url} target="_blank" className="flex justify-end items-center">
-      <div className="flex items-center justify-center p-4 rounded-lg w-full h-full backdrop-blur-sm border border-gray-900">
-        <Image
-          src={logo}
-          alt={name}
-          width={150}
-          height={100}
-          sizes="(max-width: 768px) 200px, 200px"
-          className="max-w-[200px] w-full h-auto object-contain grayscale opacity-50 hover:opacity-100 transition-opacity duration-300"
-        />
-      </div>
-    </Link>
-  );
-}
+const CLIENTS: Client[] = [
+  {
+    logo: "/images/our-clients/art-mat-logo.png",
+    name: "art-mat",
+    url: "https://art-mat.com.pl",
+  },
+  {
+    logo: "/images/our-clients/rem-met-logo.png",
+    name: "rem-met",
+    url: "https://www.rem-met.com",
+  },
+  {
+    logo: "/images/our-clients/aristo-logo.png",
+    name: "aristo",
+    url: "https://aristo-pharma.pl",
+  },
+  {
+    logo: "/images/our-clients/highwave-logo.png",
+    name: "highwave",
+    url: "https://highwavewear.pl/",
+  },
+  {
+    logo: "/images/our-clients/hatan-logo.png",
+    name: "hatan",
+    url: "https://instagram.com/hatan_pl",
+  },
+  {
+    logo: "/images/our-clients/suseu-logo.png",
+    name: "suseu",
+    url: "https://suseu.app/",
+  },
+  {
+    logo: "/images/our-clients/ecomgo-logo.png",
+    name: "ecomgo",
+    url: "https://ecomgo.pl/",
+  },
+  {
+    logo: "/images/case-studies/italiana-case-study-logo.svg",
+    name: "italiana",
+    url: "https://www.pizzeriaitaliana.com.pl/",
+  },
+  {
+    logo: "/images/our-clients/broscars-logo.png",
+    name: "broscars",
+    url: "https://broscars.pl/",
+  },
+  {
+    logo: "/images/our-clients/brandsets-logo.png",
+    name: "brandsets",
+    url: "https://brandsets.pl/",
+  },
+];
 
 export default function OurClientsSection() {
+  const [active, setActive] = useState(-1);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const interval = setInterval(() => {
+      setActive((prev) => {
+        // pick a random logo different from the one currently lit
+        let next = prev;
+        while (next === prev) {
+          next = Math.floor(Math.random() * CLIENTS.length);
+        }
+        return next;
+      });
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Section
-      className="min-h-[800px] items-center px-8 relative overflow-hidden"
+      className="min-h-[800px] justify-center px-8 relative overflow-hidden bg-gray-900"
       id="ourclients"
     >
-      <Image
-        src="/images/entei-blocks.webp"
-        alt="Entei design studio background"
-        width={1920}
-        height={1920}
-        sizes="(max-width: 768px) 100vw, 50vw"
-        className="absolute top-0 right-0 h-full w-auto lg:h-auto lg:w-3/4 xl:w-1/2 object-cover"
-      />
+      <h2 className="t-h3 max-w-xl">
+        Zaufali nam ambitni założyciele,
+        <br />
+        oraz dynamicznie rozwijające się firmy w Polsce.
+      </h2>
 
-      <div className="hidden md:block absolute inset-0 bg-radial-[at_90%_50%] from-transparent from-10% to-black to-55% z-1" />
-
-      <div className="flex flex-col items-center gap-2 z-2">
-        <AccentText>Zaufali nam</AccentText>
-        <Heading level={2}>Nasi klienci</Heading>
-        <Text className="text-center">
-          Ponad 20 firm skorzystało z naszej pomocy w projektach wizualnych
-        </Text>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] gap-2 max-w-5xl w-full z-2">
-        <ClientCard
-          logo="/images/our-clients/art-mat-logo.png"
-          name="art-mat"
-          url="https://art-mat.com.pl"
-        />
-
-        <ClientCard
-          logo="/images/our-clients/rem-met-logo.png"
-          name="rem-met"
-          url="https://www.rem-met.com"
-        />
-        {/* 
-        <ClientCard
-          logo="/images/our-clients/lagom-logo.png"
-          name="lagom"
-          url="https://www.lagomwarsaw.com"
-        /> */}
-
-        <ClientCard
-          logo="/images/our-clients/aristo-logo.png"
-          name="aristo"
-          url="https://aristo-pharma.pl"
-        />
-
-        <ClientCard
-          logo="/images/our-clients/highwave-logo.png"
-          name="highwave"
-          url="https://highwavewear.pl/"
-        />
-
-        <ClientCard
-          logo="/images/our-clients/hatan-logo.png"
-          name="hatan"
-          url="https://instagram.com/hatan_pl"
-        />
-
-        <ClientCard
-          logo="/images/our-clients/suseu-logo.png"
-          name="suseu"
-          url="https://suseu.app/"
-        />
-
-        <ClientCard
-          logo="/images/our-clients/ecomgo-logo.png"
-          name="ecomgo"
-          url="https://ecomgo.pl/"
-        />
-
-        <ClientCard
-          logo="/images/case-studies/italiana-case-study-logo.svg"
-          name="italiana"
-          url="https://www.pizzeriaitaliana.com.pl/"
-        />
-
-        <ClientCard
-          logo="/images/our-clients/broscars-logo.png"
-          name="broscars"
-          url="https://broscars.pl/"
-        />
-
-        <ClientCard
-          logo="/images/our-clients/brandsets-logo.png"
-          name="brandsets"
-          url="https://brandsets.pl/"
-        />
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 w-full">
+        {CLIENTS.map((client, i) => (
+          <Link
+            key={client.name}
+            href={client.url}
+            target="_blank"
+            className="group flex items-center justify-center p-8 min-h-[140px]"
+          >
+            <Image
+              src={client.logo}
+              alt={client.name}
+              width={150}
+              height={100}
+              sizes="(max-width: 768px) 160px, 160px"
+              className={cx(
+                "max-w-[140px] w-full h-auto object-contain grayscale brightness-0 invert transition-opacity duration-500 group-hover:opacity-90",
+                active === i ? "opacity-90" : "opacity-40",
+              )}
+            />
+          </Link>
+        ))}
       </div>
     </Section>
   );
