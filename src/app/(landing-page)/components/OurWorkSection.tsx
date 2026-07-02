@@ -1,94 +1,115 @@
-import CaseStudyCard from "@/components/CaseStudyCard";
-import Section from "@/components/Section";
+"use client";
+
 import Link from "next/link";
+
+import PortfolioCard from "@/components/PortfolioCard";
+import ScrollStackGrid from "@/components/ScrollStackGrid";
+
+const DEV = process.env.NODE_ENV !== "production";
+
+interface Work {
+  href: string;
+  target?: "_blank";
+  image: string;
+  name: string;
+  country: string;
+}
+
+/**
+ * Realizacje shown on the homepage — same caption-less tile as the „/realizacje"
+ * index (<PortfolioCard>: image only, name + country revealed on hover). Order
+ * matters: the middle item (index 4) becomes the stretched hero in
+ * <ScrollStackGrid>, so a strong visual sits in the centre of row 1.
+ */
+const WORKS: Work[] = [
+  {
+    href: "/case-study/italiana",
+    target: "_blank",
+    image: "/images/case-studies/italiana-case-study-card.png",
+    name: "Italiana",
+    country: "Polska",
+  },
+  // index 1 → centre of row 1 → the stretched hero (see centerIndex below)
+  {
+    href: "/case-study/suseu",
+    target: "_blank",
+    image: "/images/case-studies/suseu-case-study-card.png",
+    name: "Suseu",
+    country: "Polska",
+  },
+  {
+    href: "https://www.instagram.com/p/DVwKd0cCHlL",
+    target: "_blank",
+    image: "/images/case-studies/broscars-case-study-card.png",
+    name: "Broscars",
+    country: "Polska",
+  },
+  {
+    href: "/case-study/rem-met",
+    target: "_blank",
+    image: "/images/case-studies/rem-met-case-study-card.png",
+    name: "REM-MET",
+    country: "Polska",
+  },
+  {
+    href: "/case-study/art-mat",
+    target: "_blank",
+    image: "/images/case-studies/art-mat-case-study-card.png",
+    name: "Art-Mat",
+    country: "Polska",
+  },
+  {
+    href: "/case-study/ceramido",
+    target: "_blank",
+    image: "/images/case-studies/ceramido-case-study-card.png",
+    name: "Ceramido",
+    country: "Polska",
+  },
+  {
+    href: "/case-study/hatan",
+    target: "_blank",
+    image: "/images/case-studies/hatan-case-study-card.png",
+    name: "Hatan",
+    country: "Polska",
+  },
+];
 
 export default function OurWorkSection() {
   return (
-    <Section className="bg-black items-center px-0 sm:px-8" id="ourwork">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Link href="/case-study/italiana" target="_blank" className="w-full">
-          <CaseStudyCard
-            categories={["Rebranding", "Identyfikacja wizualna"]}
-            image="/images/case-studies/italiana-case-study-card.png"
-            logo="/images/case-studies/italiana-case-study-logo.svg"
-            title="Odświeżyliśmy markę Italiana w Stalowej Woli"
-            size="small"
+    <ScrollStackGrid
+      items={WORKS}
+      centerIndex={1}
+      getKey={(w) => w.href}
+      className="bg-black"
+      fallbackGridClassName="grid grid-cols-1 gap-4 px-4 py-10 sm:px-8 md:grid-cols-2 md:py-20"
+      renderItem={(w) => (
+        <Link href={w.href} target={w.target} className="block w-full">
+          {/* eager: tiles are transformed in the stage, where lazy-load stalls.
+              unoptimized in dev only — the dev image optimizer stalls when all
+              tiles request at once; prod stays optimized. */}
+          <PortfolioCard
+            name={w.name}
+            image={w.image}
+            country={w.country}
+            priority
+            unoptimized={DEV}
           />
         </Link>
-
-        <Link
-          href="https://www.instagram.com/p/DVwKd0cCHlL"
-          target="_blank"
-          className="w-full"
-        >
-          <CaseStudyCard
-            categories={["Branding", "Materiały marketingowe"]}
-            image="/images/case-studies/broscars-case-study-card.png"
-            logo="/images/our-clients/broscars-logo.png"
-            title="Zaprojektowaliśmy nowy wizerunek dla eksperta w imporcie samochodów"
-            size="small"
+      )}
+      // Hero uses the SAME card as the others (rounded corners + hover), with
+      // fillParent so it fills the animating box (width/height) as it shrinks.
+      renderHero={(w) => (
+        <Link href={w.href} target={w.target} className="absolute inset-0 block">
+          <PortfolioCard
+            name={w.name}
+            image={w.image}
+            country={w.country}
+            priority
+            unoptimized={DEV}
+            fillParent
           />
         </Link>
-
-        <Link href="/case-study/suseu" target="_blank" className="w-full">
-          <CaseStudyCard
-            categories={[
-              "Branding",
-              "Nazwa",
-              "Aplikacja mobilna",
-              "Aplikacja webowa",
-            ]}
-            image="/images/case-studies/suseu-case-study-card.png"
-            logo="/images/our-clients/suseu-logo.png"
-            title="Stworzyliśmy ponad 300 widoków w wersji web i mobile dla Suseu, aplikacji typu SaaS"
-            size="small"
-          />
-        </Link>
-
-        <Link href="/case-study/rem-met" target="_blank" className="w-full">
-          <CaseStudyCard
-            categories={[
-              "Identyfikacja wizualna",
-              "Nazwy produktów",
-              "Strona internetowa",
-            ]}
-            image="/images/case-studies/rem-met-case-study-card.png"
-            logo="/images/our-clients/rem-met-logo.png"
-            title="Zaprojektowaliśmy pełny system wizualny dla polskiego producenta wygrodzeń przemysłowych"
-            size="small"
-          />
-        </Link>
-
-        <Link href="/case-study/art-mat" target="_blank" className="w-full">
-          <CaseStudyCard
-            categories={["Branding", "Strona internetowa"]}
-            image="/images/case-studies/art-mat-case-study-card.png"
-            logo="/images/our-clients/art-mat-logo.png"
-            title="Pomogliśmy w rebrandingu naszego klienta z branży automotive"
-            size="small"
-          />
-        </Link>
-
-        <Link href="/case-study/ceramido" target="_blank" className="w-full">
-          <CaseStudyCard
-            categories={["Branding", "Opakowania produktowe"]}
-            image="/images/case-studies/ceramido-case-study-card.png"
-            logo="/images/our-clients/ceramido-logo.png"
-            title="Zaprojektowaliśmy marke suplementów dla kobiet"
-            size="small"
-          />
-        </Link>
-
-        <Link href="/case-study/hatan" target="_blank" className="w-full">
-          <CaseStudyCard
-            categories={["Branding", "Identyfikacja wizualna"]}
-            image="/images/case-studies/hatan-case-study-card.png"
-            logo="/images/our-clients/hatan-logo.png"
-            title="Branding społeczności stworzonej dla fanów muzyki elektronicznej"
-            size="small"
-          />
-        </Link>
-      </div>
-    </Section>
+      )}
+    />
   );
 }
