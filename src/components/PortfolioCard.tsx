@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { cx } from "@/lib/utils";
+
 interface PortfolioCardProps {
   /** Brand display name, e.g. "Suseu" */
   name: string;
@@ -7,6 +9,24 @@ interface PortfolioCardProps {
   image: string;
   /** Country label shown on hover, e.g. "Polska" */
   country: string;
+  /**
+   * Load the image eagerly (skip lazy IntersectionObserver). Needed when the
+   * tile is transformed/animated (e.g. inside <ScrollStackGrid>), where lazy
+   * loading can fail to trigger. Defaults to false → normal lazy behaviour.
+   */
+  priority?: boolean;
+  /**
+   * Skip Next's image optimizer (serve the source file directly). Useful to work
+   * around the dev optimizer stalling when many tiles load at once. Defaults to
+   * false → normal optimized behaviour.
+   */
+  unoptimized?: boolean;
+  /**
+   * Fill the parent's box (h-full w-full) instead of using the intrinsic
+   * `aspect-[1.4]`. Use when the parent controls the size (e.g. the animated hero
+   * box in <ScrollStackGrid>). Defaults to false → normal aspect-ratio tile.
+   */
+  fillParent?: boolean;
 }
 
 /**
@@ -18,13 +38,23 @@ export default function PortfolioCard({
   name,
   image,
   country,
+  priority = false,
+  unoptimized = false,
+  fillParent = false,
 }: PortfolioCardProps) {
   return (
-    <div className="group relative aspect-[1.4] w-full overflow-hidden rounded-lg">
+    <div
+      className={cx(
+        "group relative w-full overflow-hidden rounded-lg",
+        fillParent ? "h-full" : "aspect-[1.4]",
+      )}
+    >
       <Image
         src={image}
         alt={name}
         fill
+        priority={priority}
+        unoptimized={unoptimized}
         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
       />
