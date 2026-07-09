@@ -9,6 +9,12 @@
       "autoPort": true
     },
     {
+      "name": "next-prod",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"],
+      "port": 3100
+    },
+    {
       "name": "email-dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "email"],
