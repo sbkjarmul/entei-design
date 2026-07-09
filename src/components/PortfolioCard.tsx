@@ -27,6 +27,14 @@ interface PortfolioCardProps {
    * box in <ScrollStackGrid>). Defaults to false → normal aspect-ratio tile.
    */
   fillParent?: boolean;
+  /**
+   * Responsive `sizes` hint for the underlying <Image srcset>. Must match how
+   * wide the tile actually renders, or the browser downloads a too-small
+   * candidate and upscales it (blurry). Defaults to the grid tile width (~33vw
+   * desktop). The <ScrollStackGrid> hero fills the viewport, so it passes
+   * "100vw".
+   */
+  sizes?: string;
 }
 
 /**
@@ -41,6 +49,7 @@ export default function PortfolioCard({
   priority = false,
   unoptimized = false,
   fillParent = false,
+  sizes = "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw",
 }: PortfolioCardProps) {
   return (
     <div
@@ -55,7 +64,7 @@ export default function PortfolioCard({
         fill
         priority={priority}
         unoptimized={unoptimized}
-        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        sizes={sizes}
         className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
       />
 

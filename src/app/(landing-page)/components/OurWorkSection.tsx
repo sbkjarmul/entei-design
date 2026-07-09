@@ -107,6 +107,9 @@ export default function OurWorkSection() {
             priority
             unoptimized={DEV}
             fillParent
+            // Hero stretches to full-viewport width at scroll start; a 33vw hint
+            // would make the browser pick a too-small srcset candidate → blurry.
+            sizes="100vw"
           />
         </Link>
       )}
