@@ -80,12 +80,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     servicesKeys: ["strategy", "identity", "web"],
     liveUrl: "https://art-mat.com.pl",
     card: {
-      image: `${IMG}/art-mat-case-study-card.png`,
+      image: `${IMG}/art-mat-case-study-card.webp`,
       logo: `${IMG}/art-mat-case-study-logo.svg`,
       categories: ["Branding", "Strona internetowa"],
     },
     featureImage: {
-      src: `${A}/art-mat-mockup-tablet-steel.png`,
+      src: `${A}/art-mat-mockup-tablet-steel.webp`,
       alt: "Art-Mat, tablet z identyfikacją na stalowym tle",
     },
     body: [
@@ -100,37 +100,37 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     gallery: [
       { src: `${A}/art-mat-logo.png`, alt: "Logo Art-Mat, znak i logotyp" },
-      { src: `${A}/art-mat-mockup-tire.png`, alt: "Opona z brandingiem Art-Mat" },
+      { src: `${A}/art-mat-mockup-tire.webp`, alt: "Opona z brandingiem Art-Mat" },
       {
-        src: `${A}/art-mat-mockup-business-cards.png`,
+        src: `${A}/art-mat-mockup-business-cards.webp`,
         alt: "Wizytówki Art-Mat",
       },
       {
-        src: `${A}/art-mat-mockup-caddy.png`,
+        src: `${A}/art-mat-mockup-caddy.webp`,
         alt: "Samochód serwisowy Art-Mat",
       },
       {
-        src: `${A}/art-mat-mockup-phone-jacket.png`,
+        src: `${A}/art-mat-mockup-phone-jacket.webp`,
         alt: "Telefon i odzież firmowa Art-Mat",
       },
       {
-        src: `${A}/art-mat-mockup-phone-price.png`,
+        src: `${A}/art-mat-mockup-phone-price.webp`,
         alt: "Aplikacja Art-Mat z cennikiem",
       },
-      { src: `${A}/art-mat-mockup-badge.png`, alt: "Naszywka Art-Mat" },
+      { src: `${A}/art-mat-mockup-badge.webp`, alt: "Naszywka Art-Mat" },
       {
-        src: `${A}/art-mat-mockup-brandguidelines.png`,
+        src: `${A}/art-mat-mockup-brandguidelines.webp`,
         alt: "Księga znaku Art-Mat",
       },
       {
-        src: `${A}/art-mat-folders-mockup.png`,
+        src: `${A}/art-mat-folders-mockup.webp`,
         alt: "Teczki firmowe Art-Mat",
       },
       {
-        src: `${A}/art-mat-mockup-winter-cap.png`,
+        src: `${A}/art-mat-mockup-winter-cap.webp`,
         alt: "Czapka zimowa z logo Art-Mat",
       },
-      { src: `${A}/art-mat-mockup-cups.png`, alt: "Kubki firmowe Art-Mat" },
+      { src: `${A}/art-mat-mockup-cups.webp`, alt: "Kubki firmowe Art-Mat" },
     ],
   },
 
@@ -145,12 +145,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     servicesKeys: ["strategy", "identity", "social"],
     liveUrl: "https://www.instagram.com/hatan_pl",
     card: {
-      image: `${IMG}/hatan-case-study-card.png`,
+      image: `${IMG}/hatan-case-study-card.webp`,
       logo: `${IMG}/hatan-case-study-logo.svg`,
       categories: ["Branding", "Identyfikacja wizualna"],
     },
     featureImage: {
-      src: `${H}/hatan-banner-3-mockup.png`,
+      src: `${H}/hatan-banner-3-mockup.webp`,
       alt: "Baner zewnętrzny z identyfikacją Hatan",
     },
     body: [
@@ -165,23 +165,23 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     gallery: [
       {
-        src: `${H}/hatan-brandmark-grid.png`,
+        src: `${H}/hatan-brandmark-grid.webp`,
         alt: "Znak Hatan zbudowany na siatce sferycznej",
       },
       {
         src: `${H}/hatan-wordmark-grid.png`,
         alt: "Wordmark Hatan na siatce projektowej",
       },
-      { src: `${H}/hatan-envelope.png`, alt: "Koperta i papeteria Hatan" },
-      { src: `${H}/hatan-posters.png`, alt: "Plakaty eventowe Hatan" },
-      { src: `${H}/hatan-wristbands.png`, alt: "Opaski eventowe Hatan" },
-      { src: `${H}/hatan-tote-bag-mockup-2.png`, alt: "Torba materiałowa Hatan" },
+      { src: `${H}/hatan-envelope.webp`, alt: "Koperta i papeteria Hatan" },
+      { src: `${H}/hatan-posters.webp`, alt: "Plakaty eventowe Hatan" },
+      { src: `${H}/hatan-wristbands.webp`, alt: "Opaski eventowe Hatan" },
+      { src: `${H}/hatan-tote-bag-mockup-2.webp`, alt: "Torba materiałowa Hatan" },
       {
-        src: `${H}/hatan-banner-veritcal-mockup.png`,
+        src: `${H}/hatan-banner-veritcal-mockup.webp`,
         alt: "Pionowy baner Hatan",
       },
       {
-        src: `${H}/hatan-instagram-mockup.png`,
+        src: `${H}/hatan-instagram-mockup.webp`,
         alt: "Treści Hatan na Instagramie",
       },
     ],
@@ -198,12 +198,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     servicesKeys: ["strategy", "identity", "web"],
     liveUrl: "https://www.rem-met.com",
     card: {
-      image: `${IMG}/rem-met-case-study-card.png`,
+      image: `${IMG}/rem-met-case-study-card.webp`,
       logo: `${IMG}/rem-met-case-study-logo.svg`,
       categories: ["Identyfikacja wizualna", "Strona internetowa"],
     },
     featureImage: {
-      src: `${R}/rem-met-hero.png`,
+      src: `${R}/rem-met-hero.webp`,
       alt: "Katalog REM-MET na rok 2025",
     },
     body: [
@@ -218,7 +218,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     gallery: [
       {
-        src: `${R}/rem-met-gecko-black.png`,
+        src: `${R}/rem-met-gecko-black.webp`,
         alt: "Wygrodzenia REM-MET GECKO na czarnym tle",
       },
       {
@@ -226,15 +226,15 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Poziome logo REM-MET na czarnym tle",
       },
       {
-        src: `${R}/rem-met-squared-boxes.png`,
+        src: `${R}/rem-met-squared-boxes.webp`,
         alt: "Pudełka w kolorach REM-MET",
       },
       {
-        src: `${R}/rem-met-mockup-posters.png`,
+        src: `${R}/rem-met-mockup-posters.webp`,
         alt: "Plakaty REM-MET na szarej ścianie",
       },
       {
-        src: `${R}/rem-met-mockup-haning-poster-square.png`,
+        src: `${R}/rem-met-mockup-haning-poster-square.webp`,
         alt: "Wiszący plakat REM-MET",
       },
       {
@@ -242,35 +242,35 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Nazwy produktów REM-MET: Gecko, Falcon i Rhino",
       },
       {
-        src: `${R}/rem-met-mockup-box-no-light.png`,
+        src: `${R}/rem-met-mockup-box-no-light.webp`,
         alt: "Opakowania na akcesoria REM-MET na czarnym tle",
       },
       {
-        src: `${R}/rem-met-mockup-mug-pro-square.png`,
+        src: `${R}/rem-met-mockup-mug-pro-square.webp`,
         alt: "Kubek firmowy REM-MET",
       },
       {
-        src: `${R}/rem-met-binder-mockup-black.png`,
+        src: `${R}/rem-met-binder-mockup-black.webp`,
         alt: "Segregator z projektami REM-MET",
       },
       {
-        src: `${R}/rem-met-bus-stop.png`,
+        src: `${R}/rem-met-bus-stop.webp`,
         alt: "Reklama REM-MET na wiacie przystankowej",
       },
       {
-        src: `${R}/rem-met-city-2.png`,
+        src: `${R}/rem-met-city-2.webp`,
         alt: "Reklama REM-MET w przestrzeni miejskiej",
       },
       {
-        src: `${R}/rem-met-website-o-nas.png`,
+        src: `${R}/rem-met-website-o-nas.webp`,
         alt: "Strona REM-MET, sekcja O nas",
       },
       {
-        src: `${R}/rem-met-website-product.png`,
+        src: `${R}/rem-met-website-product.webp`,
         alt: "Strona produktu REM-MET",
       },
       {
-        src: `${R}/rem-met-mockup-catalog.png`,
+        src: `${R}/rem-met-mockup-catalog.webp`,
         alt: "Katalog produktów REM-MET na rok 2025",
       },
     ],
@@ -285,12 +285,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     industryKey: "beauty",
     servicesKeys: ["strategy", "identity", "packaging"],
     card: {
-      image: `${IMG}/ceramido-case-study-card.png`,
+      image: `${IMG}/ceramido-case-study-card.webp`,
       logo: `${IMG}/ceramido-case-study-logo.svg`,
       categories: ["Branding", "Opakowania produktowe"],
     },
     featureImage: {
-      src: `${C}/ceramido-black-billboard-mockup.png`,
+      src: `${C}/ceramido-black-billboard-mockup.webp`,
       alt: "Billboard z identyfikacją Ceramido",
     },
     body: [
@@ -305,7 +305,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     gallery: [
       {
-        src: `${C}/ceramido-day-product.png`,
+        src: `${C}/ceramido-day-product.webp`,
         alt: "Suplement diety Ceramido DAY",
       },
       {
@@ -321,11 +321,11 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Logo Ceramido na siatce projektowej",
       },
       {
-        src: `${C}/ceramido-luxury-billboard-box.png`,
+        src: `${C}/ceramido-luxury-billboard-box.webp`,
         alt: "Billboard przedstawiający kolory Ceramido",
       },
       {
-        src: `${C}/ceramido-posters-night.png`,
+        src: `${C}/ceramido-posters-night.webp`,
         alt: "Plakaty Ceramido na szarej ścianie",
       },
       {
@@ -333,23 +333,23 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Siatka projektowa dla typografii Ceramido",
       },
       {
-        src: `${C}/ceramido-posters-multiple.png`,
+        src: `${C}/ceramido-posters-multiple.webp`,
         alt: "Plakaty Ceramido w przestrzeni miejskiej",
       },
       {
-        src: `${C}/ceramido-shopping-bag-pattern.png`,
+        src: `${C}/ceramido-shopping-bag-pattern.webp`,
         alt: "Torba zakupowa Ceramido ze wzorem skóry",
       },
       {
-        src: `${C}/ceramido-instagram.png`,
+        src: `${C}/ceramido-instagram.webp`,
         alt: "Treści Ceramido na Instagramie",
       },
       {
-        src: `${C}/ceramido-building-mockup.png`,
+        src: `${C}/ceramido-building-mockup.webp`,
         alt: "Budynek z brandingiem Ceramido",
       },
       {
-        src: `${C}/ceramido-light-box.png`,
+        src: `${C}/ceramido-light-box.webp`,
         alt: "Podświetlany kaseton z marką Ceramido",
       },
     ],
@@ -364,12 +364,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     industryKey: "food",
     servicesKeys: ["strategy", "identity", "packaging"],
     card: {
-      image: `${IMG}/italiana-case-study-card.png`,
+      image: `${IMG}/italiana-case-study-card.webp`,
       logo: `${IMG}/italiana-case-study-logo.svg`,
       categories: ["Rebranding", "Identyfikacja wizualna"],
     },
     featureImage: {
-      src: `${I}/italiana-hero.png`,
+      src: `${I}/italiana-hero.webp`,
       alt: "Koszulka Italiana z grafiką wilka i hasłem Wyj, Jedz, Gryź",
     },
     body: [
@@ -384,11 +384,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     gallery: [
       {
-        src: `${I}/italiana-compare-logo.png`,
+        src: `${I}/italiana-compare-logo.webp`,
         alt: "Porównanie starego i nowego logo pizzerii Italiana",
       },
       {
-        src: `${I}/italiana-logo.png`,
+        src: `${I}/italiana-logo.webp`,
         alt: "Znak marki Italiana – grafika wilka",
       },
       {
@@ -400,27 +400,27 @@ export const CASE_STUDIES: CaseStudy[] = [
         alt: "Logotyp Italiana na czcionce ARCO",
       },
       {
-        src: `${I}/italiana-t-shirt.png`,
+        src: `${I}/italiana-t-shirt.webp`,
         alt: "Biała koszulka Italiana z zielonym logo wilka na plecach",
       },
       {
-        src: `${I}/italiana-brand-guidelines.png`,
+        src: `${I}/italiana-brand-guidelines.webp`,
         alt: "Rozkładówki brandbooka Italiana z wytycznymi do social mediów, fotografii i wizerunku lokalu",
       },
       {
-        src: `${I}/italiana-place.png`,
+        src: `${I}/italiana-place.webp`,
         alt: "Witryna pizzerii Italiana z zieloną markizą i szyldem",
       },
       {
-        src: `${I}/italiana-boxes.png`,
+        src: `${I}/italiana-boxes.webp`,
         alt: "Pudełka na pizzę Italiana z grafiką wilka",
       },
       {
-        src: `${I}/italiana-menu.png`,
+        src: `${I}/italiana-menu.webp`,
         alt: "Menu oraz ulotka promocyjna Italiana",
       },
       {
-        src: `${I}/italiana-fast-food-packaging.png`,
+        src: `${I}/italiana-fast-food-packaging.webp`,
         alt: "Zestaw opakowań Italiana: kubek, torba i pudełko",
       },
     ],
@@ -436,12 +436,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     servicesKeys: ["strategy", "identity", "product"],
     liveUrl: "https://suseu.app",
     card: {
-      image: `${IMG}/suseu-case-study-card.png`,
+      image: `${IMG}/suseu-case-study-card.webp`,
       logo: `${IMG}/suseu-case-study-logo.svg`,
       categories: ["Branding", "Aplikacja mobilna", "Aplikacja webowa"],
     },
     featureImage: {
-      src: `${S}/suseu-mockup-posters.png`,
+      src: `${S}/suseu-mockup-posters.webp`,
       alt: "Plakaty Suseu z brand hero na ścianie",
     },
     body: [
@@ -467,35 +467,35 @@ export const CASE_STUDIES: CaseStudy[] = [
       // Realistic mockups with the 2D grids woven in
       // (logo grid and word grid never sit next to each other).
       {
-        src: `${S}/suseu-mockup-cinema.png`,
+        src: `${S}/suseu-mockup-cinema.webp`,
         alt: "Reklama Suseu na ekranie kinowym",
       },
       {
-        src: `${S}/suseu-logo-grid.png`,
+        src: `${S}/suseu-logo-grid.webp`,
         alt: "Konstrukcja znaku Suseu na siatce projektowej",
       },
       {
-        src: `${S}/suseu-mockup-mac.png`,
+        src: `${S}/suseu-mockup-mac.webp`,
         alt: "Platforma webowa Suseu na MacBooku",
       },
       {
-        src: `${S}/suseu-mockup-app.png`,
+        src: `${S}/suseu-mockup-app.webp`,
         alt: "Aplikacja mobilna Suseu na smartfonie",
       },
       {
-        src: `${S}/suseu-word-grid.png`,
+        src: `${S}/suseu-word-grid.webp`,
         alt: "Konstrukcja logotypu Suseu na siatce projektowej",
       },
       {
-        src: `${S}/suseu-mockup-t-shirt.png`,
+        src: `${S}/suseu-mockup-t-shirt.webp`,
         alt: "Koszulka z brandingiem Suseu",
       },
       {
-        src: `${S}/suseu-metro-mockup.png`,
+        src: `${S}/suseu-metro-mockup.webp`,
         alt: "Reklama Suseu w przestrzeni metra",
       },
       {
-        src: `${S}/suseu-mockup-lightbox.png`,
+        src: `${S}/suseu-mockup-lightbox.webp`,
         alt: "Podświetlany kaseton z logo Suseu",
       },
     ],

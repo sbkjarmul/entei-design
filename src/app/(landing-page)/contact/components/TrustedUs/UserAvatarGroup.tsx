@@ -5,13 +5,13 @@ export default function UserAvatarGroup() {
     <div className="flex gap-[-100px]">
       <div className="-mr-3">
         <UserAvatar
-          src="/images/user-avatars/michal-merkiel-avatar.png"
+          src="/images/user-avatars/michal-merkiel-avatar.webp"
           alt="Michał Merkiel, Suseu"
         />
       </div>
       <div className="-mr-3">
         <UserAvatar
-          src="/images/user-avatars/pola-bladek-avatar.png"
+          src="/images/user-avatars/pola-bladek-avatar.webp"
           alt="Pola Błądek, Lagom"
         />
       </div>
@@ -23,7 +23,7 @@ export default function UserAvatarGroup() {
       </div>
 
       <UserAvatar
-        src="/images/user-avatars/mateusz-ozga-avatar.jpg"
+        src="/images/user-avatars/mateusz-ozga-avatar.webp"
         alt="Mateusz Ozga, REM-MET"
       />
     </div>

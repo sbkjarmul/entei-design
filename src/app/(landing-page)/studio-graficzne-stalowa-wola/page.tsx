@@ -129,7 +129,7 @@ export default function StudioGraficzneStalowaWola() {
               <Link href="/case-study/italiana" className="w-full block">
                 <CaseStudyCard
                   categories={["Rebranding", "Identyfikacja wizualna"]}
-                  image="/images/case-studies/italiana-case-study-card.png"
+                  image="/images/case-studies/italiana-case-study-card.webp"
                   logo="/images/case-studies/italiana-case-study-logo.svg"
                   title="Odświeżyliśmy markę Italiana w Stalowej Woli"
                   size="small"
