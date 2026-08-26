@@ -3,15 +3,15 @@ import { getRequestConfig } from "next-intl/server";
 const DEFAULT_LOCALE = "pl";
 const SUPPORTED_LOCALES = ["pl", "en"];
 
-export default getRequestConfig(async ({ locale, requestLocale }) => {
+export default getRequestConfig(async ({ locale }) => {
   // `locale` is provided when translations are requested for an explicit
-  // locale (e.g. getTranslations({ locale: "pl" })). Otherwise we fall back
-  // to the request locale, and finally to the default locale.
-  const candidate = locale ?? (await requestLocale);
+  // locale (e.g. getTranslations({ locale: "en" })); otherwise we use the
+  // default. We deliberately do NOT await `requestLocale`: there is no locale
+  // routing and no middleware, so it always resolves to `undefined` anyway —
+  // but awaiting it reads request headers, which opts every page into dynamic
+  // rendering (`no-store`) and sends all traffic to the origin.
   const resolved =
-    candidate && SUPPORTED_LOCALES.includes(candidate)
-      ? candidate
-      : DEFAULT_LOCALE;
+    locale && SUPPORTED_LOCALES.includes(locale) ? locale : DEFAULT_LOCALE;
 
   return {
     locale: resolved,
