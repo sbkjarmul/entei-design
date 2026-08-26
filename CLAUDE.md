@@ -35,6 +35,7 @@ oraz skill [figma-to-code](.claude/skills/figma-to-code/SKILL.md) (procedura bud
 | Lint | `npm run lint` |
 | Podgląd maili (React Email) | `npm run email` |
 | Screeny wizualne (Playwright) | `npm run shots` |
+| Optymalizacja assetów | `npm run optimize:images` (dodaj `-- --dry` na podgląd) |
 
 > Instalacja zależności: `npm install`. Po pierwszym secie Playwrighta: `npx playwright install chromium`.
 
@@ -53,6 +54,9 @@ oraz skill [figma-to-code](.claude/skills/figma-to-code/SKILL.md) (procedura bud
 - **Fonty**: główny **Neue Haas** (Typekit, klasa `font-neue-haas`, ładowany w `src/app/layout.tsx`),
   display **Despair Time** (lokalny OTF, zmienna `--font-despair-time`). Pliki w `public/fonts/`.
 - **Assety**: `public/images/` (raster + SVG marki), `public/fonts/`.
+  Rastry trzymamy jako WebP ≤2560 px — po wrzuceniu nowych plików uruchom
+  `npm run optimize:images` (skrypt konwertuje i podmienia referencje w kodzie).
+  Pełnowymiarowe oryginały zostają w historii gita, nie w deploymencie.
 - **Figma**: plik projektu ENTEI — `fileKey: <TODO: uzupełnić>`. Budowa z Figmy → skill
   [figma-to-code](.claude/skills/figma-to-code/SKILL.md); weryfikacja → subagent `design-reviewer`.
   Reference screeny w `design/figma/`.

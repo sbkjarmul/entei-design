@@ -131,7 +131,7 @@ export default function LogoStalowaWola() {
               <Link href="/case-study/italiana" className="w-full block">
                 <CaseStudyCard
                   categories={["Projekt logo", "Rebranding"]}
-                  image="/images/case-studies/italiana-case-study-card.png"
+                  image="/images/case-studies/italiana-case-study-card.webp"
                   logo="/images/case-studies/italiana-case-study-logo.svg"
                   title="Nowe logo dla pizzerii Italiana ze Stalowej Woli"
                   size="small"

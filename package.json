@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "email": "email dev --dir src/emails",
-    "shots": "node scripts/shots.mjs"
+    "shots": "node scripts/shots.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@headlessui/react": "2.2.4",
