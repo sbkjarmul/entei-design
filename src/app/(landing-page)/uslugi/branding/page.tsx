@@ -129,7 +129,7 @@ export default function BrandingServicePage() {
           </div>
 
           <Image
-            src="/images/case-studies/rem-met/rem-met-bus-stop.png"
+            src="/images/case-studies/rem-met/rem-met-bus-stop.webp"
             alt="Podgląd case study REM-MET"
             width={640}
             height={400}

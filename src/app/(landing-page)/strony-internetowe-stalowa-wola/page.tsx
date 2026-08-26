@@ -127,7 +127,7 @@ export default function StronyInternetoweStalowaWola() {
               <Link href="/case-study/rem-met" className="w-full block">
                 <CaseStudyCard
                   categories={["Strona internetowa", "Identyfikacja wizualna"]}
-                  image="/images/case-studies/rem-met-case-study-card.png"
+                  image="/images/case-studies/rem-met-case-study-card.webp"
                   logo="/images/our-clients/rem-met-logo.png"
                   title="Nowa strona internetowa dla REM-MET ze Stalowej Woli"
                   size="small"

@@ -124,7 +124,7 @@ export default function PortfolioHero() {
           <PortfolioHeroShadow />
 
           <Image
-            src="/images/portfolio/entei-me-in-glasses.png"
+            src="/images/portfolio/entei-me-in-glasses.webp"
             alt="ENTEI owner in glasses"
             width={1600}
             height={1000}
