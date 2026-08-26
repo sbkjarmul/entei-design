@@ -22,6 +22,29 @@
       "available": "Chętny do pracy",
       "entei": "entei",
       "now": "teraz"
+    },
+    "aboutMe": {
+      "accent": "Kim jestem",
+      "title": "Projektant skupiony na użytkowniku",
+      "description1": "Jestem projektantem UI/UX z kilkuletnim doświadczeniem w budowaniu frontendów aplikacji dla różnych branż.",
+      "description2": "Projektując interfejsy, skupiam się na rozwiązywaniu realnych problemów użytkowników i odpowiadaniu na ich potrzeby.",
+      "cta": "Zobacz moje realizacje",
+      "stats": {
+        "frontend": "lat w rozwoju frontendu",
+        "branding": "lat w projektowaniu marek",
+        "uiux": "lat w projektowaniu UI/UX"
+      }
+    },
+    "why": {
+      "but": "Ale...",
+      "title": "Dlaczego warto pracować ze mną?",
+      "description1": "Wiele firm chce wyróżnić się świetnym designem, ale napotyka ograniczenia techniczne, których większość projektantów UI/UX nie rozumie. To spowalnia zespół i opóźnia projekt.",
+      "description2": "Pomagam to zmienić."
+    },
+    "projects": {
+      "so": "Więc...",
+      "howDoIWork": "Jak pracuję?",
+      "description": "Poznaj efekty mojej pracy dzięki szczegółowym case studies lub działającym, w pełni wdrożonym stronom internetowym."
     }
   },
   "privacyPolicy": {
@@ -89,14 +112,49 @@
           "Poniższa tabela przedstawia narzędzia i technologie zewnętrzne wykorzystywane na stronie:"
         ],
         "table": {
-          "columns": ["Narzędzie", "Dostawca", "Cel", "Okres przechowywania"],
+          "columns": [
+            "Narzędzie",
+            "Dostawca",
+            "Cel",
+            "Okres przechowywania"
+          ],
           "rows": [
-            ["Meta Pixel", "Meta Platforms Ireland Ltd.", "Remarketing oraz pomiar skuteczności kampanii reklamowych w serwisach Facebook i Instagram", "do 180 dni"],
-            ["Google Tag Manager", "Google Ireland Ltd.", "Zarządzanie znacznikami i skryptami analitycznymi na stronie", "do 24 miesięcy"],
-            ["Google Ads", "Google Ireland Ltd.", "Pomiar konwersji i skuteczności kampanii reklamowych Google", "do 24 miesięcy"],
-            ["Travatar", "Travatar", "Analityka ruchu, sesji oraz zachowania użytkowników na stronie, w tym przybliżona geolokalizacja", "do 24 miesięcy"],
-            ["Vercel Analytics", "Vercel Inc.", "Anonimowa analityka wydajności i ruchu, działająca bez plików cookies", "dane zanonimizowane"],
-            ["Adobe Fonts (Typekit)", "Adobe Systems Inc.", "Dostarczanie i poprawne wyświetlanie czcionek na stronie", "na czas sesji"]
+            [
+              "Meta Pixel",
+              "Meta Platforms Ireland Ltd.",
+              "Remarketing oraz pomiar skuteczności kampanii reklamowych w serwisach Facebook i Instagram",
+              "do 180 dni"
+            ],
+            [
+              "Google Tag Manager",
+              "Google Ireland Ltd.",
+              "Zarządzanie znacznikami i skryptami analitycznymi na stronie",
+              "do 24 miesięcy"
+            ],
+            [
+              "Google Ads",
+              "Google Ireland Ltd.",
+              "Pomiar konwersji i skuteczności kampanii reklamowych Google",
+              "do 24 miesięcy"
+            ],
+            [
+              "Travatar",
+              "Travatar",
+              "Analityka ruchu, sesji oraz zachowania użytkowników na stronie, w tym przybliżona geolokalizacja",
+              "do 24 miesięcy"
+            ],
+            [
+              "Vercel Analytics",
+              "Vercel Inc.",
+              "Anonimowa analityka wydajności i ruchu, działająca bez plików cookies",
+              "dane zanonimizowane"
+            ],
+            [
+              "Adobe Fonts (Typekit)",
+              "Adobe Systems Inc.",
+              "Dostarczanie i poprawne wyświetlanie czcionek na stronie",
+              "na czas sesji"
+            ]
           ]
         }
       },
