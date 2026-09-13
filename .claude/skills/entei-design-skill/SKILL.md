@@ -28,6 +28,9 @@ Ciemny interfejs (czarne tło, biały tekst) z mocnym czerwonym akcentem.
 | `secondary`        | `#e0e0e0` | jasne tła pomocnicze, obramowania            |
 | `gray-500`         | `#9e9e9e` | tekst drugorzędny (body)                     |
 | `gray-300..900`    | skala     | tła/obramowania/stany wg skali w `theme.css` |
+| `concrete`         | `#c2c2c2` | jasne tło landingu agency (agency.entei.pl)  |
+| `ink`              | `#141414` | tekst/przycisk ciemny na tle `concrete`      |
+| `graphite`         | `#1c1c1c` | ciemna karta na tle `concrete`               |
 
 Klasy Tailwind: `bg-black`, `text-white`, `bg-primary`, `text-primary`, `text-gray-500`, `border-gray-700` itd.
 Domyślnie (z `globals.css`): tło czarne, tekst biały. Brak kolorów spoza systemu — brak wariantu → dodaj token w `theme.css`.
@@ -54,6 +57,15 @@ Używaj klas semantycznych z `@layer components` (responsywne automatycznie). **
 | `.t-caption` | caption / drobny tekst            | 14px    | 14px            | 400    | 1.3         | -0.01em        |
 | `.t-accent`  | eyebrow / label (chip `bg-primary`) | 14px  | 14px            | 400    | 1.2         | -0.01em        |
 | `.t-display` | gigantyczny napis brandowy        | —       | —               | 700    | 1.0         | -0.02em        |
+| `.t-title-xl`| duży tytuł sans (hero, statement) | 64px    | 40px            | 500    | 0.9         | 0              |
+| `.t-title-lg`| średni tytuł (intro, FAQ)         | 32px    | 24px            | 500    | 0.9         | 0.02em         |
+| `.t-lead`    | lead / pytania FAQ                | 24px    | 20px            | 500    | 1.0         | 0              |
+| `.t-lead-sm` | mniejszy lead                     | 20px    | 18px            | 500    | 1.0 (1.1 mob) | 0            |
+
+Modyfikatory z `@theme`: `tracking-loose` (0.02em — etykiety przycisków, „Poznajmy się.”),
+`leading-display` (0.8 — ciasne tytuły), `leading-compact` (1.2 — stopka agency).
+> Kit Typekit: waga CSS 400 jest lżejsza niż Figmowy „55 Roman”. Na landingu agency Roman = `500`,
+> Medium = `600` (`font-semibold`), Bold = `700`.
 
 Zasada: nagłówki ZAWSZE przez `<Heading level={1..6}>` (mapuje na `.t-h*`), akapity przez `<Text>` (`.t-body`),
 eyebrow przez `<AccentText>` (`.t-accent`). Nie nadpisuj rozmiarów inline — brak wariantu → dodaj go w `theme.css`,
@@ -88,7 +100,7 @@ Domyślnie `<Section>` nie wymusza wysokości (treść decyduje). Na mobile wyso
 
 ## 5. Buttony i CTA
 
-- Komponent `<Button>` (`src/components/Button.tsx`), warianty: `primary` / `secondary` / `text`.
+- Komponent `<Button>` (`src/components/Button.tsx`), warianty: `primary` / `secondary` / `dark` (`bg-ink`, na tle `concrete`) / `text`.
 - Primary: `bg-primary text-black`, hover `bg-primary/90` + lekki scale na desktopie. Secondary: `bg-black`.
 - Domyślnie zaokrąglony (`rounded-xl`), padding `px-8 py-4`, `font-medium`, transition 500ms.
 - Focus ring zawsze widoczny (a11y) — `focus-visible:ring-4`.

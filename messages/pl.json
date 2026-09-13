@@ -644,5 +644,61 @@
         "poppins"
       ]
     }
+  },
+  "agency": {
+    "meta": {
+      "title": "ENTEI | Min. 6 klientów w 90 dni dla software house'u",
+      "description": "Dostarczamy software house'om minimum 6 klientów w 90 dni. Gwarantujemy wynik: w przeciwnym wypadku zwrot pieniędzy lub pracujemy za darmo."
+    },
+    "cta": {
+      "label": "Umów rozmowę z Sebastianem",
+      "labelShort": "Umów rozmowę",
+      "availability": "Mamy dostępne miejsca w Calendly"
+    },
+    "logoAlt": "ENTEI",
+    "hero": {
+      "line1": "Dostarczymy",
+      "line2": "min. <strong>6 klientów</strong> <nowrap>w <mark>90 dni</mark></nowrap>",
+      "line3": "dla <em>software house’u.</em>",
+      "subtitle": "Gwarantujemy wynik, w przeciwnym wypadku dostajesz zwrot pieniędzy lub pracujemy za darmo.",
+      "logosLabel": "Zaufali nam"
+    },
+    "bench": {
+      "title": "Koniec z odsyłaniem developerów na ławkę.",
+      "subtitle": "Czas na jakościowe zlecenia, stabilne cash-flow i rozwój firmy."
+    },
+    "meet": {
+      "title": "Poznajmy się.",
+      "introLine1": "Cześć, tu ex-developer",
+      "introLine2": "i właściciel studia projektowego.",
+      "body": "Rozumiem jak ważna jest regularność w projektach, zarówno od strony biznesowej jak i developerskiej."
+    },
+    "faq": {
+      "title": "Najczęściej zadawane pytania",
+      "items": {
+        "guarantee": {
+          "question": "Jaką mam gwarancję, że dowieziecie wyniki?",
+          "answer": "Gwarancja jest zapisana w umowie. Jeśli w ciągu 90 dni nie dostarczymy minimum 6 klientów, zwracamy pieniądze albo pracujemy dalej bez wynagrodzenia, aż cel zostanie osiągnięty."
+        },
+        "contract": {
+          "question": "Jaki jest minimalny okres umowy?",
+          "answer": "Pracujemy w cyklach 90-dniowych. Tyle potrzeba, żeby kampania zebrała dane i dowiozła wynik. Szczegóły ustalamy na rozmowie."
+        },
+        "budget": {
+          "question": "Ile miesięcznie muszę wydać na MetaAds?",
+          "answer": "Budżet zależy od rynku i wartości pozyskanego klienta. Konkretną kwotę rekomendujemy po rozmowie i analizie Twojej oferty."
+        }
+      }
+    },
+    "footer": {
+      "tagline": "Wspieramy software house’y, aby nie musiały się martwić o regularność w projektach.",
+      "privacy": "Polityka prywatności",
+      "contact": "Kontakt",
+      "instagram": "Instagram",
+      "cookies": "Zarządzaj cookies",
+      "studioLine1": "Design studio",
+      "studioLine2": "Revolutionize your brand",
+      "studioLine3": "Modern visual identities."
+    }
   }
 }

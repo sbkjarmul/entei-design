@@ -609,5 +609,61 @@
         "poppins"
       ]
     }
+  },
+  "agency": {
+    "meta": {
+      "title": "ENTEI | At least 6 clients in 90 days for software houses",
+      "description": "We deliver at least 6 clients in 90 days to software houses. Results guaranteed: otherwise you get your money back or we work for free."
+    },
+    "cta": {
+      "label": "Book a call with Sebastian",
+      "labelShort": "Book a call",
+      "availability": "Slots available in Calendly"
+    },
+    "logoAlt": "ENTEI",
+    "hero": {
+      "line1": "We deliver",
+      "line2": "at least <strong>6 clients</strong> <nowrap>in <mark>90 days</mark></nowrap>",
+      "line3": "for <em>software houses.</em>",
+      "subtitle": "Results guaranteed. Otherwise you get your money back or we work for free.",
+      "logosLabel": "Trusted by"
+    },
+    "bench": {
+      "title": "No more sending developers to the bench.",
+      "subtitle": "Time for quality projects, stable cash flow and company growth."
+    },
+    "meet": {
+      "title": "Let’s meet.",
+      "introLine1": "Hi, I’m an ex-developer",
+      "introLine2": "and the owner of a design studio.",
+      "body": "I know how much a steady project pipeline matters, both for the business and for the developers."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": {
+        "guarantee": {
+          "question": "What guarantee do I have that you will deliver results?",
+          "answer": "The guarantee is written into the contract. If we don’t deliver at least 6 clients within 90 days, we refund you or keep working without pay until the goal is met."
+        },
+        "contract": {
+          "question": "What is the minimum contract length?",
+          "answer": "We work in 90-day cycles. That is how long a campaign needs to gather data and deliver results. We agree on the details during the call."
+        },
+        "budget": {
+          "question": "How much do I need to spend on Meta Ads per month?",
+          "answer": "The budget depends on your market and the value of a client. We recommend a specific amount after the call and a review of your offer."
+        }
+      }
+    },
+    "footer": {
+      "tagline": "We help software houses stop worrying about a steady project pipeline.",
+      "privacy": "Privacy policy",
+      "contact": "Contact",
+      "instagram": "Instagram",
+      "cookies": "Manage cookies",
+      "studioLine1": "Design studio",
+      "studioLine2": "Revolutionize your brand",
+      "studioLine3": "Modern visual identities."
+    }
   }
 }

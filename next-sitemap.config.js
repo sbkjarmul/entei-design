@@ -23,7 +23,8 @@ const routes = [
 module.exports = {
   siteUrl: "https://www.entei.design",
   generateRobotsTxt: true,
-  exclude: ["/icon.png"],
+  // /agency is served on its own host (agency.entei.pl), not www.entei.design.
+  exclude: ["/icon.png", "/agency"],
   additionalPaths: async (config) =>
     Promise.all(
       routes.map((route) =>
