@@ -653,11 +653,8 @@
       "qualityLine": "You get what you pay for.",
       "qualityBody": "At ENTEI you work with professionals. Most agencies deliver low-quality contacts."
     },
-    "meet": {
-      "title": "Let’s meet.",
-      "introLine1": "Hi, I’m an ex-developer",
-      "introLine2": "and the owner of a design studio.",
-      "body": "I know how much a steady project pipeline matters, both for the business and for the developers."
+    "closing": {
+      "title": "With our proven methods you sign more clients and keep your developers on steady projects."
     },
     "faq": {
       "title": "Frequently asked questions",

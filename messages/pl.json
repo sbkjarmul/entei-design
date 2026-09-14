@@ -688,11 +688,8 @@
       "qualityLine": "Otrzymujesz to, za co płacisz.",
       "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty."
     },
-    "meet": {
-      "title": "Poznajmy się.",
-      "introLine1": "Cześć, tu ex-developer",
-      "introLine2": "i właściciel studia projektowego.",
-      "body": "Rozumiem jak ważna jest regularność w projektach, zarówno od strony biznesowej jak i developerskiej."
+    "closing": {
+      "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom regularne projekty."
     },
     "faq": {
       "title": "Najczęściej zadawane pytania",

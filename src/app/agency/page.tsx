@@ -1,8 +1,8 @@
 import BenchSection from "./components/BenchSection";
+import ClosingSection from "./components/ClosingSection";
 import ComparisonSection from "./components/ComparisonSection";
 import FaqSection from "./components/FaqSection";
 import HeroSection from "./components/HeroSection";
-import MeetSection from "./components/MeetSection";
 
 /** Agency landing, served at agency.entei.pl (rewritten by src/middleware.ts). */
 export default function AgencyPage() {
@@ -11,7 +11,7 @@ export default function AgencyPage() {
       <HeroSection />
       <BenchSection />
       <ComparisonSection />
-      <MeetSection />
+      <ClosingSection />
       <FaqSection />
     </>
   );

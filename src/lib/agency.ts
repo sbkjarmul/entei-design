@@ -13,10 +13,6 @@ export const AGENCY_HOSTS = ["agency.entei.pl", "agency.localhost"];
 export const MAIN_SITE_URL = "https://www.entei.design";
 export const MAIN_SITE_HOSTS = ["www.entei.design", "entei.design"];
 
-/** Calendly event for "Umów rozmowę". Set NEXT_PUBLIC_CALENDLY_URL in Vercel. */
-export const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL ?? "";
-
 export const CONTACT_EMAIL = "hello@entei.design";
 export const INSTAGRAM_URL = "https://instagram.com/entei.designs";
 export const PRIVACY_POLICY_URL = `${MAIN_SITE_URL}/polityka-prywatnosci`;
-export const CONTACT_PAGE_URL = `${MAIN_SITE_URL}/contact`;

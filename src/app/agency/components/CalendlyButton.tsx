@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import ScrambleText from "@/components/ScrambleText";
-import { CALENDLY_URL, CONTACT_PAGE_URL } from "@/lib/agency";
+import { CALENDLY_URL } from "@/lib/caseStudies";
 import { cx } from "@/lib/utils";
 
 import SignalDot from "./SignalDot";
@@ -27,8 +27,7 @@ export default function CalendlyButton({
 
   return (
     <Button
-      // Until NEXT_PUBLIC_CALENDLY_URL is set, fall back to the contact page.
-      href={CALENDLY_URL || CONTACT_PAGE_URL}
+      href={CALENDLY_URL}
       target="_blank"
       variant={variant}
       rounded={false}

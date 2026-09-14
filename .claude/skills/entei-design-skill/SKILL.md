@@ -60,6 +60,7 @@ Używaj klas semantycznych z `@layer components` (responsywne automatycznie). **
 | `.t-accent`  | eyebrow / label (chip `bg-primary`) | 14px  | 14px            | 400    | 1.2         | -0.01em        |
 | `.t-display` | gigantyczny napis brandowy        | —       | —               | 700    | 1.0         | -0.02em        |
 | `.t-title-xl`| duży tytuł sans (hero, statement) | 64px    | 40px            | 500    | 0.9         | 0              |
+| `.t-headline`| wyśrodkowany tytuł karty CTA      | 48px    | 30px            | 500    | 1.0         | 0.02em         |
 | `.t-title-lg`| średni tytuł (intro, FAQ)         | 32px    | 24px            | 500    | 0.9         | 0.02em         |
 | `.t-title-md`| wieloliniowy statement w karcie   | 34px    | 26px            | 500    | 1.2         | 0.02em         |
 | `.t-lead`    | lead / pytania FAQ                | 24px    | 20px            | 500    | 1.0         | 0              |
