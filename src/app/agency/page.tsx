@@ -1,4 +1,5 @@
 import BenchSection from "./components/BenchSection";
+import ComparisonSection from "./components/ComparisonSection";
 import FaqSection from "./components/FaqSection";
 import HeroSection from "./components/HeroSection";
 import MeetSection from "./components/MeetSection";
@@ -9,6 +10,7 @@ export default function AgencyPage() {
     <>
       <HeroSection />
       <BenchSection />
+      <ComparisonSection />
       <MeetSection />
       <FaqSection />
     </>

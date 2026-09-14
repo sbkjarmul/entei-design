@@ -24,7 +24,7 @@ export default async function FaqSection() {
   };
 
   return (
-    <section className="flex flex-col justify-center gap-8 bg-concrete px-4 py-16 md:min-h-(--section-h-lg) md:py-4">
+    <section className="flex flex-col justify-center gap-8 bg-concrete px-4 py-16 md:min-h-(--section-h-lg) md:px-16 md:py-4">
       <h2 className="t-title-lg text-black">{t("title")}</h2>
       <FaqList items={items} />
       <script

@@ -632,6 +632,27 @@
       "title": "No more sending developers to the bench.",
       "subtitle": "Time for quality projects, stable cash flow and company growth."
     },
+    "comparison": {
+      "others": {
+        "title": "Other agencies",
+        "description": "Time + money you need to invest on average",
+        "time": "1 month",
+        "price": "PLN 10,000"
+      },
+      "us": {
+        "title": "With us",
+        "description": "You get qualified enquiries from people who already know your service",
+        "time": "3 months",
+        "price": "PLN 5,000 / <small>month</small>"
+      },
+      "statementAccent": "With us you earn more.",
+      "statementLine2": "And we understand your business.",
+      "statementLine3": "Sign 6 contracts in 3 months.",
+      "body": "You gain at least 6 new projects in 90 days. We won’t flood you with unqualified leads.",
+      "qualityMuted": "With us you always get in touch with qualified people.",
+      "qualityLine": "You get what you pay for.",
+      "qualityBody": "At ENTEI you work with professionals. Most agencies deliver low-quality contacts."
+    },
     "meet": {
       "title": "Let’s meet.",
       "introLine1": "Hi, I’m an ex-developer",

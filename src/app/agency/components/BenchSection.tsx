@@ -6,7 +6,7 @@ export default async function BenchSection() {
   const t = await getTranslations("agency.bench");
 
   return (
-    <section className="flex min-h-(--section-h-md) flex-col justify-center gap-6 bg-primary p-4 text-ink md:min-h-(--section-h-lg)">
+    <section className="flex min-h-(--section-h-md) flex-col justify-center gap-6 bg-primary p-4 text-ink md:px-16 md:min-h-(--section-h-lg)">
       <TextReveal
         as="h2"
         trigger="inView"

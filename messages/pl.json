@@ -667,6 +667,27 @@
       "title": "Koniec z odsyłaniem developerów na ławkę.",
       "subtitle": "Czas na jakościowe zlecenia, stabilne cash-flow i rozwój firmy."
     },
+    "comparison": {
+      "others": {
+        "title": "Inne agencje",
+        "description": "Czas + pieniądze, które musisz średnio zainwestować",
+        "time": "1 miesiąc",
+        "price": "10 000 zł"
+      },
+      "us": {
+        "title": "Z nami",
+        "description": "Dostajesz kwalifikowane zapytania od ludzi, którzy znają Twoją usługę",
+        "time": "3 miesiące",
+        "price": "5000 zł / <small>miesięcznie</small>"
+      },
+      "statementAccent": "Z nami zarobisz więcej.",
+      "statementLine2": "No i rozumiemy Twój biznes.",
+      "statementLine3": "Podpisz 6 umów w 3 miesiące.",
+      "body": "Zyskasz przynajmniej 6 nowych projektów w 90 dni. Nie będziemy zaśmiecać Cię niekwalifikowanymi leadami.",
+      "qualityMuted": "Z nami zawsze dostajesz kontakt do kwalifikowanych osób.",
+      "qualityLine": "Otrzymujesz to, za co płacisz.",
+      "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty."
+    },
     "meet": {
       "title": "Poznajmy się.",
       "introLine1": "Cześć, tu ex-developer",

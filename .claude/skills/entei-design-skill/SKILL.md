@@ -31,6 +31,8 @@ Ciemny interfejs (czarne tło, biały tekst) z mocnym czerwonym akcentem.
 | `concrete`         | `#c2c2c2` | jasne tło landingu agency (agency.entei.pl)  |
 | `ink`              | `#141414` | tekst/przycisk ciemny na tle `concrete`      |
 | `graphite`         | `#1c1c1c` | ciemna karta na tle `concrete`               |
+| `charcoal`         | `#313131` | ciemny kafelek w karcie (porównanie cen)     |
+| `ember`            | `#ff3919` | jasny początek gradientu `ember → primary`   |
 
 Klasy Tailwind: `bg-black`, `text-white`, `bg-primary`, `text-primary`, `text-gray-500`, `border-gray-700` itd.
 Domyślnie (z `globals.css`): tło czarne, tekst biały. Brak kolorów spoza systemu — brak wariantu → dodaj token w `theme.css`.
@@ -59,11 +61,13 @@ Używaj klas semantycznych z `@layer components` (responsywne automatycznie). **
 | `.t-display` | gigantyczny napis brandowy        | —       | —               | 700    | 1.0         | -0.02em        |
 | `.t-title-xl`| duży tytuł sans (hero, statement) | 64px    | 40px            | 500    | 0.9         | 0              |
 | `.t-title-lg`| średni tytuł (intro, FAQ)         | 32px    | 24px            | 500    | 0.9         | 0.02em         |
+| `.t-title-md`| wieloliniowy statement w karcie   | 34px    | 26px            | 500    | 1.2         | 0.02em         |
 | `.t-lead`    | lead / pytania FAQ                | 24px    | 20px            | 500    | 1.0         | 0              |
 | `.t-lead-sm` | mniejszy lead                     | 20px    | 18px            | 500    | 1.0 (1.1 mob) | 0            |
 
 Modyfikatory z `@theme`: `tracking-loose` (0.02em — etykiety przycisków, „Poznajmy się.”),
-`leading-display` (0.8 — ciasne tytuły), `leading-compact` (1.2 — stopka agency).
+`leading-display` (0.8 — ciasne tytuły), `leading-compact` (1.2 — stopka agency),
+`leading-lead` (1.1 — lead/opis w kartach), `leading-title` (0.9 — krótkie etykiety i liczby).
 > Kit Typekit: waga CSS 400 jest lżejsza niż Figmowy „55 Roman”. Na landingu agency Roman = `500`,
 > Medium = `600` (`font-semibold`), Bold = `700`.
 

@@ -32,11 +32,16 @@
   --color-concrete: #c2c2c2;
   --color-ink: #141414;
   --color-graphite: #1c1c1c;
+  /* Comparison cards: dark tile surface + light start of the red gradient. */
+  --color-charcoal: #313131;
+  --color-ember: #ff3919;
 
   /* ---- Letter spacing / line height (agency landing titles & buttons) ---- */
   --tracking-loose: 0.02em;
   --leading-display: 0.8;
   --leading-compact: 1.2;
+  --leading-lead: 1.1;
+  --leading-title: 0.9;
 
   /* ---- Typography ---- */
   /* Primary sans — Neue Haas (Typekit family). Drives the `font-neue-haas`
@@ -169,6 +174,13 @@
     line-height: 0.9;
     letter-spacing: 0.02em;
   }
+  /* Multi-line statement (comparison cards). */
+  .t-title-md {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
   /* Lead copy under titles, FAQ questions. */
   .t-lead {
     font-size: 20px;
@@ -187,6 +199,9 @@
     }
     .t-title-lg {
       font-size: 32px;
+    }
+    .t-title-md {
+      font-size: 34px;
     }
     .t-lead {
       font-size: 24px;
