@@ -169,7 +169,7 @@
   }
   /* Centered closing headline (CTA card). */
   .t-headline {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.02em;
@@ -183,10 +183,34 @@
   }
   /* Multi-line statement (comparison cards). */
   .t-title-md {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+  }
+  /* Card typography (comparison tiles/cards): compact on mobile. */
+  .t-card-label {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+  .t-card-caption {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+  .t-card-value {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+  .t-card-body {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
   }
   /* Lead copy under titles, FAQ questions. */
   .t-lead {
@@ -212,6 +236,24 @@
     }
     .t-title-md {
       font-size: 34px;
+    }
+    .t-card-label {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 0.9;
+    }
+    .t-card-caption {
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+    .t-card-value {
+      font-size: 24px;
+      line-height: 0.9;
+    }
+    .t-card-body {
+      font-size: 20px;
+      line-height: 1.1;
     }
     .t-lead {
       font-size: 24px;

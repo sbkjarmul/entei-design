@@ -641,9 +641,9 @@
       },
       "us": {
         "title": "With us",
-        "description": "You get qualified enquiries from people who already know your service",
+        "description": "You get enquiries from people who already know your service",
         "time": "3 months",
-        "price": "PLN 5,000 / <small>month</small>"
+        "price": "at PLN 5,000 a month"
       },
       "statementAccent": "With us you earn more.",
       "statementLine2": "And we understand your business.",
@@ -651,10 +651,12 @@
       "body": "You gain at least 6 new projects in 90 days. We won’t flood you with unqualified leads.",
       "qualityMuted": "With us you always get in touch with qualified people.",
       "qualityLine": "You get what you pay for.",
-      "qualityBody": "At ENTEI you work with professionals. Most agencies deliver low-quality contacts."
+      "qualityBody": "At ENTEI you work with professionals. Most agencies deliver low-quality contacts your sales team can do nothing with."
     },
     "closing": {
-      "title": "With our proven methods you sign more clients and keep your developers on steady projects."
+      "title": "With our proven methods you sign more clients and keep your developers on <accent>steady projects.</accent>",
+      "titleShort": "Sign more clients and keep your developers on <accent>steady projects.</accent>",
+      "writeUs": "Or write to us at <email></email>"
     },
     "faq": {
       "title": "Frequently asked questions",

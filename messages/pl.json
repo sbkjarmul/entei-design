@@ -676,9 +676,9 @@
       },
       "us": {
         "title": "Z nami",
-        "description": "Dostajesz kwalifikowane zapytania od ludzi, którzy znają Twoją usługę",
+        "description": "Dostajesz zapytania od ludzi, którzy znają Twoją usługę",
         "time": "3 miesiące",
-        "price": "5000 zł / <small>miesięcznie</small>"
+        "price": "po 5000 zł"
       },
       "statementAccent": "Z nami zarobisz więcej.",
       "statementLine2": "No i rozumiemy Twój biznes.",
@@ -686,10 +686,12 @@
       "body": "Zyskasz przynajmniej 6 nowych projektów w 90 dni. Nie będziemy zaśmiecać Cię niekwalifikowanymi leadami.",
       "qualityMuted": "Z nami zawsze dostajesz kontakt do kwalifikowanych osób.",
       "qualityLine": "Otrzymujesz to, za co płacisz.",
-      "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty."
+      "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty, z którymi Twoi sprzedawcy nic nie zrobią."
     },
     "closing": {
-      "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom regularne projekty."
+      "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom <accent>regularne projekty.</accent>",
+      "titleShort": "Podpisz więcej klientów i zapewnij developerom <accent>regularne projekty.</accent>",
+      "writeUs": "Albo napisz do nas na <email></email>"
     },
     "faq": {
       "title": "Najczęściej zadawane pytania",
