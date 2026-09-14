@@ -26,7 +26,7 @@ function PriceTile({
   return (
     <div
       className={cx(
-        "flex flex-col gap-4 rounded-xl p-4 md:rounded-2xl md:p-6",
+        "flex flex-col gap-2 rounded-xl p-4 md:gap-4 md:rounded-2xl md:p-6",
         isUs
           ? "bg-linear-136 from-ember from-15% to-primary to-95% text-black"
           : "border border-gray-800 bg-charcoal text-white",
@@ -44,7 +44,7 @@ function PriceTile({
         </p>
       </div>
       {/* Mobile: time + price read as one tight pair; desktop keeps Figma's 16px rhythm. */}
-      <div className="t-card-value flex flex-col md:gap-4">
+      <div className="t-card-value flex flex-col pt-1 md:gap-4 md:pt-0">
         <p>{time}</p>
         <p>{price}</p>
       </div>
@@ -62,7 +62,7 @@ export default async function ComparisonSection() {
     description: tc(`${variant}.description`),
     time: tc(`${variant}.time`),
     price: tc.rich(`${variant}.price`, {
-      small: (chunks) => <span className="text-xs md:text-base">{chunks}</span>,
+      small: (chunks) => <span className="block text-xs md:inline md:text-base">{chunks}</span>,
     }),
   });
 

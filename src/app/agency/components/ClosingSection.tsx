@@ -12,14 +12,14 @@ import SignalDot from "./SignalDot";
 /**
  * Closing CTA card: headline + "book a call" with a direct Calendly link.
  * Desktop follows Figma 693:24; mobile is a compact card with a shorter
- * headline, a big avatar CTA and an email fallback.
+ * headline, a softer radial card and an email fallback.
  */
 export default async function ClosingSection() {
   const t = await getTranslations("agency");
 
   return (
     <section className="flex bg-concrete px-4 py-10 md:min-h-(--section-h-lg) md:items-center md:px-16 md:py-4">
-      <div className="relative flex flex-1 flex-col items-center justify-center gap-10 rounded-2xl bg-radial-[at_50%_45%] from-gray-800 via-gray-950 to-black px-4 py-16 md:h-[732px] md:gap-8 md:rounded-3xl md:bg-none md:bg-graphite md:px-4 md:py-0">
+      <div className="relative flex flex-1 flex-col items-center justify-center gap-10 rounded-2xl bg-radial-[at_50%_45%] from-gray-900 via-gray-950 to-black px-4 py-16 md:h-[732px] md:gap-8 md:rounded-3xl md:bg-none md:bg-graphite md:px-4 md:py-0">
         <Image
           src="/images/agency/entei-wordmark-white.svg"
           alt={t("logoAlt")}
@@ -50,13 +50,8 @@ export default async function ClosingSection() {
           {t("closing.title")}
         </TextReveal>
 
-        <div className="flex w-full flex-col items-center gap-6 md:w-auto md:gap-2">
-          <CalendlyButton
-            variant="primary"
-            withAvatarOnMobile
-            label={t("cta.label")}
-            className="w-full max-w-80 justify-center rounded-lg px-4 py-4 md:w-auto md:max-w-none md:rounded-sm md:px-6"
-          />
+        <div className="flex flex-col items-center gap-4 md:gap-2">
+          <CalendlyButton variant="primary" label={t("cta.label")} />
           <a
             href={CALENDLY_URL}
             target="_blank"

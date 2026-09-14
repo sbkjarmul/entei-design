@@ -678,7 +678,7 @@
         "title": "Z nami",
         "description": "Dostajesz kwalifikowane zapytania od ludzi, którzy znają Twoją usługę",
         "time": "3 miesiące",
-        "price": "5000 zł / <small>miesięcznie</small>"
+        "price": "5000 zł <small>/ miesięcznie</small>"
       },
       "statementAccent": "Z nami zarobisz więcej.",
       "statementLine2": "No i rozumiemy Twój biznes.",
