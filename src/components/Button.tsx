@@ -3,7 +3,7 @@ import { cx } from "@/lib/utils";
 import ScrambleText from "./ScrambleText";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "text";
+  variant?: "primary" | "secondary" | "dark" | "text";
   iconRight?: React.ReactNode;
   rounded?: boolean;
   height?: string;
@@ -54,6 +54,12 @@ export default function Button({
       disabled
         ? "bg-black text-gray-500"
         : "bg-black text-gray-200 hover:text-gray-300",
+    ],
+    // Ink button on the light "concrete" surface (agency landing).
+    variant === "dark" && [
+      disabled
+        ? "bg-gray-800 text-gray-500"
+        : "bg-ink text-concrete hover:text-white",
     ],
     variant === "text" && [
       disabled

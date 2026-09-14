@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { MotionConfig, motion } from "framer-motion";
 import type { ReactNode } from "react";
 
 import { cx } from "@/lib/utils";
@@ -59,22 +59,8 @@ export default function TextReveal({
   duration = 0.7,
   mask = true,
 }: TextRevealProps) {
-  const reduceMotion = useReducedMotion();
   const items: ReactNode[] = children != null ? [children] : (lines ?? []);
   const Tag = as;
-
-  // Static render when the user prefers reduced motion: no transforms.
-  if (reduceMotion) {
-    return (
-      <Tag className={className}>
-        {items.map((item, i) => (
-          <span key={i} className={cx("block", lineClassName)}>
-            {item}
-          </span>
-        ))}
-      </Tag>
-    );
-  }
 
   const hidden = mask ? { y: "110%" } : { opacity: 0, y: 16 };
   const shown = mask ? { y: "0%" } : { opacity: 1, y: 0 };
@@ -100,19 +86,23 @@ export default function TextReveal({
     );
   };
 
+  // Same DOM on server and client (no hydration mismatch); with reduced motion
+  // MotionConfig makes framer-motion skip the transforms and only fade.
   return (
-    <Tag className={className}>
-      {items.map((item, i) =>
-        mask ? (
-          <span key={i} className="block overflow-hidden">
-            {renderLine(item, i)}
-          </span>
-        ) : (
-          <span key={i} className="block">
-            {renderLine(item, i)}
-          </span>
-        ),
-      )}
-    </Tag>
+    <MotionConfig reducedMotion="user">
+      <Tag className={className}>
+        {items.map((item, i) =>
+          mask ? (
+            <span key={i} className="block overflow-hidden">
+              {renderLine(item, i)}
+            </span>
+          ) : (
+            <span key={i} className="block">
+              {renderLine(item, i)}
+            </span>
+          ),
+        )}
+      </Tag>
+    </MotionConfig>
   );
 }

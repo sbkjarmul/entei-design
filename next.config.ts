@@ -5,6 +5,10 @@ const YEAR = 60 * 60 * 24 * 365;
 const MONTH = 60 * 60 * 24 * 30;
 
 const nextConfig: NextConfig = {
+  // Lets `next dev` serve the agency landing on http://agency.localhost:3000
+  // (host-based rewrite in src/middleware.ts).
+  allowedDevOrigins: ["agency.localhost"],
+
   images: {
     // AVIF first (~30% smaller than WebP), WebP as the fallback.
     formats: ["image/avif", "image/webp"],

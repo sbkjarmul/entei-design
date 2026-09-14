@@ -28,6 +28,21 @@
   --color-gray-900: #212121;
   --color-gray-950: #121212;
 
+  /* Light "concrete" surface + inks of the agency landing (Figma: ENTEI v.2). */
+  --color-concrete: #c2c2c2;
+  --color-ink: #141414;
+  --color-graphite: #1c1c1c;
+  /* Comparison cards: dark tile surface + light start of the red gradient. */
+  --color-charcoal: #313131;
+  --color-ember: #ff3919;
+
+  /* ---- Letter spacing / line height (agency landing titles & buttons) ---- */
+  --tracking-loose: 0.02em;
+  --leading-display: 0.8;
+  --leading-compact: 1.2;
+  --leading-lead: 1.1;
+  --leading-title: 0.9;
+
   /* ---- Typography ---- */
   /* Primary sans — Neue Haas (Typekit family). Drives the `font-neue-haas`
      utility used on <body> in src/app/layout.tsx.
@@ -142,6 +157,69 @@
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.01em;
+  }
+
+  /* ---- Titles & leads (agency landing, Figma: ENTEI v.2) ---- */
+  /* Weight 500: the Typekit kit's 400 renders lighter than Figma's "55 Roman". */
+  /* Oversized sans title (hero headline, section statements). */
+  .t-title-xl {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 0.9;
+  }
+  /* Centered closing headline (CTA card). */
+  .t-headline {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  /* Mid title (intro statement, FAQ heading). */
+  .t-title-lg {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+  }
+  /* Multi-line statement (comparison cards). */
+  .t-title-md {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  /* Lead copy under titles, FAQ questions. */
+  .t-lead {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  /* Smaller lead (hero subline, intro paragraph). */
+  .t-lead-sm {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  @media (min-width: 768px) {
+    .t-title-xl {
+      font-size: 64px;
+    }
+    .t-headline {
+      font-size: 48px;
+    }
+    .t-title-lg {
+      font-size: 32px;
+    }
+    .t-title-md {
+      font-size: 34px;
+    }
+    .t-lead {
+      font-size: 24px;
+    }
+    .t-lead-sm {
+      font-size: 20px;
+      line-height: 1;
+    }
   }
 
   /* Display face — Despair Time, for oversized branded numerals/wordmarks. */

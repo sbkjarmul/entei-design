@@ -644,5 +644,79 @@
         "poppins"
       ]
     }
+  },
+  "agency": {
+    "meta": {
+      "title": "ENTEI | Min. 6 klientów w 90 dni dla software house'u",
+      "description": "Dostarczamy software house'om minimum 6 klientów w 90 dni. Gwarantujemy wynik: w przeciwnym wypadku zwrot pieniędzy lub pracujemy za darmo."
+    },
+    "cta": {
+      "label": "Umów rozmowę z Sebastianem",
+      "labelShort": "Umów rozmowę",
+      "availability": "Mamy dostępne miejsca w Calendly"
+    },
+    "logoAlt": "ENTEI",
+    "hero": {
+      "line1": "Dostarczymy",
+      "line2": "min. <strong>6 klientów</strong> <nowrap>w <mark>90 dni</mark></nowrap>",
+      "line3": "dla <em>software house’u.</em>",
+      "subtitle": "Gwarantujemy wynik, w przeciwnym wypadku dostajesz zwrot pieniędzy lub pracujemy za darmo.",
+      "logosLabel": "Zaufali nam"
+    },
+    "bench": {
+      "title": "Koniec z odsyłaniem developerów na ławkę.",
+      "subtitle": "Czas na jakościowe zlecenia, stabilne cash-flow i rozwój firmy."
+    },
+    "comparison": {
+      "others": {
+        "title": "Inne agencje",
+        "description": "Czas + pieniądze, które musisz średnio zainwestować",
+        "time": "1 miesiąc",
+        "price": "10 000 zł"
+      },
+      "us": {
+        "title": "Z nami",
+        "description": "Dostajesz kwalifikowane zapytania od ludzi, którzy znają Twoją usługę",
+        "time": "3 miesiące",
+        "price": "5000 zł / <small>miesięcznie</small>"
+      },
+      "statementAccent": "Z nami zarobisz więcej.",
+      "statementLine2": "No i rozumiemy Twój biznes.",
+      "statementLine3": "Podpisz 6 umów w 3 miesiące.",
+      "body": "Zyskasz przynajmniej 6 nowych projektów w 90 dni. Nie będziemy zaśmiecać Cię niekwalifikowanymi leadami.",
+      "qualityMuted": "Z nami zawsze dostajesz kontakt do kwalifikowanych osób.",
+      "qualityLine": "Otrzymujesz to, za co płacisz.",
+      "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty."
+    },
+    "closing": {
+      "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom regularne projekty."
+    },
+    "faq": {
+      "title": "Najczęściej zadawane pytania",
+      "items": {
+        "guarantee": {
+          "question": "Jaką mam gwarancję, że dowieziecie wyniki?",
+          "answer": "Gwarancja jest zapisana w umowie. Jeśli w ciągu 90 dni nie dostarczymy minimum 6 klientów, zwracamy pieniądze albo pracujemy dalej bez wynagrodzenia, aż cel zostanie osiągnięty."
+        },
+        "contract": {
+          "question": "Jaki jest minimalny okres umowy?",
+          "answer": "Pracujemy w cyklach 90-dniowych. Tyle potrzeba, żeby kampania zebrała dane i dowiozła wynik. Szczegóły ustalamy na rozmowie."
+        },
+        "budget": {
+          "question": "Ile miesięcznie muszę wydać na MetaAds?",
+          "answer": "Budżet zależy od rynku i wartości pozyskanego klienta. Konkretną kwotę rekomendujemy po rozmowie i analizie Twojej oferty."
+        }
+      }
+    },
+    "footer": {
+      "tagline": "Wspieramy software house’y, aby nie musiały się martwić o regularność w projektach.",
+      "privacy": "Polityka prywatności",
+      "contact": "Kontakt",
+      "instagram": "Instagram",
+      "cookies": "Zarządzaj cookies",
+      "studioLine1": "Design studio",
+      "studioLine2": "Revolutionize your brand",
+      "studioLine3": "Modern visual identities."
+    }
   }
 }
