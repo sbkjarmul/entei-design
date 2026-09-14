@@ -26,7 +26,7 @@ function PriceTile({
   return (
     <div
       className={cx(
-        "flex flex-1 flex-col gap-4 rounded-2xl p-6",
+        "flex flex-col gap-4 rounded-2xl p-6",
         isUs
           ? "bg-linear-136 from-ember from-15% to-primary to-95% text-black"
           : "border border-gray-800 bg-charcoal text-white",
@@ -64,8 +64,8 @@ export default async function ComparisonSection() {
   });
 
   return (
-    <section className="flex flex-col gap-6 bg-concrete px-4 py-10 md:min-h-(--section-h-lg) md:flex-row md:items-center md:px-16 md:py-4">
-      <div className="flex flex-1 flex-col justify-center gap-8 rounded-3xl bg-linear-163 from-graphite from-12% to-gray-950 to-80% p-8">
+    <section className="grid auto-rows-fr gap-6 bg-concrete px-4 py-10 md:min-h-(--section-h-lg) md:auto-rows-auto md:grid-cols-2 md:content-center md:px-16 md:py-4">
+      <div className="flex flex-col justify-center gap-8 rounded-3xl bg-linear-163 from-graphite from-12% to-gray-950 to-80% p-8">
         <Image
           src="/images/agency/entei-wordmark-white.svg"
           alt={t("logoAlt")}
@@ -73,7 +73,7 @@ export default async function ComparisonSection() {
           height={20}
         />
 
-        <div className="flex flex-col gap-4 sm:flex-row">
+        <div className="grid auto-rows-fr gap-4 sm:grid-cols-2">
           <PriceTile {...tile("others")} />
           <PriceTile {...tile("us")} />
         </div>
@@ -104,7 +104,7 @@ export default async function ComparisonSection() {
         </TextReveal>
       </div>
 
-      <div className="flex flex-1 flex-col justify-end gap-8 rounded-3xl border border-gray-500 p-8 md:h-[554px]">
+      <div className="flex flex-col justify-end gap-8 rounded-3xl border border-gray-500 p-8">
         <TextReveal
           as="p"
           trigger="inView"
