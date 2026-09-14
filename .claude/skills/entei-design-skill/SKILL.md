@@ -63,10 +63,10 @@ Używaj klas semantycznych z `@layer components` (responsywne automatycznie). **
 | `.t-headline`| wyśrodkowany tytuł karty CTA      | 48px    | 26px            | 500    | 1.0         | 0.02em         |
 | `.t-title-lg`| średni tytuł (intro, FAQ)         | 32px    | 24px            | 500    | 0.9         | 0.02em         |
 | `.t-title-md`| wieloliniowy statement w karcie   | 34px    | 20px            | 500    | 1.2         | 0.02em         |
-| `.t-card-label`  | tytuł kafelka (porównanie)    | 20px    | 14px            | 600    | 0.9 (1.1 mob) | 0.02em       |
-| `.t-card-caption`| opis kafelka                  | 14px    | 13px            | 500    | 1.1 (1.3 mob) | 0.02em       |
-| `.t-card-value`  | wartości kafelka (czas, cena) | 24px    | 18px            | 500    | 0.9 (1.15 mob) | 0.02em      |
-| `.t-card-body`   | akapit w karcie               | 20px    | 14px            | 500    | 1.1 (1.4 mob) | 0             |
+| `.t-card-label`  | tytuł kafelka (porównanie)    | 20px    | 13px            | 600    | 0.9 (1.1 mob) | 0.02em       |
+| `.t-card-caption`| opis kafelka                  | 14px    | 12px            | 500    | 1.1 (1.3 mob) | 0.02em       |
+| `.t-card-value`  | wartości kafelka (czas, cena) | 24px    | 16px            | 500    | 0.9 (1.15 mob) | 0.02em      |
+| `.t-card-body`   | akapit w karcie               | 20px    | 13px            | 500    | 1.1 (1.4 mob) | 0             |
 | `.t-lead`    | lead / pytania FAQ                | 24px    | 20px            | 500    | 1.0         | 0              |
 | `.t-lead-sm` | mniejszy lead                     | 20px    | 18px            | 500    | 1.0 (1.1 mob) | 0            |
 
