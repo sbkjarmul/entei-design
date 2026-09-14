@@ -61,9 +61,7 @@ export default async function ComparisonSection() {
     title: tc(`${variant}.title`),
     description: tc(`${variant}.description`),
     time: tc(`${variant}.time`),
-    price: tc.rich(`${variant}.price`, {
-      small: (chunks) => <span className="block text-xs md:inline md:text-base">{chunks}</span>,
-    }),
+    price: tc(`${variant}.price`),
   });
 
   return (
