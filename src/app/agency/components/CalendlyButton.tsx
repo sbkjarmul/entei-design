@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Button from "@/components/Button";
 import ScrambleText from "@/components/ScrambleText";
 import { CALENDLY_URL } from "@/lib/caseStudies";
@@ -12,6 +14,8 @@ interface CalendlyButtonProps {
   variant?: "primary" | "dark";
   /** Show the red dot before the label. */
   withSignal?: boolean;
+  /** Below `md`: big CTA with Sebastian's photo and an arrow (closing card). */
+  withAvatarOnMobile?: boolean;
   className?: string;
 }
 
@@ -21,6 +25,7 @@ export default function CalendlyButton({
   shortLabel,
   variant = "dark",
   withSignal = false,
+  withAvatarOnMobile = false,
   className,
 }: CalendlyButtonProps) {
   const recolor = variant !== "primary";
@@ -36,8 +41,24 @@ export default function CalendlyButton({
         className,
       )}
     >
-      <span className="flex items-center gap-4">
+      <span
+        className={cx(
+          "flex items-center gap-4",
+          withAvatarOnMobile && "gap-3 md:gap-4",
+        )}
+      >
         {withSignal && <SignalDot />}
+        {withAvatarOnMobile && (
+          <span className="relative size-9 shrink-0 overflow-hidden rounded-full bg-black md:hidden">
+            <Image
+              src="/images/portfolio/entei-me-in-glasses.webp"
+              alt=""
+              fill
+              sizes="36px"
+              className="object-cover object-top"
+            />
+          </span>
+        )}
         {shortLabel ? (
           <>
             <ScrambleText recolor={recolor} className="md:hidden">
@@ -49,6 +70,15 @@ export default function CalendlyButton({
           </>
         ) : (
           <ScrambleText recolor={recolor}>{label}</ScrambleText>
+        )}
+        {withAvatarOnMobile && (
+          <Image
+            src="/images/icons/arrow-icon-black.svg"
+            alt=""
+            width={16}
+            height={16}
+            className="shrink-0 md:hidden"
+          />
         )}
       </span>
     </Button>

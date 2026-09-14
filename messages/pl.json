@@ -689,7 +689,9 @@
       "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty."
     },
     "closing": {
-      "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom regularne projekty."
+      "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom regularne projekty.",
+      "titleShort": "Podpisz więcej klientów i <accent>zapewnij developerom regularne projekty.</accent>",
+      "writeUs": "Albo napisz do nas na <email></email>"
     },
     "faq": {
       "title": "Najczęściej zadawane pytania",

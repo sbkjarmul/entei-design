@@ -654,7 +654,9 @@
       "qualityBody": "At ENTEI you work with professionals. Most agencies deliver low-quality contacts."
     },
     "closing": {
-      "title": "With our proven methods you sign more clients and keep your developers on steady projects."
+      "title": "With our proven methods you sign more clients and keep your developers on steady projects.",
+      "titleShort": "Sign more clients and <accent>keep your developers on steady projects.</accent>",
+      "writeUs": "Or write to us at <email></email>"
     },
     "faq": {
       "title": "Frequently asked questions",

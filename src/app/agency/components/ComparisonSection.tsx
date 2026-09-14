@@ -26,25 +26,28 @@ function PriceTile({
   return (
     <div
       className={cx(
-        "flex flex-col gap-4 rounded-2xl p-6",
+        "flex flex-col gap-4 rounded-xl p-4 md:rounded-2xl md:p-6",
         isUs
           ? "bg-linear-136 from-ember from-15% to-primary to-95% text-black"
           : "border border-gray-800 bg-charcoal text-white",
       )}
     >
-      <p className="t-lead-sm font-semibold leading-title tracking-loose">
-        {title}
-      </p>
-      <p
-        className={cx(
-          "t-caption leading-lead font-medium tracking-loose",
-          isUs ? "text-gray-900" : "text-gray-400",
-        )}
-      >
-        {description}
-      </p>
-      <p className="t-lead leading-title tracking-loose">{time}</p>
-      <p className="t-lead leading-title tracking-loose">{price}</p>
+      <div className="flex flex-col gap-2 md:gap-4">
+        <p className="t-card-label">{title}</p>
+        <p
+          className={cx(
+            "t-card-caption",
+            isUs ? "text-gray-900" : "text-gray-400",
+          )}
+        >
+          {description}
+        </p>
+      </div>
+      {/* Mobile: time + price read as one tight pair; desktop keeps Figma's 16px rhythm. */}
+      <div className="t-card-value flex flex-col md:gap-4">
+        <p>{time}</p>
+        <p>{price}</p>
+      </div>
     </div>
   );
 }
@@ -59,52 +62,56 @@ export default async function ComparisonSection() {
     description: tc(`${variant}.description`),
     time: tc(`${variant}.time`),
     price: tc.rich(`${variant}.price`, {
-      small: (chunks) => <span className="text-base">{chunks}</span>,
+      small: (chunks) => <span className="text-sm md:text-base">{chunks}</span>,
     }),
   });
 
   return (
     <section className="grid auto-rows-fr gap-6 bg-concrete px-4 py-10 md:min-h-(--section-h-lg) md:auto-rows-auto md:grid-cols-2 md:content-center md:px-16 md:py-4">
-      <div className="flex flex-col justify-center gap-8 rounded-3xl bg-linear-163 from-graphite from-12% to-gray-950 to-80% p-8">
+      <div className="flex flex-col justify-center gap-6 rounded-2xl bg-linear-163 from-graphite from-12% to-gray-950 to-80% p-4 md:gap-8 md:rounded-3xl md:p-8">
         <Image
           src="/images/agency/entei-wordmark-white.svg"
           alt={t("logoAlt")}
           width={96}
           height={20}
+          className="mx-2 mt-2 md:mx-0 md:mt-0"
         />
 
-        <div className="grid auto-rows-fr gap-4 sm:grid-cols-2">
+        {/* Two tiles side by side on every breakpoint, equal height. */}
+        <div className="grid auto-rows-fr grid-cols-2 gap-2 md:gap-4">
           <PriceTile {...tile("others")} />
           <PriceTile {...tile("us")} />
         </div>
 
-        <TextReveal
-          as="p"
-          trigger="inView"
-          mask={false}
-          stagger={0.06}
-          className="t-title-md text-gray-200"
-          lines={[
-            <span key="accent" className="text-primary">
-              {tc("statementAccent")}
-            </span>,
-            tc("statementLine2"),
-            tc("statementLine3"),
-          ]}
-        />
+        <div className="flex flex-col gap-4 px-2 pb-2 md:gap-8 md:px-0 md:pb-0">
+          <TextReveal
+            as="p"
+            trigger="inView"
+            mask={false}
+            stagger={0.06}
+            className="t-title-md text-gray-200"
+            lines={[
+              <span key="accent" className="text-primary">
+                {tc("statementAccent")}
+              </span>,
+              tc("statementLine2"),
+              tc("statementLine3"),
+            ]}
+          />
 
-        <TextReveal
-          as="p"
-          trigger="inView"
-          mask={false}
-          delay={0.15}
-          className="t-lead-sm leading-lead text-gray-400"
-        >
-          {tc("body")}
-        </TextReveal>
+          <TextReveal
+            as="p"
+            trigger="inView"
+            mask={false}
+            delay={0.15}
+            className="t-card-body text-gray-400"
+          >
+            {tc("body")}
+          </TextReveal>
+        </div>
       </div>
 
-      <div className="flex flex-col justify-end gap-8 rounded-3xl border border-gray-500 p-8">
+      <div className="flex flex-col justify-end gap-4 rounded-2xl border border-gray-500 p-6 md:gap-8 md:rounded-3xl md:p-8">
         <TextReveal
           as="p"
           trigger="inView"
@@ -123,7 +130,7 @@ export default async function ComparisonSection() {
           trigger="inView"
           mask={false}
           delay={0.15}
-          className="t-lead-sm leading-lead text-gray-700"
+          className="t-card-body text-gray-700"
         >
           {tc("qualityBody")}
         </TextReveal>
