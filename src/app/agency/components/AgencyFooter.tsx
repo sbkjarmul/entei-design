@@ -1,11 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import {
-  CONTACT_EMAIL,
-  INSTAGRAM_URL,
-  PRIVACY_POLICY_URL,
-} from "@/lib/agency";
+import { CONTACT_EMAIL, INSTAGRAM_URL, PRIVACY_POLICY_URL } from "@/lib/agency";
 
 import ManageCookiesButton from "./ManageCookiesButton";
 

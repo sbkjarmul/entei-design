@@ -57,7 +57,9 @@ export default function FaqList({ items }: { items: FaqItem[] }) {
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={
-                    reduceMotion ? { duration: 0 } : { duration: 0.4, ease: EASE }
+                    reduceMotion
+                      ? { duration: 0 }
+                      : { duration: 0.4, ease: EASE }
                   }
                 >
                   <p className="t-body max-w-2xl pt-4 pb-2 font-medium text-gray-800">

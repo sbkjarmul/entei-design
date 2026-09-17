@@ -661,7 +661,7 @@
       "line2": "min. <strong>6 klientów</strong> <nowrap>w <mark>90 dni</mark></nowrap>",
       "line3": "dla <em>software house’u.</em>",
       "subtitle": "Gwarantujemy wynik, w przeciwnym wypadku dostajesz zwrot pieniędzy lub pracujemy za darmo.",
-      "logosLabel": "Zaufali nam"
+      "logosLabel": "Narzędzia, na których pracujemy"
     },
     "bench": {
       "title": "Koniec z odsyłaniem developerów na ławkę.",
@@ -672,7 +672,7 @@
         "title": "Inne agencje",
         "description": "Czas + pieniądze, które musisz średnio zainwestować",
         "time": "1 miesiąc",
-        "price": "10 000 zł"
+        "price": "za 10 000 zł"
       },
       "us": {
         "title": "Z nami",
@@ -680,13 +680,34 @@
         "time": "3 miesiące",
         "price": "po 5000 zł"
       },
-      "statementAccent": "Z nami zarobisz więcej.",
-      "statementLine2": "No i rozumiemy Twój biznes.",
-      "statementLine3": "Podpisz 6 umów w 3 miesiące.",
-      "body": "Zyskasz przynajmniej 6 nowych projektów w 90 dni. Nie będziemy zaśmiecać Cię niekwalifikowanymi leadami.",
+      "statementAccent": "Z ENTEI zarobisz więcej.",
+      "statementLine2": "Rozumiemy Twój biznes.",
+      "statementLine3": "Podpiszesz 6 umów w 3 miesiące.",
       "qualityMuted": "Z nami zawsze dostajesz kontakt do kwalifikowanych osób.",
       "qualityLine": "Otrzymujesz to, za co płacisz.",
-      "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty, z którymi Twoi sprzedawcy nic nie zrobią."
+      "qualityBody": "W ENTEI pracujesz z profesjonalistami. Większość agencji dostarcza słabej jakości kontakty, które nie znają Twojej oferty.",
+      "title": "Oferujemy to, czego",
+      "titleMuted": "inne agencje nie mogą.",
+      "bodyLine1": "Zyskasz przynajmniej 6 nowych projektów w 90 dni.",
+      "bodyLine2": "Nie będziemy zaśmiecać Cię niekwalifikowanymi leadami.",
+      "indicators": {
+        "others": {
+          "value": "10%",
+          "label": "Większość agencji dostarcza słabej jakości kontakty",
+          "detail": "(słaba strategia, złe praktyki performance, nie rozumieją potencjału klienta)"
+        },
+        "us": {
+          "value": "89%",
+          "label": "ENTEI dostarcza jakość",
+          "detail": "(profesjonalne kreacje + regularne optymalizacje)"
+        }
+      },
+      "methodsMuted": "Sprawdzone metody sprawiają, że zarobisz więcej.",
+      "methodsLine": "Z nami sprzedajesz częściej.",
+      "methodsBody": "Klienci zyskują regularne wyniki sprzedażowe dzięki naszym metodom. Łączymy przetestowane rozwiązania graficzne z najlepszymi praktykami performance marketingu.",
+      "specialistTitle": "Performance Marketing z doświadczeniem, <accent>którego nie znajdziesz w innej agencji.</accent>",
+      "specialistBody": "Obsługą Twojej kampanii będzie zajmował się Performance Marketing Specialist z doświadczeniem w Google oraz pracy z największymi markami w Polsce.",
+      "specialistAlt": "Specjalista performance marketingu przy pracy nad kampanią"
     },
     "closing": {
       "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom <accent>regularne projekty.</accent>",
@@ -719,6 +740,31 @@
       "studioLine1": "Design studio",
       "studioLine2": "Revolutionize your brand",
       "studioLine3": "Modern visual identities."
+    },
+    "pricing": {
+      "title": "Cennik.",
+      "plans": {
+        "leads": {
+          "name": "Kwalifikowane zapytania",
+          "price": "4000 zł <small>/ miesięcznie</small>",
+          "features": [
+            "Gwarantujemy wynik w umowie",
+            "Profesjonalne kreacje tworzone przez grafika, a nie AI, które możesz udostępnić na swoich profilach social media.",
+            "CRM do pracy z klientami, który przyspiesza pracę.",
+            "Twoje kampanie są zawsze ustawiane i kontrolowane przez naszego specjalistę od performance marketingu."
+          ]
+        },
+        "brand": {
+          "name": "Branding + Strona WWW",
+          "price": "10 000 zł",
+          "features": [
+            "Profesjonalny wizerunek dla Twojego biznesu",
+            "Brand Guidelines zawierający wytyczne dla Twoich grafików",
+            "Landing page z mikrointerakcjami na podstawie indywidualnego projektu w Figmie.",
+            "Szablony grafik na social media"
+          ]
+        }
+      }
     }
   }
 }

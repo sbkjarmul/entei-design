@@ -13,7 +13,9 @@ export default async function HeroSection() {
   const tCta = await getTranslations("agency.cta");
 
   const rich = {
-    strong: (chunks: ReactNode) => <strong className="font-bold">{chunks}</strong>,
+    strong: (chunks: ReactNode) => (
+      <strong className="font-bold">{chunks}</strong>
+    ),
     mark: (chunks: ReactNode) => (
       <HighlightUnderline>
         <span className="font-semibold">{chunks}</span>

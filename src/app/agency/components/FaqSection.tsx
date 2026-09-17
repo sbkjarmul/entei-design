@@ -25,9 +25,11 @@ export default async function FaqSection() {
 
   // Desktop: heading in the left column, questions in the right one.
   return (
-    <section className="flex flex-col justify-center gap-8 bg-concrete px-4 py-16 md:grid md:min-h-(--section-h-lg) md:grid-cols-2 md:content-center md:items-start md:gap-16 md:px-16 md:py-4">
+    <section className="flex flex-col justify-center gap-8 bg-concrete px-4 py-16 md:grid md:min-h-(--section-h-lg) md:grid-cols-[auto_1fr] md:content-center md:items-start md:gap-8 md:px-16 md:py-4">
       <h2 className="t-title-lg text-black">{t("title")}</h2>
-      <FaqList items={items} />
+      <div className="md:pt-20">
+        <FaqList items={items} />
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
