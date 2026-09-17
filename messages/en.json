@@ -643,7 +643,7 @@
         "title": "With us",
         "description": "You get enquiries from people who already know your service",
         "time": "3 months",
-        "price": "at PLN 5,000 a month"
+        "price": "at PLN 4,000 a month"
       },
       "statementAccent": "With ENTEI you earn more.",
       "statementLine2": "We understand your business.",
@@ -672,7 +672,15 @@
       "methodsBody": "Clients get steady sales results thanks to our methods. We combine tested creative solutions with performance marketing best practices.",
       "specialistTitle": "Performance marketing experience <accent>you won’t find at another agency.</accent>",
       "specialistBody": "Your campaign is run by a Performance Marketing Specialist with experience at Google and with the largest brands in Poland.",
-      "specialistAlt": "Performance marketing specialist working on a campaign"
+      "specialistAlt": "Performance marketing specialist working on a campaign",
+      "specialistBadges": [
+        "Software",
+        "Mobile apps",
+        "AI automation",
+        "Web apps",
+        "Online stores",
+        "CRM systems"
+      ]
     },
     "closing": {
       "title": "With our proven methods you sign more clients and keep your developers on <accent>steady projects.</accent>",

@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import TextReveal from "@/components/TextReveal";
 import { cx } from "@/lib/utils";
 
+import BadgeMarquee from "./BadgeMarquee";
 import QualityIndicator from "./QualityIndicator";
 
 type Tile = "others" | "us";
@@ -186,8 +187,8 @@ export default async function ComparisonSection() {
           className={cx(CARD, "justify-end border border-gray-500 p-6 md:p-8")}
         >
           <div className="flex flex-col gap-6 md:gap-8">
-            <QualityIndicator {...indicator("others")} tone="muted" />
-            <QualityIndicator {...indicator("us")} tone="accent" />
+            <QualityIndicator {...indicator("others")} fill={14} tone="muted" />
+            <QualityIndicator {...indicator("us")} fill={100} tone="accent" />
           </div>
           <Statement
             className="text-ink"
@@ -223,6 +224,7 @@ export default async function ComparisonSection() {
             sizes="(min-width: 768px) 671px, 100vw"
             className="absolute inset-0 size-full object-cover md:inset-auto md:-top-[126px] md:-left-[108px] md:h-[680px] md:w-[671px] md:max-w-none"
           />
+          <BadgeMarquee badges={tc.raw("specialistBadges") as string[]} />
           <Image
             src="/images/agency/entei-wordmark-white.svg"
             alt={t("logoAlt")}
@@ -235,7 +237,7 @@ export default async function ComparisonSection() {
               as="p"
               trigger="inView"
               mask={false}
-              className="t-title-md text-concrete"
+              className="t-title-md text-gray-300"
             >
               {tc.rich("specialistTitle", {
                 accent: (chunks) => (

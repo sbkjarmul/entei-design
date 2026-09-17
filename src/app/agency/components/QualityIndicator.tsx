@@ -16,15 +16,18 @@ export default function QualityIndicator({
   label,
   detail,
   tone,
+  fill,
 }: {
-  /** e.g. "10%" — also drives the bar width. */
+  /** Label, e.g. "10%". */
   value: string;
+  /** Bar fill in % of its width (Figma: 14% for "10%", full for "89%"). */
+  fill: number;
   label: string;
   detail: string;
   tone: "muted" | "accent";
 }) {
   const reduceMotion = useReducedMotion();
-  const percent = Math.min(Math.max(parseFloat(value) || 0, 0), 100);
+  const percent = Math.min(Math.max(fill, 0), 100);
 
   return (
     <div className="flex w-full max-w-[439px] flex-col gap-2 md:gap-4">

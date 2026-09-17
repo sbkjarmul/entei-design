@@ -678,7 +678,7 @@
         "title": "Z nami",
         "description": "Dostajesz zapytania od ludzi, którzy znają Twoją usługę",
         "time": "3 miesiące",
-        "price": "po 5000 zł"
+        "price": "po 4000 zł"
       },
       "statementAccent": "Z ENTEI zarobisz więcej.",
       "statementLine2": "Rozumiemy Twój biznes.",
@@ -707,7 +707,15 @@
       "methodsBody": "Klienci zyskują regularne wyniki sprzedażowe dzięki naszym metodom. Łączymy przetestowane rozwiązania graficzne z najlepszymi praktykami performance marketingu.",
       "specialistTitle": "Performance Marketing z doświadczeniem, <accent>którego nie znajdziesz w innej agencji.</accent>",
       "specialistBody": "Obsługą Twojej kampanii będzie zajmował się Performance Marketing Specialist z doświadczeniem w Google oraz pracy z największymi markami w Polsce.",
-      "specialistAlt": "Specjalista performance marketingu przy pracy nad kampanią"
+      "specialistAlt": "Specjalista performance marketingu przy pracy nad kampanią",
+      "specialistBadges": [
+        "Oprogramowanie",
+        "Aplikacje mobilne",
+        "Automatyzacje AI",
+        "Aplikacje webowe",
+        "Sklepy internetowe",
+        "Systemy CRM"
+      ]
     },
     "closing": {
       "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom <accent>regularne projekty.</accent>",
