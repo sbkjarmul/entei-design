@@ -28,8 +28,9 @@ export default async function HeroSection() {
     ),
   };
 
+  // 10px short of the viewport so the red section below peeks in.
   return (
-    <section className="flex min-h-svh flex-col bg-concrete pb-4 text-ink">
+    <section className="flex min-h-[calc(100svh-10px)] flex-col bg-concrete pb-4 text-ink">
       <AgencyHeader />
 
       <div className="flex flex-1 flex-col items-center justify-center gap-8 px-4 py-16 text-center md:py-10">
