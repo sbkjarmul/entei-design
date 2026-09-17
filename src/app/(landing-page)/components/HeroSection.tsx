@@ -34,12 +34,14 @@ export default function HeroSection() {
       </div>
       <Text>
         <span className="block md:hidden max-w-md">
-          Tworzymy ponadczasowe logo oraz strony internetowe, które są
-          niezbędne, aby klienci wybrali Ciebie.
+          Wspieramy Twój biznes za pomocą nowoczesnego i przemyślanego
+          brandingu, stron internetowych oraz dostarczamy klientów za pomocą
+          performance marketingu.
         </span>
         <span className="hidden md:block">
-          Wiemy jak tworzyć ponadczasowe logo oraz strony internetowę, które
-          klienci zapamiętają już od pierwszego kontaktu z Twoją firmą!
+          Wspieramy Twój biznes za pomocą nowoczesnego i przemyślanego
+          brandingu, stron internetowych oraz dostarczamy klientów za pomocą
+          performance marketingu.
         </span>
       </Text>
       <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
