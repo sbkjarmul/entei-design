@@ -221,8 +221,11 @@ export default async function ComparisonSection() {
             alt={tc("specialistAlt")}
             width={720}
             height={729}
-            sizes="(min-width: 768px) 671px, 100vw"
-            className="absolute inset-0 size-full object-cover md:inset-auto md:-top-[126px] md:-left-[108px] md:h-[680px] md:w-[671px] md:max-w-none"
+            sizes="(min-width: 768px) 60vw, 100vw"
+            // Figma bleeds the photo 126px above and 108px left of the card but keeps it
+            // flush right/bottom; sizing from the card (not fixed 671x680) keeps it
+            // covering the card at every width.
+            className="absolute inset-0 size-full object-cover md:inset-auto md:-top-[126px] md:-left-[108px] md:h-[calc(100%+126px)] md:w-[calc(100%+108px)] md:max-w-none"
           />
           <BadgeMarquee badges={tc.raw("specialistBadges") as string[]} />
           <Image
