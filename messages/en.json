@@ -626,7 +626,7 @@
       "line2": "at least <strong>6 clients</strong> <nowrap>in <mark>90 days</mark></nowrap>",
       "line3": "for <em>software houses.</em>",
       "subtitle": "Results guaranteed. Otherwise you get your money back or we work for free.",
-      "logosLabel": "Trusted by"
+      "logosLabel": "Tools we work with"
     },
     "bench": {
       "title": "No more sending developers to the bench.",
@@ -637,21 +637,50 @@
         "title": "Other agencies",
         "description": "Time + money you need to invest on average",
         "time": "1 month",
-        "price": "PLN 10,000"
+        "price": "for PLN 10,000"
       },
       "us": {
         "title": "With us",
         "description": "You get enquiries from people who already know your service",
         "time": "3 months",
-        "price": "at PLN 5,000 a month"
+        "price": "at PLN 4,000 a month"
       },
-      "statementAccent": "With us you earn more.",
-      "statementLine2": "And we understand your business.",
-      "statementLine3": "Sign 6 contracts in 3 months.",
-      "body": "You gain at least 6 new projects in 90 days. We won’t flood you with unqualified leads.",
+      "statementAccent": "With ENTEI you earn more.",
+      "statementLine2": "We understand your business.",
+      "statementLine3": "You sign 6 contracts in 3 months.",
       "qualityMuted": "With us you always get in touch with qualified people.",
       "qualityLine": "You get what you pay for.",
-      "qualityBody": "At ENTEI you work with professionals. Most agencies deliver low-quality contacts your sales team can do nothing with."
+      "qualityBody": "At ENTEI you work with professionals. Most agencies deliver low-quality contacts who don’t know your offer.",
+      "title": "We offer what",
+      "titleMuted": "other agencies can’t.",
+      "bodyLine1": "You gain at least 6 new projects in 90 days.",
+      "bodyLine2": "We won’t flood you with unqualified leads.",
+      "indicators": {
+        "others": {
+          "value": "10%",
+          "label": "Most agencies deliver low-quality contacts",
+          "detail": "(weak strategy, poor performance practices, no grasp of the client’s potential)"
+        },
+        "us": {
+          "value": "89%",
+          "label": "ENTEI delivers quality",
+          "detail": "(professional creatives + regular optimisation)"
+        }
+      },
+      "methodsMuted": "Proven methods make you earn more.",
+      "methodsLine": "With us you sell more often.",
+      "methodsBody": "Clients get steady sales results thanks to our methods. We combine tested creative solutions with performance marketing best practices.",
+      "specialistTitle": "Performance marketing experience <accent>you won’t find at another agency.</accent>",
+      "specialistBody": "Your campaign is run by a Performance Marketing Specialist with experience at Google and with the largest brands in Poland.",
+      "specialistAlt": "Performance marketing specialist working on a campaign",
+      "specialistBadges": [
+        "Software",
+        "Mobile apps",
+        "AI automation",
+        "Web apps",
+        "Online stores",
+        "CRM systems"
+      ]
     },
     "closing": {
       "title": "With our proven methods you sign more clients and keep your developers on <accent>steady projects.</accent>",
@@ -684,6 +713,31 @@
       "studioLine1": "Design studio",
       "studioLine2": "Revolutionize your brand",
       "studioLine3": "Modern visual identities."
+    },
+    "pricing": {
+      "title": "Pricing.",
+      "plans": {
+        "leads": {
+          "name": "Qualified enquiries",
+          "price": "PLN 4,000 <small>/ month</small>",
+          "features": [
+            "Results guaranteed in the contract",
+            "Professional creatives made by a designer, not AI, that you can share on your social media.",
+            "A CRM for working with clients that speeds things up.",
+            "Your campaigns are always set up and monitored by our performance marketing specialist."
+          ]
+        },
+        "brand": {
+          "name": "Branding + Website",
+          "price": "PLN 10,000",
+          "features": [
+            "A professional image for your business",
+            "Brand guidelines for your designers",
+            "A landing page with micro-interactions, based on a custom Figma design.",
+            "Social media graphic templates"
+          ]
+        }
+      }
     }
   }
 }

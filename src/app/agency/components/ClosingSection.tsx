@@ -3,10 +3,9 @@ import type { ReactNode } from "react";
 
 import TextReveal from "@/components/TextReveal";
 import { CONTACT_EMAIL } from "@/lib/agency";
-import { CALENDLY_URL } from "@/lib/caseStudies";
 
+import AvailabilityLink from "./AvailabilityLink";
 import CalendlyButton from "./CalendlyButton";
-import SignalDot from "./SignalDot";
 
 const accent = (chunks: ReactNode) => (
   <span className="text-primary">{chunks}</span>
@@ -42,15 +41,7 @@ export default async function ClosingSection() {
 
         <div className="flex flex-col items-center gap-4">
           <CalendlyButton variant="primary" label={t("cta.label")} />
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="t-caption flex items-center gap-2.5 font-medium tracking-normal text-white underline-offset-4 hover:underline"
-          >
-            <SignalDot />
-            {t("cta.availability")}
-          </a>
+          <AvailabilityLink label={t("cta.availability")} />
         </div>
 
         <p className="t-caption font-medium tracking-normal text-gray-500">

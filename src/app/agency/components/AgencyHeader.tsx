@@ -8,7 +8,7 @@ export default async function AgencyHeader() {
   const t = await getTranslations("agency");
 
   return (
-    <header className="flex w-full items-center justify-between p-4">
+    <header className="flex w-full items-start justify-between p-4">
       <Link href="/" className="shrink-0">
         <Image
           src="/images/agency/entei-wordmark-ink.svg"

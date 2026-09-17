@@ -1,7 +1,7 @@
-<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="992" height="140" viewBox="0 0 992 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse id="Ellipse 11" cx="496" cy="70" rx="496" ry="70" fill="url(#paint0_radial_0_9)"/>
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="792" height="112" viewBox="0 0 792 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse id="Ellipse 11" cx="396" cy="56" rx="396" ry="56" fill="url(#paint0_radial_0_4)"/>
 <defs>
-<radialGradient id="paint0_radial_0_9" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(496 70) scale(391.5 70)">
+<radialGradient id="paint0_radial_0_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(396 56) scale(312.569 56)">
 <stop stop-color="#C2C2C2" stop-opacity="0"/>
 <stop offset="1" stop-color="#C2C2C2"/>
 </radialGradient>

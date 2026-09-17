@@ -62,7 +62,7 @@ Używaj klas semantycznych z `@layer components` (responsywne automatycznie). **
 | `.t-title-xl`| duży tytuł sans (hero, statement) | 64px    | 40px            | 500    | 0.9         | 0              |
 | `.t-headline`| wyśrodkowany tytuł karty CTA      | 48px    | 26px            | 500    | 1.0         | 0.02em         |
 | `.t-title-lg`| średni tytuł (intro, FAQ)         | 32px    | 24px            | 500    | 0.9         | 0.02em         |
-| `.t-title-md`| wieloliniowy statement w karcie   | 34px    | 20px            | 500    | 1.2         | 0.02em         |
+| `.t-title-md`| wieloliniowy statement w karcie   | 34px    | 20px            | 500    | 1.1         | 0.02em         |
 | `.t-card-label`  | tytuł kafelka (porównanie)    | 20px    | 13px            | 600 (500 mob) | 0.9 (1.1 mob) | 0.02em       |
 | `.t-card-caption`| opis kafelka                  | 14px    | 12px            | 500    | 1.1 (1.35 mob) | 0.02em (0 mob) |
 | `.t-card-value`  | wartości kafelka (czas, cena) | 24px    | 16px            | 500    | 0.9 (1.15 mob) | 0.02em      |
