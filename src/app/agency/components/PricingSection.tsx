@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import TextReveal from "@/components/TextReveal";
 
-import AvailabilityLink from "./AvailabilityLink";
+import AvailabilityNote from "./AvailabilityNote";
 import CalendlyButton from "./CalendlyButton";
 
 const PLANS = ["leads", "brand"] as const;
@@ -47,7 +47,7 @@ export default async function PricingSection() {
                 label={t("cta.label")}
                 className="w-full justify-center"
               />
-              <AvailabilityLink label={t("cta.availability")} tone="dark" />
+              <AvailabilityNote label={t("cta.availability")} tone="dark" />
             </div>
 
             <ul className="t-lead flex list-disc flex-col gap-2 pl-9 text-gray-700">

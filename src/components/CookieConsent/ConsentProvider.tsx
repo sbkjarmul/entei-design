@@ -22,14 +22,20 @@ interface ConsentContextValue {
   accept: () => void;
   reject: () => void;
   openBanner: () => void;
+  /** True while a page has switched the consent banner off (see CookieBannerOff). */
+  bannerSuppressed: boolean;
+  setBannerSuppressed: (value: boolean) => void;
 }
 
-const ConsentContext = createContext<ConsentContextValue | undefined>(undefined);
+const ConsentContext = createContext<ConsentContextValue | undefined>(
+  undefined,
+);
 
 export function ConsentProvider({ children }: { children: React.ReactNode }) {
   const [consent, setConsent] = useState<Consent>(null);
   const [mounted, setMounted] = useState(false);
   const [isBannerOpen, setIsBannerOpen] = useState(false);
+  const [bannerSuppressed, setBannerSuppressed] = useState(false);
 
   useEffect(() => {
     try {
@@ -59,7 +65,16 @@ export function ConsentProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <ConsentContext.Provider
-      value={{ consent, mounted, isBannerOpen, accept, reject, openBanner }}
+      value={{
+        consent,
+        mounted,
+        isBannerOpen,
+        accept,
+        reject,
+        openBanner,
+        bannerSuppressed,
+        setBannerSuppressed,
+      }}
     >
       {children}
     </ConsentContext.Provider>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import CookieBannerOff from "@/components/CookieConsent/CookieBannerOff";
 import RevealFooter from "@/components/RevealFooter";
 import { AGENCY_URL, MAIN_SITE_URL } from "@/lib/agency";
 
@@ -53,6 +54,8 @@ export default function AgencyLayout({
 }>) {
   return (
     <>
+      {/* No cookie banner on the landing: the Calendly button is its only CTA. */}
+      <CookieBannerOff />
       {/* Opaque content layer above the pinned footer (see RevealFooter). */}
       <div className="relative z-30 bg-concrete text-ink">
         <main>{children}</main>
