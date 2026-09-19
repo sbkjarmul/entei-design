@@ -10,10 +10,16 @@ import { useConsent } from "./ConsentProvider";
  * and again whenever they re-open it via "Manage cookies" in the footer.
  */
 export default function CookieConsentBanner() {
-  const { consent, mounted, isBannerOpen, accept, reject } = useConsent();
+  const { consent, mounted, isBannerOpen, accept, reject, bannerSuppressed } =
+    useConsent();
 
   // Avoid a hydration mismatch — render nothing until the stored value is read.
   if (!mounted) {
+    return null;
+  }
+
+  // Switched off by the current page (e.g. the agency landing).
+  if (bannerSuppressed) {
     return null;
   }
 

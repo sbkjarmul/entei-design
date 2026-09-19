@@ -23,7 +23,3 @@ export const AGENCY_URL = AGENCY_SUBDOMAIN_LIVE
 
 /** Hosts that serve the landing at `/`. `agency.localhost` is for local testing. */
 export const AGENCY_HOSTS = ["agency.entei.pl", "agency.localhost"];
-
-export const CONTACT_EMAIL = "hello@entei.design";
-export const INSTAGRAM_URL = "https://instagram.com/entei.designs";
-export const PRIVACY_POLICY_URL = `${MAIN_SITE_URL}/polityka-prywatnosci`;

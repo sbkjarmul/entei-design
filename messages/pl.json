@@ -719,8 +719,7 @@
     },
     "closing": {
       "title": "Dzięki naszym sprawdzonym metodom podpiszesz więcej klientów i zapewnisz developerom <accent>regularne projekty.</accent>",
-      "titleShort": "Podpisz więcej klientów i zapewnij developerom <accent>regularne projekty.</accent>",
-      "writeUs": "Albo napisz do nas na <email></email>"
+      "titleShort": "Podpisz więcej klientów i zapewnij developerom <accent>regularne projekty.</accent>"
     },
     "faq": {
       "title": "Najczęściej zadawane pytania",
@@ -741,10 +740,6 @@
     },
     "footer": {
       "tagline": "Wspieramy software house’y, aby nie musiały się martwić o regularność w projektach.",
-      "privacy": "Polityka prywatności",
-      "contact": "Kontakt",
-      "instagram": "Instagram",
-      "cookies": "Zarządzaj cookies",
       "studioLine1": "Design studio",
       "studioLine2": "Revolutionize your brand",
       "studioLine3": "Modern visual identities."

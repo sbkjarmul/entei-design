@@ -2,9 +2,8 @@ import { getTranslations } from "next-intl/server";
 import type { ReactNode } from "react";
 
 import TextReveal from "@/components/TextReveal";
-import { CONTACT_EMAIL } from "@/lib/agency";
 
-import AvailabilityLink from "./AvailabilityLink";
+import AvailabilityNote from "./AvailabilityNote";
 import CalendlyButton from "./CalendlyButton";
 
 const accent = (chunks: ReactNode) => (
@@ -13,7 +12,7 @@ const accent = (chunks: ReactNode) => (
 
 /**
  * Closing CTA card: radial dark card with a headline ("regularne projekty" in
- * brand red), a direct Calendly button and an email fallback. Same component
+ * brand red) and a direct Calendly button. Same component
  * on every breakpoint; mobile gets the shorter headline.
  */
 export default async function ClosingSection() {
@@ -41,21 +40,8 @@ export default async function ClosingSection() {
 
         <div className="flex flex-col items-center gap-4">
           <CalendlyButton variant="primary" label={t("cta.label")} />
-          <AvailabilityLink label={t("cta.availability")} />
+          <AvailabilityNote label={t("cta.availability")} />
         </div>
-
-        <p className="t-caption font-medium tracking-normal text-gray-500">
-          {t.rich("closing.writeUs", {
-            email: () => (
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="text-white underline underline-offset-4"
-              >
-                {CONTACT_EMAIL}
-              </a>
-            ),
-          })}
-        </p>
       </div>
     </section>
   );

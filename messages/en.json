@@ -684,8 +684,7 @@
     },
     "closing": {
       "title": "With our proven methods you sign more clients and keep your developers on <accent>steady projects.</accent>",
-      "titleShort": "Sign more clients and keep your developers on <accent>steady projects.</accent>",
-      "writeUs": "Or write to us at <email></email>"
+      "titleShort": "Sign more clients and keep your developers on <accent>steady projects.</accent>"
     },
     "faq": {
       "title": "Frequently asked questions",
@@ -706,10 +705,6 @@
     },
     "footer": {
       "tagline": "We help software houses stop worrying about a steady project pipeline.",
-      "privacy": "Privacy policy",
-      "contact": "Contact",
-      "instagram": "Instagram",
-      "cookies": "Manage cookies",
       "studioLine1": "Design studio",
       "studioLine2": "Revolutionize your brand",
       "studioLine3": "Modern visual identities."
