@@ -24,6 +24,9 @@ export const AGENCY_URL = AGENCY_SUBDOMAIN_LIVE
 /** Cal.com booking link (`user/event-type`) behind the booking landing. */
 export const CAL_COM_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? "entei/15min";
 
+/** Cal.com booking page, used by every CTA on the landing. */
+export const CAL_COM_URL = `https://cal.com/${CAL_COM_LINK}`;
+
 /** Public URL of the booking landing (hero + embedded Cal.com booker). */
 export const AGENCY_BOOKING_URL = `${AGENCY_URL}/rezerwacja`;
 

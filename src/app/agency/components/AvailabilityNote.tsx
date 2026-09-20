@@ -2,7 +2,7 @@ import { cx } from "@/lib/utils";
 
 import SignalDot from "./SignalDot";
 
-/** "Mamy dostępne miejsca w Calendly" caption under the Calendly button. */
+/** Availability caption with the pulsing dot, under a booking button. */
 export default function AvailabilityNote({
   label,
   tone = "light",

@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import TextReveal from "@/components/TextReveal";
 
 import AvailabilityNote from "./AvailabilityNote";
-import CalendlyButton from "./CalendlyButton";
+import BookingButton from "./BookingButton";
 
 const accent = (chunks: ReactNode) => (
   <span className="text-primary">{chunks}</span>
@@ -12,7 +12,7 @@ const accent = (chunks: ReactNode) => (
 
 /**
  * Closing CTA card: radial dark card with a headline ("regularne projekty" in
- * brand red) and a direct Calendly button. Same component
+ * brand red) and a direct booking button. Same component
  * on every breakpoint; mobile gets the shorter headline.
  */
 export default async function ClosingSection() {
@@ -39,7 +39,7 @@ export default async function ClosingSection() {
         </TextReveal>
 
         <div className="flex flex-col items-center gap-4">
-          <CalendlyButton variant="primary" label={t("cta.label")} />
+          <BookingButton variant="primary" label={t("cta.label")} />
           <AvailabilityNote label={t("cta.availability")} />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import CalendlyButton from "./CalendlyButton";
+import BookingButton from "./BookingButton";
 
 interface AgencyHeaderProps {
   /** Booking CTA on the right. Off on the booking page (the calendar is the CTA). */
@@ -24,7 +24,7 @@ export default async function AgencyHeader({
         className="shrink-0"
       />
       {withCta && (
-        <CalendlyButton
+        <BookingButton
           variant="dark"
           withSignal
           label={t("cta.label")}

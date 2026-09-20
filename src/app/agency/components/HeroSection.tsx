@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import TextReveal from "@/components/TextReveal";
 
 import AgencyHeader from "./AgencyHeader";
-import CalendlyButton from "./CalendlyButton";
+import BookingButton from "./BookingButton";
 import HighlightUnderline from "./HighlightUnderline";
 import LogoMarquee from "./LogoMarquee";
 
@@ -51,7 +51,7 @@ export default async function HeroSection() {
         </TextReveal>
 
         <TextReveal mask={false} delay={0.4}>
-          <CalendlyButton variant="dark" withSignal label={tCta("label")} />
+          <BookingButton variant="dark" withSignal label={tCta("label")} />
         </TextReveal>
 
         <LogoMarquee label={t("logosLabel")} />

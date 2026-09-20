@@ -3,11 +3,11 @@ import { getTranslations } from "next-intl/server";
 import TextReveal from "@/components/TextReveal";
 
 import AvailabilityNote from "./AvailabilityNote";
-import CalendlyButton from "./CalendlyButton";
+import BookingButton from "./BookingButton";
 
 const PLANS = ["leads", "brand"] as const;
 
-/** "Cennik." — two plans with price, Calendly CTA and feature list (Figma 714:95). */
+/** "Cennik." — two plans with price, booking CTA and feature list (Figma 714:95). */
 export default async function PricingSection() {
   const t = await getTranslations("agency");
   const tp = await getTranslations("agency.pricing");
@@ -42,7 +42,7 @@ export default async function PricingSection() {
             </div>
 
             <div className="flex w-full max-w-[411px] flex-col items-center gap-2">
-              <CalendlyButton
+              <BookingButton
                 variant="primary"
                 label={t("cta.label")}
                 className="w-full justify-center"
