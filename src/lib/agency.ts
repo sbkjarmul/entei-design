@@ -21,5 +21,14 @@ export const AGENCY_URL = AGENCY_SUBDOMAIN_LIVE
   ? AGENCY_SUBDOMAIN_URL
   : `${MAIN_SITE_URL}${AGENCY_PATH}`;
 
+/** Public URL of the booking landing (hero + embedded Calendly calendar). */
+export const AGENCY_BOOKING_URL = `${AGENCY_URL}/rozmowa`;
+
+/**
+ * Landing subpages, as seen from the landing root. On the agency host they are
+ * rewritten to `/agency/<subpath>`; everything else there goes to the main site.
+ */
+export const AGENCY_SUBPATHS: string[] = ["/rozmowa"];
+
 /** Hosts that serve the landing at `/`. `agency.localhost` is for local testing. */
 export const AGENCY_HOSTS = ["agency.entei.pl", "agency.localhost"];
