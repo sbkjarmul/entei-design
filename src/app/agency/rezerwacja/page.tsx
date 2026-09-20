@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
-import { AGENCY_BOOKING_URL, MAIN_SITE_URL } from "@/lib/agency";
+import { AGENCY_BOOKING_URL, CAL_COM_LINK, MAIN_SITE_URL } from "@/lib/agency";
 
 import BookingSection from "../components/BookingSection";
-import CalendlyEmbed from "../components/CalendlyEmbed";
+import CalComEmbed from "../components/CalComEmbed";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("agency.booking.meta");
@@ -41,8 +41,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 /**
- * Booking landing for ad campaigns: the agency hero with an embedded Calendly
- * calendar. Served at agency.entei.pl/rozmowa once the subdomain is live.
+ * Booking landing for ad campaigns: the agency hero with an embedded Cal.com
+ * booker. Served at agency.entei.pl/rezerwacja once the subdomain is live.
  */
 export default async function AgencyBookingPage() {
   const t = await getTranslations("agency.booking");
@@ -50,7 +50,8 @@ export default async function AgencyBookingPage() {
   return (
     <BookingSection
       calendar={
-        <CalendlyEmbed
+        <CalComEmbed
+          calLink={CAL_COM_LINK}
           label={t("calendarLabel")}
           fallbackPrefix={t("fallbackPrefix")}
           fallbackLink={t("fallbackLink")}

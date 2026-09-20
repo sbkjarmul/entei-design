@@ -21,22 +21,17 @@ export const AGENCY_URL = AGENCY_SUBDOMAIN_LIVE
   ? AGENCY_SUBDOMAIN_URL
   : `${MAIN_SITE_URL}${AGENCY_PATH}`;
 
-/**
- * Cal.com booking link (`user/event-type`) for the /agency/rozmowa-cal styling
- * spike. Set NEXT_PUBLIC_CAL_LINK to your own once the account exists; the
- * fallback is Cal.com's public demo link, so it only shows how the embed looks.
- */
-export const CAL_COM_LINK =
-  process.env.NEXT_PUBLIC_CAL_LINK ?? "rick/get-rick-rolled";
+/** Cal.com booking link (`user/event-type`) behind the booking landing. */
+export const CAL_COM_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? "entei/15min";
 
-/** Public URL of the booking landing (hero + embedded Calendly calendar). */
-export const AGENCY_BOOKING_URL = `${AGENCY_URL}/rozmowa`;
+/** Public URL of the booking landing (hero + embedded Cal.com booker). */
+export const AGENCY_BOOKING_URL = `${AGENCY_URL}/rezerwacja`;
 
 /**
  * Landing subpages, as seen from the landing root. On the agency host they are
  * rewritten to `/agency/<subpath>`; everything else there goes to the main site.
  */
-export const AGENCY_SUBPATHS: string[] = ["/rozmowa"];
+export const AGENCY_SUBPATHS: string[] = ["/rezerwacja"];
 
 /** Hosts that serve the landing at `/`. `agency.localhost` is for local testing. */
 export const AGENCY_HOSTS = ["agency.entei.pl", "agency.localhost"];

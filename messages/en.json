@@ -614,9 +614,9 @@
     "booking": {
       "meta": {
         "title": "Book a call | ENTEI",
-        "description": "Pick a slot for a 30-minute call with Sebastian and see how we deliver at least 6 clients in 90 days."
+        "description": "Pick a slot for a 15-minute call with Sebastian and see how we deliver at least 6 clients in 90 days."
       },
-      "subtitle": "Pick a slot for a 30-minute call. We will check whether we can deliver the result and how.",
+      "subtitle": "Pick a slot for a 15-minute call. We will check whether we can deliver the result and how.",
       "calendarLabel": "Booking calendar",
       "fallbackPrefix": "Calendar not loading?",
       "fallbackLink": "Open the booking page in a new tab."

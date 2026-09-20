@@ -649,9 +649,9 @@
     "booking": {
       "meta": {
         "title": "Umów rozmowę | ENTEI",
-        "description": "Wybierz termin 30-minutowej rozmowy z Sebastianem i sprawdź, jak dostarczymy Ci min. 6 klientów w 90 dni."
+        "description": "Wybierz termin 15-minutowej rozmowy z Sebastianem i sprawdź, jak dostarczymy Ci min. 6 klientów w 90 dni."
       },
-      "subtitle": "Wybierz termin 30-minutowej rozmowy. Sprawdzimy, czy dowieziemy Ci wynik i jak to zrobimy.",
+      "subtitle": "Wybierz termin 15-minutowej rozmowy. Sprawdzimy, czy dowieziemy Ci wynik i jak to zrobimy.",
       "calendarLabel": "Kalendarz rezerwacji rozmowy",
       "fallbackPrefix": "Nie widzisz kalendarza?",
       "fallbackLink": "Otwórz rezerwację w nowej karcie."

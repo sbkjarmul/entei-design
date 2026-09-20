@@ -10,8 +10,9 @@ const NAMESPACE = "agency";
 
 /**
  * ENTEI palette mapped onto Cal.com's embed tokens (theme.css is the source of
- * the hex values). Unlike Calendly, Cal.com applies these on the free plan, so
- * the booker can sit on the dark graphite surface used by the comparison cards.
+ * the hex values). Cal.com applies these on the free plan, so the booker sits
+ * on the dark graphite surface used by the comparison cards instead of the
+ * white card Calendly forces. Fonts stay theirs: the embed is an iframe.
  */
 const THEME_VARS = {
   "cal-brand": "#ff2400",
@@ -36,13 +37,25 @@ const THEME_VARS = {
 };
 
 interface CalComEmbedProps {
-  /** Booking link as `user/event-type`, e.g. `entei/30min`. */
+  /** Booking link as `user/event-type`, e.g. `entei/15min`. */
   calLink: string;
+  /** Accessible name of the booking region. */
+  label: string;
+  /** Text before the fallback link (shown when the embed can't load). */
+  fallbackPrefix: string;
+  /** Label of the fallback link to the booking page. */
+  fallbackLink: string;
   className?: string;
 }
 
-/** Inline Cal.com booker, styled with the brand tokens (free-plan friendly). */
-export default function CalComEmbed({ calLink, className }: CalComEmbedProps) {
+/** Inline Cal.com booker, themed with the brand tokens. */
+export default function CalComEmbed({
+  calLink,
+  label,
+  fallbackPrefix,
+  fallbackLink,
+  className,
+}: CalComEmbedProps) {
   useEffect(() => {
     let cancelled = false;
 
@@ -63,20 +76,34 @@ export default function CalComEmbed({ calLink, className }: CalComEmbedProps) {
   }, []);
 
   return (
-    <div
-      className={cx(
+    <div className={cx("flex w-full flex-col items-center gap-4", className)}>
+      <div
+        role="region"
+        aria-label={label}
         // Desktop: the booker sizes itself. Mobile: cap it so the slot list
         // scrolls inside the card instead of stretching the page.
-        "max-h-[820px] w-full max-w-[1100px] overflow-y-auto md:max-h-none md:overflow-visible",
-        className,
-      )}
-    >
-      <Cal
-        namespace={NAMESPACE}
-        calLink={calLink}
-        config={{ layout: "month_view", theme: "dark" }}
-        style={{ width: "100%", height: "auto", overflow: "hidden" }}
-      />
+        className="max-h-[820px] w-full max-w-[1100px] overflow-y-auto md:max-h-none md:overflow-visible"
+      >
+        <Cal
+          namespace={NAMESPACE}
+          calLink={calLink}
+          config={{ layout: "month_view", theme: "dark" }}
+          style={{ width: "100%", height: "auto", overflow: "hidden" }}
+        />
+      </div>
+
+      {/* Ad blockers and script errors must not cost us the lead. */}
+      <p className="t-caption text-graphite">
+        {fallbackPrefix}{" "}
+        <a
+          href={`https://cal.com/${calLink}`}
+          target="_blank"
+          rel="noreferrer"
+          className="underline underline-offset-4 transition-colors hover:text-ink"
+        >
+          {fallbackLink}
+        </a>
+      </p>
     </div>
   );
 }
