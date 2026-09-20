@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { AGENCY_BOOKING_URL, MAIN_SITE_URL } from "@/lib/agency";
 
 import BookingSection from "../components/BookingSection";
+import CalendlyEmbed from "../components/CalendlyEmbed";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("agency.booking.meta");
@@ -43,6 +44,18 @@ export async function generateMetadata(): Promise<Metadata> {
  * Booking landing for ad campaigns: the agency hero with an embedded Calendly
  * calendar. Served at agency.entei.pl/rozmowa once the subdomain is live.
  */
-export default function AgencyBookingPage() {
-  return <BookingSection />;
+export default async function AgencyBookingPage() {
+  const t = await getTranslations("agency.booking");
+
+  return (
+    <BookingSection
+      calendar={
+        <CalendlyEmbed
+          label={t("calendarLabel")}
+          fallbackPrefix={t("fallbackPrefix")}
+          fallbackLink={t("fallbackLink")}
+        />
+      }
+    />
+  );
 }

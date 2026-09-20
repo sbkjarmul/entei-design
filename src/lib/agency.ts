@@ -21,6 +21,14 @@ export const AGENCY_URL = AGENCY_SUBDOMAIN_LIVE
   ? AGENCY_SUBDOMAIN_URL
   : `${MAIN_SITE_URL}${AGENCY_PATH}`;
 
+/**
+ * Cal.com booking link (`user/event-type`) for the /agency/rozmowa-cal styling
+ * spike. Set NEXT_PUBLIC_CAL_LINK to your own once the account exists; the
+ * fallback is Cal.com's public demo link, so it only shows how the embed looks.
+ */
+export const CAL_COM_LINK =
+  process.env.NEXT_PUBLIC_CAL_LINK ?? "rick/get-rick-rolled";
+
 /** Public URL of the booking landing (hero + embedded Calendly calendar). */
 export const AGENCY_BOOKING_URL = `${AGENCY_URL}/rozmowa`;
 

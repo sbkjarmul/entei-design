@@ -4,15 +4,21 @@ import type { ReactNode } from "react";
 import TextReveal from "@/components/TextReveal";
 
 import AgencyHeader from "./AgencyHeader";
-import CalendlyEmbed from "./CalendlyEmbed";
 import HighlightUnderline from "./HighlightUnderline";
 import LogoMarquee from "./LogoMarquee";
 
+interface BookingSectionProps {
+  /** Booking calendar rendered in place of the hero's CTA button. */
+  calendar: ReactNode;
+}
+
 /**
- * Booking landing (/agency/rozmowa): the hero of the agency landing with the
- * Calendly calendar embedded in place of the CTA button.
+ * Booking landing (/agency/rozmowa): the hero of the agency landing with a
+ * booking calendar embedded in place of the CTA button.
  */
-export default async function BookingSection() {
+export default async function BookingSection({
+  calendar,
+}: BookingSectionProps) {
   const t = await getTranslations("agency.hero");
   const tb = await getTranslations("agency.booking");
 
@@ -54,11 +60,7 @@ export default async function BookingSection() {
           {tb("subtitle")}
         </TextReveal>
 
-        <CalendlyEmbed
-          label={tb("calendarLabel")}
-          fallbackPrefix={tb("fallbackPrefix")}
-          fallbackLink={tb("fallbackLink")}
-        />
+        {calendar}
 
         <LogoMarquee label={t("logosLabel")} />
       </div>
