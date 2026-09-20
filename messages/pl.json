@@ -646,6 +646,16 @@
     }
   },
   "agency": {
+    "booking": {
+      "meta": {
+        "title": "Umów rozmowę | ENTEI",
+        "description": "Wybierz termin 15-minutowej rozmowy z Sebastianem i sprawdź, jak dostarczymy Ci min. 6 klientów w 90 dni."
+      },
+      "subtitle": "Wybierz termin 15-minutowej rozmowy. Sprawdzimy, czy dowieziemy Ci wynik i jak to zrobimy.",
+      "calendarLabel": "Kalendarz rezerwacji rozmowy",
+      "fallbackPrefix": "Nie widzisz kalendarza?",
+      "fallbackLink": "Otwórz rezerwację w nowej karcie."
+    },
     "meta": {
       "title": "ENTEI | Min. 6 klientów w 90 dni dla software house'u",
       "description": "Dostarczamy software house'om minimum 6 klientów w 90 dni. Gwarantujemy wynik: w przeciwnym wypadku zwrot pieniędzy lub pracujemy za darmo."
@@ -653,7 +663,7 @@
     "cta": {
       "label": "Umów rozmowę z Sebastianem",
       "labelShort": "Umów rozmowę",
-      "availability": "Mamy dostępne miejsca w Calendly"
+      "availability": "Mamy dostępne terminy w kalendarzu"
     },
     "logoAlt": "ENTEI",
     "hero": {

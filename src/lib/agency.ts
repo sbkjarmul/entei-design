@@ -21,5 +21,20 @@ export const AGENCY_URL = AGENCY_SUBDOMAIN_LIVE
   ? AGENCY_SUBDOMAIN_URL
   : `${MAIN_SITE_URL}${AGENCY_PATH}`;
 
+/** Cal.com booking link (`user/event-type`) behind the booking landing. */
+export const CAL_COM_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? "entei/15min";
+
+/** Cal.com booking page, used by every CTA on the landing. */
+export const CAL_COM_URL = `https://cal.com/${CAL_COM_LINK}`;
+
+/** Public URL of the booking landing (hero + embedded Cal.com booker). */
+export const AGENCY_BOOKING_URL = `${AGENCY_URL}/rezerwacja`;
+
+/**
+ * Landing subpages, as seen from the landing root. On the agency host they are
+ * rewritten to `/agency/<subpath>`; everything else there goes to the main site.
+ */
+export const AGENCY_SUBPATHS: string[] = ["/rezerwacja"];
+
 /** Hosts that serve the landing at `/`. `agency.localhost` is for local testing. */
 export const AGENCY_HOSTS = ["agency.entei.pl", "agency.localhost"];

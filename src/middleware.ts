@@ -5,6 +5,7 @@ import {
   AGENCY_PATH,
   AGENCY_SUBDOMAIN_LIVE,
   AGENCY_SUBDOMAIN_URL,
+  AGENCY_SUBPATHS,
   MAIN_SITE_HOSTS,
   MAIN_SITE_URL,
 } from "@/lib/agency";
@@ -28,8 +29,19 @@ export function middleware(request: NextRequest) {
     if (pathname === "/") {
       return NextResponse.rewrite(new URL(`${AGENCY_PATH}${search}`, request.url));
     }
+    if (AGENCY_SUBPATHS.includes(pathname)) {
+      return NextResponse.rewrite(
+        new URL(`${AGENCY_PATH}${pathname}${search}`, request.url),
+      );
+    }
     if (pathname === AGENCY_PATH) {
       return NextResponse.redirect(new URL(`/${search}`, request.url), 308);
+    }
+    if (pathname.startsWith(`${AGENCY_PATH}/`)) {
+      return NextResponse.redirect(
+        new URL(`${pathname.slice(AGENCY_PATH.length)}${search}`, request.url),
+        308,
+      );
     }
     return NextResponse.redirect(new URL(`${pathname}${search}`, MAIN_SITE_URL), 307);
   }

@@ -4,13 +4,23 @@ import type { ReactNode } from "react";
 import TextReveal from "@/components/TextReveal";
 
 import AgencyHeader from "./AgencyHeader";
-import BookingButton from "./BookingButton";
 import HighlightUnderline from "./HighlightUnderline";
 import LogoMarquee from "./LogoMarquee";
 
-export default async function HeroSection() {
+interface BookingSectionProps {
+  /** Booking calendar rendered in place of the hero's CTA button. */
+  calendar: ReactNode;
+}
+
+/**
+ * Booking landing (/agency/rozmowa): the hero of the agency landing with a
+ * booking calendar embedded in place of the CTA button.
+ */
+export default async function BookingSection({
+  calendar,
+}: BookingSectionProps) {
   const t = await getTranslations("agency.hero");
-  const tCta = await getTranslations("agency.cta");
+  const tb = await getTranslations("agency.booking");
 
   const rich = {
     strong: (chunks: ReactNode) => (
@@ -28,12 +38,12 @@ export default async function HeroSection() {
     ),
   };
 
-  // 10px short of the viewport so the red section below peeks in.
   return (
-    <section className="flex min-h-[calc(100svh-10px)] flex-col bg-concrete pb-4 text-ink">
-      <AgencyHeader />
+    <section className="flex min-h-svh flex-col bg-concrete pb-4 text-ink">
+      {/* The calendar is the CTA here, so the header keeps only the logo. */}
+      <AgencyHeader withCta={false} />
 
-      <div className="flex flex-1 flex-col items-center justify-center gap-8 px-4 py-16 text-center md:py-10">
+      <div className="flex flex-1 flex-col items-center gap-8 px-4 py-10 text-center md:py-16">
         <TextReveal
           as="h1"
           mask={false}
@@ -47,12 +57,10 @@ export default async function HeroSection() {
           delay={0.3}
           className="t-lead-sm max-w-[506px]"
         >
-          {t("subtitle")}
+          {tb("subtitle")}
         </TextReveal>
 
-        <TextReveal mask={false} delay={0.4}>
-          <BookingButton variant="dark" withSignal label={tCta("label")} />
-        </TextReveal>
+        {calendar}
 
         <LogoMarquee label={t("logosLabel")} />
       </div>

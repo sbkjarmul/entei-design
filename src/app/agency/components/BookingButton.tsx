@@ -1,11 +1,11 @@
 import Button from "@/components/Button";
 import ScrambleText from "@/components/ScrambleText";
-import { CALENDLY_URL } from "@/lib/caseStudies";
+import { CAL_COM_URL } from "@/lib/agency";
 import { cx } from "@/lib/utils";
 
 import SignalDot from "./SignalDot";
 
-interface CalendlyButtonProps {
+interface BookingButtonProps {
   label: string;
   /** Shorter label shown below `md` (e.g. in the mobile header). */
   shortLabel?: string;
@@ -15,19 +15,19 @@ interface CalendlyButtonProps {
   className?: string;
 }
 
-/** CTA linking straight to the Calendly booking page (new tab). */
-export default function CalendlyButton({
+/** CTA linking straight to the Cal.com booking page (new tab). */
+export default function BookingButton({
   label,
   shortLabel,
   variant = "dark",
   withSignal = false,
   className,
-}: CalendlyButtonProps) {
+}: BookingButtonProps) {
   const recolor = variant !== "primary";
 
   return (
     <Button
-      href={CALENDLY_URL}
+      href={CAL_COM_URL}
       target="_blank"
       variant={variant}
       rounded={false}

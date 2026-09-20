@@ -54,7 +54,7 @@ export default function AgencyLayout({
 }>) {
   return (
     <>
-      {/* No cookie banner on the landing: the Calendly button is its only CTA. */}
+      {/* No cookie banner on the landing: the booking button is its only CTA. */}
       <CookieBannerOff />
       {/* Opaque content layer above the pinned footer (see RevealFooter). */}
       <div className="relative z-30 bg-concrete text-ink">

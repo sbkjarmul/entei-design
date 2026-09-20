@@ -611,6 +611,16 @@
     }
   },
   "agency": {
+    "booking": {
+      "meta": {
+        "title": "Book a call | ENTEI",
+        "description": "Pick a slot for a 15-minute call with Sebastian and see how we deliver at least 6 clients in 90 days."
+      },
+      "subtitle": "Pick a slot for a 15-minute call. We will check whether we can deliver the result and how.",
+      "calendarLabel": "Booking calendar",
+      "fallbackPrefix": "Calendar not loading?",
+      "fallbackLink": "Open the booking page in a new tab."
+    },
     "meta": {
       "title": "ENTEI | At least 6 clients in 90 days for software houses",
       "description": "We deliver at least 6 clients in 90 days to software houses. Results guaranteed: otherwise you get your money back or we work for free."
@@ -618,7 +628,7 @@
     "cta": {
       "label": "Book a call with Sebastian",
       "labelShort": "Book a call",
-      "availability": "Slots available in Calendly"
+      "availability": "Slots available in the calendar"
     },
     "logoAlt": "ENTEI",
     "hero": {
