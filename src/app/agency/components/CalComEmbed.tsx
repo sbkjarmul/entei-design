@@ -93,7 +93,8 @@ export default function CalComEmbed({
       </div>
 
       {/* Ad blockers and script errors must not cost us the lead. */}
-      <p className="t-caption text-graphite">
+      {/* font-medium: the Typekit kit has no 400, which falls back to Helvetica. */}
+      <p className="t-caption font-medium tracking-normal text-graphite">
         {fallbackPrefix}{" "}
         <a
           href={`https://cal.com/${calLink}`}
