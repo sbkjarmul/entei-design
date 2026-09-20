@@ -9,14 +9,14 @@ import { cx } from "@/lib/utils";
 const WIDGET_SRC = "https://assets.calendly.com/assets/external/widget.js";
 
 /**
- * Brand colors for the widget (hex without `#`). Calendly ignores them on free
- * plans, so the embed then falls back to its own white theme — still usable.
+ * The widget is a cross-origin iframe, so its interior can't be styled from
+ * here, and Calendly's own color params only apply on paid plans. What we can
+ * do: drop the event-details column (the page already gives that context) and
+ * desaturate the frame, so Calendly's navy stops fighting the brand red.
  */
 const EMBED_PARAMS = new URLSearchParams({
   hide_gdpr_banner: "1",
-  background_color: "c2c2c2",
-  text_color: "141414",
-  primary_color: "ff2400",
+  hide_event_type_details: "1",
 });
 
 interface CalendlyEmbedProps {
@@ -51,7 +51,7 @@ export default function CalendlyEmbed({
         aria-label={label}
         data-url={url}
         data-resize="true"
-        className="calendly-inline-widget h-[860px] w-full max-w-[1040px] overflow-hidden rounded-2xl md:h-[700px]"
+        className="calendly-inline-widget h-[860px] w-full max-w-[1040px] overflow-hidden rounded-2xl grayscale contrast-105 md:h-[700px]"
       />
       <Script src={WIDGET_SRC} strategy="afterInteractive" />
 
