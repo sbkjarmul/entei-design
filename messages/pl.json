@@ -688,7 +688,7 @@
         "title": "Z nami",
         "description": "Dostajesz zapytania od ludzi, którzy znają Twoją usługę",
         "time": "3 miesiące",
-        "price": "po 4000 zł"
+        "price": "po 3000 zł"
       },
       "statementAccent": "Z ENTEI zarobisz więcej.",
       "statementLine2": "Rozumiemy Twój biznes.",
@@ -759,7 +759,7 @@
       "plans": {
         "leads": {
           "name": "Kwalifikowane zapytania",
-          "price": "4000 zł <small>/ miesięcznie</small>",
+          "price": "3000 zł <small>/ miesięcznie</small>",
           "features": [
             "Gwarantujemy wynik w umowie",
             "Profesjonalne kreacje tworzone przez grafika, a nie AI, które możesz udostępnić na swoich profilach social media.",
