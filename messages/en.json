@@ -653,7 +653,7 @@
         "title": "With us",
         "description": "You get enquiries from people who already know your service",
         "time": "3 months",
-        "price": "at PLN 4,000 a month"
+        "price": "at PLN 3,000 a month"
       },
       "statementAccent": "With ENTEI you earn more.",
       "statementLine2": "We understand your business.",
@@ -724,7 +724,7 @@
       "plans": {
         "leads": {
           "name": "Qualified enquiries",
-          "price": "PLN 4,000 <small>/ month</small>",
+          "price": "PLN 3,000 <small>/ month</small>",
           "features": [
             "Results guaranteed in the contract",
             "Professional creatives made by a designer, not AI, that you can share on your social media.",
