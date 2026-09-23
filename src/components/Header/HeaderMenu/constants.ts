@@ -1,3 +1,5 @@
+import { AGENCY_PATH } from "@/lib/agency";
+
 export const headerMenu = [
   {
     name: "Nasze realizacje",
@@ -10,6 +12,10 @@ export const headerMenu = [
   {
     name: "Usługi",
     href: "/uslugi",
+  },
+  {
+    name: "Marketing",
+    href: AGENCY_PATH,
   },
   {
     name: "Kontakt",
