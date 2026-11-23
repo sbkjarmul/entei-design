@@ -84,7 +84,7 @@ export default async function OrderPage({ params }: PageProps) {
         <div className="flex flex-col gap-8 md:col-start-1 md:row-start-1">
           <Link
             href={`${AGENCY_PATH}#cennik`}
-            className="t-caption w-fit font-medium underline underline-offset-4 transition-colors hover:text-primary"
+            className="t-caption w-fit font-medium underline underline-offset-4 transition-colors hover:text-primary tracking-normal"
           >
             ← {t("back")}
           </Link>
@@ -102,11 +102,11 @@ export default async function OrderPage({ params }: PageProps) {
           </div>
 
           <div className="flex flex-col gap-2 border-y border-gray-500 py-6">
-            <p className="t-caption font-medium text-gray-800">
+            <p className="t-caption font-medium text-gray-800 tracking-normal">
               {t("priceLabel")}
             </p>
             <p className="t-title-lg">{priceValues.gross}</p>
-            <p className="t-body text-gray-800">
+            <p className="t-body text-gray-800 tracking-normal font-medium">
               {t("priceNet", { amount: priceValues.net })}
             </p>
           </div>
@@ -132,7 +132,7 @@ export default async function OrderPage({ params }: PageProps) {
         <div className="flex flex-col gap-8 md:col-start-1 md:row-start-2">
           <div className="flex flex-col gap-4">
             <h2 className="t-lead">{t("includesTitle")}</h2>
-            <ul className="t-body flex list-disc flex-col gap-2 pl-6 text-gray-800">
+            <ul className="t-body flex list-disc flex-col gap-2 pl-6 text-gray-800 tracking-normal font-medium">
               {includes.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -141,14 +141,14 @@ export default async function OrderPage({ params }: PageProps) {
 
           <div className="flex flex-col gap-4">
             <h2 className="t-lead">{t("termsTitle")}</h2>
-            <ul className="t-body flex list-disc flex-col gap-2 pl-6 text-gray-800">
+            <ul className="t-body flex list-disc flex-col gap-2 pl-6 text-gray-800 tracking-normal font-medium">
               {terms.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
 
-          <div className="t-caption flex flex-col gap-1 text-gray-800">
+          <div className="t-caption flex flex-col gap-1 text-gray-800 tracking-normal font-medium">
             <p className="font-semibold">{t("sellerTitle")}</p>
             <p>{COMPANY.name}</p>
             <p>{COMPANY_ADDRESS}</p>

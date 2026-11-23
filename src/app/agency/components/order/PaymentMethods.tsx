@@ -21,13 +21,13 @@ export default async function PaymentMethods({
 
   return (
     <div className={cx("flex flex-col gap-2", className)}>
-      <p className="t-caption font-medium">{t("label")}</p>
+      <p className="t-caption font-medium tracking-normal">{t("label")}</p>
       <ul className="flex flex-wrap gap-2">
         {methods.map((method) => (
           <li
             key={method}
             className={cx(
-              "t-caption rounded-sm border px-2 py-1 font-semibold",
+              "t-caption rounded-sm border px-2 py-1 font-semibold tracking-normal",
               tone === "dark"
                 ? "border-ink/40"
                 : "border-gray-600 text-gray-300",

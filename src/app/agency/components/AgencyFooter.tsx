@@ -42,7 +42,7 @@ export default async function AgencyFooter() {
           </p>
         </div>
 
-        <div className="t-caption flex flex-col gap-6 border-t border-ink/20 pt-6 md:flex-row md:items-start md:justify-between">
+        <div className="t-caption flex flex-col gap-6 border-t border-ink/20 pt-6 md:flex-row md:items-start md:justify-between tracking-normal font-medium">
           <div className="flex max-w-[480px] flex-col gap-1">
             <p className="font-semibold">{t("footer.legal.sellerLabel")}</p>
             {(t.raw("footer.legal.seller") as string[]).map((line) => (

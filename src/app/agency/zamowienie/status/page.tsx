@@ -45,7 +45,7 @@ export default async function OrderStatusPage({ searchParams }: PageProps) {
         </p>
 
         {orderNumber && (
-          <p className="t-body text-gray-800">
+          <p className="t-body text-gray-800 tracking-normal font-medium">
             {t("orderLabel")}:{" "}
             <span className="font-semibold text-ink">{orderNumber}</span>
           </p>
@@ -53,7 +53,7 @@ export default async function OrderStatusPage({ searchParams }: PageProps) {
 
         <Link
           href={`${AGENCY_PATH}#cennik`}
-          className="t-caption font-medium underline underline-offset-4 transition-colors hover:text-primary"
+          className="t-caption font-medium underline underline-offset-4 transition-colors hover:text-primary tracking-normal"
         >
           {t("back")}
         </Link>

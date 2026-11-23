@@ -100,7 +100,10 @@ export default function OrderForm({ productId, amountLabel }: OrderFormProps) {
     const id = `order-${name}`;
     return (
       <div className="flex flex-col gap-2">
-        <label htmlFor={id} className="t-caption font-medium text-gray-300">
+        <label
+          htmlFor={id}
+          className="t-caption font-medium text-gray-300 tracking-normal"
+        >
           {t(`form.${name}`)}
         </label>
         <input
@@ -112,14 +115,17 @@ export default function OrderForm({ productId, amountLabel }: OrderFormProps) {
           aria-describedby={error ? `${id}-error` : undefined}
           disabled={busy}
           className={cx(
-            "t-body rounded-sm border bg-transparent px-4 py-4 text-white transition-colors",
+            "t-body rounded-sm border bg-transparent px-4 py-4 text-white transition-colors tracking-normal font-medium",
             "focus-visible:border-white focus-visible:outline-none",
             error ? "border-primary" : "border-gray-700 hover:border-gray-500",
           )}
           {...register(name)}
         />
         {error && (
-          <span id={`${id}-error`} className="t-caption text-primary">
+          <span
+            id={`${id}-error`}
+            className="t-caption text-primary tracking-normal font-medium"
+          >
             {error}
           </span>
         )}
@@ -145,10 +151,15 @@ export default function OrderForm({ productId, amountLabel }: OrderFormProps) {
             className="mt-1 size-4 shrink-0 cursor-pointer accent-primary"
             {...register(name)}
           />
-          <span className="t-caption text-gray-300">{label}</span>
+          <span className="t-caption text-gray-300 tracking-normal font-medium">
+            {label}
+          </span>
         </label>
         {error && (
-          <span id={`${id}-error`} className="t-caption pl-8 text-primary">
+          <span
+            id={`${id}-error`}
+            className="t-caption pl-8 text-primary tracking-normal font-medium"
+          >
             {error}
           </span>
         )}
@@ -248,12 +259,14 @@ export default function OrderForm({ productId, amountLabel }: OrderFormProps) {
       )}
       {checkbox("acceptStart", t("form.acceptStart"))}
 
-      <p className="t-caption text-gray-500">{t("form.requiredNote")}</p>
+      <p className="t-caption text-gray-500 tracking-normal font-medium">
+        {t("form.requiredNote")}
+      </p>
 
       {serverError && (
         <p
           role="alert"
-          className="t-body rounded-sm border border-primary px-4 py-4 text-white"
+          className="t-body rounded-sm border border-primary px-4 py-4 text-white tracking-normal font-medium"
         >
           {serverError}
         </p>
@@ -271,7 +284,7 @@ export default function OrderForm({ productId, amountLabel }: OrderFormProps) {
             ? t("form.submitting")
             : t("form.submit", { amount: amountLabel })}
         </Button>
-        <p className="t-caption text-center text-gray-500">
+        <p className="t-caption text-center text-gray-500 tracking-normal font-medium">
           {t("form.paymentNote")}
         </p>
       </div>
