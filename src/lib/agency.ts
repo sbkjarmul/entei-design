@@ -38,7 +38,6 @@ export const AGENCY_SUBPATHS: string[] = [
   "/rezerwacja",
   "/zamowienie/meta-ads",
   "/zamowienie/branding",
-  "/zamowienie/test",
   "/zamowienie/status",
 ];
 

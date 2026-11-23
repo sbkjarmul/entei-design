@@ -849,18 +849,6 @@
             "W cenie 2 rundy poprawek. Pliki i autorskie prawa majątkowe przekazujemy po odbiorze projektu.",
             "Brak dodatkowych kosztów."
           ]
-        },
-        "test": {
-          "name": "Płatność testowa",
-          "payuName": "Płatność testowa ENTEI",
-          "lead": "Techniczna płatność testowa 1 zł do sprawdzenia płatności online. Pieniądze zostaną zwrócone.",
-          "includes": [
-            "Sprawdzenie płatności PayU i potwierdzeń e-mail."
-          ],
-          "terms": [
-            "Płatność jednorazowa: {gross} brutto ({net} netto + 23% VAT).",
-            "Kwota zostanie zwrócona w ciągu 14 dni."
-          ]
         }
       },
       "form": {
