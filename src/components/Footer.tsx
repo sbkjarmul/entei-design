@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import SocialMediaButton from "./SocialMediaButton";
 import { useConsent } from "./CookieConsent/ConsentProvider";
 
 export default function Footer() {
   const { openBanner } = useConsent();
+  const t = useTranslations("siteFooter");
 
   return (
     <footer className="bg-primary text-black z-10">
@@ -81,6 +83,15 @@ export default function Footer() {
               © 2026 ENTEI Sebastian Jarmul. Wszelkie prawa zastrzeżone.
             </span>
             <div className="flex flex-wrap items-center gap-4">
+              <Link href="/regulamin" className="underline hover:opacity-70">
+                {t("terms")}
+              </Link>
+              <Link
+                href="/zasady-zakupow"
+                className="underline hover:opacity-70"
+              >
+                {t("purchase")}
+              </Link>
               <Link
                 href="/polityka-prywatnosci"
                 className="underline hover:opacity-70"

@@ -52,7 +52,7 @@
       "badge": "Legal documents",
       "titleLight": "Privacy",
       "titleStrong": "policy",
-      "lastUpdated": "Last updated: 22 May 2026",
+      "lastUpdated": "Last updated: 23 November 2026",
       "intro": "We care about the privacy of everyone who visits our website. Below we explain what data we collect, for what purpose and on what legal basis we process it, with whom we may share it, and what rights you have."
     },
     "tocTitle": "Table of contents",
@@ -86,6 +86,7 @@
         "paragraphs": [
           "The scope of the data we collect depends on how you use the website and contact us.",
           "Contact form data — when you fill in the contact form available on the website, you provide us with your name, email address, optionally a company name and the content of your message. Providing this data is voluntary but necessary for us to respond to your enquiry.",
+          "Service order data: when you order a service online, you give us your name, email address, phone number and, if you want a company invoice, the company name, VAT ID and address. Providing this data is voluntary but necessary to conclude and perform the contract and issue an invoice.",
           "Data from contact via Instagram — if you contact us through our Instagram profile (@entei.designs), via direct messages or comments, we process your profile name and the content of the correspondence along with any information you choose to share with us.",
           "Technical and analytics data — while you browse the website, data such as your IP address, browser type and version, device type, operating system, approximate geographic location, traffic source and information about your activity on the site are collected automatically. This data is collected using cookies and the tools described in section 5."
         ]
@@ -97,6 +98,7 @@
           "We process your personal data for the following purposes and on the following legal bases:"
         ],
         "bullets": [
+          "Concluding and performing the contract for services ordered online, including handling payments and complaints: art. 6(1)(b) GDPR; issuing invoices and keeping accounting records: legal obligation (art. 6(1)(c) GDPR).",
           "Handling enquiries from the contact form and conducting correspondence — taking steps at your request prior to entering into a contract (Art. 6(1)(b) GDPR) and our legitimate interest in communicating with people interested in our services (Art. 6(1)(f) GDPR).",
           "Contact and handling correspondence via Instagram — our legitimate interest in responding to enquiries made through social media (Art. 6(1)(f) GDPR).",
           "Website analytics and audience statistics — your voluntary consent given through the cookie banner (Art. 6(1)(a) GDPR).",
@@ -112,14 +114,49 @@
           "The table below lists the external tools and technologies used on the website:"
         ],
         "table": {
-          "columns": ["Tool", "Provider", "Purpose", "Retention period"],
+          "columns": [
+            "Tool",
+            "Provider",
+            "Purpose",
+            "Retention period"
+          ],
           "rows": [
-            ["Meta Pixel", "Meta Platforms Ireland Ltd.", "Remarketing and measuring the effectiveness of advertising campaigns on Facebook and Instagram", "up to 180 days"],
-            ["Google Tag Manager", "Google Ireland Ltd.", "Managing tags and analytics scripts on the website", "up to 24 months"],
-            ["Google Ads", "Google Ireland Ltd.", "Measuring conversions and the effectiveness of Google advertising campaigns", "up to 24 months"],
-            ["Travatar", "Travatar", "Analytics of traffic, sessions and user behaviour on the website, including approximate geolocation", "up to 24 months"],
-            ["Vercel Analytics", "Vercel Inc.", "Anonymous performance and traffic analytics, operating without cookies", "anonymised data"],
-            ["Adobe Fonts (Typekit)", "Adobe Systems Inc.", "Delivering and correctly displaying fonts on the website", "session duration"]
+            [
+              "Meta Pixel",
+              "Meta Platforms Ireland Ltd.",
+              "Remarketing and measuring the effectiveness of advertising campaigns on Facebook and Instagram",
+              "up to 180 days"
+            ],
+            [
+              "Google Tag Manager",
+              "Google Ireland Ltd.",
+              "Managing tags and analytics scripts on the website",
+              "up to 24 months"
+            ],
+            [
+              "Google Ads",
+              "Google Ireland Ltd.",
+              "Measuring conversions and the effectiveness of Google advertising campaigns",
+              "up to 24 months"
+            ],
+            [
+              "Travatar",
+              "Travatar",
+              "Analytics of traffic, sessions and user behaviour on the website, including approximate geolocation",
+              "up to 24 months"
+            ],
+            [
+              "Vercel Analytics",
+              "Vercel Inc.",
+              "Anonymous performance and traffic analytics, operating without cookies",
+              "anonymised data"
+            ],
+            [
+              "Adobe Fonts (Typekit)",
+              "Adobe Systems Inc.",
+              "Delivering and correctly displaying fonts on the website",
+              "session duration"
+            ]
           ]
         }
       },
@@ -145,7 +182,8 @@
           "Travatar — the analytics tool provider.",
           "Vercel Inc. — the provider of website hosting and the Vercel Analytics service.",
           "Calendly LLC — in connection with booking consultation appointments, if you choose to use this form of contact.",
-          "Adobe Systems Inc. — in connection with delivering the fonts displayed on the website."
+          "Adobe Systems Inc. — in connection with delivering the fonts displayed on the website.",
+          "PayU S.A., Poznań (ul. Grunwaldzka 186, 60-166 Poznań): we share order data with it to process online payments; PayU S.A. is a separate controller for payment processing."
         ]
       },
       {
@@ -165,7 +203,8 @@
         "bullets": [
           "Contact form data and correspondence — for the time necessary to handle the enquiry and then until the limitation period for any claims expires.",
           "Data processed based on consent (analytics, marketing) — until consent is withdrawn or the cookies expire, in line with the periods indicated in section 5.",
-          "Data processed based on legitimate interest — until an effective objection is raised or that interest ceases to apply."
+          "Data processed based on legitimate interest — until an effective objection is raised or that interest ceases to apply.",
+          "Order and invoice data: for the duration of the contract, then for 5 years from the end of the tax year (tax obligations) or until claims become time-barred."
         ]
       },
       {
@@ -717,14 +756,32 @@
       "tagline": "We help software houses stop worrying about a steady project pipeline.",
       "studioLine1": "Design studio",
       "studioLine2": "Revolutionize your brand",
-      "studioLine3": "Modern visual identities."
+      "studioLine3": "Modern visual identities.",
+      "legal": {
+        "sellerLabel": "Seller",
+        "seller": [
+          "ENTEI Sebastian Jarmul",
+          "ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, Poland",
+          "VAT ID (NIP) 8652574151, REGON 544272533, registered in CEIDG"
+        ],
+        "contact": "Contact and complaints: hello@entei.design, tel. +48 791 912 845",
+        "links": {
+          "terms": "Terms of Service",
+          "company": "Company details and contact",
+          "payments": "Payments",
+          "fulfilment": "Service delivery",
+          "withdrawal": "Withdrawal from the contract",
+          "complaints": "Complaints",
+          "privacy": "Privacy Policy"
+        }
+      }
     },
     "pricing": {
       "title": "Pricing.",
       "plans": {
         "leads": {
           "name": "Qualified enquiries",
-          "price": "PLN 3,000 <small>/ month</small>",
+          "price": "PLN 3,000 <small>net / month</small>",
           "features": [
             "Results guaranteed in the contract",
             "Professional creatives made by a designer, not AI, that you can share on your social media.",
@@ -733,16 +790,384 @@
           ]
         },
         "brand": {
-          "name": "Branding + Website",
-          "price": "PLN 10,000",
+          "name": "Branding Package",
+          "price": "PLN 5,000 <small>net</small>",
           "features": [
             "A professional image for your business",
-            "Brand guidelines for your designers",
-            "A landing page with micro-interactions, based on a custom Figma design.",
+            "Brand Guidelines for your designers",
+            "Brand colour palette and typography",
             "Social media graphic templates"
           ]
         }
+      },
+      "orderCta": "Order and pay online",
+      "gross": "{amount} gross",
+      "grossMonthly": "{amount} gross / month"
+    },
+    "order": {
+      "meta": {
+        "title": "Order: {product} | ENTEI",
+        "description": "Order an ENTEI service and pay online with PayU: BLIK, bank transfer or card."
+      },
+      "back": "Back to pricing",
+      "eyebrow": "Order",
+      "includesTitle": "What you get",
+      "termsTitle": "Terms and costs",
+      "priceLabel": "To pay now",
+      "priceNet": "{amount} net + 23% VAT",
+      "sellerTitle": "Seller",
+      "products": {
+        "meta-ads": {
+          "name": "Qualified leads: Meta Ads campaigns",
+          "payuName": "Meta Ads campaigns, month 1 of the cycle",
+          "lead": "A client acquisition system built on Meta Ads campaigns (Facebook and Instagram). You pay now for the first month of a 90-day cycle.",
+          "includes": [
+            "Meta Ads campaign strategy and setup run by a performance marketing specialist.",
+            "Ad creatives designed by a graphic designer (not AI) that you can also post on your profiles.",
+            "A CRM for handling client enquiries.",
+            "Ongoing campaign optimisation and a monthly results report."
+          ],
+          "terms": [
+            "Fixed-term contract: one 90-day cycle (3 months).",
+            "You pay now for month 1: {gross} gross ({net} net + 23% VAT).",
+            "Months 2 and 3 are billed by VAT invoice payable within 7 days, {gross} gross each.",
+            "Total cost of the cycle: {total} gross.",
+            "You pay the ad budget directly to Meta; it is not part of the service price. We recommend the amount at the kick-off meeting.",
+            "Start: kick-off meeting within 3 business days of payment, first campaigns within 14 days.",
+            "The contract expires after 90 days. A new cycle requires a new order."
+          ]
+        },
+        "branding": {
+          "name": "Branding Package",
+          "payuName": "Branding Package",
+          "lead": "Your company's visual identity: logo, colours, typography and rules for using them. One-off payment.",
+          "includes": [
+            "A professional image: primary and secondary logo versions.",
+            "Brand Guidelines for your designers.",
+            "Brand colour palette and typography.",
+            "Social media graphic templates."
+          ],
+          "terms": [
+            "One-off payment: {gross} gross ({net} net + 23% VAT).",
+            "Delivery: up to 30 business days from the kick-off meeting.",
+            "2 rounds of revisions included. Files and economic copyrights are transferred on acceptance.",
+            "No additional costs."
+          ]
+        }
+      },
+      "form": {
+        "title": "Your details",
+        "requiredNote": "Fields marked * are required.",
+        "firstName": "First name *",
+        "lastName": "Last name *",
+        "email": "Email *",
+        "phone": "Phone *",
+        "wantsInvoice": "I want a VAT invoice for my company",
+        "companyName": "Company name *",
+        "nip": "VAT ID (NIP) *",
+        "street": "Street and number *",
+        "postalCode": "Postal code *",
+        "city": "City *",
+        "acceptTerms": "I accept the <terms>Terms of Service</terms> and have read the <purchase>Purchase Information</purchase> and the <privacy>Privacy Policy</privacy>. *",
+        "acceptStart": "I request that the service starts before the 14-day withdrawal period ends. I understand that I lose the right of withdrawal once the service is fully performed, and that if I withdraw earlier I will pay for the part performed until then. *",
+        "submit": "Order and pay {amount}",
+        "submitting": "Redirecting to PayU…",
+        "paymentNote": "You will be redirected to PayU S.A. Pay with BLIK, instant bank transfer or card."
+      },
+      "errors": {
+        "required": "This field is required.",
+        "tooLong": "Text is too long.",
+        "invalidName": "Use letters only.",
+        "invalidEmail": "Enter a valid email address.",
+        "invalidPhone": "Enter a valid phone number.",
+        "invalidNip": "Enter a valid VAT ID (10 digits).",
+        "invalidPostalCode": "Format: 00-000.",
+        "acceptTerms": "Accept the terms to place the order.",
+        "acceptStart": "We need this consent to start right away.",
+        "validation": "Check the form and try again.",
+        "unavailable": "Online payments are temporarily unavailable. Email us: hello@entei.design.",
+        "payment": "We couldn't connect to PayU. Please try again in a moment."
+      },
+      "status": {
+        "meta": {
+          "title": "Payment status | ENTEI"
+        },
+        "orderLabel": "Order number",
+        "success": {
+          "eyebrow": "Thank you",
+          "title": "Order received.",
+          "body": "Once PayU confirms the payment, we'll email you the order confirmation. It usually takes a few minutes. Within 3 business days we'll get in touch to book the kick-off meeting."
+        },
+        "failure": {
+          "eyebrow": "Payment",
+          "title": "Payment failed.",
+          "body": "No money was taken. You can try again or email us at hello@entei.design."
+        },
+        "back": "Back to pricing"
+      },
+      "email": {
+        "subject": "Order confirmation {order} | ENTEI"
+      },
+      "payments": {
+        "label": "Online payments handled by PayU",
+        "methods": [
+          "PayU",
+          "BLIK",
+          "Bank transfer",
+          "Visa",
+          "Mastercard"
+        ]
       }
+    }
+  },
+  "siteFooter": {
+    "terms": "Terms of Service",
+    "purchase": "Purchase information"
+  },
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Terms of Service | ENTEI",
+        "description": "Terms of Service for ENTEI services ordered and paid online: orders, PayU payments, delivery, withdrawal and complaints."
+      },
+      "header": {
+        "badge": "Legal documents",
+        "titleLight": "Terms",
+        "titleStrong": "of Service",
+        "lastUpdated": "Effective from: 23 November 2026",
+        "intro": "These terms set out how ENTEI services are ordered and paid for online, how they are delivered, and how to withdraw from a contract or file a complaint. The Polish version is binding."
+      },
+      "tocTitle": "Table of contents",
+      "sections": [
+        {
+          "id": "postanowienia-ogolne",
+          "title": "§1. General provisions",
+          "paragraphs": [
+            "These terms are issued under art. 8 of the Polish Act of 18 July 2002 on providing services by electronic means. They apply to services ordered via www.entei.design (including agency.entei.pl).",
+            "The service provider and seller is ENTEI Sebastian Jarmul, ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, Poland, VAT ID (NIP) 8652574151, registered in the Central Register and Information on Economic Activity (CEIDG), hereinafter “ENTEI”.",
+            "Definitions:"
+          ],
+          "bullets": [
+            "Client: a natural or legal person or organisational unit placing an Order.",
+            "Consumer: a Client who is a natural person concluding a contract not directly related to their business or profession.",
+            "Sole trader with consumer rights: a natural person running a sole proprietorship for whom the contract is not of a professional nature (art. 38a of the Consumer Rights Act). They have the same withdrawal rights as a Consumer.",
+            "Service: a service from ENTEI's offer described on the order page.",
+            "Order: the Client's declaration made through the order form, aimed at concluding a service contract."
+          ]
+        },
+        {
+          "id": "kontakt",
+          "title": "§2. Seller details and contact",
+          "paragraphs": [
+            "ENTEI Sebastian Jarmul, ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, Poland, VAT ID (NIP) 8652574151. REGON 544272533. Registered in CEIDG.",
+            "Email (also for complaints and withdrawal): hello@entei.design.",
+            "Phone: +48 791 912 845, standard operator rates.",
+            "Postal address for correspondence and complaints: ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, Poland."
+          ]
+        },
+        {
+          "id": "uslugi-i-ceny",
+          "title": "§3. Services and prices",
+          "paragraphs": [
+            "The description, scope, price and duration of each Service are shown on the order page before the Order is placed. We offer:"
+          ],
+          "bullets": [
+            "Qualified leads (Meta Ads campaigns): 90-day cycle, PLN 3,000 net (PLN 3,690 gross) per month, PLN 11,070 gross per cycle in total. Month 1 is paid online when ordering, months 2 and 3 by VAT invoice payable within 7 days.",
+            "Branding Package: PLN 5,000 net (PLN 6,150 gross), one-off online payment when ordering."
+          ]
+        },
+        {
+          "id": "zamowienie",
+          "title": "§4. Placing an order and concluding the contract",
+          "paragraphs": [
+            "To order, the Client picks a Service in the pricing section, fills in the form (name, email, phone and, for a company invoice, company details and VAT ID), accepts these terms and clicks “Order and pay”, which entails an obligation to pay.",
+            "The contract is concluded once PayU records the payment. We email a confirmation of the contract with a link to these terms (durable medium).",
+            "Technical requirements: a device with internet access, an up-to-date browser and an active email address."
+          ]
+        },
+        {
+          "id": "platnosci",
+          "title": "§5. Payments",
+          "paragraphs": [
+            "Prices are in Polish zloty and include 23% VAT (gross). The net amount is shown alongside.",
+            "Online payments are handled by PayU S.A., Poznań (ul. Grunwaldzka 186, 60-166 Poznań), a national payment institution supervised by the Polish Financial Supervision Authority. Available methods: BLIK, instant bank transfer (pay-by-link), Visa and Mastercard cards and other methods shown on the PayU page.",
+            "Online payment is required when placing the Order (in advance). Further billing periods of a recurring Service are paid by bank transfer against a VAT invoice within 7 days of issue.",
+            "We charge no surcharge for any payment method. We issue a VAT invoice on request and send it by email.",
+            "Refunds are made using the same payment method, unless the Client agrees to another one at no extra cost."
+          ]
+        },
+        {
+          "id": "realizacja",
+          "title": "§6. Service delivery",
+          "paragraphs": [
+            "Services are provided remotely (online). We ship no physical goods, so there are no delivery costs. Deliverables (e.g. design files, reports) are provided electronically.",
+            "Within 3 business days of payment we contact the Client to book a kick-off meeting.",
+            "Meta Ads campaigns: the first campaigns go live within 14 days of the kick-off meeting, provided the Client grants access to their Meta ad account. The Client pays the ad budget directly to Meta Platforms Ireland Ltd.; it is not part of the Service price.",
+            "Branding Package: delivery within 30 business days of the kick-off meeting, 2 rounds of revisions included. Economic copyrights to the accepted design pass to the Client upon acceptance and full payment.",
+            "The Client cooperates with ENTEI as needed to deliver the Service (access, materials, feedback). Delays on the Client's side extend deadlines accordingly."
+          ]
+        },
+        {
+          "id": "czas-trwania",
+          "title": "§7. Duration and termination",
+          "paragraphs": [
+            "The “Qualified leads” contract is concluded for a fixed term of 90 days (the Client's minimum commitment). It expires at the end of the cycle. Renewal requires a new Order.",
+            "The Branding Package contract expires upon acceptance of the design.",
+            "Either party may terminate the contract with immediate effect if the other party materially breaches it and fails to remedy the breach within 7 days of being notified."
+          ]
+        },
+        {
+          "id": "odstapienie",
+          "title": "§8. Withdrawal from the contract",
+          "paragraphs": [
+            "A Consumer and a sole trader with consumer rights may withdraw from the contract without giving a reason within 14 days of its conclusion by sending a statement by email to hello@entei.design or by post to the address in §2 before the deadline. The model form from annex 2 to the Consumer Rights Act may be used. We confirm receipt by email.",
+            "If the Client requested that the Service start before the withdrawal period ends and then withdraws, they pay for the part performed until withdrawal, in proportion to the scope of the contract.",
+            "The right of withdrawal does not apply once ENTEI has fully performed the Service with the Client's express consent, given after being informed that they would lose the right of withdrawal upon full performance (art. 38(1)(1) of the Consumer Rights Act).",
+            "We refund payments within 14 days of receiving the withdrawal statement, using the same payment method (see §5).",
+            "This right of withdrawal does not apply to Clients contracting in a professional capacity."
+          ]
+        },
+        {
+          "id": "reklamacje",
+          "title": "§9. Complaints",
+          "paragraphs": [
+            "ENTEI must provide Services in accordance with the contract. Complaints can be filed by email to hello@entei.design or by post to the address in §2.",
+            "A complaint should include the Client's details, the order number, a description of the problem and the expected resolution (e.g. revision, re-performance, price reduction or refund).",
+            "We respond within 14 days of receipt, by email, and keep the Client informed of progress."
+          ]
+        },
+        {
+          "id": "dane-osobowe",
+          "title": "§10. Personal data",
+          "paragraphs": [
+            "ENTEI is the controller of Clients' personal data. We process data under the GDPR (EU Regulation 2016/679) to conclude and perform the contract, issue invoices and handle complaints. Details, including the Client's rights, are in the Privacy Policy.",
+            "To process payments we share the Client's data (name, email, phone, amount) with PayU S.A., which is a separate controller for payment processing.",
+            "Data is protected, among others, by an encrypted connection (HTTPS). We do not store payment card data."
+          ]
+        },
+        {
+          "id": "ograniczenia",
+          "title": "§11. Order restrictions",
+          "paragraphs": [
+            "We serve Clients based or resident in Poland; settlement in PLN only.",
+            "Orders may be placed by adults with full legal capacity.",
+            "Meta Ads campaigns require a Meta Business account and a business permitted by Meta's advertising policies. We do not run campaigns for industries prohibited by those policies."
+          ]
+        },
+        {
+          "id": "dobre-praktyki",
+          "title": "§12. Code of good practice",
+          "paragraphs": [
+            "We act fairly and transparently: we show full prices before ordering, charge no hidden fees, reply to messages within 1 business day and inform you of any change to deadlines."
+          ]
+        },
+        {
+          "id": "spory",
+          "title": "§13. Dispute resolution",
+          "paragraphs": [
+            "Consumers may use out-of-court complaint and redress procedures, including municipal or district consumer ombudsmen and permanent consumer arbitration courts at the Provincial Trade Inspectorates. More at www.uokik.gov.pl."
+          ]
+        },
+        {
+          "id": "postanowienia-koncowe",
+          "title": "§14. Final provisions",
+          "paragraphs": [
+            "Matters not covered here are governed by Polish law, in particular the Civil Code and the Consumer Rights Act.",
+            "Amendments do not affect contracts concluded before they take effect.",
+            "These terms are available free of charge at www.entei.design/regulamin in a form that can be downloaded and printed."
+          ]
+        }
+      ]
+    },
+    "purchase": {
+      "meta": {
+        "title": "Purchase information: payments, delivery, returns | ENTEI",
+        "description": "ENTEI company details, prices, PayU payment methods, delivery times, withdrawal and complaints."
+      },
+      "header": {
+        "badge": "Client information",
+        "titleLight": "Purchase",
+        "titleStrong": "information",
+        "lastUpdated": "Last updated: 23 November 2026",
+        "intro": "The key information before you buy, in one place. Full rules are in the Terms of Service."
+      },
+      "tocTitle": "Table of contents",
+      "sections": [
+        {
+          "id": "dane-firmy",
+          "title": "Company details and contact",
+          "paragraphs": [
+            "ENTEI Sebastian Jarmul",
+            "ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, Poland",
+            "VAT ID (NIP): 8652574151",
+            "REGON: 544272533",
+            "Registered in the Central Register and Information on Economic Activity (CEIDG)",
+            "Email: hello@entei.design",
+            "Phone: +48 791 912 845",
+            "Complaints address: as above, email: hello@entei.design"
+          ]
+        },
+        {
+          "id": "oferta-i-ceny",
+          "title": "Offer and prices",
+          "paragraphs": [
+            "All prices are gross (incl. 23% VAT); the net amount is shown alongside."
+          ],
+          "bullets": [
+            "Qualified leads (Meta Ads campaigns): PLN 3,690 gross per month (PLN 3,000 net), 90-day cycle, PLN 11,070 gross in total. The ad budget paid directly to Meta is not included.",
+            "Branding Package: PLN 6,150 gross (PLN 5,000 net), one-off payment."
+          ]
+        },
+        {
+          "id": "platnosci",
+          "title": "Payments",
+          "paragraphs": [
+            "Online payments are handled by PayU S.A. Available methods: BLIK, instant bank transfer, Visa and Mastercard cards.",
+            "Payment is due when ordering (in advance). For Meta Ads campaigns, months 2 and 3 are paid by bank transfer against a VAT invoice within 7 days of issue.",
+            "No surcharge for any payment method. VAT invoices are sent by email."
+          ]
+        },
+        {
+          "id": "realizacja",
+          "title": "Service delivery",
+          "paragraphs": [
+            "Services are delivered remotely, with no shipping or delivery costs. Deliverables are provided electronically.",
+            "Within 3 business days of payment we book a kick-off meeting.",
+            "Meta Ads campaigns: first campaigns within 14 days of the kick-off meeting. Branding Package: up to 30 business days from the kick-off meeting."
+          ]
+        },
+        {
+          "id": "odstapienie",
+          "title": "Withdrawal and refunds",
+          "paragraphs": [
+            "Consumers and sole traders with consumer rights may withdraw within 14 days of concluding the contract, without giving a reason, whatever payment method they used. An email to hello@entei.design or a letter to the company address is enough.",
+            "If the service started at your request before the 14 days ended, you pay for the part performed until withdrawal. Once the service is fully performed, the right of withdrawal expires.",
+            "We refund within 14 days of receiving the statement, using the same payment method."
+          ]
+        },
+        {
+          "id": "reklamacje",
+          "title": "Complaints",
+          "paragraphs": [
+            "Send complaints to hello@entei.design or by post to the company address. Include the order number, a description of the problem and the expected resolution (revision, re-performance, price reduction or refund).",
+            "We respond within 14 days and keep you informed of the status."
+          ]
+        },
+        {
+          "id": "ograniczenia",
+          "title": "Restrictions",
+          "paragraphs": [
+            "We serve clients in Poland, settlement in PLN. Orders may be placed by adults. Meta Ads campaigns are only run for businesses allowed by Meta's advertising policies and require a Meta Business account."
+          ]
+        },
+        {
+          "id": "dane-osobowe",
+          "title": "Personal data",
+          "paragraphs": [
+            "The controller is ENTEI Sebastian Jarmul. We process order data to perform the contract and issue invoices. For payment processing we share it with PayU S.A. (a separate controller). Details in the Privacy Policy."
+          ]
+        }
+      ]
     }
   }
 }

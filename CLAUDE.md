@@ -57,6 +57,9 @@ oraz skill [figma-to-code](.claude/skills/figma-to-code/SKILL.md) (procedura bud
   Rastry trzymamy jako WebP ≤2560 px — po wrzuceniu nowych plików uruchom
   `npm run optimize:images` (skrypt konwertuje i podmienia referencje w kodzie).
   Pełnowymiarowe oryginały zostają w historii gita, nie w deploymencie.
+- **Płatności (PayU)**: `src/lib/payu/` (klient API, produkty i ceny, schemat formularza), akcja `src/actions/create-payu-order.ts`,
+  notyfikacje `src/app/api/payu/notify/route.ts`, strony `src/app/agency/zamowienie/`. Dane sprzedawcy: `src/lib/company.ts`.
+  Regulamin `/regulamin` i `/zasady-zakupow` (komponent `LegalDocument`). Opis i checklista wdrożenia: [docs/PAYU.md](docs/PAYU.md).
 - **Figma**: plik projektu ENTEI — `fileKey: <TODO: uzupełnić>`. Budowa z Figmy → skill
   [figma-to-code](.claude/skills/figma-to-code/SKILL.md); weryfikacja → subagent `design-reviewer`.
   Reference screeny w `design/figma/`.

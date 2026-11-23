@@ -52,7 +52,7 @@
       "badge": "Dokumenty prawne",
       "titleLight": "Polityka",
       "titleStrong": "prywatności",
-      "lastUpdated": "Ostatnia aktualizacja: 22 maja 2026",
+      "lastUpdated": "Ostatnia aktualizacja: 23 listopada 2026",
       "intro": "Dbamy o prywatność osób odwiedzających naszą stronę. Poniżej wyjaśniamy, jakie dane zbieramy, w jakim celu i na jakiej podstawie je przetwarzamy, komu możemy je przekazać oraz jakie prawa Ci przysługują."
     },
     "tocTitle": "Spis treści",
@@ -86,6 +86,7 @@
         "paragraphs": [
           "Zakres zbieranych danych zależy od sposobu, w jaki korzystasz ze strony i kontaktujesz się z nami.",
           "Dane z formularza kontaktowego — wypełniając formularz kontaktowy dostępny na stronie, przekazujesz nam imię i nazwisko, adres e-mail, opcjonalnie nazwę firmy oraz treść wiadomości. Podanie tych danych jest dobrowolne, ale niezbędne do udzielenia odpowiedzi na Twoje zapytanie.",
+          "Dane z zamówienia usługi: zamawiając usługę online, przekazujesz nam imię i nazwisko, adres e-mail, numer telefonu, a jeżeli chcesz fakturę na firmę, także nazwę firmy, NIP i adres. Podanie tych danych jest dobrowolne, ale niezbędne do zawarcia i wykonania umowy oraz wystawienia faktury.",
           "Dane z kontaktu przez Instagram — jeżeli kontaktujesz się z nami poprzez nasz profil na Instagramie (@entei.designs), w wiadomościach prywatnych lub komentarzach, przetwarzamy nazwę Twojego profilu oraz treść przekazanej korespondencji wraz z informacjami, które zdecydujesz się nam udostępnić.",
           "Dane techniczne i analityczne — podczas przeglądania strony automatycznie zbierane są dane takie jak adres IP, typ i wersja przeglądarki, rodzaj urządzenia, system operacyjny, przybliżona lokalizacja geograficzna, źródło wejścia na stronę oraz informacje o aktywności na stronie. Dane te zbierane są za pomocą plików cookies i narzędzi opisanych w punkcie 5."
         ]
@@ -97,6 +98,7 @@
           "Twoje dane osobowe przetwarzamy w następujących celach i w oparciu o następujące podstawy prawne:"
         ],
         "bullets": [
+          "Zawarcie i wykonanie umowy o świadczenie usług zamówionych online, w tym obsługa płatności i reklamacji: art. 6 ust. 1 lit. b RODO; wystawianie faktur i prowadzenie dokumentacji księgowej: obowiązek prawny (art. 6 ust. 1 lit. c RODO).",
           "Obsługa zapytań z formularza kontaktowego oraz prowadzenie korespondencji — podejmowanie działań na Twoje żądanie przed zawarciem umowy (art. 6 ust. 1 lit. b RODO) oraz nasz prawnie uzasadniony interes polegający na komunikacji z osobami zainteresowanymi naszymi usługami (art. 6 ust. 1 lit. f RODO).",
           "Kontakt i obsługa korespondencji za pośrednictwem serwisu Instagram — nasz prawnie uzasadniony interes polegający na obsłudze zapytań kierowanych przez media społecznościowe (art. 6 ust. 1 lit. f RODO).",
           "Prowadzenie analityki i statystyk oglądalności strony — Twoja dobrowolna zgoda wyrażona poprzez baner plików cookies (art. 6 ust. 1 lit. a RODO).",
@@ -180,7 +182,8 @@
           "Travatar — dostawca narzędzia analitycznego.",
           "Vercel Inc. — dostawca hostingu strony oraz usługi Vercel Analytics.",
           "Calendly LLC — w zakresie rezerwacji terminów konsultacji, jeżeli zdecydujesz się skorzystać z tej formy kontaktu.",
-          "Adobe Systems Inc. — w zakresie dostarczania czcionek wyświetlanych na stronie."
+          "Adobe Systems Inc. — w zakresie dostarczania czcionek wyświetlanych na stronie.",
+          "PayU S.A. z siedzibą w Poznaniu (ul. Grunwaldzka 186, 60-166 Poznań): w celu realizacji płatności online przekazujemy jej dane z zamówienia; PayU S.A. jest odrębnym administratorem danych w zakresie obsługi płatności."
         ]
       },
       {
@@ -200,7 +203,8 @@
         "bullets": [
           "Dane z formularza kontaktowego oraz korespondencji — przez czas niezbędny do obsługi zapytania, a następnie do upływu okresu przedawnienia ewentualnych roszczeń.",
           "Dane przetwarzane na podstawie zgody (analityka, marketing) — do czasu wycofania zgody lub wygaśnięcia plików cookies, zgodnie z okresami wskazanymi w punkcie 5.",
-          "Dane przetwarzane na podstawie prawnie uzasadnionego interesu — do czasu skutecznego wniesienia sprzeciwu lub ustania tego interesu."
+          "Dane przetwarzane na podstawie prawnie uzasadnionego interesu — do czasu skutecznego wniesienia sprzeciwu lub ustania tego interesu.",
+          "Dane z zamówień i faktur: przez czas wykonania umowy, a następnie przez 5 lat od końca roku podatkowego (obowiązki podatkowe) lub do upływu terminu przedawnienia roszczeń."
         ]
       },
       {
@@ -752,14 +756,32 @@
       "tagline": "Wspieramy software house’y, aby nie musiały się martwić o regularność w projektach.",
       "studioLine1": "Design studio",
       "studioLine2": "Revolutionize your brand",
-      "studioLine3": "Modern visual identities."
+      "studioLine3": "Modern visual identities.",
+      "legal": {
+        "sellerLabel": "Sprzedawca",
+        "seller": [
+          "ENTEI Sebastian Jarmul",
+          "ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola",
+          "NIP 8652574151, REGON 544272533, wpis do CEIDG"
+        ],
+        "contact": "Kontakt i reklamacje: hello@entei.design, tel. +48 791 912 845",
+        "links": {
+          "terms": "Regulamin świadczenia usług",
+          "company": "Dane firmy i kontakt",
+          "payments": "Płatności",
+          "fulfilment": "Realizacja usług",
+          "withdrawal": "Odstąpienie od umowy",
+          "complaints": "Reklamacje",
+          "privacy": "Polityka prywatności"
+        }
+      }
     },
     "pricing": {
       "title": "Cennik.",
       "plans": {
         "leads": {
           "name": "Kwalifikowane zapytania",
-          "price": "3000 zł <small>/ miesięcznie</small>",
+          "price": "3000 zł <small>netto / miesięcznie</small>",
           "features": [
             "Gwarantujemy wynik w umowie",
             "Profesjonalne kreacje tworzone przez grafika, a nie AI, które możesz udostępnić na swoich profilach social media.",
@@ -768,16 +790,384 @@
           ]
         },
         "brand": {
-          "name": "Branding + Strona WWW",
-          "price": "10 000 zł",
+          "name": "Pakiet Branding",
+          "price": "5000 zł <small>netto</small>",
           "features": [
             "Profesjonalny wizerunek dla Twojego biznesu",
             "Brand Guidelines zawierający wytyczne dla Twoich grafików",
-            "Landing page z mikrointerakcjami na podstawie indywidualnego projektu w Figmie.",
+            "Paleta kolorów i typografia marki",
             "Szablony grafik na social media"
           ]
         }
+      },
+      "orderCta": "Zamów i zapłać online",
+      "gross": "{amount} brutto",
+      "grossMonthly": "{amount} brutto / miesięcznie"
+    },
+    "order": {
+      "meta": {
+        "title": "Zamówienie: {product} | ENTEI",
+        "description": "Zamów usługę ENTEI i zapłać online przez PayU: BLIK, przelew lub karta."
+      },
+      "back": "Wróć do cennika",
+      "eyebrow": "Zamówienie",
+      "includesTitle": "Co dostajesz",
+      "termsTitle": "Warunki i koszty",
+      "priceLabel": "Do zapłaty teraz",
+      "priceNet": "{amount} netto + 23% VAT",
+      "sellerTitle": "Sprzedawca",
+      "products": {
+        "meta-ads": {
+          "name": "Kwalifikowane zapytania: kampanie Meta Ads",
+          "payuName": "Kampanie Meta Ads, 1. miesiąc cyklu",
+          "lead": "System pozyskiwania klientów oparty o kampanie Meta Ads (Facebook i Instagram). Płacisz teraz za pierwszy miesiąc 90-dniowego cyklu.",
+          "includes": [
+            "Strategia i konfiguracja kampanii Meta Ads prowadzona przez specjalistę performance marketingu.",
+            "Kreacje reklamowe projektowane przez grafika (nie AI), które możesz też publikować na swoich profilach.",
+            "CRM do obsługi zapytań od klientów.",
+            "Stała optymalizacja kampanii i miesięczny raport wyników."
+          ],
+          "terms": [
+            "Umowa na czas określony: jeden cykl 90 dni (3 miesiące).",
+            "Teraz płacisz za 1. miesiąc: {gross} brutto ({net} netto + 23% VAT).",
+            "Miesiąc 2. i 3. rozliczamy fakturą VAT z 7-dniowym terminem płatności, po {gross} brutto.",
+            "Łączny koszt cyklu: {total} brutto.",
+            "Budżet reklamowy płacisz bezpośrednio do Meta; nie wchodzi w cenę usługi. Rekomendowaną kwotę ustalamy na spotkaniu startowym.",
+            "Start: spotkanie startowe w ciągu 3 dni roboczych od płatności, pierwsze kampanie w ciągu 14 dni.",
+            "Po 90 dniach umowa wygasa. Kolejny cykl wymaga nowego zamówienia."
+          ]
+        },
+        "branding": {
+          "name": "Pakiet Branding",
+          "payuName": "Pakiet Branding",
+          "lead": "Identyfikacja wizualna Twojej firmy: logo, kolory, typografia i zasady ich stosowania. Płatność jednorazowa.",
+          "includes": [
+            "Profesjonalny wizerunek: logo w wersji podstawowej i uzupełniających.",
+            "Brand Guidelines z wytycznymi dla Twoich grafików.",
+            "Paleta kolorów i typografia marki.",
+            "Szablony grafik na social media."
+          ],
+          "terms": [
+            "Płatność jednorazowa: {gross} brutto ({net} netto + 23% VAT).",
+            "Realizacja: do 30 dni roboczych od spotkania startowego.",
+            "W cenie 2 rundy poprawek. Pliki i autorskie prawa majątkowe przekazujemy po odbiorze projektu.",
+            "Brak dodatkowych kosztów."
+          ]
+        }
+      },
+      "form": {
+        "title": "Twoje dane",
+        "requiredNote": "Pola oznaczone * są obowiązkowe.",
+        "firstName": "Imię *",
+        "lastName": "Nazwisko *",
+        "email": "E-mail *",
+        "phone": "Telefon *",
+        "wantsInvoice": "Chcę fakturę VAT na firmę",
+        "companyName": "Nazwa firmy *",
+        "nip": "NIP *",
+        "street": "Ulica i numer *",
+        "postalCode": "Kod pocztowy *",
+        "city": "Miejscowość *",
+        "acceptTerms": "Akceptuję <terms>Regulamin świadczenia usług</terms> oraz zapoznałem(-am) się z <purchase>Zasadami zakupów</purchase> i <privacy>Polityką prywatności</privacy>. *",
+        "acceptStart": "Żądam rozpoczęcia usługi przed upływem 14 dni na odstąpienie od umowy. Wiem, że po pełnym wykonaniu usługi tracę prawo odstąpienia, a odstępując wcześniej, zapłacę za część wykonaną do tej chwili. *",
+        "submit": "Zamawiam i płacę {amount}",
+        "submitting": "Przekierowuję do PayU…",
+        "paymentNote": "Zostaniesz przekierowany do PayU S.A. Zapłacisz BLIKiem, szybkim przelewem lub kartą."
+      },
+      "errors": {
+        "required": "To pole jest wymagane.",
+        "tooLong": "Za długi tekst.",
+        "invalidName": "Użyj samych liter.",
+        "invalidEmail": "Podaj poprawny adres e-mail.",
+        "invalidPhone": "Podaj poprawny numer telefonu.",
+        "invalidNip": "Podaj poprawny NIP (10 cyfr).",
+        "invalidPostalCode": "Format: 00-000.",
+        "acceptTerms": "Zaakceptuj regulamin, aby złożyć zamówienie.",
+        "acceptStart": "Ta zgoda jest potrzebna, żebyśmy mogli zacząć od razu.",
+        "validation": "Sprawdź dane w formularzu i spróbuj ponownie.",
+        "unavailable": "Płatności online są chwilowo niedostępne. Napisz do nas: hello@entei.design.",
+        "payment": "Nie udało się połączyć z PayU. Spróbuj ponownie za chwilę."
+      },
+      "status": {
+        "meta": {
+          "title": "Status płatności | ENTEI"
+        },
+        "orderLabel": "Numer zamówienia",
+        "success": {
+          "eyebrow": "Dziękujemy",
+          "title": "Zamówienie przyjęte.",
+          "body": "Gdy PayU potwierdzi płatność, wyślemy potwierdzenie zamówienia na Twój e-mail. Zwykle trwa to kilka minut. W ciągu 3 dni roboczych odezwiemy się, żeby umówić spotkanie startowe."
+        },
+        "failure": {
+          "eyebrow": "Płatność",
+          "title": "Płatność nie powiodła się.",
+          "body": "Nie pobraliśmy żadnych środków. Możesz spróbować ponownie albo napisać do nas na hello@entei.design."
+        },
+        "back": "Wróć do cennika"
+      },
+      "email": {
+        "subject": "Potwierdzenie zamówienia {order} | ENTEI"
+      },
+      "payments": {
+        "label": "Płatności online obsługuje PayU",
+        "methods": [
+          "PayU",
+          "BLIK",
+          "Przelew online",
+          "Visa",
+          "Mastercard"
+        ]
       }
+    }
+  },
+  "siteFooter": {
+    "terms": "Regulamin",
+    "purchase": "Zasady zakupów"
+  },
+  "legal": {
+    "terms": {
+      "meta": {
+        "title": "Regulamin świadczenia usług | ENTEI",
+        "description": "Regulamin świadczenia usług ENTEI zamawianych i opłacanych online: zamówienia, płatności PayU, realizacja, odstąpienie od umowy i reklamacje."
+      },
+      "header": {
+        "badge": "Dokumenty prawne",
+        "titleLight": "Regulamin",
+        "titleStrong": "świadczenia usług",
+        "lastUpdated": "Obowiązuje od: 23 listopada 2026",
+        "intro": "Regulamin określa zasady zamawiania i opłacania online usług ENTEI, ich realizacji, odstąpienia od umowy oraz składania reklamacji."
+      },
+      "tocTitle": "Spis treści",
+      "sections": [
+        {
+          "id": "postanowienia-ogolne",
+          "title": "§1. Postanowienia ogólne",
+          "paragraphs": [
+            "Regulamin wydano na podstawie art. 8 ustawy z 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną. Dotyczy usług zamawianych przez stronę www.entei.design (w tym jej podstronę agency.entei.pl).",
+            "Usługodawcą i sprzedawcą jest ENTEI Sebastian Jarmul, ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, NIP 8652574151, przedsiębiorca wpisany do Centralnej Ewidencji i Informacji o Działalności Gospodarczej (CEIDG), dalej: „ENTEI”.",
+            "Pojęcia użyte w regulaminie:"
+          ],
+          "bullets": [
+            "Klient: osoba fizyczna, osoba prawna lub jednostka organizacyjna, która składa Zamówienie.",
+            "Konsument: Klient będący osobą fizyczną, który zawiera umowę niezwiązaną bezpośrednio z jego działalnością gospodarczą lub zawodową.",
+            "Przedsiębiorca na prawach konsumenta: osoba fizyczna prowadząca jednoosobową działalność, dla której umowa nie ma charakteru zawodowego (art. 38a ustawy o prawach konsumenta). Ma ona te same prawa co Konsument w zakresie odstąpienia od umowy.",
+            "Usługa: usługa z oferty ENTEI opisana na stronie zamówienia.",
+            "Zamówienie: oświadczenie woli Klienta złożone przez formularz zamówienia, zmierzające do zawarcia umowy o świadczenie Usługi."
+          ]
+        },
+        {
+          "id": "kontakt",
+          "title": "§2. Dane sprzedawcy i kontakt",
+          "paragraphs": [
+            "ENTEI Sebastian Jarmul, ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola, NIP 8652574151. REGON 544272533. Wpis do CEIDG.",
+            "E-mail (również do reklamacji i odstąpienia od umowy): hello@entei.design.",
+            "Telefon: +48 791 912 845, opłata wg cennika operatora.",
+            "Adres do korespondencji i reklamacji: ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola."
+          ]
+        },
+        {
+          "id": "uslugi-i-ceny",
+          "title": "§3. Usługi i ceny",
+          "paragraphs": [
+            "Opis, zakres, cena i czas trwania każdej Usługi są podane na stronie zamówienia przed złożeniem Zamówienia. Oferujemy:"
+          ],
+          "bullets": [
+            "Kwalifikowane zapytania (kampanie Meta Ads): cykl 90 dni, 3000 zł netto (3690 zł brutto) miesięcznie, łącznie 11 070 zł brutto za cykl. Pierwszy miesiąc płatny online przy zamówieniu, miesiące 2. i 3. fakturą VAT z 7-dniowym terminem płatności.",
+            "Pakiet Branding: 5000 zł netto (6150 zł brutto), płatność jednorazowa online przy zamówieniu."
+          ]
+        },
+        {
+          "id": "zamowienie",
+          "title": "§4. Składanie zamówienia i zawarcie umowy",
+          "paragraphs": [
+            "Aby złożyć Zamówienie, Klient wybiera Usługę w cenniku, wypełnia formularz (imię, nazwisko, e-mail, telefon, a przy fakturze na firmę także dane firmy i NIP), akceptuje regulamin i klika przycisk „Zamawiam i płacę”, który oznacza obowiązek zapłaty.",
+            "Umowa zostaje zawarta z chwilą zaksięgowania płatności przez PayU. Potwierdzenie zawarcia umowy wraz z linkiem do regulaminu wysyłamy e-mailem (trwały nośnik).",
+            "Wymagania techniczne: urządzenie z dostępem do internetu, aktualna przeglądarka i aktywny adres e-mail."
+          ]
+        },
+        {
+          "id": "platnosci",
+          "title": "§5. Płatności",
+          "paragraphs": [
+            "Ceny są podane w złotych polskich i zawierają 23% VAT (kwoty brutto). Przy cenach podajemy także kwotę netto.",
+            "Płatności online obsługuje PayU S.A. z siedzibą w Poznaniu (ul. Grunwaldzka 186, 60-166 Poznań), krajowa instytucja płatnicza nadzorowana przez KNF. Dostępne metody: BLIK, szybki przelew online (pay-by-link), karty płatnicze Visa i Mastercard oraz inne metody wyświetlone na stronie PayU.",
+            "Płatność online jest wymagana przy składaniu Zamówienia (z góry). Kolejne okresy rozliczeniowe Usługi cyklicznej opłacane są przelewem na podstawie faktury VAT, w terminie 7 dni od jej wystawienia.",
+            "Nie pobieramy dopłat za wybór metody płatności. Fakturę VAT wystawiamy na każde życzenie Klienta i wysyłamy e-mailem.",
+            "Zwrot płatności następuje tą samą metodą, którą Klient zapłacił, chyba że Klient zgodzi się na inną, bez dodatkowych kosztów dla niego."
+          ]
+        },
+        {
+          "id": "realizacja",
+          "title": "§6. Realizacja usług",
+          "paragraphs": [
+            "Usługi świadczymy zdalnie (online). Nie wysyłamy rzeczy fizycznych, więc nie ma kosztów dostawy. Rezultaty prac (np. pliki projektów, raporty) przekazujemy elektronicznie.",
+            "W ciągu 3 dni roboczych od płatności kontaktujemy się z Klientem, żeby umówić spotkanie startowe.",
+            "Kampanie Meta Ads: pierwsze kampanie uruchamiamy w ciągu 14 dni od spotkania startowego, pod warunkiem przekazania przez Klienta dostępów do konta reklamowego Meta. Budżet reklamowy Klient płaci bezpośrednio do Meta Platforms Ireland Ltd.; nie jest on częścią ceny Usługi.",
+            "Pakiet Branding: realizacja do 30 dni roboczych od spotkania startowego, w cenie 2 rundy poprawek. Autorskie prawa majątkowe do zaakceptowanego projektu przechodzą na Klienta z chwilą odbioru i zapłaty pełnej ceny.",
+            "Klient współdziała z ENTEI w zakresie potrzebnym do realizacji Usługi (dostępy, materiały, informacje zwrotne). Opóźnienia po stronie Klienta przesuwają terminy o czas opóźnienia."
+          ]
+        },
+        {
+          "id": "czas-trwania",
+          "title": "§7. Czas trwania i rozwiązanie umowy",
+          "paragraphs": [
+            "Umowa o Usługę „Kwalifikowane zapytania” jest zawierana na czas określony 90 dni (minimalny czas trwania zobowiązania Klienta). Wygasa po upływie cyklu. Przedłużenie wymaga nowego Zamówienia.",
+            "Umowa o Pakiet Branding wygasa z chwilą odbioru projektu.",
+            "Każda ze stron może rozwiązać umowę ze skutkiem natychmiastowym w razie rażącego naruszenia jej postanowień przez drugą stronę, po bezskutecznym wezwaniu do usunięcia naruszenia w terminie 7 dni."
+          ]
+        },
+        {
+          "id": "odstapienie",
+          "title": "§8. Odstąpienie od umowy",
+          "paragraphs": [
+            "Konsument i Przedsiębiorca na prawach konsumenta mogą odstąpić od umowy bez podania przyczyny w terminie 14 dni od jej zawarcia. Wystarczy wysłać oświadczenie e-mailem na hello@entei.design lub pocztą na adres z §2, przed upływem terminu. Można użyć wzoru formularza z załącznika nr 2 do ustawy o prawach konsumenta. Otrzymanie oświadczenia potwierdzimy e-mailem.",
+            "Jeżeli Klient zażądał rozpoczęcia Usługi przed upływem terminu na odstąpienie, a następnie odstąpi od umowy, płaci za świadczenia spełnione do chwili odstąpienia, proporcjonalnie do zakresu umowy.",
+            "Prawo odstąpienia nie przysługuje, jeżeli ENTEI wykonało Usługę w pełni za wyraźną zgodą Klienta, który przed rozpoczęciem świadczenia został poinformowany, że po jego spełnieniu utraci prawo odstąpienia (art. 38 ust. 1 pkt 1 ustawy o prawach konsumenta).",
+            "Zwracamy płatności w ciągu 14 dni od otrzymania oświadczenia o odstąpieniu, tą samą metodą płatności (zob. §5).",
+            "Prawo odstąpienia z tego paragrafu nie przysługuje Klientom zawierającym umowę w związku z działalnością o charakterze zawodowym."
+          ]
+        },
+        {
+          "id": "reklamacje",
+          "title": "§9. Reklamacje",
+          "paragraphs": [
+            "ENTEI ma obowiązek świadczyć Usługi zgodnie z umową. Reklamację można złożyć e-mailem na hello@entei.design lub pocztą na adres z §2.",
+            "Reklamacja powinna zawierać dane Klienta, numer zamówienia, opis problemu i oczekiwany sposób rozwiązania (np. poprawka, ponowne wykonanie, obniżenie ceny lub zwrot pieniędzy).",
+            "Odpowiadamy na reklamację w ciągu 14 dni od jej otrzymania, e-mailem. O postępie rozpatrywania informujemy na bieżąco."
+          ]
+        },
+        {
+          "id": "dane-osobowe",
+          "title": "§10. Ochrona danych osobowych",
+          "paragraphs": [
+            "Administratorem danych osobowych Klientów jest ENTEI. Dane przetwarzamy na podstawie RODO (rozporządzenie UE 2016/679) w celu zawarcia i wykonania umowy, wystawienia faktur i obsługi reklamacji. Szczegóły, w tym prawa Klienta, opisuje Polityka prywatności.",
+            "W celu realizacji płatności dane Klienta (imię, nazwisko, e-mail, telefon, kwota) przekazujemy PayU S.A., która jest odrębnym administratorem danych w zakresie obsługi płatności.",
+            "Dane są chronione m.in. szyfrowanym połączeniem (HTTPS). Nie przechowujemy danych kart płatniczych."
+          ]
+        },
+        {
+          "id": "ograniczenia",
+          "title": "§11. Ograniczenia realizacji zamówień",
+          "paragraphs": [
+            "Usługi świadczymy Klientom z siedzibą lub miejscem zamieszkania w Polsce, rozliczenie wyłącznie w PLN.",
+            "Zamówienie może złożyć osoba pełnoletnia z pełną zdolnością do czynności prawnych.",
+            "Kampanie Meta Ads wymagają, aby Klient miał (lub założył) konto firmowe w Meta Business oraz prowadził działalność dopuszczoną przez zasady reklamowe Meta. Nie prowadzimy kampanii dla branż zakazanych w tych zasadach."
+          ]
+        },
+        {
+          "id": "dobre-praktyki",
+          "title": "§12. Kodeks dobrych praktyk",
+          "paragraphs": [
+            "Działamy uczciwie i przejrzyście: podajemy pełne ceny przed zamówieniem, nie stosujemy ukrytych opłat, odpowiadamy na wiadomości w ciągu 1 dnia roboczego i informujemy o każdej zmianie terminów."
+          ]
+        },
+        {
+          "id": "spory",
+          "title": "§13. Rozwiązywanie sporów",
+          "paragraphs": [
+            "Konsument może skorzystać z pozasądowych sposobów rozpatrywania reklamacji, m.in. pomocy miejskiego lub powiatowego rzecznika konsumentów oraz stałych polubownych sądów konsumenckich przy Wojewódzkich Inspektoratach Inspekcji Handlowej. Informacje: www.uokik.gov.pl."
+          ]
+        },
+        {
+          "id": "postanowienia-koncowe",
+          "title": "§14. Postanowienia końcowe",
+          "paragraphs": [
+            "W sprawach nieuregulowanych stosuje się przepisy prawa polskiego, w szczególności Kodeksu cywilnego i ustawy o prawach konsumenta.",
+            "Zmiany regulaminu nie dotyczą umów zawartych przed ich wejściem w życie.",
+            "Regulamin jest dostępny bezpłatnie na stronie www.entei.design/regulamin w formie umożliwiającej jego pobranie i wydruk."
+          ]
+        }
+      ]
+    },
+    "purchase": {
+      "meta": {
+        "title": "Zasady zakupów: płatności, realizacja, zwroty | ENTEI",
+        "description": "Dane firmy ENTEI, ceny, metody płatności PayU, terminy realizacji usług, odstąpienie od umowy i reklamacje."
+      },
+      "header": {
+        "badge": "Informacje dla klientów",
+        "titleLight": "Zasady",
+        "titleStrong": "zakupów",
+        "lastUpdated": "Ostatnia aktualizacja: 23 listopada 2026",
+        "intro": "Najważniejsze informacje przed zakupem w jednym miejscu. Pełne zasady opisuje Regulamin świadczenia usług."
+      },
+      "tocTitle": "Spis treści",
+      "sections": [
+        {
+          "id": "dane-firmy",
+          "title": "Dane firmy i kontakt",
+          "paragraphs": [
+            "ENTEI Sebastian Jarmul",
+            "ul. Wojska Polskiego 24/13, 37-450 Stalowa Wola",
+            "NIP: 8652574151",
+            "REGON: 544272533",
+            "Wpis do Centralnej Ewidencji i Informacji o Działalności Gospodarczej (CEIDG)",
+            "E-mail: hello@entei.design",
+            "Telefon: +48 791 912 845",
+            "Adres do reklamacji: jak wyżej, e-mail: hello@entei.design"
+          ]
+        },
+        {
+          "id": "oferta-i-ceny",
+          "title": "Oferta i ceny",
+          "paragraphs": [
+            "Wszystkie ceny są cenami brutto (z 23% VAT); kwotę netto podajemy obok."
+          ],
+          "bullets": [
+            "Kwalifikowane zapytania (kampanie Meta Ads): 3690 zł brutto miesięcznie (3000 zł netto), umowa na cykl 90 dni, łącznie 11 070 zł brutto. Budżet reklamowy płacony bezpośrednio do Meta nie wchodzi w cenę.",
+            "Pakiet Branding: 6150 zł brutto (5000 zł netto), płatność jednorazowa."
+          ]
+        },
+        {
+          "id": "platnosci",
+          "title": "Płatności",
+          "paragraphs": [
+            "Płatności online obsługuje PayU S.A. Dostępne metody: BLIK, szybki przelew online, karty Visa i Mastercard.",
+            "Termin zapłaty: przy składaniu zamówienia (z góry). W kampaniach Meta Ads miesiąc 2. i 3. opłacasz przelewem na podstawie faktury VAT, w ciągu 7 dni od jej wystawienia.",
+            "Nie pobieramy dodatkowych opłat za metodę płatności. Fakturę VAT wysyłamy e-mailem."
+          ]
+        },
+        {
+          "id": "realizacja",
+          "title": "Realizacja usług",
+          "paragraphs": [
+            "Usługi realizujemy zdalnie, bez wysyłki i kosztów dostawy. Rezultaty przekazujemy elektronicznie.",
+            "W ciągu 3 dni roboczych od płatności umawiamy spotkanie startowe.",
+            "Kampanie Meta Ads: pierwsze kampanie w ciągu 14 dni od spotkania startowego. Pakiet Branding: do 30 dni roboczych od spotkania startowego."
+          ]
+        },
+        {
+          "id": "odstapienie",
+          "title": "Odstąpienie od umowy i zwroty",
+          "paragraphs": [
+            "Konsument i przedsiębiorca na prawach konsumenta mogą odstąpić od umowy w ciągu 14 dni od jej zawarcia, bez podania przyczyny, niezależnie od wybranej metody płatności. Wystarczy e-mail na hello@entei.design lub list na adres firmy.",
+            "Jeżeli usługa zaczęła się na Twoje żądanie przed upływem 14 dni, płacisz za część wykonaną do dnia odstąpienia. Po pełnym wykonaniu usługi prawo odstąpienia wygasa.",
+            "Pieniądze zwracamy w ciągu 14 dni od otrzymania oświadczenia, tą samą metodą płatności."
+          ]
+        },
+        {
+          "id": "reklamacje",
+          "title": "Reklamacje",
+          "paragraphs": [
+            "Reklamację wyślij na hello@entei.design lub pocztą na adres firmy. Podaj numer zamówienia, opis problemu i oczekiwane rozwiązanie (poprawka, ponowne wykonanie, obniżenie ceny lub zwrot).",
+            "Odpowiadamy w ciągu 14 dni i informujemy na bieżąco o statusie."
+          ]
+        },
+        {
+          "id": "ograniczenia",
+          "title": "Ograniczenia",
+          "paragraphs": [
+            "Obsługujemy klientów z Polski, rozliczenie w PLN. Zamówienie może złożyć osoba pełnoletnia. Kampanie Meta Ads prowadzimy tylko dla działalności dozwolonych przez zasady reklamowe Meta i wymagają konta Meta Business."
+          ]
+        },
+        {
+          "id": "dane-osobowe",
+          "title": "Dane osobowe",
+          "paragraphs": [
+            "Administratorem danych jest ENTEI Sebastian Jarmul. Dane z zamówienia przetwarzamy, żeby wykonać umowę i wystawić fakturę. Do obsługi płatności przekazujemy je PayU S.A. (odrębny administrator). Szczegóły w Polityce prywatności."
+          ]
+        }
+      ]
     }
   }
 }

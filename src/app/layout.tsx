@@ -62,6 +62,7 @@ export default async function RootLayout({
                 portfolio: messages.portfolio,
                 loading: messages.loading,
                 testimonials: messages.testimonials,
+                siteFooter: messages.siteFooter,
               }}
             >
               {children}
