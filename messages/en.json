@@ -849,6 +849,18 @@
             "2 rounds of revisions included. Files and economic copyrights are transferred on acceptance.",
             "No additional costs."
           ]
+        },
+        "test": {
+          "name": "Test payment",
+          "payuName": "ENTEI test payment",
+          "lead": "A technical 1 zł test payment to check online payments. The money will be refunded.",
+          "includes": [
+            "Checking PayU payments and e-mail confirmations."
+          ],
+          "terms": [
+            "One-off payment: {gross} gross ({net} net + 23% VAT).",
+            "The amount will be refunded within 14 days."
+          ]
         }
       },
       "form": {
