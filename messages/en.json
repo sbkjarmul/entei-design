@@ -906,13 +906,7 @@
       },
       "payments": {
         "label": "Online payments handled by PayU",
-        "methods": [
-          "PayU",
-          "BLIK",
-          "Bank transfer",
-          "Visa",
-          "Mastercard"
-        ]
+        "transfer": "Bank transfer"
       }
     }
   },

@@ -906,13 +906,7 @@
       },
       "payments": {
         "label": "Płatności online obsługuje PayU",
-        "methods": [
-          "PayU",
-          "BLIK",
-          "Przelew online",
-          "Visa",
-          "Mastercard"
-        ]
+        "transfer": "Przelew online"
       }
     }
   },
