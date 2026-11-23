@@ -1,4 +1,3 @@
-import BenchSection from "./components/BenchSection";
 import ClosingSection from "./components/ClosingSection";
 import ComparisonSection from "./components/ComparisonSection";
 import FaqSection from "./components/FaqSection";
@@ -10,7 +9,6 @@ export default function AgencyPage() {
   return (
     <>
       <HeroSection />
-      <BenchSection />
       <ComparisonSection />
       <ClosingSection />
       <PricingSection />
