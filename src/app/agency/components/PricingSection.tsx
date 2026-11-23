@@ -60,7 +60,7 @@ export default async function PricingSection() {
                     ),
                   })}
                 </p>
-                <p className="t-lead-sm text-gray-800">
+                <p className="t-lead-sm tracking-loose text-gray-800">
                   {product.periods > 1
                     ? tp("grossMonthly", { amount: gross })
                     : tp("gross", { amount: gross })}
