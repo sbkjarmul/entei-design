@@ -18,6 +18,8 @@ const routes = [
   { loc: "/case-study/rem-met", priority: 0.6 },
   { loc: "/case-study/suseu", priority: 0.6 },
   { loc: "/polityka-prywatnosci", priority: 0.3 },
+  { loc: "/regulamin", priority: 0.3 },
+  { loc: "/zasady-zakupow", priority: 0.3 },
 ];
 
 module.exports = {

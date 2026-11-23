@@ -34,7 +34,12 @@ export const AGENCY_BOOKING_URL = `${AGENCY_URL}/rezerwacja`;
  * Landing subpages, as seen from the landing root. On the agency host they are
  * rewritten to `/agency/<subpath>`; everything else there goes to the main site.
  */
-export const AGENCY_SUBPATHS: string[] = ["/rezerwacja"];
+export const AGENCY_SUBPATHS: string[] = [
+  "/rezerwacja",
+  "/zamowienie/meta-ads",
+  "/zamowienie/branding",
+  "/zamowienie/status",
+];
 
 /** Hosts that serve the landing at `/`. `agency.localhost` is for local testing. */
 export const AGENCY_HOSTS = ["agency.entei.pl", "agency.localhost"];
