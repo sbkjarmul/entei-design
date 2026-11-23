@@ -8,7 +8,7 @@
 
 export const VAT_RATE = 0.23;
 
-export const PRODUCT_IDS = ["meta-ads", "branding", "test"] as const;
+export const PRODUCT_IDS = ["meta-ads", "branding"] as const;
 export type ProductId = (typeof PRODUCT_IDS)[number];
 
 export interface Product {
@@ -27,9 +27,6 @@ export interface Product {
 export const PRODUCTS: Record<ProductId, Product> = {
   "meta-ads": { id: "meta-ads", code: "MA", netAmount: 300_000, periods: 3 },
   branding: { id: "branding", code: "BR", netAmount: 500_000, periods: 1 },
-  // TEMPORARY: hidden 1 zł gross product to test live payments end to end.
-  // Not linked from the pricing; remove after the production test.
-  test: { id: "test", code: "TS", netAmount: 81, periods: 1 },
 };
 
 export function isProductId(value: unknown): value is ProductId {
